@@ -9,12 +9,7 @@ tags:
 share: true
 ---
 
-
-
-
-
-
-> [!insights]+ 
+> [!insights]+
 > 1. self-efﬁcacy theory ([@seifert2004, 137](zotero://open-pdf/library/items/76U5A5GJ?page=1&annotation=VMMHQENV))
 > 2. attribution theory ([@seifert2004, 137](zotero://open-pdf/library/items/76U5A5GJ?page=1&annotation=TT652RQ5))
 > 3. selfworth theory ([@seifert2004, 137](zotero://open-pdf/library/items/76U5A5GJ?page=1&annotation=2X4STS2Z))
