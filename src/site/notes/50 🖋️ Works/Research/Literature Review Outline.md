@@ -32,6 +32,14 @@ When looking for articles, I focused search terms around:
 
 Engaging in peer code review helps students in develop their analytical skills and attention to detail, which are essential for identifying and fixing bugs and errors in code. This skill is a standard practice in the industry.
 
+- @petersen2018
+- @perez-quinones2009
+- @li2006
+- @indriasari2020a
+- @hundhausen2013
+- @hamer2015
+- @hamer2009
+- @cross1987
 
 { .block-language-dataview}
 
@@ -39,6 +47,16 @@ Engaging in peer code review helps students in develop their analytical skills a
 
 Some key motivational theories relevant to education include Self-Determination Theory, Expectancy Theory, Social Development Theory, and Goal Setting Theory. The application of motivational theories to understand student motivation in peer feedback is pivotal in identifying effective strategies for engagement, and to potentially identify why students do not provide quality peer code reviews.
 
+- @taing2013
+- @seifert2004
+- @ryan1983
+- @pintrich2003
+- @papastergiou2009
+- @lopez-fernandez2021
+- @locke2002
+- @levesque2006
+- @deci1994
+- @bandura2012
 
 { .block-language-dataview}
 
@@ -46,6 +64,10 @@ Some key motivational theories relevant to education include Self-Determination 
 
 Student-generated peer code reviews often lack depth and specificity. The feedback tends to be short, non-committal, and fails to be useful. Students are not intrinsically motivated to provide useful feedback. Addressing these challenges is crucial for improving the overall quality of peer code reviews.
 
+- @indriasari2023
+- @indriasari2020
+- @indriasari2021a
+- @indriasari2021
 
 { .block-language-dataview}
 
@@ -55,6 +77,8 @@ Student-generated peer code reviews often lack depth and specificity. The feedba
 
 Gamification and game-based learning are two distinct approaches that incorporate elements of games. Gamification involves the use of game elements in non-game contexts, while game-based learning involves the use of games to deliver educational content.
 
+- @jayasinghe2013
+- @al-azawi2016
 
 { .block-language-dataview}
 
@@ -62,6 +86,16 @@ Gamification and game-based learning are two distinct approaches that incorporat
 
 While gamification relies on extrinsic motivators like rewards and recognition, game-based learning emphasizes intrinsic motivators such as enjoyment and engagement with the game and its educational content.
 
+- @jayasinghe2013
+- @indriasari2021a
+- @papastergiou2009
+- @indriasari2023
+- @llorens-largo2016
+- @indriasari2020
+- @goshevski2017
+- @indriasari2021
+- @oktaviati2018
+- @lopez-fernandez2021
 
 { .block-language-dataview}
 
@@ -69,6 +103,12 @@ While gamification relies on extrinsic motivators like rewards and recognition, 
 
 In computer science, games have been utilized to teach algorithms, data structures, networks, software testing, and programming languages. Therefore, experimenting with game-based learning for peer code reviews seems like a logical next step.
 
+- @jayasinghe2013
+- @papastergiou2009
+- @schmitz2011
+- @mohamedmasrop2019
+- @lopez-fernandez2021
+- @videnovik2023
 
 { .block-language-dataview}
 
@@ -76,6 +116,10 @@ In computer science, games have been utilized to teach algorithms, data structur
 
 While these authors have extensively studied gamification in the peer code review process, using a game-based approach has not been done yet. They conclude by saying more research in this field is required.
 
+- @indriasari2023
+- @indriasari2020
+- @indriasari2021a
+- @indriasari2021
 
 { .block-language-dataview}
 
