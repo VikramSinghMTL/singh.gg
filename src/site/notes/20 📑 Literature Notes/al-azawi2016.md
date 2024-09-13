@@ -1,7 +1,0 @@
----
-{"dg-publish":true,"permalink":"/20-literature-notes/al-azawi2016/","title":"Educational Gamification Vs. Game Based Learning - Comparative Study","tags":["game-based-learning","gamification"],"noteIcon":"","created":"2024.08.30 17:34","updated":"2024.09.09 16:17"}
----
-
-
-> [!abstract]+
-> Computer games have grown in many directions. Many studies and systems deals with different elements such as”Fun” and”pleasure” in the game structure to improve a learners motivation in the field of educational learning. In this paper, we will explain different theoretical support for the benefit of using game in education and learning. We will also demonstrate the difference among those methods such as, Game Base Learning(GBL), educational game and Gamification in education. A clear description among these new terms with explanation of the possible impact on teaching and learning will be presented. Games can make learning concept more enjoyable for students and provide a platform for their creative thought. Games will often act as learning triggers inducing lively discussion on learning concepts amongst students following game play. A couple of new ways of teaching like Game Based Learning and Gamification can be applied to enhance the learning procedure of students in various age levels.
