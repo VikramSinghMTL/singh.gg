@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/50-works/research/literature-review-outline/","title":"Literature Review Outline","noteIcon":"","created":"Aug 31, 2024 05:14","updated":"Sep 12, 2024 23:16"}
+{"dg-publish":true,"permalink":"/50-works/research/literature-review-outline/","title":"Literature Review Outline","noteIcon":2,"created":"Aug 31, 2024 05:14","updated":"Sep 12, 2024 23:16"}
 ---
 
 
