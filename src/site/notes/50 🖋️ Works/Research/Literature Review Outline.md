@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/50-works/research/literature-review-outline/","title":"Literature Review Outline","noteIcon":"","created":"2024.08.31 05:14","updated":"2024.09.09 16:17"}
+{"dg-publish":true,"permalink":"/50-works/research/literature-review-outline/","title":"Literature Review Outline","noteIcon":"","created":"Aug 31, 2024 05:14","updated":"Sep 12, 2024 23:16"}
 ---
 
 
@@ -9,8 +9,8 @@ Improving computer science students' motivation to provide quality peer code rev
 
 ## Problem
 
--   Peer code review is a fundamental part of being a professional software developer, yet many Computer Science students lack this key skill.
--   Computer Science students are unmotivated to provide quality feedback in the peer code review process.
+- Peer code review is a fundamental part of being a professional software developer, yet many Computer Science students lack this key skill.
+- Computer Science students are unmotivated to provide quality feedback in the peer code review process.
 
 ## Questions
 
@@ -127,11 +127,11 @@ While these authors have extensively studied gamification in the peer code revie
 
 From the articles I am currently able to find,
 
--   There are **17** articles about using _gamification_ in _computer science_ education.
--   There are **6** articles about using _game-based learning_ in _computer science_ education.
--   There are **5** articles about using _gamification_ during the _peer assessment_ process.
--   There are **3** articles about using _game-based learning_ during the _peer assessment_ process.
--   There are **4** articles about using _gamification_ during the _peer assessment_ process in _computer science_ education.
--   There are **** articles about _game-based learning_ during the _peer assessment_ process in _computer science_ education.
+- There are **17** articles about using _gamification_ in _computer science_ education.
+- There are **6** articles about using _game-based learning_ in _computer science_ education.
+- There are **5** articles about using _gamification_ during the _peer assessment_ process.
+- There are **3** articles about using _game-based learning_ during the _peer assessment_ process.
+- There are **4** articles about using _gamification_ during the _peer assessment_ process in _computer science_ education.
+- There are **** articles about _game-based learning_ during the _peer assessment_ process in _computer science_ education.
 
 From the lack of studies based around game-based learning to increase motivation for the peer code review process, I am curious to find out if this method has the potential to bear fruit.
