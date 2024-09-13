@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/40-development/game-programming/collision-detection/","title":"Collision Detection","noteIcon":"","created":"2024.09.02 17:02","updated":"2024.09.09 16:52"}
+{"dg-publish":true,"permalink":"/40-development/game-programming/collision-detection/","title":"Collision Detection","noteIcon":"1","created":"Sep 02, 2024 17:02","updated":"Sep 12, 2024 23:24"}
 ---
 
 
@@ -18,5 +18,5 @@ if (
 }
 ```
 
--   The formula is checking if the two boxes are colliding in any way.
--   We can use AABB Collision Detection to detect whether, for example, a player is colliding with an enemy and react accordingly.
+- The formula is checking if the two boxes are colliding in any way.
+- We can use AABB Collision Detection to detect whether, for example, a player is colliding with an enemy and react accordingly.

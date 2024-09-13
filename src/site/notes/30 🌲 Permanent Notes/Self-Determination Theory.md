@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/30-permanent-notes/self-determination-theory/","title":"Self-Determination Theory","tags":["🪴"],"noteIcon":"","created":"2024.08.30 17:33","updated":"2024.09.09 16:17"}
+{"dg-publish":true,"permalink":"/30-permanent-notes/self-determination-theory/","title":"Self-Determination Theory","tags":["🪴"],"noteIcon":"1","created":"Aug 30, 2024 17:33","updated":"Sep 12, 2024 23:24"}
 ---
 
 
@@ -7,8 +7,8 @@ Self-Determination Theory is a motivational framework that emphasizes three core
 
 ## Instructional Characteristics
 
--   Students Learn: Autonomy
--   Teaching Style: Supportive
+- Students Learn: Autonomy
+- Teaching Style: Supportive
 
 ## Dependent Variables
 
@@ -16,11 +16,11 @@ Perceived autonomy through identification
 
 ## Desired Student Outcomes
 
--   Engagement
--   Positive affect
--   Conceptual learning
--   Joy
--   Coping effectively with failure
+- Engagement
+- Positive affect
+- Conceptual learning
+- Joy
+- Coping effectively with failure
 
 ## In Class
 
@@ -28,5 +28,5 @@ Provide students with necessary information while encouraging them to use the in
 
 ## Out of Class
 
--   Chose own topic for research.
--   Choose own book for review.
+- Chose own topic for research.
+- Choose own book for review.

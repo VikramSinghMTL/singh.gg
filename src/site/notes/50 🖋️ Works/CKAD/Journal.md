@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/50-works/ckad/journal/","noteIcon":"","created":"2024.08.31 05:14","updated":"2024.09.09 16:17"}
+{"dg-publish":true,"permalink":"/50-works/ckad/journal/","noteIcon":"1","created":"Aug 31, 2024 05:14","updated":"Sep 12, 2024 23:24"}
 ---
 
 

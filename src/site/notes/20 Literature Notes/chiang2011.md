@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/chiang2011/","title":"Using Game-Based Learning and Interactive Peer Assessment to Improve Career Goals and Objectives for College Students","tags":["peer-assessment","game-based-learning"],"noteIcon":"","created":"2024.08.30 17:33","updated":"2024.09.09 16:17"}
+{"dg-publish":true,"permalink":"/20-literature-notes/chiang2011/","title":"Using Game-Based Learning and Interactive Peer Assessment to Improve Career Goals and Objectives for College Students","tags":["peer-assessment","game-based-learning"],"noteIcon":"1","created":"Aug 30, 2024 17:33","updated":"Sep 12, 2024 23:24"}
 ---
 
 

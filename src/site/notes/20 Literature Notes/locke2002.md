@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/locke2002/","title":"Building a practically useful theory of goal setting and task motivation - A 35-year odyssey.","tags":["motivation"],"noteIcon":"","created":"2024.08.30 17:34","updated":"2024.09.09 16:17"}
+{"dg-publish":true,"permalink":"/20-literature-notes/locke2002/","title":"Building a practically useful theory of goal setting and task motivation - A 35-year odyssey.","tags":["motivation"],"noteIcon":"1","created":"Aug 30, 2024 17:34","updated":"Sep 12, 2024 23:24"}
 ---
 
 

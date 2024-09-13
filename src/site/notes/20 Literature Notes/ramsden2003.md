@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/ramsden2003/","title":"Learning to teach in higher education","noteIcon":"","created":"2024.08.30 17:33","updated":"2024.09.09 16:17"}
+{"dg-publish":true,"permalink":"/20-literature-notes/ramsden2003/","title":"Learning to teach in higher education","noteIcon":"1","created":"Aug 30, 2024 17:33","updated":"Sep 12, 2024 23:24"}
 ---
 
 

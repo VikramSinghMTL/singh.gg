@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/50-works/research/closing-statement/","title":"Closing Statement","noteIcon":"","created":"2024.05.13 15:04","updated":"2024.09.09 16:17"}
+{"dg-publish":true,"permalink":"/50-works/research/closing-statement/","title":"Closing Statement","noteIcon":"1","created":"May 13, 2024 15:04","updated":"Sep 12, 2024 23:24"}
 ---
 
 

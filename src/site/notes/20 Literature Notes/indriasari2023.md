@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/indriasari2023/","title":"Gamification improves the quality of student peer code review","tags":["gamification","computer-science","peer-feedback","motivation"],"noteIcon":"","created":"2024.08.30 17:34","updated":"2024.09.09 16:17"}
+{"dg-publish":true,"permalink":"/20-literature-notes/indriasari2023/","title":"Gamification improves the quality of student peer code review","tags":["gamification","computer-science","peer-feedback","motivation"],"noteIcon":"1","created":"Aug 30, 2024 17:34","updated":"Sep 12, 2024 23:24"}
 ---
 
 
@@ -19,7 +19,7 @@
 > 2. When reviewing a code submission using {Anonymized}, the reviewer provides both numerical scores and open-response written feedback. ([@indriasari2023, 4](zotero://open-pdf/library/items/ECULZ55X?page=5&annotation=EICI5P3W))
 > 3. ![indriasari2023-8-x87-y645.png](/img/user/00%20%E2%9A%99%EF%B8%8F%20System/Assets/indriasari2023-8-x87-y645.png)
 >     - Figure 2. An Overview of the experimental study and participant counts. Activities are shown in diﬀerent colour of grey box and participants counts are shown in red circle for gamiﬁcation condition and blue circle for the control condition.
->       Definitely quantitative.
+> Definitely quantitative.
 > 4. We used criteria derived from Stegeman, Barendsen, and Smetsers (2014); Stegeman et al. (2016) such as Variable Names, Expression, and Control Flow. We combined similar criteria into a single criterion to simplify and reduce the number of criteria used. The Inline Comments and Header Comments were merged into a single criterion called Comments, and Layout and Formatting were incorporated into a single Layout criterion, and ﬁnally Decomposition and Modularisation criteria were combined into Decomposition criterion. Overall, we used six criteria to assess the code quality in the practice review and peer review assignment. ([@indriasari2023, 7](zotero://open-pdf/library/items/ECULZ55X?page=8&annotation=2RCKV8RD))
 >     - Rubric criteria conceptual framework.
 > 5. During the last week of the course, students in both groups were invited to participate in a survey. The survey questions asked students about their perception of the feedback they provided, and the feedback they received during the peer code review activities. The survey included two Likert-scale questions and an open-ended question, as follows:

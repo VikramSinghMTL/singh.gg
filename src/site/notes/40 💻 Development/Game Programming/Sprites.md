@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/40-development/game-programming/sprites/","title":"Sprites","noteIcon":"","created":"2024.09.02 16:19","updated":"2024.09.09 16:53"}
+{"dg-publish":true,"permalink":"/40-development/game-programming/sprites/","title":"Sprites","noteIcon":"1","created":"Sep 02, 2024 16:19","updated":"Sep 12, 2024 23:24"}
 ---
 
 
@@ -21,9 +21,9 @@ Instead of loading many individual images, the entire sprite sheet is loaded, an
 
 Using sprite sheets offers several benefits compared to using individual sprite images:
 
--   **Performance**: By loading a single image (the sprite sheet), you reduce the number of HTTP requests, improving load times and performance. Modern GPUs are optimized for batch rendering, making sprite sheets more efficient to render than individual images.
--   **Memory Efficiency**: Packing sprites together in one image can save memory compared to loading multiple smaller files. This is particularly useful in performance-critical applications like games.
--   **Simplified Asset Management**: It's easier to manage a single sprite sheet file than many individual images. All related sprites are kept in one place, making it more straightforward to handle animations and visual transitions.
+- **Performance**: By loading a single image (the sprite sheet), you reduce the number of HTTP requests, improving load times and performance. Modern GPUs are optimized for batch rendering, making sprite sheets more efficient to render than individual images.
+- **Memory Efficiency**: Packing sprites together in one image can save memory compared to loading multiple smaller files. This is particularly useful in performance-critical applications like games.
+- **Simplified Asset Management**: It's easier to manage a single sprite sheet file than many individual images. All related sprites are kept in one place, making it more straightforward to handle animations and visual transitions.
 
 ## Extracting a Single Sprite from a Sprite Sheet
 
@@ -39,8 +39,8 @@ Imagine the sprite sheet as a grid of rows and columns, with each grid cell repr
 
 For example, if each sprite is 32x32 pixels and you want to extract the sprite in the second row and third column, you would calculate:
 
--   `X = 2 * 32 = 64`
--   `Y = 1 * 32 = 32`
+- `X = 2 * 32 = 64`
+- `Y = 1 * 32 = 32`
 
 This tells you that the sprite starts at (64, 32) on the sprite sheet, and from there, you would draw a 32x32 pixel section to display the sprite.
 

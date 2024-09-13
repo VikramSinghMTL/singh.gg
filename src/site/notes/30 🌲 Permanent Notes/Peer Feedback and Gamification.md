@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/30-permanent-notes/peer-feedback-and-gamification/","title":"Peer Feedback and Gamification","tags":["🪴"],"noteIcon":"","created":"2024.08.30 17:33","updated":"2024.09.09 16:17"}
+{"dg-publish":true,"permalink":"/30-permanent-notes/peer-feedback-and-gamification/","title":"Peer Feedback and Gamification","tags":["🪴"],"noteIcon":"1","created":"Aug 30, 2024 17:33","updated":"Sep 12, 2024 23:24"}
 ---
 
 
@@ -15,8 +15,8 @@ How does gamification affect computer science students' motivation and quality o
 
 Questions:
 
--   How will you measure the quality of feedback students give?
--   How will you measure their degree of motivation during the peer feedback exercise?
+- How will you measure the quality of feedback students give?
+- How will you measure their degree of motivation during the peer feedback exercise?
 
 ## Subjects
 
@@ -34,24 +34,24 @@ Create (map out the steps) of the peer feedback exercise.
 
 ### Instructions
 
--   Criteria and standards of performance need to be clear and exist in the form of a rubric that students can use to provide the feedback.
--   Teach the procedure to both groups explaining and stressing its value
--   Come up with a way to document the feedback given and received in each group.
+- Criteria and standards of performance need to be clear and exist in the form of a rubric that students can use to provide the feedback.
+- Teach the procedure to both groups explaining and stressing its value
+- Come up with a way to document the feedback given and received in each group.
 
 ### Gamification
 
--   Create the gamification component that gets added to the exact peer feedback exercise used above and integrated into the peer feedback exercise of Group B.
--   You would have so show that it had all the components of the peer feedback exercise done by both groups with the added gamification element.
+- Create the gamification component that gets added to the exact peer feedback exercise used above and integrated into the peer feedback exercise of Group B.
+- You would have so show that it had all the components of the peer feedback exercise done by both groups with the added gamification element.
 
 ### Measurements
 
--   Figure out how you will measure the quality of students’ feedback.
--   Find or create an instrument that measures student motivation in relation to performing a specific learning activity (peer feedback exercise)
+- Figure out how you will measure the quality of students’ feedback.
+- Find or create an instrument that measures student motivation in relation to performing a specific learning activity (peer feedback exercise)
 
 ### Analysis
 
--   Group A is compared to Group B on the quality of their feedback (T-Test or Anova)
--   Group A is compared to Group B on the degree of motivation exhibited during the peer feedback exercise. (T-Test or Anova)
+- Group A is compared to Group B on the quality of their feedback (T-Test or Anova)
+- Group A is compared to Group B on the degree of motivation exhibited during the peer feedback exercise. (T-Test or Anova)
 
 ### Categories
 

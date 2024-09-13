@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/40-development/permissions/","title":"Permissions","tags":["macos","unix"],"noteIcon":"","created":"2024.08.29 17:17","updated":"2024.09.09 16:17"}
+{"dg-publish":true,"permalink":"/40-development/permissions/","title":"Permissions","tags":["macos","unix"],"noteIcon":"1","created":"Aug 29, 2024 17:17","updated":"Sep 12, 2024 23:24"}
 ---
 
 
@@ -13,9 +13,9 @@ I wanted to create a deep work user account so that I could work without being l
 
 One approach is to create a new group, add both users to this group, and then set the folder's group ownership and permissions to this group.
 
--   Create a new group through Mac system settings GUI `Users and Groups`.
--   Add both users to the newly created group, again through the GUI.
--   Change the group ownership of the folder to the new group:
+- Create a new group through Mac system settings GUI `Users and Groups`.
+- Add both users to the newly created group, again through the GUI.
+- Change the group ownership of the folder to the new group:
 
     ```bash
 
@@ -31,7 +31,7 @@ sudo chown:newgroup foldername
 sudo chmod -R g+rw foldername
 ````
 
--   To set the group ID on the directory so that new files inherit this group, use:
+- To set the group ID on the directory so that new files inherit this group, use:
 
     ```bash
 

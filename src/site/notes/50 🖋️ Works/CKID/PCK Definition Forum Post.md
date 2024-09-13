@@ -1,13 +1,13 @@
 ---
-{"dg-publish":true,"permalink":"/50-works/ckid/pck-definition-forum-post/","title":"PCK Definition Forum Post","noteIcon":"","created":"2021.10.24 20:19","updated":"2024.09.09 16:41"}
+{"dg-publish":true,"permalink":"/50-works/ckid/pck-definition-forum-post/","title":"PCK Definition Forum Post","noteIcon":"1","created":"Oct 24, 2021 20:19","updated":"Sep 12, 2024 23:24"}
 ---
 
 
 ## ☑️ Tasks
 
--   [x] Formulate your own definition of pedagogical content knowledge.
--   [x] Give examples from your discipline of content knowledge, pedagogical knowledge and pedagogical content knowledge.
--   [x] Discuss your definition within the frameworks presented by Tsui (reading 12), i.e. "teacher knowledge" as:
+- [x] Formulate your own definition of pedagogical content knowledge.
+- [x] Give examples from your discipline of content knowledge, pedagogical knowledge and pedagogical content knowledge.
+- [x] Discuss your definition within the frameworks presented by Tsui (reading 12), i.e. "teacher knowledge" as:
     1. Reflective practice
     2. Situated knowledge
     3. Content knowledge
@@ -16,9 +16,9 @@
 
 Just because one is an expert in their discipline does not mean that they can automatically teach the discipline [@bransford2000 44]. Being an expert means it is likely that much time has passed since they were a novice, so they tend to forget the novice’s perspective. What is required of Computer Science teachers is _pedagogical content knowledge_ which combines the knowledge and skills of an expert software developer with the knowledge and skills of an expert teacher.
 
--   **Pedagogical Knowledge**: Utilizing the instructional strategy of a "jigsaw" to split up a large piece of content into chunks such that groups of students can become experts of one chunk and learn the other chunks from their peers.
--   **Content Knowledge**: Being able to consume and understand a large codebase.
--   **Pedagogical Content Knowledge**: Presenting the students with a large codebase and splitting it up into different sections based on some category (ex. a Model View Controller architecture).
+- **Pedagogical Knowledge**: Utilizing the instructional strategy of a "jigsaw" to split up a large piece of content into chunks such that groups of students can become experts of one chunk and learn the other chunks from their peers.
+- **Content Knowledge**: Being able to consume and understand a large codebase.
+- **Pedagogical Content Knowledge**: Presenting the students with a large codebase and splitting it up into different sections based on some category (ex. a Model View Controller architecture).
     1. Get assigned a number from 1-3, and depending on your number, read either the model (1), view (2), or controller (3) files of the codebase.
     2. In groups of 3, where all members of the group share the same number, discuss what you read and what the purpose of the files seem to be.
     3. In groups of 3, where no two members of the group share the same number, share your findings from the files you read with the group. Once everyone has shared, collaborate to determine the relationships between the model, view, and controller files.

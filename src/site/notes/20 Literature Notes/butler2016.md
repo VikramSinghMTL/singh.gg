@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/butler2016/","title":"Gamification to Engage and Motivate Students to Achieve Computer Science Learning Goals","tags":["gamification","computer-science"],"noteIcon":"","created":"2024.08.30 17:34","updated":"2024.09.09 16:17"}
+{"dg-publish":true,"permalink":"/20-literature-notes/butler2016/","title":"Gamification to Engage and Motivate Students to Achieve Computer Science Learning Goals","tags":["gamification","computer-science"],"noteIcon":"1","created":"Aug 30, 2024 17:34","updated":"Sep 12, 2024 23:24"}
 ---
 
 

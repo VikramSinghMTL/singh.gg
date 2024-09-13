@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/30-permanent-notes/constructivism/","title":"Constructivism","tags":["🪴"],"noteIcon":"","created":"2024.08.30 17:33","updated":"2024.09.09 16:17"}
+{"dg-publish":true,"permalink":"/30-permanent-notes/constructivism/","title":"Constructivism","tags":["🪴"],"noteIcon":"1","created":"Aug 30, 2024 17:33","updated":"Sep 12, 2024 23:24"}
 ---
 
 
@@ -7,12 +7,12 @@ Constructivism is...
 
 ## [[Cognitive Constructivism\|Cognitive Constructivism]]
 
--   Piaget
+- Piaget
 
 ## [[Social Constructivism\|Social Constructivism]]
 
--   Vygotsky
--   Zone of Proximal Development
+- Vygotsky
+- Zone of Proximal Development
 
 ## 📚 References
 

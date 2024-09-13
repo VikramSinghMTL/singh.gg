@@ -1,10 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/40-development/game-programming/delta-time/","title":"Delta Time","noteIcon":"","created":"2024.08.22 23:00","updated":"2024.09.09 16:52"}
+{"dg-publish":true,"permalink":"/40-development/game-programming/delta-time/","title":"Delta Time","noteIcon":"1","created":"Aug 22, 2024 23:00","updated":"Sep 12, 2024 23:24"}
 ---
 
 
 > [!note]
-> The content for this section was taken from Drew Coleman[^1]. If you want a more in-depth explanation about delta time, I highly recommend reading the article in its entirety!
+> The content for this section was taken from Drew Coleman.[^1] If you want a more in-depth explanation about delta time, I highly recommend reading the article in its entirety!
 
 Combining the previous two sections, we paint (and repaint) on a 2D canvas over and over again until the game stops. This repainting is what gives the illusion of things being moved on the screen. But, how fast is the repainting happening? This depends on the hardware your game is running on. You may have heard the terms "30 FPS" and "60 FPS" before. FPS stands for "frames per second". A "frame" is a single painting of our animation.
 
@@ -73,4 +73,4 @@ No matter how fast or slow the hardware is, our game will always behave the same
 ## 📚 References
 
 [^1]: [Drew Coleman - Understanding Delta Time](https://drewcampbell92.medium.com/understanding-delta-time-b53bf4781a03)
-[^2]: https://javimir.tumblr.com/post/116880977997
+[^2]: <https://javimir.tumblr.com/post/116880977997>

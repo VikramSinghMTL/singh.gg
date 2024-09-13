@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/50-works/research/conceptual-framework/","title":"Conceptual Framework","noteIcon":"","created":"2024.02.10 12:00","updated":"2024.09.09 16:17"}
+{"dg-publish":true,"permalink":"/50-works/research/conceptual-framework/","title":"Conceptual Framework","noteIcon":"1","created":"Feb 10, 2024 12:00","updated":"Sep 12, 2024 23:24"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/50-works/research/pecha-kucha/critical-path-pecha-kucha/","title":"Critical Path Pecha Kucha","noteIcon":"","created":"2024.09.06 17:30","updated":"2024.09.09 16:17"}
+{"dg-publish":true,"permalink":"/50-works/research/pecha-kucha/critical-path-pecha-kucha/","title":"Critical Path Pecha Kucha","noteIcon":"1","created":"Sep 06, 2024 17:30","updated":"Sep 12, 2024 23:24"}
 ---
 
 
@@ -64,7 +64,7 @@ Notes.
 </style>
 
 | Framework/Theory                     | Author              | Concepts                                   |
-| :----------------------------------- | :------------------ | :----------------------------------------- |
+|:----------------------------------- |:------------------ |:----------------------------------------- |
 | Self-Determination Theory            | (Deci & Ryan 1994)  | Intrinsic & extrinsic motivation           |
 | A RECIPE for Meaningful Gamification | (Nicholson 2015)    | Meaning-based & rewards-based gamification |
 | Peer Code Review Framework           | (Indriasari 2023)   | Criteria to assess code quality            |
@@ -92,7 +92,7 @@ Notes.
 </style>
 
 | Aspect                      | Description                                                                                                          |
-| :-------------------------- | :------------------------------------------------------------------------------------------------------------------- |
+|:-------------------------- |:------------------------------------------------------------------------------------------------------------------- |
 | Independent Variable        |  Game-based learning approach                                                                                        |
 | Dependent Variable          |  Quality of code review feedback                                                                                     |
 | Participants                |  3rd year computer science students                                                                                  |

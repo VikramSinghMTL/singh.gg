@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/friedrich2019/","title":"Effectiveness of peer review as cooperative web-based learning method applied out-of-class in a role playing game - A case study by quasi-experimental approach","tags":["game-based-learning","peer-assessment"],"noteIcon":"","created":"2024.08.30 17:34","updated":"2024.09.09 16:17"}
+{"dg-publish":true,"permalink":"/20-literature-notes/friedrich2019/","title":"Effectiveness of peer review as cooperative web-based learning method applied out-of-class in a role playing game - A case study by quasi-experimental approach","tags":["game-based-learning","peer-assessment"],"noteIcon":"1","created":"Aug 30, 2024 17:34","updated":"Sep 12, 2024 23:24"}
 ---
 
 

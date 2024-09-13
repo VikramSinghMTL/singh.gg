@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/30-permanent-notes/goal-setting-theory/","title":"Goal-Setting Theory","tags":["🪴"],"noteIcon":"","created":"2024.08.30 17:33","updated":"2024.09.09 16:17"}
+{"dg-publish":true,"permalink":"/30-permanent-notes/goal-setting-theory/","title":"Goal-Setting Theory","tags":["🪴"],"noteIcon":"1","created":"Aug 30, 2024 17:33","updated":"Sep 12, 2024 23:24"}
 ---
 
 
@@ -11,28 +11,28 @@ When challenging goals are achieved, a learner will set a new challenging goal, 
 
 ## Dependent Variables
 
--   Goal importance
--   Goal difficulty
--   Goal attainability
--   Goal specificity
--   Goal commitment
+- Goal importance
+- Goal difficulty
+- Goal attainability
+- Goal specificity
+- Goal commitment
 
 ## Desired Student Outcomes
 
--   Learning goals vs. performance goals
--   Directive function
--   Energizing function
--   Persistence
--   Task-relevant knowledge
--   Feedback
--   Task-complexity
--   Self-efficacy
--   Ability
+- Learning goals vs. performance goals
+- Directive function
+- Energizing function
+- Persistence
+- Task-relevant knowledge
+- Feedback
+- Task-complexity
+- Self-efficacy
+- Ability
 
 ## In Class
 
--   Teacher helps students set goals by giving shorter timeline due dates for components of a major project.
--   Formative feedback is given to boost self-efficacy and moderate goal achievement.
+- Teacher helps students set goals by giving shorter timeline due dates for components of a major project.
+- Formative feedback is given to boost self-efficacy and moderate goal achievement.
 
 ## Out of Class
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/50-works/ckid/literature-review/","title":"How Computer Science Students Learn to Debug","noteIcon":"","created":"2024.08.31 05:14","updated":"2024.09.09 16:41"}
+{"dg-publish":true,"permalink":"/50-works/ckid/literature-review/","title":"How Computer Science Students Learn to Debug","noteIcon":"1","created":"Aug 31, 2024 05:14","updated":"Sep 12, 2024 23:24"}
 ---
 
 
@@ -48,13 +48,13 @@ One developer can learn from another simply by engaging in a pair programming se
 
 Being aware of what one knows and the gaps in one's knowledge can be referred to as _metacognition_ and is a characteristic of an expert programmer [@bransford2000 47]. The metacognitive process requires reflection on what solutions one discovered and whether any functions can be abstracted to fit a more general-purpose context [@bransford2000 34]. In the studies by @chmiel2004 [p. 18] and @fitzgerald2010 [p. 395] about developing debugging skills for Computer Science students, they tasked students with answering metacognitive questions such as:
 
--   How much time did you spend on designing, coding, and testing each part or subroutine?
--   What kinds of defects did you find during the development of the program?
--   When did you discover these defects (during code review or testing)?
--   How did you find them?
--   What would you do differently for the next programming assignment?
--   Why did you make that change?
--   What do you think will happen now?
+- How much time did you spend on designing, coding, and testing each part or subroutine?
+- What kinds of defects did you find during the development of the program?
+- When did you discover these defects (during code review or testing)?
+- How did you find them?
+- What would you do differently for the next programming assignment?
+- Why did you make that change?
+- What do you think will happen now?
 
 By asking these questions, students can develop the ability to teach themselves [@bransford2000 50]. Metacognition also surfaced in the studies by @marques2018 and @soh2015, where they identified that novices are unable to distinguish between what they know and what they do not know. In addition, @ben-davidkolikant2018 [p. 220] outlined in their study that not only are the fundamental cognitive processes for searching the internet analysis and evaluation, but also metacognition. The students first had to recognize that the solution they were currently looking at was not one they understood, before doing some more searching to understand further how the solution worked.
 

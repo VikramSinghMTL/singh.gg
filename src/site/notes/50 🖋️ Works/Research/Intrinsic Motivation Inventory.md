@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/50-works/research/intrinsic-motivation-inventory/","title":"Intrinsic Motivation Inventory (IMI)","noteIcon":"","created":"2024.05.13 08:44","updated":"2024.09.09 16:17"}
+{"dg-publish":true,"permalink":"/50-works/research/intrinsic-motivation-inventory/","title":"Intrinsic Motivation Inventory (IMI)","noteIcon":"1","created":"May 13, 2024 08:44","updated":"Sep 12, 2024 23:24"}
 ---
 
 
@@ -50,65 +50,65 @@ not at all true | somewhat true | very true
 
 ### Interest/Enjoyment
 
--   I enjoyed doing this activity very much.
--   This activity was fun to do.
--   I thought this was a boring activity. (R)
--   This activity did not hold my attention at all. (R)
--   I would describe this activity as very interesting. I thought this activity was quite enjoyable.
--   While I was doing this activity, I was thinking about how much I enjoyed it.
+- I enjoyed doing this activity very much.
+- This activity was fun to do.
+- I thought this was a boring activity. (R)
+- This activity did not hold my attention at all. (R)
+- I would describe this activity as very interesting. I thought this activity was quite enjoyable.
+- While I was doing this activity, I was thinking about how much I enjoyed it.
 
 ### Perceived Competence
 
--   I think I am pretty good at this activity.
--   I think I did pretty well at this activity, compared to other students. After working at this activity for awhile, I felt pretty competent.
--   I am satisfied with my performance at this task. I was pretty skilled at this activity.
--   This was an activity that I couldn't do very well. (R)
+- I think I am pretty good at this activity.
+- I think I did pretty well at this activity, compared to other students. After working at this activity for awhile, I felt pretty competent.
+- I am satisfied with my performance at this task. I was pretty skilled at this activity.
+- This was an activity that I couldn't do very well. (R)
 
 ### Effort/Importance
 
--   I put a lot of effort into this.
--   I didn't try very hard to do well at this activity. (R)
--   I tried very hard on this activity.
--   It was important to me to do well at this task. I didn't put much energy into this. (R)
+- I put a lot of effort into this.
+- I didn't try very hard to do well at this activity. (R)
+- I tried very hard on this activity.
+- It was important to me to do well at this task. I didn't put much energy into this. (R)
 
 ### Pressure/Tension
 
--   I did not feel nervous at all while doing this. (R)
--   I felt very tense while doing this activity.
--   I was very relaxed in doing these. (R)
--   I was anxious while working on this task.
--   I felt pressured while doing these.
+- I did not feel nervous at all while doing this. (R)
+- I felt very tense while doing this activity.
+- I was very relaxed in doing these. (R)
+- I was anxious while working on this task.
+- I felt pressured while doing these.
 
 ### Perceived Choice
 
--   I believe I had some choice about doing this activity.
--   I felt like it was not my own choice to do this task. (R)
--   I didn't really have a choice about doing this task. (R)
--   I felt like I had to do this. (R)
--   I did this activity because I had no choice. (R)
--   I did this activity because I wanted to.
--   I did this activity because I had to. (R)
+- I believe I had some choice about doing this activity.
+- I felt like it was not my own choice to do this task. (R)
+- I didn't really have a choice about doing this task. (R)
+- I felt like I had to do this. (R)
+- I did this activity because I had no choice. (R)
+- I did this activity because I wanted to.
+- I did this activity because I had to. (R)
 
 ### Value/Usefulness
 
--   I believe this activity could be of some value to me.
--   I think that doing this activity is useful for _blank_.
--   I think this is important to do because it can _blank_.
--   I would be willing to do this again because it has some value to me.
--   I think doing this activity could help me to _blank_.
--   I believe doing this activity could be beneficial to me.
--   I think this is an important activity.
+- I believe this activity could be of some value to me.
+- I think that doing this activity is useful for _blank_.
+- I think this is important to do because it can _blank_.
+- I would be willing to do this again because it has some value to me.
+- I think doing this activity could help me to _blank_.
+- I believe doing this activity could be beneficial to me.
+- I think this is an important activity.
 
 ### Relatedness
 
--   I felt really distant to this person. (R)
--   I really doubt that this person and I would ever be friends. (R)
--   I felt like I could really trust this person.
--   I'd like a chance to interact with this person more often.
--   I'd really prefer not to interact with this person in the future. (R)
--   I don't feel like I could really trust person. (R)
--   It is likely that this person and I could become friends if we interacted a lot.
--   I feel close to this person.
+- I felt really distant to this person. (R)
+- I really doubt that this person and I would ever be friends. (R)
+- I felt like I could really trust this person.
+- I'd like a chance to interact with this person more often.
+- I'd really prefer not to interact with this person in the future. (R)
+- I don't feel like I could really trust person. (R)
+- It is likely that this person and I could become friends if we interacted a lot.
+- I feel close to this person.
 
 **Constructing the IMI for your study.** First, decide which of the variables (factors) you want to use, based on what theoretical questions you are addressing. Then, use the items from those factors, randomly ordered. If you use the value/usefulness items, you will need to complete the three items as appropriate. In other words, if you were studying whether the person believes an activity is useful for improving concentration, or becoming a better basketball player, or whatever, then fill in the blanks with that information. If you do not want to refer to a particular outcome, then just truncate the items with its being useful, helpful, or important.
 
@@ -152,10 +152,10 @@ not at all true | somewhat true | very true
 
 **Scoring information**. Begin by reverse scoring items # 2, 9, 11, 14, 19, 21. In other words, subtract the item response from 8, and use the result as the item score for that item. This way, a higher score will indicate more of the concept described in the subscale name. Thus, a higher score on pressure/tension means the person felt more pressured and tense; a higher score on perceived competence means the person felt more competent; and so on. Then calculate subscale scores by averaging the items scores for the items on each subscale. They are as follows. The (R) after an item number is just a reminder that the item score is the reverse of the participant's response on that item.
 
--   Interest/enjoyment: 1, 5, 8, 10, 14 (R), 17, 20
--   Perceived competence: 4, 7, 12, 16, 22
--   Perceived choice: 3, 11 (R), 15, 19 (R), 21 (R)
--   Pressure/tension: 2 (R), 6, 9 (R), 13, 18
+- Interest/enjoyment: 1, 5, 8, 10, 14 (R), 17, 20
+- Perceived competence: 4, 7, 12, 16, 22
+- Perceived choice: 3, 11 (R), 15, 19 (R), 21 (R)
+- Pressure/tension: 2 (R), 6, 9 (R), 13, 18
 
 The subscale scores can then be used as dependent variables, predictors, or mediators, depending on the research questions being addressed.
 
@@ -184,8 +184,8 @@ not at all true | somewhat true | very true
 
 concept described in the subscale name. Then calculate subscale scores by averaging the items scores for the items on each subscale. They are shown below. The (R) after an item number is just a reminder that the item score is the reverse of the participant's response on that item.
 
--   Interest/enjoyment: 1, 3 (R), 5, 7, 9
--   Perceived competence: 4, 6
+- Interest/enjoyment: 1, 3 (R), 5, 7, 9
+- Perceived competence: 4, 6
     Pressure/tension: 2 (R), 8
 
 ---
@@ -229,9 +229,9 @@ not at all true | somewhat true | very true
 
 **Scoring information**. Begin by reverse scoring items # 8, 12, 14, 18, 20, and 24 by subtracting the item response from 8 and using the result as the item score for that item. Then calculate subscale scores by averaging the items scores for the items on each subscale. They are shown below. The (R) after an item number is just a reminder that the item score is the reverse of the participant's response on that item.
 
--   Interest/enjoyment: 3, 5, 7, 11, 12 (R), 15, 17, 23
--   Value/usefulness: 1, 4, 6, 10, 13, 16, 19, 21, 25
--   Perceived choice: 2, 8 (R), 9, 14 (R), 18 (R), 20 (R), 22, 24 (R)
+- Interest/enjoyment: 3, 5, 7, 11, 12 (R), 15, 17, 23
+- Value/usefulness: 1, 4, 6, 10, 13, 16, 19, 21, 25
+- Perceived choice: 2, 8 (R), 9, 14 (R), 18 (R), 20 (R), 22, 24 (R)
 
 ---
 
@@ -276,8 +276,8 @@ not at all true | somewhat true | very true
 
 **Scoring information**. Begin by reverse scoring items # 2, 3, 6, 12, 14, 16, 18, 21, 25, 27, and 28 by subtracting the item response from 8 and using the result as the item score for that item. Then calculate subscale scores by averaging the items scores for the items on each subscale. They are shown below. The (R) after an item number is just a reminder that the item score is the reverse of the participant's response on that item.
 
--   Relatedness: 2 (R), 6 (R), 10, 13, 16 (R), 21 (R), 24, 26
--   Interest/enjoyment: 1, 5, 7, 8, 11, 18 (R), 22
--   Perceived choice: 4, 14 (R), 19, 25 (R), 28 (R)
--   Pressure/tension: 3 (R), 9, 12 (R), 17, 23
--   Effort: 15, 20, 27 (R), 29
+- Relatedness: 2 (R), 6 (R), 10, 13, 16 (R), 21 (R), 24, 26
+- Interest/enjoyment: 1, 5, 7, 8, 11, 18 (R), 22
+- Perceived choice: 4, 14 (R), 19, 25 (R), 28 (R)
+- Pressure/tension: 3 (R), 9, 12 (R), 17, 23
+- Effort: 15, 20, 27 (R), 29

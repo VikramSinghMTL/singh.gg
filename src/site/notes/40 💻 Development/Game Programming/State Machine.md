@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/40-development/game-programming/state-machine/","title":"State Machine","noteIcon":"","created":"2024.09.02 17:07","updated":"2024.09.09 16:53"}
+{"dg-publish":true,"permalink":"/40-development/game-programming/state-machine/","title":"State Machine","noteIcon":"1","created":"Sep 02, 2024 17:07","updated":"Sep 12, 2024 23:24"}
 ---
 
 
@@ -38,17 +38,17 @@ State machines operate by defining three main components:
 
 Consider a character in a 2D platformer game. The character might have the following states:
 
--   **Idle**: The character is standing still.
--   **Walking**: The character is moving left or right.
--   **Jumping**: The character is in the air after jumping.
--   **Attacking**: The character is performing an attack.
+- **Idle**: The character is standing still.
+- **Walking**: The character is moving left or right.
+- **Jumping**: The character is in the air after jumping.
+- **Attacking**: The character is performing an attack.
 
 These states form the core of the state machine. The transitions between states might look like this:
 
--   **Idle → Walking**: When the player presses the left or right arrow key.
--   **Walking → Jumping**: When the player presses the jump button while walking.
--   **Jumping → Idle**: When the character lands back on the ground after jumping.
--   **Idle/Walking → Attacking**: When the player presses the attack button.
+- **Idle → Walking**: When the player presses the left or right arrow key.
+- **Walking → Jumping**: When the player presses the jump button while walking.
+- **Jumping → Idle**: When the character lands back on the ground after jumping.
+- **Idle/Walking → Attacking**: When the player presses the attack button.
 
 ## How State Machines are Implemented
 
@@ -59,9 +59,9 @@ State machines are typically implemented using classes or data structures that r
 
 ## Advantages of State Machines in Games
 
--   **Modularity**: By encapsulating each behavior in a separate state, you can easily add, modify, or remove states without affecting other parts of the system.
--   **Clarity**: State machines make it clear what your entities are doing at any given time, which simplifies debugging and testing.
--   **Scalability**: As your game grows, state machines allow you to manage increasingly complex behavior without the system becoming unwieldy.
+- **Modularity**: By encapsulating each behavior in a separate state, you can easily add, modify, or remove states without affecting other parts of the system.
+- **Clarity**: State machines make it clear what your entities are doing at any given time, which simplifies debugging and testing.
+- **Scalability**: As your game grows, state machines allow you to manage increasingly complex behavior without the system becoming unwieldy.
 
 ## Conclusion
 

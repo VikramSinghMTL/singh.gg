@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/powell2009/","title":"Cognitive and social constructivism - developing tools for an effective classroom","tags":["constructivism"],"noteIcon":"","created":"2024.08.30 17:34","updated":"2024.09.09 16:17"}
+{"dg-publish":true,"permalink":"/20-literature-notes/powell2009/","title":"Cognitive and social constructivism - developing tools for an effective classroom","tags":["constructivism"],"noteIcon":"1","created":"Aug 30, 2024 17:34","updated":"Sep 12, 2024 23:24"}
 ---
 
 

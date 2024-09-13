@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/ahmad2020/","title":"The Impact of Gamification on Learning Outcomes of Computer Science Majors","tags":["gamification","computer-science"],"noteIcon":"","created":"2024.08.30 17:34","updated":"2024.09.09 16:17"}
+{"dg-publish":true,"permalink":"/20-literature-notes/ahmad2020/","title":"The Impact of Gamification on Learning Outcomes of Computer Science Majors","tags":["gamification","computer-science"],"noteIcon":"1","created":"Aug 30, 2024 17:34","updated":"Sep 12, 2024 23:24"}
 ---
 
 
@@ -32,10 +32,10 @@
 
 > [!conclusion]+
 >
-> -   Results were generally positive.
-> -   Students in the gamification groups all had better grades across the board.
-> -   Students were more satisfied in the no group and small group settings.
-> -   Strong correlation between the students mark and their satisfaction. ([@ahmad2020a, 178](zotero://open-pdf/library/items/AUEJBAEZ?page=18&annotation=Q8C8Q2FB))
+> - Results were generally positive.
+> - Students in the gamification groups all had better grades across the board.
+> - Students were more satisfied in the no group and small group settings.
+> - Strong correlation between the students mark and their satisfaction. ([@ahmad2020a, 178](zotero://open-pdf/library/items/AUEJBAEZ?page=18&annotation=Q8C8Q2FB))
 
 > [!insights]+
 >

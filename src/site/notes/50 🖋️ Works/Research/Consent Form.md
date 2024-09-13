@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/50-works/research/consent-form/","title":"Consent Form","noteIcon":"","created":"2024.04.27 16:40","updated":"2024.09.09 16:17"}
+{"dg-publish":true,"permalink":"/50-works/research/consent-form/","title":"Consent Form","noteIcon":"1","created":"Apr 27, 2024 16:40","updated":"Sep 12, 2024 23:24"}
 ---
 
 
@@ -11,8 +11,8 @@ This project is being conducted by Vikram Singh, a Computer Science Teacher at J
 
 Depending on your section, you will be in one of two groups:
 
--   **Group A:** You'll play a short game related to code review concepts, followed by a peer code review activity.
--   **Group B:** You'll participate in a standard peer code review activity.
+- **Group A:** You'll play a short game related to code review concepts, followed by a peer code review activity.
+- **Group B:** You'll participate in a standard peer code review activity.
 
 Regardless of your group, you'll complete a survey about your experience and your feedback will be analyzed along with the contents of the feedback you gave your peer.
 
@@ -47,8 +47,8 @@ If you have any questions about your rights or treatment during this study, plea
 
 I attest that I have read the above information and that I freely consent to participate in the study about the peer code review in the context of my 420-5P6 Game Programming course during the Fall 2024 semester.
 
--   Student Name (please print):
--   Student Number:
--   Student Signature:
--   Date:
--   I wish to receive the results of the study. My email is:
+- Student Name (please print):
+- Student Number:
+- Student Signature:
+- Date:
+- I wish to receive the results of the study. My email is:
