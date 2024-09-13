@@ -38,4 +38,4 @@
 
 ## 📚 References
 
-1. [[20 📑 Literature Notes/hamer2015\|hamer2015]]
+1. [[20 Literature Notes/hamer2015\|hamer2015]]

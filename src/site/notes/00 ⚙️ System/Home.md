@@ -26,7 +26,7 @@
 
 -   [Johnny.Decimal](https://johnnydecimal.com/)
 -   [PARA](https://fortelabs.com/blog/para/)
--   [[20 📑 Literature Notes/allen2010\|allen2010]]
+-   [[20 Literature Notes/allen2010\|allen2010]]
 -   [PARA+GTD Obsidian setup](https://medium.com/@guywiener/para-gtd-obsidian-setup-d7f30b1dbb0c)
 -   [Daily notes template](https://www.reddit.com/r/ObsidianMD/comments/131pvv6/daily_notes_template_for_obsidian_task_edition/)
 -   [Publish](https://dg-docs.ole.dev/getting-started/01-getting-started/)

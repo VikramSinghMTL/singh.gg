@@ -5,4 +5,4 @@
 
 Surface learning vs. deep learning.
 
-[[20 📑 Literature Notes/ramsden2003\|ramsden2003]]
+[[20 Literature Notes/ramsden2003\|ramsden2003]]

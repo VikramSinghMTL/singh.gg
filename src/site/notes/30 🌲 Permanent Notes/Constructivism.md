@@ -16,4 +16,4 @@ Constructivism is...
 
 ## 📚 References
 
-1. [[20 📑 Literature Notes/powell2009\|powell2009]]
+1. [[20 Literature Notes/powell2009\|powell2009]]

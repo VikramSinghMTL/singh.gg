@@ -1,0 +1,7 @@
+---
+{"dg-publish":true,"permalink":"/20-literature-notes/chiang2011/","title":"Using Game-Based Learning and Interactive Peer Assessment to Improve Career Goals and Objectives for College Students","tags":["peer-assessment","game-based-learning"],"noteIcon":"","created":"2024.08.30 17:33","updated":"2024.09.09 16:17"}
+---
+
+
+> [!abstract]+
+> This article aims to develop game-based learning and interactive peer assessment to improve college students’ career goals and objectives. A total of 36 students enrolled the “Sport Guidance and Counseling” course and participated the “Job Hunting” game. Each student completed a “future resume” and played the role-play game to demonstrate their ability to find a job. Peer assessments were completed during the game as in-class activity. Self-critiques and reflections were required to post on the course blog. Participation observation and blog feedback were two major qualitative research methods to collect the data. Constant comparison was utilized to analyze the data with QSR Nvivo7. The results identified that students learned through concrete experience, reflective observation, abstract conceptualization and active experimentation in the interactive peer assessment. The finding showed that game-based learning and interactive peer assessment are viable combinations to motivate colleague students to collaborate and to improve career goals and objectives.
