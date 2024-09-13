@@ -1,7 +1,0 @@
----
-{"dg-publish":true,"permalink":"/20-literature-notes/garcia-iruela2020/","title":"Gamification and Computer Science Students’ Activity","tags":["computer-science","gamification"],"noteIcon":"","created":"2024.08.30 17:34","updated":"2024.09.09 16:17"}
----
-
-
-> [!abstract]+
-> Students’ participation and motivation are of great importance in their learning process. The decrease in attendance and difﬁculties in stimulating students’ activity makes it necessary to ﬁnd new methodologies that can solve these problems. The use of game mechanics in non-ludic environments (Gamiﬁcation) has begun to be of great interest in research, since it could increase the motivation and therefore the activity of the students. This study tries to verify if there is an existing relationship between gamiﬁcation and a possible increase in student activity or between the cessation of gamiﬁcation and student activity. In addition, it evaluates whether a greater student activity corresponds to a greater learning improvement. In the obtained results, no signiﬁcant differences were found between the methodology or the activity with a learning improvement. According to the study, the simple use of gamiﬁed elements does not necessarily imply a solution to the problems posed. The students’ activity in a course of these characteristics does not imply a better learning improvement, the importance lies in the quality of the activity generated and not in the quantity.
