@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/ibanez2014/","title":"Gamification for Engaging Computer Science Students in Learning Activities - A Case Study","tags":["gamification","computer-science"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Gamification for Engaging Computer Science Students in Learning Activities - A Case Study","authors":["[[Maria-Blanca Ibanez]]","[[Angela Di-Serio]]","[[Carlos Delgado-Kloos]]"],"date":"2014-07-01","processed":true,"tags":["gamification","computer-science"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/ibanez2014/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

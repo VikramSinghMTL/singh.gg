@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/al-azawi2016/","title":"Educational Gamification Vs. Game Based Learning - Comparative Study","tags":["game-based-learning","gamification"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Educational Gamification Vs. Game Based Learning - Comparative Study","authors":["[[Rula Al-Azawi]]","[[Fatma Al-Faliti]]","[[Mazin Al-Blushi]]"],"date":"2016-01-01","processed":false,"tags":["game-based-learning","gamification"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/al-azawi2016/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/petersen2018/","title":"Code reviews in large, first-year courses","tags":["computer-science","peer-assessment"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Code reviews in large, first-year courses","authors":["[[Andrew Petersen]]","[[Daniel Zingaro]]"],"date":"2018-07-02","processed":false,"tags":["computer-science","peer-assessment"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/petersen2018/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/indriasari2023/","title":"Gamification improves the quality of student peer code review","tags":["gamification","computer-science","peer-feedback","motivation"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Gamification improves the quality of student peer code review","authors":["[[Theresia Devi Indriasari]]","[[Paul Denny]]","[[Danielle Lottridge]]","[[Andrew Luxton-Reilly]]"],"date":"2023-07-03","processed":true,"tags":["gamification","computer-science","peer-feedback","motivation"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/indriasari2023/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

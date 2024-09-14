@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/lopez-fernandez2021/","title":"Comparing Traditional Teaching and Game-Based Learning Using Teacher-Authored Games on Computer Science Education","tags":["computer-science","game-based-learning","motivation"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Comparing Traditional Teaching and Game-Based Learning Using Teacher-Authored Games on Computer Science Education","authors":["[[Daniel Lopez-Fernandez]]","[[Aldo Gordillo]]","[[Pedro P. Alarcon]]","[[Edmundo Tovar]]"],"date":"2021-11-01","processed":true,"tags":["computer-science","game-based-learning","motivation"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/lopez-fernandez2021/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

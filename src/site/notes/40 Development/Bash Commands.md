@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/40-development/bash-commands/","title":"Bash Commands","tags":["bash"],"created":"2024-08-29","updated":"2024-09-13"}
+{"title":"Bash Commands","tags":["bash"],"dg-publish":true,"created":"2024-08-29","modified":"2024-09-13","permalink":"/40-development/bash-commands/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

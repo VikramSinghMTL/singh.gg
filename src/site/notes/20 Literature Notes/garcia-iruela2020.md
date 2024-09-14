@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/garcia-iruela2020/","title":"Gamification and Computer Science Students’ Activity","tags":["computer-science","gamification"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Gamification and Computer Science Students’ Activity","authors":["[[Miguel Garcia-Iruela]]","[[Manuel J. Fonseca]]","[[Raquel Hijon-Neira]]","[[Teresa Chambel]]"],"date":"2020-01-01","processed":false,"tags":["computer-science","gamification"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/garcia-iruela2020/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/40-development/permissions/","title":"Permissions","tags":["macos","unix"],"created":"2024-08-29","updated":"2024-09-13"}
+{"title":"Permissions","tags":["macos","unix"],"dg-publish":true,"created":"2024-08-29","modified":"2024-09-13","permalink":"/40-development/permissions/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

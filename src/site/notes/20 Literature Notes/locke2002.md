@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/locke2002/","title":"Building a practically useful theory of goal setting and task motivation - A 35-year odyssey.","tags":["motivation"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Building a practically useful theory of goal setting and task motivation - A 35-year odyssey.","authors":["[[Edwin A. Locke]]","[[Gary P. Latham]]"],"date":"2002-01-01","processed":false,"tags":["motivation"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/locke2002/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

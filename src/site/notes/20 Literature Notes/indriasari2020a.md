@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/indriasari2020a/","title":"A Review of Peer Code Review in Higher Education","tags":["computer-science","peer-assessment"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"A Review of Peer Code Review in Higher Education","authors":["[[Theresia Devi Indriasari]]","[[Andrew Luxton-Reilly]]","[[Paul Denny]]"],"date":"2020-09-30","processed":false,"tags":["computer-science","peer-assessment"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/indriasari2020a/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

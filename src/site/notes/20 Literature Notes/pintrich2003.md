@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/pintrich2003/","title":"A Motivational Science Perspective on the Role of Student Motivation in Learning and Teaching Contexts.","tags":["motivation"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"A Motivational Science Perspective on the Role of Student Motivation in Learning and Teaching Contexts.","authors":["[[Paul R. Pintrich]]"],"date":"2003-12-01","processed":false,"tags":["motivation"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/pintrich2003/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

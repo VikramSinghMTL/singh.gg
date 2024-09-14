@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/polito2021/","title":"A gamified web based system for computer programming learning","tags":["computer-science","gamification"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"A gamified web based system for computer programming learning","authors":["[[Giuseppina Polito]]","[[Marco Temperini]]"],"date":"2021-01-01","processed":false,"tags":["computer-science","gamification"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/polito2021/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

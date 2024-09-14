@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/chiang2011/","title":"Using Game-Based Learning and Interactive Peer Assessment to Improve Career Goals and Objectives for College Students","tags":["peer-assessment","game-based-learning"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Using Game-Based Learning and Interactive Peer Assessment to Improve Career Goals and Objectives for College Students","authors":["[[Maiga Chang]]","[[Wu-Yuin Hwang]]","[[Ming-Puu Chen]]","[[Wolfgang Müller]]","[[I-Tsun Chiang]]","[[Ru-Chu Shih]]","[[Eric Zhi-Feng Liu]]","[[Alex Jun-Yen Lee]]"],"date":"2011-01-01","processed":false,"tags":["peer-assessment","game-based-learning"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/chiang2011/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/50-works/research/pecha-kucha/critical-path-pecha-kucha/","title":"Critical Path Pecha Kucha","created":"2024-09-06","updated":"2024-09-13"}
+{"title":"Critical Path Pecha Kucha","theme":"uncover","class":"invert","paginate":true,"marp":true,"headingDivider":3,"dg-publish":true,"created":"2024-09-06","modified":"2024-09-13","permalink":"/50-works/research/pecha-kucha/critical-path-pecha-kucha/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/40-development/game-programming/state-machine/","title":"State Machine","created":"2024-09-02","updated":"2024-09-13"}
+{"title":"State Machine","created":"2024-09-02","modified":"2024-09-13","dg-publish":true,"permalink":"/40-development/game-programming/state-machine/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

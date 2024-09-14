@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/30-permanent-notes/how-computer-science-students-learn/","title":"How Computer Science Students Learn","tags":["🪴"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"How Computer Science Students Learn","dg-publish":true,"tags":["🪴"],"created":"2024-08-30","modified":"2024-09-13","permalink":"/30-permanent-notes/how-computer-science-students-learn/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

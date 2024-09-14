@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/goshevski2017/","title":"A Review of Gamification Platforms for Higher Education","tags":["gamification","motivation"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"A Review of Gamification Platforms for Higher Education","authors":["[[Dimitar Goshevski]]","[[Joana Veljanoska]]","[[Thanos Hatziapostolou]]"],"date":"2017-09-20","processed":true,"tags":["gamification","motivation"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/goshevski2017/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

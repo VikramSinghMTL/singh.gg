@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/40-development/game-programming/entity-component-system/","created":"2024-01-02","updated":"2024-09-13"}
+{"created":"2024-01-02","aliases":["ECS"],"dg-publish":true,"modified":"2024-09-13","permalink":"/40-development/game-programming/entity-component-system/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/30-permanent-notes/peer-code-review-rubric/","title":"Peer Code Review Rubric","tags":["🪴"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Peer Code Review Rubric","dg-publish":true,"tags":["🪴"],"created":"2024-08-30","modified":"2024-09-13","permalink":"/30-permanent-notes/peer-code-review-rubric/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/hamer2009/","title":"Quality of peer assessment in CS1","tags":["computer-science","peer-assessment"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Quality of peer assessment in CS1","authors":["[[John Hamer]]","[[Helen C. Purchase]]","[[Paul Denny]]","[[Andrew Luxton-Reilly]]"],"date":"2009-08-10","processed":false,"tags":["computer-science","peer-assessment"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/hamer2009/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

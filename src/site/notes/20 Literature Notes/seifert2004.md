@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/seifert2004/","title":"Understanding student motivation","tags":["motivation"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Understanding student motivation","authors":["[[Timothy Seifert]]"],"date":"2004-06-01","processed":false,"tags":["motivation"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/seifert2004/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

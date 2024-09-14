@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"permanent-notes","permalink":"/permanent-notes/","title":"Permanent Notes","created":"2024-09-14","updated":"2024-09-14"}
+{"title":"Permanent Notes","created":"2024-09-14","modified":"2024-09-14","dg-publish":true,"dg-permalink":"permanent-notes","permalink":"/permanent-notes/","dgPassFrontmatter":true,"updated":"2024-09-14"}
 ---
 
 
