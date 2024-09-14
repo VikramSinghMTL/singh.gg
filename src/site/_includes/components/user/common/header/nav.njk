@@ -1,0 +1,14 @@
+<script>
+	const navElement = document.createElement('nav');
+	navElement.innerHTML = `
+		<a class="name" href="/">Vikram Singh</a>
+
+		<div class="nav-links">
+			{% for link in userComputed.navLinks %}
+				<a href="{{ link.path }}">{{ link.name }}</a>
+			{% endfor %}
+		</div>
+	`;
+
+	document.body.prepend(navElement);
+</script>
