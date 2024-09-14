@@ -14,8 +14,20 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
     {% endfor %}
   </head>
   <body class="theme-{{meta.baseTheme}} markdown-preview-view markdown-rendered markdown-preview-section {{meta.bodyClasses}}">
-    {%include "components/notegrowthhistory.njk"%}
-    
+    <nav>
+
+		<a class="name" href="/">Vikram Singh</a>
+
+		<div class="nav-links">
+			{% for link in userComputed.navLinks %}
+				<a href="{{ link.path }}">{{ link.name }}</a>
+			{% endfor %}
+		</div>
+
+	</nav>
+
+	{%include "components/notegrowthhistory.njk"%}
+
     {% if settings.dgShowFileTree !== true %}
       {%include "components/navbar.njk"%}
     {%else%}
