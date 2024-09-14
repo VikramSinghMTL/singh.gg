@@ -3,8 +3,9 @@
 function userComputed(data) {
 	return {
 		navLinks: [
-			{ name: 'About', path: '/about' },
-			{ name: 'Contact', path: '/contact' },
+			{ name: 'Fleeting', path: '/fleeting-notes' },
+			{ name: 'Literature', path: '/literature-notes' },
+			{ name: 'Permanent', path: '/permanent-notes' },
 			{ name: 'Now', path: '/now' },
 		],
 	};
