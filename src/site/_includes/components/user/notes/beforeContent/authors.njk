@@ -1,0 +1,11 @@
+{% if authors %}
+
+	<p>Authors:
+		{% for author in authors %}
+			{{ author | replace("[[", "") | replace("]]", "") }}{% if not loop.last %}, {% endif %}
+		{% endfor %}
+	</p>
+
+	<p>Date: {{date}}</p>
+
+{% endif %}
