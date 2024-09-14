@@ -14,7 +14,7 @@
 
 > [!methodology]+
 >
-> 1. ![ahmad2020a-6-x56-y412.png](/img/user/00%20%E2%9A%99%EF%B8%8F%20System/Assets/ahmad2020a-6-x56-y412.png)
+> 1. ![ahmad2020a-6-x56-y412.png](/img/user/00%20System/Assets/ahmad2020a-6-x56-y412.png)
 > 2. A user-oriented gamification framework, as proposed by Nicholson [52], recommends (a) focusing on fun element, (b) different ways to achieve learning goals, (c) design considering users’ benefit, and (d) combining game elements with non-gaming settings. Further, Blohm and Leimeister [53] argued that gamification in education should consist of at least two distinct layers, one for identification and development of learning objectives, realizing the learning outcome of every module and the other layer for the integration of learning objectives in game design elements. The proposed framework (illustrated in Figure 1), while adapting both the above-mentioned frameworks, comprises three main components: (a) gamification constructs, (b) game design elements, and (c) assessment about students’ satisfaction and learning outcomes.
 > 3. Gamification elements are adapted from the work of Nah and colleagues [54], which provide guidelines to develop gamification applications in educational settings. There are five major elements:
 >     1. goal orientation

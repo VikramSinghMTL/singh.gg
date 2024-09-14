@@ -1,0 +1,28 @@
+---
+{"dg-publish":true,"permalink":"/50-works/ckid/journal-1/","title":"Journal 1","created":"2024-08-31","updated":"2024-09-13"}
+---
+
+
+## Journal 1
+
+I am researching how people learn in Computer Science using the Sophia library database at the University of Sherbrooke. When searching, I try to phrase my queries using cognitive processes while learning how to program or debug. Phrases such as _computational thinking in Computer Science_, _problem-solving_/_problem-based learning in Computer Science_, and _coding collaboratively_. The concepts and principles we have been discussing in class have helped me in my research. The central concept is the difference between a novice and an expert in Computer Science.
+
+Experts can separate logical/related sections from the whole problem, otherwise known as _chunks_ [@bransford2000 32]. These chunks can be configured in different ways by the expert when determining solutions to problems. Novices lack this ability and can only see the problem in individually scattered pieces. Another term to describe a logical chunk is a _schema_. Experts use schemas to develop a strong understanding of the problem. For example, in software development, an expert programmer can debug a program quickly and efficiently. They do this by organizing the code in their mind in logical chunks. As a result, they can easily recognize patterns and potential places where bugs may hide. Novice programmers lack this ability and only see the program as a sequence of instructions given to the CPU. The expert can use these schemas and other co-related fields to convey concepts and link/connect ideas [@bransford2000 38].
+
+Experts can extend schemas to use in a learning context [@bransford2000 42]. Textbooks tend to focus on the lower levels of Bloom’s Taxonomy (i.e. remember and understand), which causes students to stress about memorizing everything. Teachers should leverage standard schemas used by experts in addition to the factual knowledge of the course content. One example of an advanced schema in software development is that of _software design patterns_. Design patterns are battle-tested solutions to prolific problems that all programmers face. Having a deep understanding and appreciation of design patterns and using them is characteristic of an expert.
+
+The _conditionalization_ (i.e. contextualization) of knowledge means the ability to apply knowledge in situations that are not cut-and-dry [@bransford2000 43]. For example, students can answer questions at the end of a chapter because they know all the answers will involve the knowledge from the chapter. However, they get tripped up when faced with problems that are not adjacent to the relevant knowledge. Experts can identify what knowledge to use, when and where. I often see this in Computer Science, where students who should have learned how to query a database in their introductory database course will not be able to do so in my subsequent web programming course since the context is different.
+
+Knowing is one thing; being able to retrieve the knowledge when required is another. Knowledge retrieval can be categorized by _effortful_ (novice), _fluent_, and _automatic_ (expert) [@bransford2000 44]. For example, a novice programmer has trouble keeping track of all the variables, functions, and classes in a codebase and cannot maintain a conversation while debugging. On the other hand, an expert programmer automatically processes all the variables, functions, and classes in a codebase and can maintain a conversation while debugging.
+
+Just because one is an expert in their discipline does not mean that they can automatically teach the discipline [@bransford2000 44]. Being an expert means it is likely that much time has passed since they were a novice, so they tend to forget the novice’s perspective. What is required of Computer Science teachers is _pedagogical content knowledge_ which combines the knowledge and skills of an expert software developer with the knowledge and skills of an expert teacher. For example, using a jigsaw activity with mob programming to quickly understand a codebase can be something a Computer Science teacher with pedagogical content knowledge would know.
+
+Identifying gaps in one’s knowledge is a form of _metacognition_ and is a characteristic of an expert. Novices cannot distinguish between what they know and what they do not know [@bransford2000 47]. An example is an expert programmer searching the internet for potential solutions for a bug. When they come across a solution with many comments and up-votes, the expert programmer does not take the solution right away. Instead, they first try to understand the solution presented. Suppose they do not know what it is doing. In that case, they research further to fill the gaps in their knowledge to fully understand why the proposed solution would work in their context. On the other hand, the novice programmer copy-pastes the first solution in Google and is even more confused when it inevitably does not work.
+
+The only critique I have of the article is that Bransford et al. (2000) keep using the same analogy of the expert chess player. The authors compare the player to a computer algorithm that brute-forces the moves for a chess game. The claim is that the computer cannot intelligently filter and determine the select few options that make sense for the current turn of the game as a human player would. This claim is simply untrue with modern-day artificial intelligence and machine learning algorithms. By their very definition, machine learning algorithms do what humans do to filter information and determine solutions given the task at hand.
+
+### References
+
+1. [[bransford2000\|bransford2000]]
+{ #df97cd}
+
