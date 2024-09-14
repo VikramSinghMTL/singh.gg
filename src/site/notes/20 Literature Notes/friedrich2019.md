@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/friedrich2019/","title":"Effectiveness of peer review as cooperative web-based learning method applied out-of-class in a role playing game - A case study by quasi-experimental approach","tags":["game-based-learning","peer-assessment"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Effectiveness of peer review as cooperative web-based learning method applied out-of-class in a role playing game - A case study by quasi-experimental approach","authors":["[[Daniel Friedrich]]"],"date":"2019-12-01","processed":false,"tags":["game-based-learning","peer-assessment"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/friedrich2019/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

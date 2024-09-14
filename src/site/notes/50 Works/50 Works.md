@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"works","permalink":"/works/","title":"Works","created":"2024-09-14","updated":"2024-09-14"}
+{"title":"Works","created":"2024-09-14","modified":"2024-09-14","dg-publish":true,"dg-permalink":"works","permalink":"/works/","dgPassFrontmatter":true,"updated":"2024-09-14"}
 ---
 
 

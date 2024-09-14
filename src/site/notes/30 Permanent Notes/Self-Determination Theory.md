@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/30-permanent-notes/self-determination-theory/","title":"Self-Determination Theory","tags":["🪴"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Self-Determination Theory","dg-publish":true,"tags":["🪴"],"created":"2024-08-30","modified":"2024-09-13","permalink":"/30-permanent-notes/self-determination-theory/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

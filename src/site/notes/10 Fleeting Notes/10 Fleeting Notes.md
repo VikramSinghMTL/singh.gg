@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"fleeting-notes","permalink":"/fleeting-notes/","title":"Fleeting Notes","created":"2024-09-14","updated":"2024-09-14"}
+{"title":"Fleeting Notes","created":"2024-09-14","modified":"2024-09-14","dg-publish":true,"dg-permalink":"fleeting-notes","dg-hide-backlinks":true,"permalink":"/fleeting-notes/","dgPassFrontmatter":true,"updated":"2024-09-14"}
 ---
 
 

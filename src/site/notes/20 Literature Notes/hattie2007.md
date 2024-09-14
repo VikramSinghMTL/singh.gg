@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/hattie2007/","title":"The Power of Feedback","tags":["peer-assessment"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"The Power of Feedback","authors":["[[John Hattie]]","[[Helen Timperley]]"],"date":"2007-03-01","processed":false,"tags":["peer-assessment"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/hattie2007/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

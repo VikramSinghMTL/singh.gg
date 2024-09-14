@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/ahmad2020/","title":"The Impact of Gamification on Learning Outcomes of Computer Science Majors","tags":["gamification","computer-science"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"The Impact of Gamification on Learning Outcomes of Computer Science Majors","authors":["[[Adnan Ahmad]]","[[Furkh Zeshan]]","[[Muhammad Salman Khan]]","[[Rutab Marriam]]","[[Amjad Ali]]","[[Alia Samreen]]"],"date":"2020-06-30","processed":true,"tags":["gamification","computer-science"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/ahmad2020/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

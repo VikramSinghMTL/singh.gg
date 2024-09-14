@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/50-works/research/consent-form/","title":"Consent Form","created":"2024-04-27","updated":"2024-09-13"}
+{"title":"Consent Form","created":"2024-04-27","dg-publish":true,"modified":"2024-09-13","permalink":"/50-works/research/consent-form/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

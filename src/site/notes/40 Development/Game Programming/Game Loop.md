@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/40-development/game-programming/game-loop/","title":"Game Loop","created":"2024-08-22","updated":"2024-09-13"}
+{"title":"Game Loop","created":"2024-08-22","modified":"2024-09-13","dg-publish":true,"permalink":"/40-development/game-programming/game-loop/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

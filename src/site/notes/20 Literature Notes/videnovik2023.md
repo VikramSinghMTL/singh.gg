@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/videnovik2023/","title":"Game-based learning in computer science education - a scoping literature review","tags":["computer-science","game-based-learning"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Game-based learning in computer science education - a scoping literature review","authors":["[[Maja Videnovik]]","[[Tone Vold]]","[[Linda Kiønig]]","[[Ana Madevska Bogdanova]]","[[Vladimir Trajkovik]]"],"date":"2023-09-06","processed":false,"tags":["computer-science","game-based-learning"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/videnovik2023/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

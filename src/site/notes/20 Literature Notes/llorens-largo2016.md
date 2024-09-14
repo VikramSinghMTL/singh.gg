@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/llorens-largo2016/","title":"Gamification of the Learning Process - Lessons Learned","tags":["gamification","computer-science","motivation"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Gamification of the Learning Process - Lessons Learned","authors":["[[Faraon Llorens-Largo]]","[[Francisco J. Gallego-Duran]]","[[Carlos J. Villagra-Arnedo]]","[[Patricia Compan-Rosique]]","[[Rosana Satorre-Cuerda]]","[[Rafael Molina-Carmona]]"],"date":"2016-11-01","processed":true,"tags":["gamification","computer-science","motivation"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/llorens-largo2016/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

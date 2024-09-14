@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/00-system/workflows/","title":"Workflows","created":"2024-08-29","updated":"2024-09-13"}
+{"title":"Workflows","created":"2024-08-29","modified":"2024-09-13","dg-publish":true,"permalink":"/00-system/workflows/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

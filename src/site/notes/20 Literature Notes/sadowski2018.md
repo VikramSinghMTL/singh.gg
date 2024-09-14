@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/sadowski2018/","title":"Modern code review - a case study at google","tags":["computer-science"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Modern code review - a case study at google","authors":["[[Caitlin Sadowski]]","[[Emma Söderberg]]","[[Luke Church]]","[[Michal Sipko]]","[[Alberto Bacchelli]]"],"date":"2018-05-27","processed":false,"tags":["computer-science"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/sadowski2018/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/schmitz2011/","title":"Game Based Learning for Computer Science Education","tags":["computer-science","game-based-learning"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Game Based Learning for Computer Science Education","authors":["[[Birgit Schmitz]]","[[André Czauderna]]","[[Roland Klemke]]"],"date":"2011-12-12","processed":false,"tags":["computer-science","game-based-learning"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/schmitz2011/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

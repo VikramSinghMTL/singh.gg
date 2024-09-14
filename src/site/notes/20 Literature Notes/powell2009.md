@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/powell2009/","title":"Cognitive and social constructivism - developing tools for an effective classroom","tags":["constructivism"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Cognitive and social constructivism - developing tools for an effective classroom","authors":["[[Katherine C Powell]]","[[Cody J Kalina]]"],"date":"2009-01-01","processed":false,"tags":["constructivism"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/powell2009/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

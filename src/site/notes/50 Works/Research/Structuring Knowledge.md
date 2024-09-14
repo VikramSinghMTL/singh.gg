@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/50-works/research/structuring-knowledge/","title":"Structuring Knowledge","created":"2024-08-31","updated":"2024-09-13"}
+{"title":"Structuring Knowledge","dg-publish":true,"created":"2024-08-31","modified":"2024-09-13","permalink":"/50-works/research/structuring-knowledge/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

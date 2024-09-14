@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/iosup2014/","title":"An experience report on using gamification in technical higher education","tags":["gamification","computer-science"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"An experience report on using gamification in technical higher education","authors":["[[Alexandru Iosup]]","[[Dick Epema]]"],"date":"2014-03-05","processed":true,"tags":["gamification","computer-science"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/iosup2014/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

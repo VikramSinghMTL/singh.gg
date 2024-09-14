@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/50-works/ckid/pck-definition-forum-post/","title":"PCK Definition Forum Post","created":"2021-10-24","updated":"2024-09-13"}
+{"title":"PCK Definition Forum Post","dg-publish":true,"created":"2021-10-24","modified":"2024-09-13","permalink":"/50-works/ckid/pck-definition-forum-post/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

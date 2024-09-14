@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/oktaviati2018/","title":"The Impact of Using Gamification in Learning Computer Science for Students in University","tags":["gamification","computer-science","motivation"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"The Impact of Using Gamification in Learning Computer Science for Students in University","authors":["[[Risna Oktaviati]]","[[Adam Amril Jaharadak]]"],"date":"2018-10-02","processed":true,"tags":["gamification","computer-science","motivation"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/oktaviati2018/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

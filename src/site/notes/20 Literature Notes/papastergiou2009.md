@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/papastergiou2009/","title":"Digital Game-Based Learning in high school Computer Science education - Impact on educational effectiveness and student motivation","tags":["computer-science","game-based-learning","motivation"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Digital Game-Based Learning in high school Computer Science education - Impact on educational effectiveness and student motivation","authors":["[[Marina Papastergiou]]"],"date":"2009-01-01","processed":false,"tags":["computer-science","game-based-learning","motivation"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/papastergiou2009/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

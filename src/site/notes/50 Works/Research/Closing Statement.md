@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/50-works/research/closing-statement/","title":"Closing Statement","created":"2024-05-13","updated":"2024-09-13"}
+{"title":"Closing Statement","created":"2024-05-13","dg-publish":true,"tags":null,"modified":"2024-09-13","permalink":"/50-works/research/closing-statement/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

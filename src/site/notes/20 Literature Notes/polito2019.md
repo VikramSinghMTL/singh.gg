@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/polito2019/","title":"2TSW Automated Assessment of Computer Programming Assignments, in a Gamified Web Based System","tags":["computer-science","gamification"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"2TSW Automated Assessment of Computer Programming Assignments, in a Gamified Web Based System","authors":["[[Giuseppina Polito]]","[[Marco Temperini]]","[[Andrea Sterbini]]"],"date":"2019-09-01","processed":false,"tags":["computer-science","gamification"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/polito2019/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

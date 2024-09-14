@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/50-works/ckid/annotated-bibliography/","created":"2024-08-31","updated":"2024-09-13"}
+{"dg-publish":true,"created":"2024-08-31","modified":"2024-09-13","permalink":"/50-works/ckid/annotated-bibliography/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

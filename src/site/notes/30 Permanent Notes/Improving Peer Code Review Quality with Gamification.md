@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/30-permanent-notes/improving-peer-code-review-quality-with-gamification/","title":"Improving Peer Code Review Quality with Gamification","tags":["peer-feedback","motivation","gamification","🪴"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Improving Peer Code Review Quality with Gamification","tags":["peer-feedback","motivation","gamification","🪴"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/30-permanent-notes/improving-peer-code-review-quality-with-gamification/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

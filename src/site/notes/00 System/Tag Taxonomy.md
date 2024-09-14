@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/00-system/tag-taxonomy/","title":"Tag Taxonomy","created":"2024-09-08","updated":"2024-09-13"}
+{"title":"Tag Taxonomy","dg-publish":true,"created":"2024-09-08","modified":"2024-09-13","permalink":"/00-system/tag-taxonomy/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

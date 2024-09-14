@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/30-permanent-notes/peer-feedback-and-gamification/","title":"Peer Feedback and Gamification","tags":["🪴"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Peer Feedback and Gamification","dg-publish":true,"tags":["🪴"],"created":"2024-08-30","modified":"2024-09-13","permalink":"/30-permanent-notes/peer-feedback-and-gamification/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

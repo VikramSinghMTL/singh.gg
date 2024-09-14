@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/40-development/netlify/","created":"2024-08-29","updated":"2024-09-13"}
+{"dg-publish":true,"created":"2024-08-29","modified":"2024-09-13","permalink":"/40-development/netlify/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

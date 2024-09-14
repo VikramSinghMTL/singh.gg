@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/50-works/ckid/literature-review/","title":"How Computer Science Students Learn to Debug","created":"2024-08-31","updated":"2024-09-13"}
+{"title":"How Computer Science Students Learn to Debug","dg-publish":true,"created":"2024-08-31","modified":"2024-09-13","permalink":"/50-works/ckid/literature-review/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

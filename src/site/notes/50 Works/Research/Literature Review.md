@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/50-works/research/literature-review/","title":"Literature Review","created":"2024-01-07","updated":"2024-09-13"}
+{"title":"Literature Review","created":"2024-01-07","dg-publish":true,"tags":null,"modified":"2024-09-13","permalink":"/50-works/research/literature-review/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

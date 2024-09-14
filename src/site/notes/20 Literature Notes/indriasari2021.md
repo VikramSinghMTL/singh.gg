@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/indriasari2021/","title":"Investigating Accuracy and Perceived Value of Feedback in Peer Code Review Using Gamification","tags":["computer-science","gamification","peer-assessment","motivation"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Investigating Accuracy and Perceived Value of Feedback in Peer Code Review Using Gamification","authors":["[[Theresia Devi Indriasari]]","[[Andrew Luxton-Reilly]]","[[Paul Denny]]"],"date":"2021-06-26","processed":false,"tags":["computer-science","gamification","peer-assessment","motivation"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/indriasari2021/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

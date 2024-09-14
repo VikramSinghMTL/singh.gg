@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/ramsden2003/","title":"Learning to teach in higher education","created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Learning to teach in higher education","authors":["[[Paul Ramsden]]"],"date":"2003-01-01","processed":false,"tags":[],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/ramsden2003/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

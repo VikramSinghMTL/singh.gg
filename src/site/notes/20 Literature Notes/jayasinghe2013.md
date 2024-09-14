@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/jayasinghe2013/","title":"Game based learning vs. gamification from the higher education students' perspective","tags":["computer-science","game-based-learning","gamification","motivation"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Game based learning vs. gamification from the higher education students' perspective","authors":["[[Udeni Jayasinghe]]","[[Anuja Dharmaratne]]"],"date":"2013-08-01","processed":false,"tags":["computer-science","game-based-learning","gamification","motivation"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/jayasinghe2013/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

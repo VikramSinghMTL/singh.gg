@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/hundhausen2013/","title":"Talking about code - Integrating pedagogical code reviews into early computing courses","tags":["computer-science","peer-assessment"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Talking about code - Integrating pedagogical code reviews into early computing courses","authors":["[[Christopher D. Hundhausen]]","[[Anukrati Agrawal]]","[[Pawan Agarwal]]"],"date":"2013-08-01","processed":false,"tags":["computer-science","peer-assessment"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/hundhausen2013/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

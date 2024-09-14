@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/50-works/ckid/journal-2/","title":"Journal 2","created":"2024-08-31","updated":"2024-09-13"}
+{"title":"Journal 2","dg-publish":true,"created":"2024-08-31","modified":"2024-09-13","permalink":"/50-works/ckid/journal-2/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

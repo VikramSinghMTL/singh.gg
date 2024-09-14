@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/perez-quinones2009/","title":"Exploring Peer Review in the Computer Science Classroom","tags":["computer-science","peer-assessment"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Exploring Peer Review in the Computer Science Classroom","authors":["[[Manuel A. Perez-Quinones]]","[[Scott Turner]]"],"date":"2009-01-01","processed":false,"tags":["computer-science","peer-assessment"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/perez-quinones2009/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

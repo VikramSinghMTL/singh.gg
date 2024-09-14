@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/hamer2015/","title":"A comparison of peer and tutor feedback","tags":["peer-assessment","computer-science"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"A comparison of peer and tutor feedback","authors":["[[John Hamer]]","[[Helen Purchase]]","[[Andrew Luxton-Reilly]]","[[Paul Denny]]"],"date":"2015-01-02","processed":false,"tags":["peer-assessment","computer-science"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/hamer2015/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

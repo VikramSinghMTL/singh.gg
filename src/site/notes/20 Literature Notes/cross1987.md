@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/cross1987/","title":"Peer group software reviews in university education for software engineering (abstract only)","tags":["computer-science","peer-assessment"],"created":"2024-08-30","updated":"2024-09-13"}
+{"title":"Peer group software reviews in university education for software engineering (abstract only)","authors":["[[John A. Cross]]"],"date":"1987-01-01","processed":false,"tags":["computer-science","peer-assessment"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/cross1987/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

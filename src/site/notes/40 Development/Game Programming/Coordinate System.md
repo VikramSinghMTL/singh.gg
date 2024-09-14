@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/40-development/game-programming/coordinate-system/","title":"2D Coordinate System","created":"2024-08-22","updated":"2024-09-13"}
+{"title":"2D Coordinate System","created":"2024-08-22","modified":"2024-09-13","dg-publish":true,"permalink":"/40-development/game-programming/coordinate-system/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

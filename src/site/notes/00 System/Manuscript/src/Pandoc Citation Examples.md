@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/00-system/manuscript/src/pandoc-citation-examples/","created":"2024-09-06","updated":"2024-09-13"}
+{"dg-publish":true,"created":"2024-09-06","modified":"2024-09-13","permalink":"/00-system/manuscript/src/pandoc-citation-examples/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 
