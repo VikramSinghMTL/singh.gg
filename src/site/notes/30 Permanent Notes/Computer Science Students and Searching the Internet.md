@@ -3,7 +3,7 @@
 ---
 
 
-[[30 🌲 Permanent Notes/+ MOC How Computer Science Students Learn\|+ MOC How Computer Science Students Learn]]
+[[30 Permanent Notes/+ How Computer Science Students Learn\|+ How Computer Science Students Learn]]
 
 Searching the internet for reliable sources of information is difficult for Computer Science students [@ben-davidkolikant2018 213]. The sheer quantity of documentation created by countless authors makes it hard to filter out irrelevant information even for experiences programmers.
 

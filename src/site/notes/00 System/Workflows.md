@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/00-system/home/","title":"Home","tags":["gardenEntry"],"created":"2024-08-29","updated":"2024-09-13"}
+{"dg-publish":true,"permalink":"/00-system/workflows/","title":"Home","created":"2024-08-29","updated":"2024-09-13"}
 ---
 
 
@@ -127,4 +127,4 @@ When I process my inbox, I do one of the following:
 - Send it to my task manager if I need to take some sort of action on it, or
 - Save it to my note taking app if I need to remember it.
 
-## [[00 ⚙️ System/Tag Taxonomy\|Tag Taxonomy]]
+## [[00 System/Tag Taxonomy\|Tag Taxonomy]]

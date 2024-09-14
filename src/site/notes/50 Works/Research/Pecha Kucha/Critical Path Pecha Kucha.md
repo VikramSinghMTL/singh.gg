@@ -11,13 +11,13 @@ University of Sherbrooke
 
 February 24, 2024
 
-![bg contain](/img/user/50 🖋️ Works/Research/Pecha Kucha/assets/background.png)
+![bg contain](/img/user/50 Works/Research/Pecha Kucha/assets/background.png)
 
 ### 💡 Topic
 
 > Improving computer science students' ~~motivation~~ ability to provide quality peer code review through game-based learning.
 
-![bg contain right:33%](/img/user/50 🖋️ Works/Research/Pecha Kucha/assets/peer-feedback.png)
+![bg contain right:33%](/img/user/50 Works/Research/Pecha Kucha/assets/peer-feedback.png)
 
 <!--
 Notes.
@@ -27,7 +27,7 @@ Notes.
 
 > Students give **poor feedback** during peer code reviews which is an **essential skill** for professional software developers.
 
-![bg contain left:33%](/img/user/50 🖋️ Works/Research/Pecha Kucha/assets/feedback.png)
+![bg contain left:33%](/img/user/50 Works/Research/Pecha Kucha/assets/feedback.png)
 
 <!--
 - Peer code review is essential for software development, but it's only effective when students put in effort.
@@ -37,7 +37,7 @@ Notes.
 
 ### 🔍 Research Question
 
-![bg contain right:33%](/img/user/50 🖋️ Works/Research/Pecha Kucha/assets/problem.png)
+![bg contain right:33%](/img/user/50 Works/Research/Pecha Kucha/assets/problem.png)
 
 > Does a game-based learning approach, designed to increase computer science students' motivation, increase the quality of the feedback provided during peer code review?
 
@@ -47,7 +47,7 @@ Notes.
 
 ### 🏗️ Conceptual Framework
 
-![h:500px](/img/user/50 🖋️ Works/Research/Pecha Kucha/assets/conceptual-framework.png)
+![h:500px](/img/user/50 Works/Research/Pecha Kucha/assets/conceptual-framework.png)
 
 <!--
 - **Problem:** Traditional approaches to peer code review often fail to motivate Computer Science students, resulting in low-quality feedback that hinders learning for all involved.

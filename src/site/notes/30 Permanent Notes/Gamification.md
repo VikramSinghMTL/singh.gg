@@ -5,7 +5,7 @@
 
 - Badges and levels ([[Extrinsic Motivation\|Extrinsic Motivation]]) vs stories and narrative ([[Intrinsic Motivation\|Intrinsic Motivation]]).
     - Rewards based gamification vs meaning based gamification
-- Many studies mention [[30 🌲 Permanent Notes/Self-Determination Theory\|self-determinism theory]].
+- Many studies mention [[30 Permanent Notes/Self-Determination Theory\|self-determinism theory]].
 - All the studies so far outline how to do gamification in the classroom and report their results with the platforms they used.
 - Gamification generally seems to get positive results in the conclusion and data sections.
 - I feel like this can only work well if the game is tightly coupled to the learning objectives. Like, slapping a kahoot onto something and calling it gamification seems disingenuous. However, lots of people report success with kahoot so who am I.

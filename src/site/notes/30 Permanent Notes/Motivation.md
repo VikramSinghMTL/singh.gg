@@ -9,8 +9,8 @@
 
 ## Theories
 
-- [[30 🌲 Permanent Notes/Self-Determination Theory\|Self-Determination Theory]]: Motivated behaviours vary in the degree to which they are autonomous versus controlled.
-- [[30 🌲 Permanent Notes/Goal-Setting Theory\|Goal-Setting Theory]]: Learners can increase performance by setting goals.
+- [[30 Permanent Notes/Self-Determination Theory\|Self-Determination Theory]]: Motivated behaviours vary in the degree to which they are autonomous versus controlled.
+- [[30 Permanent Notes/Goal-Setting Theory\|Goal-Setting Theory]]: Learners can increase performance by setting goals.
 - Self-Efficacy Theory: How much a person believes in their own ability to accomplish a task.
 - Attribution Theory: Learners aim to attribute outcomes to a cause which will affect future behaviours.
 - Self-Worth Theory: Student will engage in behaviours with the goal of preserving self-worth.

@@ -3,9 +3,9 @@
 ---
 
 
-[[30 🌲 Permanent Notes/+ MOC How Computer Science Students Learn\|+ MOC How Computer Science Students Learn]]
+[[30 Permanent Notes/+ How Computer Science Students Learn\|+ How Computer Science Students Learn]]
 
-Being aware of what one knows and where the gaps in their knowledge are can be referred to as [[30 🌲 Permanent Notes/Metacognition\|Metacognition]] and is a characteristic of an expert programmer [@bransford2000 47]. The metacognitive process requires reflection on what you came up with and determine if any functions can be abstracted to fit a more general purpose [@bransford2000 34]. In the studies by @chmiel2004 [p. 18] and @fitzgerald2010 [@fitzgerald2010 395] about developing debugging skills for Computer Science students, they tasked students with answering metacognitive questions like:
+Being aware of what one knows and where the gaps in their knowledge are can be referred to as [[30 Permanent Notes/Metacognition\|Metacognition]] and is a characteristic of an expert programmer [@bransford2000 47]. The metacognitive process requires reflection on what you came up with and determine if any functions can be abstracted to fit a more general purpose [@bransford2000 34]. In the studies by @chmiel2004 [p. 18] and @fitzgerald2010 [@fitzgerald2010 395] about developing debugging skills for Computer Science students, they tasked students with answering metacognitive questions like:
 
 - How much time did you spend on the design, coding, and testing of each part or subroutine?
 - What kinds of defects did you find during the development of the program?

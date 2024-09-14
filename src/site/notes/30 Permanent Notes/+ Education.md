@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/30-permanent-notes/moc-mtp/","title":"MOC MTP","tags":["🪴"],"created":"2024-08-30","updated":"2024-09-13"}
+{"dg-publish":true,"permalink":"/30-permanent-notes/education/","title":"Education","tags":["🪴"],"created":"2024-08-30","updated":"2024-09-13"}
 ---
 
 
@@ -27,7 +27,7 @@
 
 ## Integration Seminar
 
-## [[30 🌲 Permanent Notes/Motivation\|Motivation for Learning]]
+## [[30 Permanent Notes/Motivation\|Motivation for Learning]]
 
 ## Philosophy of Education
 

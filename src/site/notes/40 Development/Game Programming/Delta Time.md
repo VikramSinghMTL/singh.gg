@@ -8,11 +8,11 @@
 
 Combining the previous two sections, we paint (and repaint) on a 2D canvas over and over again until the game stops. This repainting is what gives the illusion of things being moved on the screen. But, how fast is the repainting happening? This depends on the hardware your game is running on. You may have heard the terms "30 FPS" and "60 FPS" before. FPS stands for "frames per second". A "frame" is a single painting of our animation.
 
-![Frame-Rates.gif](/img/user/00%20%E2%9A%99%EF%B8%8F%20System/Assets/Frame-Rates.gif)[^2]
+![Frame-Rates.gif](/img/user/00%20System/Assets/Frame-Rates.gif)[^2]
 
 For example, if our hardware runs at 3 frames per second, this means that in one second, we have 3 repaints.
 
-![Delta-Time-3-FPS.png](/img/user/00%20%E2%9A%99%EF%B8%8F%20System/Assets/Delta-Time-3-FPS.png)
+![Delta-Time-3-FPS.png](/img/user/00%20System/Assets/Delta-Time-3-FPS.png)
 
 In other words, we have 1 repaint (roughly) every 0.33 seconds (1/3). Our **delta time** in this case is 0.33 seconds.
 
@@ -24,11 +24,11 @@ A game that is frame rate dependent is one in which parts of the game is tied sp
 
 Let's look at one area in a game which shouldn't be frame rate dependent, **movement**. When we are describing movement it's in terms of the distance we travel over some specified time, like pixels per second (p/s), or kilometers per hour (kmph). If our game is frame rate dependent, then the speed at which our objects move is tied to the frame rate which means the speed of our game objects will be different on different hardware.
 
-![Delta-Time-30-FPS.png](/img/user/00%20%E2%9A%99%EF%B8%8F%20System/Assets/Delta-Time-30-FPS.png)
+![Delta-Time-30-FPS.png](/img/user/00%20System/Assets/Delta-Time-30-FPS.png)
 
 Assuming we have a spaceship and we want it to move at 10p/s, if we knew our game ran at 30fps on our device, then we would want it to move at 0.33333 pixels per frame.
 
-![Delta-Time-60-FPS.png](/img/user/00%20%E2%9A%99%EF%B8%8F%20System/Assets/Delta-Time-60-FPS.png)
+![Delta-Time-60-FPS.png](/img/user/00%20System/Assets/Delta-Time-60-FPS.png)
 
 However, as soon as we run our game on a different device then the speed at which our ship moves will no longer be at 10p/s. On a device that can run our game at 60fps, we would have moved 20p/s. This is because we would be moving at 0.33333 pixels per frame, but the number of paints we're doing in 1 second has **doubled**!
 
