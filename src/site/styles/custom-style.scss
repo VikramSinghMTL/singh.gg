@@ -57,11 +57,46 @@ body {
 		position: relative;
 		transform: none;
 		border-radius: 4px;
-		margin-top: 50px;
-		// max-width: 700px;
-		margin: auto;
+		top: initial;
+		right: initial;
 		border-radius: 0;
 		border-top: 2px solid var(--background-secondary);
 		justify-content: space-between;
+	}
+
+	.sidebar-container {
+		padding: 0;
+	}
+
+	a.tag {
+		margin: 0 5px;
+	}
+
+	.callout {
+		padding: 10px;
+		font-family: 'Montserrat', sans-serif;
+		font-optical-sizing: auto;
+		font-weight: 300;
+		font-style: normal;
+	}
+
+	.callout[data-callout='questions'] {
+		--callout-color: 250, 179, 135;
+		--callout-icon: lucide-search;
+	}
+
+	.callout[data-callout='methodology'] {
+		--callout-color: 166, 227, 161;
+		--callout-icon: lucide-flask-conical;
+	}
+
+	.callout[data-callout='conclusion'] {
+		--callout-color: 249, 226, 175;
+		--callout-icon: lucide-list;
+	}
+
+	.callout[data-callout='insights'] {
+		--callout-color: 203, 166, 247;
+		--callout-icon: lucide-lightbulb;
 	}
 }
