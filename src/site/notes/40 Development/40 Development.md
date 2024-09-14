@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/40-development/40-development/","created":"2024-09-14","updated":"2024-09-14"}
+{"dg-publish":true,"dg-permalink":"development","permalink":"/development/","title":"Development","created":"2024-09-14","updated":"2024-09-14"}
 ---
 
 
