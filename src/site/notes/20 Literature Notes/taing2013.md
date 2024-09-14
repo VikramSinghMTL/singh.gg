@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/taing2013/","title":"The relationship between learning goal orientation, goal setting, and performance - a longitudinal study - Goal orientation and goal setting","tags":["motivation"],"noteIcon":"1","created":"Aug 30, 2024 17:34","updated":"Sep 12, 2024 23:24"}
+{"dg-publish":true,"permalink":"/20-literature-notes/taing2013/","title":"The relationship between learning goal orientation, goal setting, and performance - a longitudinal study - Goal orientation and goal setting","tags":["motivation"],"created":"2024-08-30","updated":"2024-09-13"}
 ---
 
 

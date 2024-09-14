@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/50-works/ckid/journal-1/","title":"Journal 1","noteIcon":"1","created":"Aug 31, 2024 05:14","updated":"Sep 12, 2024 23:24"}
+{"dg-publish":true,"permalink":"/50-works/ckid/journal-1/","title":"Journal 1","created":"2024-08-31","updated":"2024-09-13"}
 ---
 
 

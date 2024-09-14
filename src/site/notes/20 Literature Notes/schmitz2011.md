@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/schmitz2011/","title":"Game Based Learning for Computer Science Education","tags":["computer-science","game-based-learning"],"noteIcon":"1","created":"Aug 30, 2024 17:33","updated":"Sep 12, 2024 23:24"}
+{"dg-publish":true,"permalink":"/20-literature-notes/schmitz2011/","title":"Game Based Learning for Computer Science Education","tags":["computer-science","game-based-learning"],"created":"2024-08-30","updated":"2024-09-13"}
 ---
 
 

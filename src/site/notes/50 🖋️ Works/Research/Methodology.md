@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/50-works/research/methodology/","title":"Methodology","noteIcon":"1","created":"Mar 06, 2024 20:14","updated":"Sep 12, 2024 23:24"}
+{"dg-publish":true,"permalink":"/50-works/research/methodology/","title":"Methodology","created":"2024-03-06","updated":"2024-09-13"}
 ---
 
 

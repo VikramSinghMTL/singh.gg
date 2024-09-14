@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/10-fleeting-notes/taste-vs-ability/","title":"Taste vs Ability","tags":["🌱"],"noteIcon":"1","created":"Aug 22, 2024 14:29","updated":"Sep 12, 2024 23:24"}
+{"dg-publish":true,"permalink":"/10-fleeting-notes/taste-vs-ability/","title":"Taste vs Ability","tags":["🌱"],"created":"2024-08-22","updated":"2024-09-13"}
 ---
 
 

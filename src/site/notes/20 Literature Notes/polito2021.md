@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/polito2021/","title":"A gamified web based system for computer programming learning","tags":["computer-science","gamification"],"noteIcon":"1","created":"Aug 30, 2024 17:34","updated":"Sep 12, 2024 23:24"}
+{"dg-publish":true,"permalink":"/20-literature-notes/polito2021/","title":"A gamified web based system for computer programming learning","tags":["computer-science","gamification"],"created":"2024-08-30","updated":"2024-09-13"}
 ---
 
 

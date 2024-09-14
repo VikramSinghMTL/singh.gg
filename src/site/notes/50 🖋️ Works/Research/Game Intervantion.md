@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/50-works/research/game-intervantion/","title":"Game Intervention","noteIcon":"1","created":"Aug 28, 2024 13:57","updated":"Sep 12, 2024 23:24"}
+{"dg-publish":true,"permalink":"/50-works/research/game-intervantion/","title":"Game Intervention","created":"2024-08-28","updated":"2024-09-13"}
 ---
 
 

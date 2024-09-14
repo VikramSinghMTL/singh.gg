@@ -1,11 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/00-system/home/","title":"Home","tags":["gardenEntry"],"noteIcon":"1","created":"Aug 29, 2024 17:13","updated":"Sep 12, 2024 23:16"}
+{"dg-publish":true,"permalink":"/00-system/home/","title":"Home","tags":["gardenEntry"],"created":"2024-08-29","updated":"2024-09-13"}
 ---
 
 
-## Home
-
-### Goals
+## Goals
 
 - Task tracker that tells me what the next task I need to do is for a given project.
 - Periodic check ins so that I can keep up with my goals.
@@ -22,7 +20,7 @@
     - Is there a Zotero integration? Where do I keep my PDFs now, Zotero, or Readwise?
 - Read Building a Second Brain
 
-### Potential Strategies
+## Potential Strategies
 
 - [Johnny.Decimal](https://johnnydecimal.com/)
 - [PARA](https://fortelabs.com/blog/para/)
@@ -31,7 +29,7 @@
 - [Daily notes template](https://www.reddit.com/r/ObsidianMD/comments/131pvv6/daily_notes_template_for_obsidian_task_edition/)
 - [Publish](https://dg-docs.ole.dev/getting-started/01-getting-started/)
 
-### Folder Structure
+## Folder Structure
 
 - 00 Inbox
 - Fleeting notes/ideas/dump
@@ -54,7 +52,7 @@ But like isn't the problem that everything is getting siloed now? How do I link 
 
 Okay I read it and it's interesting. Eleanor argues that folders have always been and therefore always will be (Lindy effect) and I think this is true. Tagging is a newer feature and may not play well with other systems. I have to decide what tags I want and would be useful and to keep a **rigorous** list of them using some kind of tag index/glossary. Think of tags like enums for better structure. To link my thinking... maybe that could happen within specific folders? Like the MTP areas folder? Then the projects folder probably wouldn't have links, or would it, I don't know yet until I start populating it with stuff. Another idea could be that each area folder has its own MOC or each project folder has its own MOC? The MOC could then index all the notes in the folder instead of having subfolders... But this would mean that each area folder would just be a whole mess of notes then to achieve more of a "flat" structure, but at least that would be contained within a folder itself. [This chick](https://www.youtube.com/watch?v=LflU3FqZ6h4) has one giant flat structure and constructs dashboards and views from all of it but it is then extremely coupled to Notion which is bad. I think I could achieve the same but on like a "sub-topic" or "area" basis. Lots of good ideas in that video I think.
 
-### Flows
+## Flows
 
 1. Getting Things Done
     1. Capture tasks I think of during the day (Todoist)
@@ -82,7 +80,7 @@ Okay I read it and it's interesting. Eleanor argues that folders have always bee
 
 <https://cft.vanderbilt.edu/learning-and-course-management-systems/>
 
-### My Todoist Workflow
+## My Todoist Workflow
 
 - Priorities
     - Red: Today
@@ -108,7 +106,7 @@ Okay I read it and it's interesting. Eleanor argues that folders have always bee
 
 Every new task is given a priority which denotes what time frame in which it should be completed, a label for time approximation as well as a status, and an associated project/sub-project.
 
-### My Nirvana Workflow
+## My Nirvana Workflow
 
 Friendship with Todoist over, now Nirvana is my best friend. It's much more geared towards GTD with the one killer feature being that it auto-updates next tasks as you check things off a project list. That sounds nuts but since next actions are the core of GTD, this is paramount.
 
@@ -129,4 +127,4 @@ When I process my inbox, I do one of the following:
 - Send it to my task manager if I need to take some sort of action on it, or
 - Save it to my note taking app if I need to remember it.
 
-### [[00 ⚙️ System/Tag Taxonomy\|Tag Taxonomy]]
+## [[00 ⚙️ System/Tag Taxonomy\|Tag Taxonomy]]

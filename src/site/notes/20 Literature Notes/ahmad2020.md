@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/ahmad2020/","title":"The Impact of Gamification on Learning Outcomes of Computer Science Majors","tags":["gamification","computer-science"],"noteIcon":"1","created":"Aug 30, 2024 17:34","updated":"Sep 12, 2024 23:24"}
+{"dg-publish":true,"permalink":"/20-literature-notes/ahmad2020/","title":"The Impact of Gamification on Learning Outcomes of Computer Science Majors","tags":["gamification","computer-science"],"created":"2024-08-30","updated":"2024-09-13"}
 ---
 
 

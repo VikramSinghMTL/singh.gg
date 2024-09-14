@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/10-fleeting-notes/redundancy/","tags":["🌱"],"noteIcon":"1","created":"Aug 29, 2024 17:17","updated":"Sep 12, 2024 23:24"}
+{"dg-publish":true,"permalink":"/10-fleeting-notes/redundancy/","tags":["🌱"],"created":"2024-08-29","updated":"2024-09-13"}
 ---
 
 

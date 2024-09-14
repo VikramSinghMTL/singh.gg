@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/50-works/research/research-proposal/","title":"Research Proposal","noteIcon":"1","created":"Apr 27, 2024 16:13","updated":"Sep 12, 2024 23:24"}
+{"dg-publish":true,"permalink":"/50-works/research/research-proposal/","title":"Research Proposal","created":"2024-04-27","updated":"2024-09-13"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/hattie2007/","title":"The Power of Feedback","tags":["peer-assessment"],"noteIcon":"1","created":"Aug 30, 2024 17:33","updated":"Sep 12, 2024 23:24"}
+{"dg-publish":true,"permalink":"/20-literature-notes/hattie2007/","title":"The Power of Feedback","tags":["peer-assessment"],"created":"2024-08-30","updated":"2024-09-13"}
 ---
 
 

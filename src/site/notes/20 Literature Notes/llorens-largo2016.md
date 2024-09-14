@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/20-literature-notes/llorens-largo2016/","title":"Gamification of the Learning Process - Lessons Learned","tags":["gamification","computer-science","motivation"],"noteIcon":"1","created":"Aug 30, 2024 17:34","updated":"Sep 12, 2024 23:24"}
+{"dg-publish":true,"permalink":"/20-literature-notes/llorens-largo2016/","title":"Gamification of the Learning Process - Lessons Learned","tags":["gamification","computer-science","motivation"],"created":"2024-08-30","updated":"2024-09-13"}
 ---
 
 

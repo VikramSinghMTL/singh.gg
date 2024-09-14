@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/40-development/game-programming/delta-time/","title":"Delta Time","noteIcon":"1","created":"Aug 22, 2024 23:00","updated":"Sep 12, 2024 23:24"}
+{"dg-publish":true,"permalink":"/40-development/game-programming/delta-time/","title":"Delta Time","created":"2024-08-22","updated":"2024-09-13"}
 ---
 
 

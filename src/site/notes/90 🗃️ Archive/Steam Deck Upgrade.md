@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/90-archive/steam-deck-upgrade/","title":"Steam Deck Upgrade","noteIcon":"1","created":"Aug 14, 2024 11:23","updated":"Sep 12, 2024 23:24"}
+{"dg-publish":true,"permalink":"/90-archive/steam-deck-upgrade/","title":"Steam Deck Upgrade","created":"2024-08-14","updated":"2024-09-13"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/50-works/research/intrinsic-motivation-inventory/","title":"Intrinsic Motivation Inventory (IMI)","noteIcon":"1","created":"May 13, 2024 08:44","updated":"Sep 12, 2024 23:24"}
+{"dg-publish":true,"permalink":"/50-works/research/intrinsic-motivation-inventory/","title":"Intrinsic Motivation Inventory (IMI)","created":"2024-05-13","updated":"2024-09-13"}
 ---
 
 
