@@ -1,5 +1,5 @@
 ---
-{"title":"Course Design","aliases":["College Teaching and Course Design","PED-601"],"tags":["pedagogy","🪴"],"created":"2024-09-16","modified":"2024-09-16","dg-publish":true,"permalink":"/30-permanent-notes/course-design/","dgPassFrontmatter":true,"updated":"2024-09-16"}
+{"title":"Course Design","aliases":["College Teaching and Course Design","PED-601"],"tags":["pedagogy","🪴"],"created":"2019-10-04","modified":"2024-09-16","dg-publish":true,"permalink":"/30-permanent-notes/course-design/","dgPassFrontmatter":true,"updated":"2024-09-16"}
 ---
 
 

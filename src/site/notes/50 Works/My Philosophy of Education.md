@@ -1,5 +1,5 @@
 ---
-{"title":"My Philosophy of Education","tags":["pedagogy"],"created":"2024-09-16","modified":"2024-09-16","dg-publish":true,"permalink":"/50-works/my-philosophy-of-education/","dgPassFrontmatter":true,"updated":"2024-09-16"}
+{"title":"My Philosophy of Education","tags":["pedagogy"],"created":"2021-05-16","modified":"2021-05-16","dg-publish":true,"permalink":"/50-works/my-philosophy-of-education/","dgPassFrontmatter":true,"updated":"2021-05-16"}
 ---
 
 
