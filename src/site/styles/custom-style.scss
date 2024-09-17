@@ -13,6 +13,17 @@ body {
 		font-optical-sizing: auto;
 		font-weight: 300;
 		font-style: normal;
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: 'Nerko One', cursive;
+			font-weight: 400;
+			font-style: normal;
+		}
 	}
 
 	nav {
@@ -47,7 +58,7 @@ body {
 			font-family: 'Nerko One', cursive;
 			font-weight: 400;
 			font-style: normal;
-			font-size: 2.5em;
+			font-size: 3em;
 			color: #babbf1;
 			text-decoration: none;
 		}
