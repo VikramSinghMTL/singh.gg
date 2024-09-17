@@ -1,5 +1,5 @@
 ---
-{"title":"Works","created":"2024-09-14","modified":"2024-09-14","dg-publish":true,"dg-permalink":"works","permalink":"/works/","dgPassFrontmatter":true,"updated":"2024-09-14"}
+{"title":"Works","created":"2024-09-14","modified":"2024-09-16","dg-publish":true,"dg-permalink":"works","permalink":"/works/","dgPassFrontmatter":true,"updated":"2024-09-16"}
 ---
 
 
@@ -14,6 +14,7 @@
 	- [[50 Works/CKID/Journal 2\|Journal 2]]
 	- [[50 Works/CKID/Literature Review\|How Computer Science Students Learn to Debug]]
 	- [[50 Works/CKID/PCK Definition Forum Post\|PCK Definition Forum Post]]
+- [[50 Works/My Philosophy of Education\|My Philosophy of Education]]
 - **Research**
 	- [[50 Works/Research/Closing Statement\|Closing Statement]]
 	- [[50 Works/Research/Code Review Taxonomy\|Code Review Taxonomy]]
