@@ -1,5 +1,5 @@
 ---
-{"title":"Development","created":"2024-09-14","modified":"2024-09-14","dg-publish":true,"dg-permalink":"development","permalink":"/development/","dgPassFrontmatter":true,"updated":"2024-09-14"}
+{"title":"Software","created":"2024-09-14","modified":"2024-09-16","dg-publish":true,"dg-permalink":"software","permalink":"/software/","dgPassFrontmatter":true,"updated":"2024-09-16"}
 ---
 
 
