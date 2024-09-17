@@ -1,5 +1,5 @@
 ---
-{"title":"Now","created":"2024-09-14","modified":"2024-09-14","dg-publish":true,"dg-permalink":"now","permalink":"/now/","dgPassFrontmatter":true,"updated":"2024-09-14"}
+{"title":"Now","created":"2024-09-14","modified":"2024-09-16","dg-publish":true,"dg-permalink":"now","permalink":"/now/","dgPassFrontmatter":true,"updated":"2024-09-16"}
 ---
 
 
