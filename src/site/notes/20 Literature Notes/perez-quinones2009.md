@@ -10,7 +10,7 @@
 >
 > 1. Besides the benefits to learning, this is also a necessary skill for students to have as it prepares them for professional activity. Being able to read, understand, and evaluate code is needed throughout the stages of a program’s life cycle (Deimel 1985). For instance, when writing or maintaining programs, one must be able to look at what has been done in order to build on it, modify it, or correct it. That is true if for small, individual school work and for large, group-developed, professional products. ([@perez-quinones2009, 2](zotero://open-pdf/library/items/B5G9BM7Q?page=2&annotation=Z6IBHDA2))
 >     - This is a comment on the annotation.
-> 2. ![perez-quinones2009-18-x59-y257.png](/img/user/00%20System/Assets/perez-quinones2009-18-x59-y257.png)
+> 2. ![[perez-quinones2009-18-x59-y257.png\|perez-quinones2009-18-x59-y257.png]]
 
 > [!insights]+
 >

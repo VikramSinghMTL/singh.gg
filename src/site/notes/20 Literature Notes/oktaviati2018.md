@@ -17,7 +17,7 @@
 
 > [!conclusion]+
 >
-> 1. ![oktaviati2018-3-x309-y223.png](/img/user/00%20System/Assets/oktaviati2018-3-x309-y223.png)
+> 1. ![[oktaviati2018-3-x309-y223.png\|oktaviati2018-3-x309-y223.png]]
 >     - People love badges and points.
 > 2. The most elements examined by research are leaderboards, badges and reward, point, and level. ([@oktaviati2018, 122](zotero://open-pdf/library/items/GXUBRAV8?page=3&annotation=LECLKKPM))
 >     - It's like all this.

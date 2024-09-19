@@ -12,7 +12,7 @@
     2. Explore the effect of gamification and group size on students’ satisfaction level.
     3. Assess the effectiveness of gamification and different group sizes on learning outcomes and students’ satisfaction over time through longitudinal experiments.
 - Theoretical Frameworks
-    - ![ahmad2020a-6-x56-y412.png](/img/user/00%20System/Assets/ahmad2020a-6-x56-y412.png)
+    - ![[ahmad2020a-6-x56-y412.png\|ahmad2020a-6-x56-y412.png]]
     - Nah's gamification framework.
         - Goal Orientation
         - Achievements
@@ -136,9 +136,9 @@
     2. In which contexts (course/subject) and levels (year of study) have peer review been gamified?
     3. What is the evidence and impact of the gamified peer review studies?
 - Theoretical Frameworks
-    1. ![indriasari2020a-5-x48-y432.png](/img/user/00%20System/Assets/indriasari2020a-5-x48-y432.png)
-    2. ![indriasari2020a-7-x48-y45.png](/img/user/00%20System/Assets/indriasari2020a-7-x48-y45.png)
-    3. ![indriasari2020a-9-x48-y412.png](/img/user/00%20System/Assets/indriasari2020a-9-x48-y412.png)
+    1. ![[indriasari2020a-5-x48-y432.png\|indriasari2020a-5-x48-y432.png]]
+    2. ![[indriasari2020a-7-x48-y45.png\|indriasari2020a-7-x48-y45.png]]
+    3. ![[indriasari2020a-9-x48-y412.png\|indriasari2020a-9-x48-y412.png]]
         - It captures the activities that may occur during a student peer review process. The circular nodes represent the different roles that students adopt. The rectangular nodes symbolize objects. The arcs represent actions taken by students, mediated through the peer review system.
 - Type of Research & Variables Studied
     - I think this is quantitative since they're not doing any surveys? It's all about coding attributes from several articles and analyzing the trends.
@@ -178,7 +178,7 @@
     2. How do students perceive the value of feedback produced and received?
     3. What is the impact of gamiﬁcation on the quality of student code reviews?
 - Theoretical Frameworks
-    - ![indriasari2023-8-x87-y645.png](/img/user/00%20System/Assets/indriasari2023-8-x87-y645.png)
+    - ![[indriasari2023-8-x87-y645.png\|indriasari2023-8-x87-y645.png]]
         - Activities are shown in diﬀerent colour of grey box and participants counts are shown in red circle for gamiﬁcation condition and blue circle for the control condition.
 - Type of Research & Variables Studied
     - Quantitative.

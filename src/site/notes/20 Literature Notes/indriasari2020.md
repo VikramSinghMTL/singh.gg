@@ -15,14 +15,14 @@
 > 2. In which contexts (course/subject) and levels (year of study) have peer review been gamified?
 > 3. What is the evidence and impact of the gamified peer review studies?
 > 4. The goal of the first research question (RQ1) is to understand the various ways in which gamification has been used in peer review contexts. We split this broad question into three distinct aspects of the implementation: activities in peer review that have been gamified; methods to gamify peer review activities; game elements that have been used. The second research question (RQ2) focuses on identifying the context of the peer review, including the types of subjects/courses and the level of education of the students. The last research question (RQ3) examines the reported evidence for the impact of gamification. Together, this information will be valuable for understanding how the gamification of peer review activities can affect the learning process. ([@indriasari2020a, 4](zotero://open-pdf/library/items/GCH3WE78?page=4&annotation=DVWPFC6X))
-> 5. ![indriasari2020a-4-x47-y48.png](/img/user/00%20System/Assets/indriasari2020a-4-x47-y48.png)
+> 5. ![[indriasari2020a-4-x47-y48.png\|indriasari2020a-4-x47-y48.png]]
 
 > [!methodology]+
 >
-> 1. ![indriasari2020a-5-x48-y432.png](/img/user/00%20System/Assets/indriasari2020a-5-x48-y432.png)
+> 1. ![[indriasari2020a-5-x48-y432.png\|indriasari2020a-5-x48-y432.png]]
 >     - I think this is quantitative since they're not doing any surveys? It's all about coding attributes from articles and analyzing the trends.
-> 2. ![indriasari2020a-7-x48-y45.png](/img/user/00%20System/Assets/indriasari2020a-7-x48-y45.png)
-> 3. ![indriasari2020a-9-x48-y412.png](/img/user/00%20System/Assets/indriasari2020a-9-x48-y412.png)
+> 2. ![[indriasari2020a-7-x48-y45.png\|indriasari2020a-7-x48-y45.png]]
+> 3. ![[indriasari2020a-9-x48-y412.png\|indriasari2020a-9-x48-y412.png]]
 >     - This section explains the “Gamified Peer Review Model” (Fig. 3) that we use in our analysis. It captures the activities that may occur during a student peer review process. The circular nodes represent the different roles that students adopt. The rectangular nodes symbolize objects. The arcs represent actions taken by students, mediated through the peer review system.
 
 > [!conclusion]+

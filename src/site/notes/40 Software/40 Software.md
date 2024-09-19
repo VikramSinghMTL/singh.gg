@@ -4,7 +4,6 @@
 
 
 
-
 - [[40 Software/Bash Commands\|Bash Commands]]
 - **Game Programming**
 	- [[40 Software/Game Programming/Collision Detection\|Collision Detection]]
@@ -19,7 +18,6 @@
 - [[40 Software/Microservices\|Microservices]]
 - [[40 Software/Motion Canvas\|Motion Canvas]]
 - [[40 Software/Netlify\|Netlify]]
-- [[40 Software/Permissions\|Permissions]]
 - [[40 Software/React\|React]]
 - [[40 Software/Regular Expressions\|Regular Expressions]]
 

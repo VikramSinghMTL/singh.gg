@@ -35,7 +35,7 @@
 
 > [!conclusion]+
 >
-> 1. ![iosup2014-4-x313-y619.png](/img/user/00%20System/Assets/iosup2014-4-x313-y619.png)
+> 1. ![[iosup2014-4-x313-y619.png\|iosup2014-4-x313-y619.png]]
 > 2. We have found that gamiﬁcation can help in many ways our students, from increasing passing rates and participation, to high student satisfaction and heart-warming testimonials. ([@iosup2014, 32](zotero://open-pdf/library/items/RM72UCE9?page=6&annotation=JBZ2PVEP))
 >     - Positive results.
 

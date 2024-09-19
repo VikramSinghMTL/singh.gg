@@ -4,7 +4,6 @@
 
 
 
-
 - **CKAD**
 	- [[50 Works/CKAD/Article Summary\|Article Summary]]
 	- [[50 Works/CKAD/Journal\|Journal]]
@@ -26,7 +25,6 @@
 	- [[50 Works/CKID/Literature Review\|Literature Review]]
 	- [[50 Works/Research/Methodology\|Methodology]]
 	- **Pecha Kucha**
-		- **assets**
 		- [[50 Works/Research/Pecha Kucha/Critical Path Pecha Kucha\|Critical Path Pecha Kucha]]
 	- [[50 Works/Research/Problem Statement\|Problem Statement]]
 	- [[50 Works/Research/Research Proposal\|Research Proposal]]
