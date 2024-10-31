@@ -5,7 +5,7 @@
 
 ## Variable Names
 
-The variable names describe the intent of the underlying code. (Use variable names that describe the source code's intent or purpose. Avoid using variable names that have no meaning, such as those that consist of only one or two letters and have no meaning; avoid using variables that are confusing and unreadable (e.g., abbreviations of a the name stands for / acronym).
+The variable names describe the intent of the underlying code. Use variable names that describe the source code's intent or purpose. Avoid using variable names that have no meaning, such as those that consist of only one or two letters and have no meaning; avoid using variables that are confusing and unreadable (e.g., abbreviations of a the name stands for / acronym).
 
 1. No variable names meet the criteria;
 2. 25% of variable names meet the criteria;
@@ -15,7 +15,7 @@ The variable names describe the intent of the underlying code. (Use variable nam
 
 ## Comments
 
-The header comments of routines and modules summarize the goal of each part of the program and explain parameters (i.e. how to use the part); the spelling Is correct as well. Inline comments in the code help to explain and elaborate on the decision. (Comment headers on routines or modules explain each parameter and describe the purpose of each part of the program. In addition, the spelling is correct. Each routine or module should have a comment header that provides a clear and up-to-date description of the routines/modules and their parameters. Comment headers that are redundant or unusable should be avoided. Inline comments provide useful information in some parts of the source code that require explanation. It is recommended that comments be added to some parts of the source code that require explanation, so that people reading the code can understand the flow of code and the reasons for making decisions. Avoid using difficult-to-understand language.
+The header comments of routines and modules summarize the goal of each part of the program and explain parameters (i.e. how to use the part); the spelling Is correct as well. Inline comments in the code help to explain and elaborate on the decision. Comment headers on routines or modules explain each parameter and describe the purpose of each part of the program. In addition, the spelling is correct. Each routine or module should have a comment header that provides a clear and up-to-date description of the routines/modules and their parameters. Comment headers that are redundant or unusable should be avoided. Inline comments provide useful information in some parts of the source code that require explanation. It is recommended that comments be added to some parts of the source code that require explanation, so that people reading the code can understand the flow of code and the reasons for making decisions. Avoid using difficult-to-understand language.
 
 1. No headers and inline comments at all;
 2. 25% of the code contains headers and inline comments;
@@ -25,7 +25,7 @@ The header comments of routines and modules summarize the goal of each part of t
 
 ## Layout
 
-The layout of the code has been optimized for readability (e.g. grouping code and ordering code). The indentation, blank lines, spacing and brackets (formatting) have been used consistently to highlight the intended structure of the code formatting. (The layout of the source code, for example, code grouping and code positioning, is optimized to make the source code easier to read. Consistent positioning, such as variable declarations at the top, frequently accessed routines at the top, and other related routines close together. The formatting of the source code structure is done consistently. For example, indentation/tab key use blank lines/code blank lines, spacing/spaces, and brackets/ OP. Furthermore, the length of each line of code should be kept to a minimum.
+The layout of the code has been optimized for readability (e.g. grouping code and ordering code). The indentation, blank lines, spacing and brackets (formatting) have been used consistently to highlight the intended structure of the code formatting. The layout of the source code, for example, code grouping and code positioning, is optimized to make the source code easier to read. Consistent positioning, such as variable declarations at the top, frequently accessed routines at the top, and other related routines close together. The formatting of the source code structure is done consistently. For example, indentation/tab key use blank lines/code blank lines, spacing/spaces, and brackets/ OP. Furthermore, the length of each line of code should be kept to a minimum.
 
 1. The layout and formatting do not meet the requirements;
 2. 25% of code employs layout and formatting according to the criteria.

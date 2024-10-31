@@ -14,6 +14,7 @@
 	- [[40 Software/Game Programming/Godot\|Godot]]
 	- [[40 Software/Game Programming/Sprites\|Sprites]]
 	- [[40 Software/Game Programming/State Machine\|State Machine]]
+	- [[40 Software/Game Programming/Tools & Resources\|Tools & Resources]]
 - [[40 Software/MacOS Commands\|MacOS Commands]]
 - [[40 Software/Microservices\|Microservices]]
 - [[40 Software/Motion Canvas\|Motion Canvas]]
