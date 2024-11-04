@@ -13,11 +13,11 @@ Loaded from imgur
 
 Individual local images
 
-![knowlet-card.png](/img/user/00%20System/Assets/knowlet-card.png)
+![knowlet-card.png|100](/img/user/00%20System/Assets/knowlet-card.png)
 
-![contemplark-card.png](/img/user/00%20System/Assets/contemplark-card.png)
+![contemplark-card.png|200](/img/user/00%20System/Assets/contemplark-card.png)
 
-![librarion-card.png](/img/user/00%20System/Assets/librarion-card.png)
+![librarion-card.png|300](/img/user/00%20System/Assets/librarion-card.png)
 
 Table with individual horizontal
 
