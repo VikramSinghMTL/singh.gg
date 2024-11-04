@@ -5,6 +5,8 @@
 
 ![knowlet-contemplark-librarion.png](/img/user/00%20System/Assets/knowlet-contemplark-librarion.png)
 
+![Pokemon Cards](https://i.imgur.com/1CdLqzf.png)
+
 Both Baxter Magolda’s [-@baxtermagolda1992] _Responsive Teaching_ and Moore’s [-@moore1994] interpretation of the _Perry Schema_ outline how students progress from seeing knowledge as absolute to understanding it as contextual and constructed. Ramsden’s [-@ramsden2003] distinction between [[30 Permanent Notes/Learning Approaches\|deep and surface learning]] parallels the stages in these models. Early stages align with surface approaches, where students focus on rote memorization and rely heavily on authority, as seen in Perry’s _Dualism_ and Baxter Magolda’s _Absolute Knowing_. Here, students often exhibit surface learning, aiming for completion rather than true understanding.
 
 Erickson, Peters, and Strommer’s focus on the progression from basic _knowing_ to higher-order _thinking_ also echoes these stages. Their framework underscores the importance of moving students beyond memorization to understanding, applying, and creating, aligning closely with Ramsden’s emphasis on fostering deep learning.
