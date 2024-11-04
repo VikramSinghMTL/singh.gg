@@ -4,16 +4,19 @@
 
 
 
-
 - [[20 Literature Notes/ahmad2020\|The Impact of Gamification on Learning Outcomes of Computer Science Majors]]
 - [[20 Literature Notes/al-azawi2016\|Educational Gamification Vs. Game Based Learning - Comparative Study]]
 - [[20 Literature Notes/allen2010\|Getting Things Done]]
 - [[20 Literature Notes/bandura2012\|On the Functional Properties of Perceived Self-Efficacy Revisited]]
+- [[20 Literature Notes/barr1995\|From Teaching to Learning - A New Paradigm For Undergraduate Education]]
+- [[20 Literature Notes/baxtermagolda1992\|Teaching Responsively to Different Ways of Knowing]]
+- [[20 Literature Notes/biggs2012\|What the student does - teaching for enhanced learning]]
 - [[20 Literature Notes/boller2017\|Play to Learn - Everything You Need to Know About Designing Effective Learning Games]]
 - [[20 Literature Notes/butler2016\|Gamification to Engage and Motivate Students to Achieve Computer Science Learning Goals]]
 - [[20 Literature Notes/chiang2011\|Using Game-Based Learning and Interactive Peer Assessment to Improve Career Goals and Objectives for College Students]]
 - [[20 Literature Notes/cross1987\|Peer group software reviews in university education for software engineering (abstract only)]]
 - [[20 Literature Notes/deci1994\|Promoting Self‐determined Education]]
+- [[20 Literature Notes/erickson2009\|Knowing, Understanding, Thinking, and Learning How to Learn - The Goals of First-Year Instruction]]
 - [[20 Literature Notes/farber2017\|Game-Based Learning in Action]]
 - [[20 Literature Notes/farber2017a\|Gamify your classroom - a field guide to game-based learning]]
 - [[20 Literature Notes/forte2022\|Building a Second Brain]]
@@ -32,6 +35,7 @@
 - [[20 Literature Notes/indriasari2023\|Gamification improves the quality of student peer code review]]
 - [[20 Literature Notes/iosup2014\|An experience report on using gamification in technical higher education]]
 - [[20 Literature Notes/jayasinghe2013\|Game based learning vs. gamification from the higher education students' perspective]]
+- [[20 Literature Notes/krathwohl2002\|A Revision of Bloom's Taxonomy - An Overview]]
 - [[20 Literature Notes/levesque2006\|A Theory-Based Integrative Model for Learning and Motivation in Higher Education]]
 - [[20 Literature Notes/li2006\|Using Peer Review to Assess Coding Standards – A Case Study]]
 - [[20 Literature Notes/li2011\|PeerSpace - An Online Collaborative Learning Environment for Computer Science Students]]
@@ -42,6 +46,7 @@
 - [[20 Literature Notes/lopez-fernandez2021\|Comparing Traditional Teaching and Game-Based Learning Using Teacher-Authored Games on Computer Science Education]]
 - [[20 Literature Notes/lynch2018\|Play anything - The pleasure of limits, the uses of boredom, and the secret of games]]
 - [[20 Literature Notes/mohamedmasrop2019\|Games Based Learning for Computer Science Education - A Systematic Literature Review]]
+- [[20 Literature Notes/moore1994\|Student and Faculty Epistemology in the College Classroom - The Perry Schema of Intellectual and Ethical Development]]
 - [[20 Literature Notes/narasareddygari2018\|Gamification in Computer Science Education - a Systematic Literature Review]]
 - [[20 Literature Notes/oktaviati2018\|The Impact of Using Gamification in Learning Computer Science for Students in University]]
 - [[20 Literature Notes/ortiz2016\|Gamification in Higher Education and Stem - A Systematic Review of Literature]]
@@ -62,5 +67,6 @@
 - [[20 Literature Notes/taing2013\|The relationship between learning goal orientation, goal setting, and performance - a longitudinal study - Goal orientation and goal setting]]
 - [[20 Literature Notes/urh2015\|The Model for Introduction of Gamification into E-learning in Higher Education]]
 - [[20 Literature Notes/videnovik2023\|Game-based learning in computer science education - a scoping literature review]]
+- [[20 Literature Notes/whetten2007\|Principles of Effective Course Design - What I Wish I Had Known About Learning-Centered Teaching 30 Years Ago]]
 
 

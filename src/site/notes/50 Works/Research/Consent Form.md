@@ -5,13 +5,13 @@
 
 ## Purpose
 
-This project is being conducted by Vikram Singh, a Computer Science Teacher at John Abbott College, for the completion of a Master’s Degree in College Teaching, accredited by the Université de Sherbrooke. This study explores how different approaches to peer code review affect student motivation and feedback quality.
+This project is being conducted by Vikram Singh, a Computer Science Teacher at John Abbott College, for the completion of a Master's Degree in College Teaching, accredited by the Université de Sherbrooke. This study explores how different approaches to peer code review affect student motivation and feedback quality.
 
 ## Procedure
 
-1. Before beginning the activity, you’ll complete a short survey regarding your perspectives on peer feedback.
+1. Before beginning the activity, you'll complete a short survey regarding your perspectives on peer feedback.
 2. You will participate in a brief card game related to your course material.
-3. After the card game, you’ll complete a survey about your experience.
+3. After the card game, you'll complete a survey about your experience.
 4. Your feedback on the course assignments, along with survey responses, will be analyzed to better understand factors influencing feedback quality and student motivation in peer code review.
 
 ## Potential Risks & Benefits

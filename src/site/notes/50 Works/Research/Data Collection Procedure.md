@@ -37,9 +37,14 @@
 - symbol blue card in corner so you can see in your hand
 - slowly incorporate yellows?
 - force green discard over blues?
+- Definitely increased motivation to know the the criteria of yellow distribution
+- Diminishing returns on replayability? Future research on repeated play
+- Leaderboard? Paul says most people won't win, which tends to lead to demotivation
+- If you win x number of times, you unlock a special card?
 
 ## My Biases
 
 - Mentioning that my students that I love get to be a part of my masters journey.
 - Being in the room while they're filling out the survey.
 - Telling them how the yellows are calculated (ask Paul about this one).
+

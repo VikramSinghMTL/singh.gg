@@ -1,6 +1,7 @@
 ---
-{"title":"Works","created":"2024-09-14","modified":"2024-09-16","dg-publish":true,"dg-permalink":"works","permalink":"/works/","dgPassFrontmatter":true,"updated":"2024-09-16"}
+{"title":"Works","created":"2024-09-14","modified":"2024-10-30","dg-publish":true,"dg-permalink":"works","permalink":"/works/","dgPassFrontmatter":true,"updated":"2024-10-30"}
 ---
+
 
 
 
@@ -25,8 +26,6 @@
 	- [[50 Works/Research/Literature Review Outline\|Literature Review Outline]]
 	- [[50 Works/CKID/Literature Review\|Literature Review]]
 	- [[50 Works/Research/Methodology\|Methodology]]
-	- **Pecha Kucha**
-		- [[50 Works/Research/Pecha Kucha/Critical Path Pecha Kucha\|Critical Path Pecha Kucha]]
 	- [[50 Works/Research/Pre-Test & Post-Test\|Pre-Test & Post-Test]]
 	- [[50 Works/Research/Problem Statement\|Problem Statement]]
 	- [[50 Works/Research/Research Proposal\|Research Proposal]]

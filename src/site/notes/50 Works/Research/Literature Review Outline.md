@@ -50,9 +50,9 @@ Some key motivational theories relevant to education include Self-Determination 
 - @taing2013
 - @seifert2004
 - @ryan1983
-- @lopez-fernandez2021
 - @pintrich2003
 - @papastergiou2009
+- @lopez-fernandez2021
 - @locke2002
 - @levesque2006
 - @deci1994
@@ -86,12 +86,12 @@ Gamification and game-based learning are two distinct approaches that incorporat
 
 While gamification relies on extrinsic motivators like rewards and recognition, game-based learning emphasizes intrinsic motivators such as enjoyment and engagement with the game and its educational content.
 
-- @lopez-fernandez2021
 - @papastergiou2009
 - @oktaviati2018
+- @lopez-fernandez2021
 - @llorens-largo2016
-- @jayasinghe2013
 - @indriasari2023
+- @jayasinghe2013
 - @indriasari2021
 - @indriasari2021a
 - @indriasari2020
@@ -105,8 +105,8 @@ In computer science, games have been utilized to teach algorithms, data structur
 
 - @videnovik2023
 - @schmitz2011
-- @lopez-fernandez2021
 - @papastergiou2009
+- @lopez-fernandez2021
 - @mohamedmasrop2019
 - @jayasinghe2013
 

@@ -1,12 +1,15 @@
 ---
-{"title":"Learning to teach in higher education","authors":["[[Paul Ramsden]]"],"date":"2003-01-01","processed":false,"tags":[],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/ramsden2003/","dgPassFrontmatter":true,"updated":"2024-09-13"}
+{"title":"Approaches to Learning","authors":["[[Paul Ramsden]]"],"date":"2003-07-03","processed":true,"dg-publish":true,"tags":["conceptual"],"zotero":"zotero://select/library/items/43NZZ83M","created":"2024-10-02","modified":"2024-11-03","permalink":"/20-literature-notes/ramsden2003/","dgPassFrontmatter":true,"updated":"2024-11-03"}
 ---
 
 
-> [!abstract]+
-> Introduction - Ways of understanding teaching - What students learn - Approaches to learning - Learning from the student's perspective - The nature of good teaching in higher education - Theories of teaching in higher education - The goals and structure of a course - Teaching strategies for effective learning - Assessing for understanding - Evaluating the quality of higher education - What does it take to improve university teaching?
-
 > [!insights]+
->
-> 1. The two contrasting ways of relating to a learning assignment described above have become known as surface and deep approaches to learning respectively. Strictly speaking, there are two different aspects of an approach to learning. One is concerned with whether the student is searching for meaning or not when engaging with a learning task; the second is concerned with the way in which the student organises the task. ([@ramsden2003, 43](zotero://open-pdf/library/items/PSKD2MBG?page=58&annotation=RZ8MGFFW))
->     - Surface vs deep learning.
+> **Deep vs. Surface Learning**: A _deep approach_ involves understanding material by relating it to prior knowledge and seeking to make meaningful connections, while a _surface approach_ focuses on rote memorization and fulfilling assessment criteria without true comprehension.
+
+> [!summary]+
+> - **Quality of Engagement**: The quality of student learning is directly related to how they engage with learning tasks. Deep approaches lead to better outcomes, fostering understanding and long-term retention, while surface approaches result in poor learning quality and temporary recall.
+> - **Influence of Teaching**: Effective teaching should create conditions that encourage a deep approach, emphasizing meaning, relevance, and integration. Surface learning often arises when students feel pressured by assessments or overloaded with content.
+> - **Imitation Learning**: Ramsden warns against _imitation learning_, where students learn in a superficial way, memorizing without genuine understanding. This can give the illusion of learning but lacks lasting educational value.
+
+> [!cite]+
+> Ramsden, P. (2003). Approaches to Learning. In _Learning to Teach in Higher Education_ (2nd ed., pp. 39–61). Routledge.
