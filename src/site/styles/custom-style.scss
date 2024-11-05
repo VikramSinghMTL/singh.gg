@@ -110,6 +110,7 @@ body {
 		--callout-color: 203, 166, 247;
 		--callout-icon: lucide-lightbulb;
 	}
+	}
 
 // Remove borders from tables with only a header row
 .markdown-rendered table:has(thead):not(:has(tbody)) th,
