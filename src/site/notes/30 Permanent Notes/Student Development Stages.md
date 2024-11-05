@@ -3,35 +3,8 @@
 ---
 
 
-Three in one image
-
-![knowlet-contemplark-librarion.png](/img/user/00%20System/Assets/knowlet-contemplark-librarion.png)
-
-Loaded from imgur
-
-![Pokemon Cards](https://i.imgur.com/1CdLqzf.png)
-
-Individual local images
-
-![knowlet-card.png|100](/img/user/00%20System/Assets/knowlet-card.png)
-
-![contemplark-card.png|200](/img/user/00%20System/Assets/contemplark-card.png)
-
-![librarion-card.png|300](/img/user/00%20System/Assets/librarion-card.png)
-
-Table with individual horizontal
-
-||||
-|-|-|-|
 |![knowlet-card.png](/img/user/00%20System/Assets/knowlet-card.png)|![contemplark-card.png](/img/user/00%20System/Assets/contemplark-card.png)|![librarion-card.png](/img/user/00%20System/Assets/librarion-card.png)|
-
-Table with individual vertical
-
-|||
-|-|-|
-|![knowlet-card.png](/img/user/00%20System/Assets/knowlet-card.png)|Knowlet|
-|![contemplark-card.png](/img/user/00%20System/Assets/contemplark-card.png)|Contemplark|
-|![librarion-card.png](/img/user/00%20System/Assets/librarion-card.png)|Librarion|
+|:-------------------:|:-----------------------:|:---------------------:|
 
 Both Baxter Magolda’s [-@baxtermagolda1992] _Responsive Teaching_ and Moore’s [-@moore1994] interpretation of the _Perry Schema_ outline how students progress from seeing knowledge as absolute to understanding it as contextual and constructed. Ramsden’s [-@ramsden2003] distinction between [[30 Permanent Notes/Learning Approaches\|deep and surface learning]] parallels the stages in these models. Early stages align with surface approaches, where students focus on rote memorization and rely heavily on authority, as seen in Perry’s _Dualism_ and Baxter Magolda’s _Absolute Knowing_. Here, students often exhibit surface learning, aiming for completion rather than true understanding.
 
