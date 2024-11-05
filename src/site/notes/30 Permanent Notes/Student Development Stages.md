@@ -3,7 +3,7 @@
 ---
 
 
-> [!note]+
+> [!note]
 > 
 > Meet the stages of cognitive development through our Pokémon-inspired trio: _Knowlet_, _Contemplark_, and _Librarion_. Each represents a unique phase in student development stages described by the conceptual models below.
 > 
