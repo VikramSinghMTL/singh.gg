@@ -1,24 +1,22 @@
 ---
-{"title":"Student Development Stages","aliases":["Responsive Teaching","Perry Schema"],"tags":["pedagogy","🪴"],"dg-publish":true,"created":"2024-11-03","modified":"2024-11-04","permalink":"/30-permanent-notes/student-development-stages/","dgPassFrontmatter":true,"updated":"2024-11-04"}
+{"title":"Student Development Stages","aliases":["Responsive Teaching","Perry Schema"],"tags":["pedagogy","🌲"],"dg-publish":true,"created":"2024-11-03","modified":"2024-11-04","permalink":"/30-permanent-notes/student-development-stages/","dgPassFrontmatter":true,"updated":"2024-11-04"}
 ---
 
 
 > [!note]
-> 
+>
 > Meet the stages of cognitive development through our Pokémon-inspired trio: _Knowlet_, _Contemplark_, and _Librarion_. Each represents a unique phase in student development stages described by the conceptual models below.
-> 
+>
 > |![knowlet-card.png](/img/user/00%20System/Assets/knowlet-card.png)|![contemplark-card.png](/img/user/00%20System/Assets/contemplark-card.png)|![librarion-card.png](/img/user/00%20System/Assets/librarion-card.png)|
 > |:-------------------:|:-----------------------:|:---------------------:|
 
-Both Baxter Magolda’s [-@baxtermagolda1992] _Responsive Teaching_ and Moore’s [-@moore1994] interpretation of the _Perry Schema_ outline how students progress from seeing knowledge as absolute to understanding it as contextual and constructed. Ramsden’s [-@ramsden2003] distinction between [[30 Permanent Notes/Learning Approaches\|deep and surface learning]] parallels the stages in these models. Early stages align with surface approaches, where students focus on rote memorization and rely heavily on authority, as seen in Perry’s _Dualism_ and Baxter Magolda’s _Absolute Knowing_. Here, students often exhibit surface learning, aiming for completion rather than true understanding.
+Both Baxter Magolda’s [-@baxtermagolda1992] _Responsive Teaching_ and Moore’s [-@moore1994] take on the _Perry Schema_ look at how students move from seeing knowledge as fixed to understanding it as something more complex and shaped by context. Ramsden’s [-@ramsden2003] ideas on [[30 Permanent Notes/Learning Approaches\|deep and surface learning]] tie into this, showing how students’ approaches to learning evolve in similar ways. Erickson et al. also follow this pattern, describing a shift from basic _knowing_ to deeper, higher-order _thinking_. In the early stages, students tend to stick with surface learning—focusing on memorization and looking to authority for clear answers—just as we see in Perry’s _Dualism_ and Baxter Magolda’s _Absolute Knowing_. At this level, they’re all about finishing tasks rather than really digging in and understanding, which lines up with what Erickson would call that first phase of simply “knowing.”
 
-Erickson, Peters, and Strommer’s focus on the progression from basic _knowing_ to higher-order _thinking_ also echoes these stages. Their framework underscores the importance of moving students beyond memorization to understanding, applying, and creating, aligning closely with Ramsden’s emphasis on fostering deep learning.
+As students start to transition, things get a little more complicated. In Perry’s _Multiplicity_ stage and Baxter Magolda’s _Transitional Knowing_, they begin to realize that there’s more than one way to see things, though they might not yet know how to handle that complexity. This stage often still includes some surface learning, but if teaching strategies encourage discussion and reflection, it can help push them toward deeper engagement. Erickson’s framework lines up here as well, moving from basic knowledge into understanding and applying, and Ramsden would agree that this is where students start making more meaningful connections.
 
-As students transition to _Multiplicity_ (Perry) or _Transitional Knowing_ (Baxter Magolda), they begin to recognize the existence of multiple perspectives, although they may not yet fully understand how to evaluate or integrate them. This stage still carries elements of surface learning, but teaching strategies that promote discussion and reflection can start to shift students toward deeper engagement.
+Then we get to the more advanced stages—Perry’s _Contextual Relativism_ and Baxter Magolda’s _Contextual Knowing_—where students fully embrace a deep learning approach. At this point, they’re not just taking in information; they’re thinking critically, making connections, and applying what they know in new ways. Ramsden’s concept of deep learning really shines here, as students learn to analyze, synthesize, and create. This also matches up with Erickson et al.’s higher level of _thinking_, where students don’t just understand—they apply and adapt knowledge thoughtfully. Teaching strategies for this stage should involve activities like case studies and complex projects, which encourage students to think independently and apply their knowledge in meaningful ways.
 
-In the later stages, such as _Contextual Relativism_ (Perry) and _Contextual Knowing_ (Baxter Magolda), students adopt a deep approach to learning. They seek to understand and apply knowledge, engage critically with content, and make connections that extend beyond the classroom. Ramsden’s concept of deep learning is exemplified here, as students analyze, synthesize, and create, reflecting a mature level of cognitive development. Erickson et al.’s progression to the _thinking_ stage underscores this shift, showing that effective teaching must encourage students to move from simple comprehension to complex application and reflection. Teaching strategies at this stage should include complex, reflective activities like case studies and problem-solving projects to foster independent thinking and meaningful application.
-
-Thus, all four models illustrate how instructional methods should evolve to guide students from early, surface-level learning to later stages that prioritize depth, understanding, and application.
+Together, these four models highlight how teaching needs to adapt as students move from surface-level learning to a place where depth, understanding, and real-world application take center stage.
 
 ## References
 
