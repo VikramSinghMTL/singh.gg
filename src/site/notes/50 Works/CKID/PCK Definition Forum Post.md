@@ -14,7 +14,7 @@
 
 ## 🧠 PCK Definition
 
-Just because one is an expert in their discipline does not mean that they can automatically teach the discipline [@bransford2000 44]. Being an expert means it is likely that much time has passed since they were a novice, so they tend to forget the novice’s perspective. What is required of Computer Science teachers is _pedagogical content knowledge_ which combines the knowledge and skills of an expert software developer with the knowledge and skills of an expert teacher.
+Just because one is an expert in their discipline does not mean that they can automatically teach the discipline [@bransford2000#p. 44]. Being an expert means it is likely that much time has passed since they were a novice, so they tend to forget the novice’s perspective. What is required of Computer Science teachers is _pedagogical content knowledge_ which combines the knowledge and skills of an expert software developer with the knowledge and skills of an expert teacher.
 
 - **Pedagogical Knowledge**: Utilizing the instructional strategy of a "jigsaw" to split up a large piece of content into chunks such that groups of students can become experts of one chunk and learn the other chunks from their peers.
 - **Content Knowledge**: Being able to consume and understand a large codebase.
@@ -29,7 +29,7 @@ Just because one is an expert in their discipline does not mean that they can au
 ### 🧑🏾‍🏫 Teacher Knowledge
 
 1. **Reflective Practice**: Suppose a lesson does not go as well as you may have wanted it to. Instead of throwing your hands up in the air and chalking it up to this semester's unique mix of students, one should take the time to reflect on what happened in the lesson. By purposefully thinking about the situation, one can identify potential pedagogical areas that need to be addressed. Once an area has been identified, one can determine if it falls into the pedagogical/content/technological domains and conduct research to improve one's knowledge in the area. Then, an experiment can be conducted using a new strategy to test if the research proved fruitful. Rinse and repeat!
-2. **Situated Knowledge**: The context around who/what/where/when/why/how we teach is sometimes as important as the content we are teaching itself. Considering things like the demographic of our students, the working conditions of the computer labs, the college's facilities and resources, and the semester (Fall or Winter), and the time when the actual class takes place can help us greatly when teaching [@tsui2003a 4].
+2. **Situated Knowledge**: The context around who/what/where/when/why/how we teach is sometimes as important as the content we are teaching itself. Considering things like the demographic of our students, the working conditions of the computer labs, the college's facilities and resources, and the semester (Fall or Winter), and the time when the actual class takes place can help us greatly when teaching [@tsui2003a#p. 4].
 
     - For example, if I know that a particular student is having financial issues then I can point them to our Financial Services office to speak with an advisor about potential loans or bursaries. Such a thing might seem inconsequential to my course's content, yet it does play a significant role in that particular student's learning.
 

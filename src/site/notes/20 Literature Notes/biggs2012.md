@@ -1,5 +1,5 @@
 ---
-{"title":"What the student does - teaching for enhanced learning","authors":["[[John Biggs]]"],"date":"2012-02-01","processed":true,"dg-publish":true,"tags":["pedagogy","conceptual"],"zotero":"zotero://select/library/items/3KKBYCMB","created":"2024-11-03","modified":"2024-11-03","permalink":"/20-literature-notes/biggs2012/","dgPassFrontmatter":true,"updated":"2024-11-03"}
+{"title":"What the student does - teaching for enhanced learning","authors":["[[John Biggs]]"],"date":"2012-02-01","processed":true,"dg-publish":true,"tags":["pedagogy","conceptual"],"zotero":"zotero://select/library/items/3KKBYCMB","created":"2024-11-03","modified":"2024-11-03","aliases":["@biggs2012"],"permalink":"/20-literature-notes/biggs2012/","dgPassFrontmatter":true,"updated":"2024-11-03"}
 ---
 
 
