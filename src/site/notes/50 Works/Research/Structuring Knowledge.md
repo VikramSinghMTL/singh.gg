@@ -12,7 +12,6 @@
     2. Explore the effect of gamification and group size on students’ satisfaction level.
     3. Assess the effectiveness of gamification and different group sizes on learning outcomes and students’ satisfaction over time through longitudinal experiments.
 - Theoretical Frameworks
-    - ![[ahmad2020a-6-x56-y412.png\|ahmad2020a-6-x56-y412.png]]
     - Nah's gamification framework.
         - Goal Orientation
         - Achievements
@@ -35,7 +34,7 @@
     - Students were more satisfied in the no group and small group settings.
     - Strong correlation between the students mark and their satisfaction.
 
-## [@ibanez2014a]
+## [@ibanez2014]
 
 - Topic & Problem
     - Student engagement and academic performance.
