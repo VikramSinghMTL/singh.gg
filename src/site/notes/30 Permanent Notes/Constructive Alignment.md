@@ -21,3 +21,5 @@ One big challenge with _constructive alignment_ is finding the time to work in m
 - [[20 Literature Notes/ramsden2003\|ramsden2003]]
 - [[20 Literature Notes/whetten2007\|whetten2007]]
 - [[20 Literature Notes/baxtermagolda1992\|baxtermagolda1992]]
+
+[bibliography]
