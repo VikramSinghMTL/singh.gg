@@ -35,9 +35,8 @@ Engaging in peer code review helps students in develop their analytical skills a
 - @petersen2018
 - @perez-quinones2009
 - @li2006
-- @hamer2015
-- @indriasari2020a
 - @hundhausen2013
+- @hamer2015
 - @hamer2009
 - @cross1987
 
@@ -94,8 +93,8 @@ While gamification relies on extrinsic motivators like rewards and recognition, 
 - @jayasinghe2013
 - @indriasari2021
 - @indriasari2021a
-- @indriasari2020
 - @goshevski2017
+- @indriasari2020
 
 { .block-language-dataview}
 

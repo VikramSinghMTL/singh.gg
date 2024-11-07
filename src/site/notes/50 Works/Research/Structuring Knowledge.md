@@ -3,7 +3,7 @@
 ---
 
 
-## [@ahmad2020a]
+## [@ahmad2020]
 
 - Topic & Problem
     - Student motivation and engagement.
@@ -135,9 +135,9 @@
     2. In which contexts (course/subject) and levels (year of study) have peer review been gamified?
     3. What is the evidence and impact of the gamified peer review studies?
 - Theoretical Frameworks
-    1. ![[indriasari2020a-5-x48-y432.png\|indriasari2020a-5-x48-y432.png]]
-    2. ![[indriasari2020a-7-x48-y45.png\|indriasari2020a-7-x48-y45.png]]
-    3. ![[indriasari2020a-9-x48-y412.png\|indriasari2020a-9-x48-y412.png]]
+    1. ![indriasari2020a-5-x48-y432.png](/img/user/00%20System/Assets/indriasari2020a-5-x48-y432.png)
+    2. ![indriasari2020a-7-x48-y45.png](/img/user/00%20System/Assets/indriasari2020a-7-x48-y45.png)
+    3. ![indriasari2020a-9-x48-y412.png](/img/user/00%20System/Assets/indriasari2020a-9-x48-y412.png)
         - It captures the activities that may occur during a student peer review process. The circular nodes represent the different roles that students adopt. The rectangular nodes symbolize objects. The arcs represent actions taken by students, mediated through the peer review system.
 - Type of Research & Variables Studied
     - I think this is quantitative since they're not doing any surveys? It's all about coding attributes from several articles and analyzing the trends.
