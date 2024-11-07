@@ -35,6 +35,7 @@ Engaging in peer code review helps students in develop their analytical skills a
 - @petersen2018
 - @perez-quinones2009
 - @li2006
+- @indriasari2020
 - @hundhausen2013
 - @hamer2015
 - @hamer2009
@@ -64,9 +65,9 @@ Some key motivational theories relevant to education include Self-Determination 
 Student-generated peer code reviews often lack depth and specificity. The feedback tends to be short, non-committal, and fails to be useful. Students are not intrinsically motivated to provide useful feedback. Addressing these challenges is crucial for improving the overall quality of peer code reviews.
 
 - @indriasari2023
-- @indriasari2020
 - @indriasari2021
 - @indriasari2021a
+- @indriasari2020a
 
 { .block-language-dataview}
 
@@ -94,7 +95,7 @@ While gamification relies on extrinsic motivators like rewards and recognition, 
 - @indriasari2021
 - @indriasari2021a
 - @goshevski2017
-- @indriasari2020
+- @indriasari2020a
 
 { .block-language-dataview}
 
@@ -116,9 +117,9 @@ In computer science, games have been utilized to teach algorithms, data structur
 While these authors have extensively studied gamification in the peer code review process, using a game-based approach has not been done yet. They conclude by saying more research in this field is required.
 
 - @indriasari2023
-- @indriasari2020
 - @indriasari2021
 - @indriasari2021a
+- @indriasari2020a
 
 { .block-language-dataview}
 
