@@ -28,7 +28,7 @@
 - [[20 Literature Notes/hattie2007\|The Power of Feedback]]
 - [[20 Literature Notes/hundhausen2013\|Talking about code - Integrating pedagogical code reviews into early computing courses]]
 - [[20 Literature Notes/ibanez2014\|Gamification for Engaging Computer Science Students in Learning Activities - A Case Study]]
-- [[20 Literature Notes/indriasari2020\|A Review of Peer Code Review in Higher Education]]
+- [[20 Literature Notes/indriasari2020\|Gamification of student peer review in education - A systematic literature review]]
 - [[20 Literature Notes/indriasari2020a\|Gamification of student peer review in education - A systematic literature review]]
 - [[20 Literature Notes/indriasari2021\|Investigating Accuracy and Perceived Value of Feedback in Peer Code Review Using Gamification]]
 - [[20 Literature Notes/indriasari2021a\|Improving Student Peer Code Review Using Gamification]]

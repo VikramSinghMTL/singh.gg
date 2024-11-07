@@ -177,7 +177,7 @@
     2. How do students perceive the value of feedback produced and received?
     3. What is the impact of gamiﬁcation on the quality of student code reviews?
 - Theoretical Frameworks
-    - ![[indriasari2023-8-x87-y645.png\|indriasari2023-8-x87-y645.png]]
+    - ![indriasari2023-8-x87-y645.png](/img/user/00%20System/Assets/indriasari2023-8-x87-y645.png)
         - Activities are shown in diﬀerent colour of grey box and participants counts are shown in red circle for gamiﬁcation condition and blue circle for the control condition.
 - Type of Research & Variables Studied
     - Quantitative.
