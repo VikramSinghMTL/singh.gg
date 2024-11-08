@@ -1,5 +1,5 @@
 ---
-{"title":"Constructive Alignment","aliases":["Backwards Design"],"dg-publish":true,"tags":["pedagogy","🪴"],"created":"2024-11-03","modified":"2024-11-04","bibliography":true,"permalink":"/30-permanent-notes/constructive-alignment/","dgPassFrontmatter":true,"updated":"2024-11-04"}
+{"title":"Constructive Alignment","aliases":["Backwards Design"],"dg-publish":true,"tags":["pedagogy","🪴"],"created":"2024-11-03","modified":"2024-11-04","permalink":"/30-permanent-notes/constructive-alignment/","dgPassFrontmatter":true,"updated":"2024-11-04"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"title":"Student Development Stages","aliases":["Responsive Teaching","Perry Schema"],"tags":["pedagogy","🌲"],"dg-publish":true,"created":"2024-11-03","modified":"2024-11-04","bibliography":true,"permalink":"/30-permanent-notes/student-development-stages/","dgPassFrontmatter":true,"updated":"2024-11-04"}
+{"title":"Student Development Stages","aliases":["Responsive Teaching","Perry Schema"],"tags":["pedagogy","🌲"],"dg-publish":true,"created":"2024-11-03","modified":"2024-11-04","permalink":"/30-permanent-notes/student-development-stages/","dgPassFrontmatter":true,"updated":"2024-11-04"}
 ---
 
 
