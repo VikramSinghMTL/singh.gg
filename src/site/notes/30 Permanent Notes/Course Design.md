@@ -5,10 +5,9 @@
 
 Effective course design goes beyond content delivery; it involves creating a structured, intentional learning journey for students. Central to this process is aligning teaching strategies, assessments, and learning objectives to foster meaningful and active engagement.
 
-- **Learning Approaches**: Understanding how students engage with material is essential, whether through surface learning or deep, critical engagement. [[30 Permanent Notes/Learning Approaches\|Read more about deep and surface learning here]].
-- **Student Development Stages**: As students grow, so does their way of understanding and interacting with knowledge. Tailoring teaching to meet these stages supports them in moving from absolute to contextual understanding. [[30 Permanent Notes/Student Development Stages\|Explore the stages of student development here]].
-- **Bloom’s Taxonomy**: Bloom’s revised taxonomy offers a structured way to create clear, actionable learning objectives that progress from basic recall to higher-order thinking skills. [[30 Permanent Notes/Bloom's Taxonomy\|Learn how Bloom’s Taxonomy can shape your objectives]].
-- **Constructive Alignment**: Aligning objectives, teaching strategies, and assessments ensures that students’ learning experiences are cohesive and goal-focused. [[30 Permanent Notes/Constructive Alignment\|Dive into how constructive alignment supports effective teaching]].
+- :LiBrainCog: [[30 Permanent Notes/Student Development Stages\|Student Development Stages]]: As students grow, so does their way of understanding and interacting with knowledge. Tailoring teaching to meet these stages supports them in moving from absolute to contextual understanding.
+- :LiPyramid: [[30 Permanent Notes/Bloom's Taxonomy\|Bloom's Taxonomy]]: Bloom’s revised taxonomy offers a structured way to create clear, actionable learning objectives that progress from basic recall to higher-order thinking skills.
+- :LiArrowsUpFromLine: [[30 Permanent Notes/Constructive Alignment\|Constructive Alignment]]: Aligning objectives, teaching strategies, and assessments ensures that students’ learning experiences are cohesive and goal-focused.
 
 Together, these frameworks provide a roadmap for building courses that engage students in learning that’s both challenging and relevant. Each model adds a layer to course design, helping educators create environments where students don’t just acquire information but actively build understanding.
 
