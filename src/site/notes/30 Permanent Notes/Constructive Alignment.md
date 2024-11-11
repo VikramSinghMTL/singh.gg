@@ -1,5 +1,5 @@
 ---
-{"title":"Constructive Alignment","aliases":["Backwards Design"],"dg-publish":true,"tags":["pedagogy","🪴"],"created":"2024-11-03","modified":"2024-11-04","bibliography":true,"permalink":"/30-permanent-notes/constructive-alignment/","dgPassFrontmatter":true,"updated":"2024-11-04"}
+{"title":"Constructive Alignment","aliases":["Backwards Design"],"dg-publish":true,"tags":["pedagogy","🪴"],"created":"2024-11-03","modified":"2024-11-04","permalink":"/30-permanent-notes/constructive-alignment/","dgPassFrontmatter":true,"updated":"2024-11-04"}
 ---
 
 
@@ -14,3 +14,5 @@ In my computer science courses, I use _constructive alignment_ by designing proj
 ## Challenges
 
 One big challenge with _constructive alignment_ is finding the time to work in meaningful activities without cutting into essential content. Balancing active learning and time constraints can be tricky, especially when there’s a lot of material to cover. But as Ramsden and Baxter Magolda suggest, encouraging students to dive deep into what they’re learning is worth the effort, even if it means rethinking how class time is used [@ramsden2003; @baxtermagolda1992].
+
+[bibliography]

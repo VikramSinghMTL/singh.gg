@@ -1,19 +1,16 @@
 ---
-{"title":"Course Design","aliases":["College Teaching and Course Design","PED-601"],"tags":["pedagogy","🪴"],"created":"2019-10-04","modified":"2024-09-16","dg-publish":true,"permalink":"/30-permanent-notes/course-design/","dgPassFrontmatter":true,"updated":"2024-09-16"}
+{"title":"Course Design","aliases":["College Teaching","PED-601"],"tags":["pedagogy","course-design","🪴"],"created":"2019-10-04","modified":"2024-11-10","dg-publish":true,"permalink":"/30-permanent-notes/course-design/","dgPassFrontmatter":true,"updated":"2024-11-10"}
 ---
 
 
-The shift from a teaching-centered approach to a learning-centered approach is essential in fostering an educational environment where students are active participants. This transition has been articulated by education theorists like Barr and Tagg, as well as Biggs, whose model of _constructive alignment_ has become a cornerstone in modern pedagogy. Instead of focusing on lecture delivery, emphasis should be on designing learning experiences that engage students as active [[30 Permanent Notes/Constructivism\|constructors]] of their knowledge.
+Effective course design goes beyond content delivery; it involves creating a structured, intentional learning journey for students. Central to this process is aligning teaching strategies, assessments, and learning objectives to foster meaningful and active engagement.
 
-**Baxter Magolda’s** work extends this idea by emphasizing the importance of _responsive teaching_—adapting teaching methods to align with students’ diverse ways of knowing, from absolute to contextual. This approach ensures that students are not only participating but are engaged in ways that match their developmental stage, fostering a deeper sense of understanding and independent thought.
+- **Learning Approaches**: Understanding how students engage with material is essential, whether through surface learning or deep, critical engagement. [[30 Permanent Notes/Learning Approaches\|Read more about deep and surface learning here]].
+- **Student Development Stages**: As students grow, so does their way of understanding and interacting with knowledge. Tailoring teaching to meet these stages supports them in moving from absolute to contextual understanding. [[30 Permanent Notes/Student Development Stages\|Explore the stages of student development here]].
+- **Bloom’s Taxonomy**: Bloom’s revised taxonomy offers a structured way to create clear, actionable learning objectives that progress from basic recall to higher-order thinking skills. [[30 Permanent Notes/Bloom's Taxonomy\|Learn how Bloom’s Taxonomy can shape your objectives]].
+- **Constructive Alignment**: Aligning objectives, teaching strategies, and assessments ensures that students’ learning experiences are cohesive and goal-focused. [[30 Permanent Notes/Constructive Alignment\|Dive into how constructive alignment supports effective teaching]].
 
-The shift from a teaching-centered to a learning-centered approach has been explored by various theorists. The Perry Schema, as outlined by William S. Moore, adds a nuanced layer to this shift by explaining how students evolve from seeing knowledge as absolute (dualism) to viewing it as complex and contextual (contextual relativism). This cognitive progression is crucial for educators to consider when designing responsive, student-centered learning experiences that not only impart knowledge but also facilitate the development of critical thinking and personal meaning-making.
-
-The shift from teaching-centered to learning-centered approaches aligns with fostering deeper intellectual development, as described by Erickson, Peters, and Strommer. Effective teaching progresses from helping students memorize content (knowing), to recognizing relationships (understanding), to applying knowledge in complex ways (thinking). This echoes the importance of creating student-centered learning experiences that not only impart content but help students practice and reflect, developing their ability to think critically and learn independently.
-
-Whetten’s principles align with the shift from teaching-centered to learning-centered education by emphasizing course design as the driver of student learning. He supports this through the concept of _backward design_, where learning outcomes inform the development of activities and assessments. This complements Biggs’ _constructive alignment_, Baxter Magolda’s _responsive teaching_, and Moore’s _Perry Schema_ by reinforcing that the planning of what students do is essential for fostering deep learning.
-
-Ramsden’s discussion on deep and surface approaches to learning underscores the importance of designing courses that prioritize meaningful engagement. This insight complements Biggs’ _constructive alignment_ and Whetten’s _backward design_, reinforcing that fostering deep learning is key to effective education. It also aligns with Baxter Magolda’s _responsive teaching_, which supports students’ development through engaging tasks.
+Together, these frameworks provide a roadmap for building courses that engage students in learning that’s both challenging and relevant. Each model adds a layer to course design, helping educators create environments where students don’t just acquire information but actively build understanding.
 
 ## Relevance
 

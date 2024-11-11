@@ -51,8 +51,8 @@ Some key motivational theories relevant to education include Self-Determination 
 - @ryan1983
 - @pintrich2003
 - @papastergiou2009
-- @locke2002
 - @lopez-fernandez2021
+- @locke2002
 - @levesque2006
 - @deci1994
 - @bandura2012
@@ -65,9 +65,9 @@ Student-generated peer code reviews often lack depth and specificity. The feedba
 
 - @indriasari2020
 - @indriasari2023
+- @indriasari2020a
 - @indriasari2021a
 - @indriasari2021
-- @indriasari2020a
 
 { .block-language-dataview}
 
@@ -91,10 +91,10 @@ While gamification relies on extrinsic motivators like rewards and recognition, 
 - @lopez-fernandez2021
 - @llorens-largo2016
 - @indriasari2023
+- @indriasari2020a
 - @jayasinghe2013
 - @indriasari2021a
 - @indriasari2021
-- @indriasari2020a
 - @indriasari2020
 - @goshevski2017
 
@@ -119,9 +119,9 @@ While these authors have extensively studied gamification in the peer code revie
 
 - @indriasari2020
 - @indriasari2023
+- @indriasari2020a
 - @indriasari2021a
 - @indriasari2021
-- @indriasari2020a
 
 { .block-language-dataview}
 

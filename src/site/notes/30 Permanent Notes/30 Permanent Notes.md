@@ -6,6 +6,7 @@
 
 - [[30 Permanent Notes/+ How Computer Science Students Learn\|How Computer Science Students Learn]]
 - [[30 Permanent Notes/+ Pedagogy\|Pedagogy]]
+- [[30 Permanent Notes/Bloom's Taxonomy\|Bloom's Taxonomy]]
 - [[30 Permanent Notes/Code Review Taxonomy\|Code Review Taxonomy]]
 - [[30 Permanent Notes/Computer Science Students and Collaboration\|Computer Science Students and Collaboration]]
 - [[30 Permanent Notes/Computer Science Students and Debugging\|Computer Science Students and Debugging]]
