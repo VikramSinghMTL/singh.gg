@@ -5,7 +5,7 @@
 
 Effective course design goes beyond content delivery; it involves creating a structured, intentional learning journey for students. Central to this process is aligning teaching strategies, assessments, and learning objectives to foster meaningful and active engagement.
 
-- :LiBrainCog: [[30 Permanent Notes/Student Development Stages\|Student Development Stages]]: As students grow, so does their way of understanding and interacting with knowledge. Tailoring teaching to meet these stages supports them in moving from absolute to contextual understanding.
+- :LiSprout: [[30 Permanent Notes/Student Development Stages\|Student Development Stages]]: As students grow, so does their way of understanding and interacting with knowledge. Tailoring teaching to meet these stages supports them in moving from absolute to contextual understanding.
 - :LiPyramid: [[30 Permanent Notes/Bloom's Taxonomy\|Bloom's Taxonomy]]: Bloom’s revised taxonomy offers a structured way to create clear, actionable learning objectives that progress from basic recall to higher-order thinking skills.
 - :LiArrowsUpFromLine: [[30 Permanent Notes/Constructive Alignment\|Constructive Alignment]]: Aligning objectives, teaching strategies, and assessments ensures that students’ learning experiences are cohesive and goal-focused.
 
