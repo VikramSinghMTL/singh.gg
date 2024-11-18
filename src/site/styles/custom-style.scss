@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
 
 body {
 	/***
       ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
       IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
    ***/
-	background-image: url('https://www.transparenttextures.com/patterns/classy-fabric.png');
+	background-image: url('https://www.transparenttextures.com/patterns/sandpaper.png');
 
 	.content {
-		font-family: 'Montserrat', sans-serif;
-		font-optical-sizing: auto;
+		font-family: 'Inter', serif;
 		font-weight: 300;
 		font-style: normal;
 
@@ -20,7 +24,7 @@ body {
 		h4,
 		h5,
 		h6 {
-			font-family: 'Nerko One', cursive;
+			font-family: 'Merriweather', sans-serif;
 			font-weight: 400;
 			font-style: normal;
 		}
@@ -41,10 +45,10 @@ body {
 
 			a {
 				text-decoration-color: transparent;
-				color: white;
+				color: var(--text-normal);
 				font-size: 1.25em;
-				font-family: 'Nerko One', cursive;
-				font-weight: 300;
+				font-family: 'Merriweather', sans-serif;
+				font-weight: 700;
 				font-style: normal;
 				padding: 0 20px;
 
@@ -52,18 +56,18 @@ body {
 			}
 
 			a:hover {
-				// color: #babbf1;
-				text-decoration-color: #ef9f76;
+				color: var(--text-muted);
+				// text-decoration-color: #ef9f76;
 				transition: all 0.5s ease;
 			}
 		}
 
 		.name {
-			font-family: 'Nerko One', cursive;
+			font-family: 'Just Another Hand', cursive;
 			font-weight: 400;
 			font-style: normal;
-			font-size: 3em;
-			color: #babbf1;
+			font-size: 4em;
+			color: var(--text-normal);
 			text-decoration: none;
 		}
 	}
@@ -87,12 +91,25 @@ body {
 		margin: 0 5px;
 	}
 
+	// Remove borders from tables with only a header row
+	&.markdown-rendered table:has(thead):not(:has(tbody)) th,
+	&.markdown-rendered table:has(thead):not(:has(tbody)) td {
+		border: none;
+	}
+
+	main p {
+		line-height: 1.75;
+	}
+
 	.callout {
-		padding: 10px;
-		font-family: 'Montserrat', sans-serif;
-		font-optical-sizing: auto;
-		font-weight: 300;
-		font-style: normal;
+		// padding: 10px;
+		// font-family: 'Merriweather', serif;
+		// font-style: normal;
+		// font-style: normal;
+	}
+
+	.callout-content {
+		background-color: var(--background-primary);
 	}
 
 	.callout[data-callout='questions'] {
@@ -114,10 +131,87 @@ body {
 		--callout-color: 203, 166, 247;
 		--callout-icon: lucide-lightbulb;
 	}
+
+	.callout[data-callout='cite'] {
+		// --callout-color: 203, 166, 247;
+		--callout-icon: lucide-quote;
 	}
 
-// Remove borders from tables with only a header row
-.markdown-rendered table:has(thead):not(:has(tbody)) th,
-.markdown-rendered table:has(thead):not(:has(tbody)) td {
-	border: none;
+	.bibliography-contents .csl-entry {
+		font-size: 0.65em;
+		margin-left: 2.5em;
+		margin-bottom: 1em;
+		text-indent: -2.5em;
+		line-height: 2;
+	}
+
+	footer {
+		color: var(--text-normal);
+		padding: 20px 0;
+		flex-shrink: 0;
+
+		a {
+			color: var(--text-muted);
+			text-decoration: none;
+		}
+	}
+
+	.site-footer {
+		width: 100%;
+	}
+
+	.footer-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 20px;
+	}
+
+	.footer-bottom {
+		text-align: center;
+		padding: 10px;
+		font-size: 14px;
+	}
+
+	.footer-bottom p {
+		margin: 0;
+	}
+
+	/* Sticky footer style */
+	body {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.site-footer {
+		margin-top: auto;
+	}
+
+	/* Use :has() to target only lists with <i data-lucide> icons */
+	&.markdown-rendered ul:has(svg),
+	&.markdown-rendered ol:has(svg) {
+		list-style-type: none;
+		padding-inline-start: 15px;
+	}
+
+	/* Additional styling for list items with icons */
+	ul:has(svg) li,
+	ol:has(svg) li {
+		position: relative;
+		padding-left: 30px;
+	}
+
+	ul:has(svg) li svg,
+	ol:has(svg) li svg {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 1.2em;
+		height: 1.7em;
+		color: currentColor;
+		pointer-events: none;
+	}
 }
