@@ -1,6 +1,55 @@
+<script src="https://unpkg.com/lucide@latest"></script>
+
 <script>
 	mediumZoom('main img', {
 		margin: 24,
 		background: 'rgba(0, 0, 0, 0.9)',
+	});
+
+	document.addEventListener("DOMContentLoaded", () => {
+		function toKebabCase(str) {
+					return str.replace(/([a-z])([A-Z])/g, '$1-$2')
+							.replace(/([A-Z])([A-Z][a-z])/g, '$1-$2')
+							.toLowerCase();
+				}
+
+				// Recursive function to replace `:LiIconName:` in text nodes
+				function replaceIconsInTextNodes(node) {
+					// Iterate over each child node
+					node.childNodes.forEach(child => {
+						if (child.nodeType === Node.TEXT_NODE && child.textContent.includes(":Li")) {
+							const parts = child.textContent.split(/(:Li[a-zA-Z]+:)/);
+
+							// Create a document fragment to hold new nodes
+							const fragment = document.createDocumentFragment();
+
+							parts.forEach(part => {
+								if (part.match(/:Li([a-zA-Z]+):/)) {
+									const iconName = part.match(/:Li([a-zA-Z]+):/)[1];
+									const kebabName = toKebabCase(iconName);
+
+									// Create an icon element
+									const iconElement = document.createElement("i");
+									iconElement.setAttribute("data-lucide", kebabName);
+									fragment.appendChild(iconElement);
+								} else {
+									// Append regular text
+									fragment.appendChild(document.createTextNode(part));
+								}
+							});
+
+							// Replace the original text node with the fragment
+							child.replaceWith(fragment);
+						} else if (child.nodeType === Node.ELEMENT_NODE) {
+							replaceIconsInTextNodes(child); // Recurse for element nodes
+						}
+					});
+				}
+
+				// Apply replacement on the body (or a specific container if needed)
+				replaceIconsInTextNodes(document.body);
+
+				// Initialize Lucide icons
+				lucide.createIcons();
 	});
 </script>
