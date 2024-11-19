@@ -29,5 +29,3 @@ I’ve even built a tool, [course.tools](https://course.tools), to make creating
 ## Why Bloom’s Taxonomy Still Matters
 
 Bloom’s Taxonomy remains a foundational tool because it doesn’t just focus on what to teach, but on how to help students engage with material on different cognitive levels. Incorporating Bloom’s Taxonomy into course design is more than just ticking boxes—it’s about ensuring that every objective, activity, and assessment [[30 Permanent Notes/Constructive Alignment\|aligns]] with the intended learning outcomes. It’s a tool to help teachers take students on a journey from basic recall to insightful, [[30 Permanent Notes/Constructivism\|constructive]] learning.
-
-[bibliography]
