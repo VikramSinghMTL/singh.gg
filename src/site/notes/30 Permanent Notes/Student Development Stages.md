@@ -1,5 +1,5 @@
 ---
-{"title":"Student Development Stages","aliases":["Responsive Teaching","Perry Schema"],"tags":["pedagogy","course-design","🌲"],"dg-publish":true,"created":"2024-11-03","modified":"2024-11-08","permalink":"/30-permanent-notes/student-development-stages/","dgPassFrontmatter":true,"updated":"2024-11-08"}
+{"title":"Student Development Stages","aliases":["Responsive Teaching","Perry Schema"],"tags":["pedagogy","course-design","🌲"],"dg-publish":true,"created":"2024-11-03","modified":"2024-11-19","permalink":"/30-permanent-notes/student-development-stages/","dgPassFrontmatter":true,"updated":"2024-11-19"}
 ---
 
 
@@ -21,5 +21,3 @@ As students start to transition, things get a little more complicated. In Perry�
 Then we get to the more advanced stages, Perry’s _Contextual Relativism_ and Baxter Magolda’s _Contextual Knowing_, where students fully embrace a deep learning approach. At this point, they’re not just taking in information; they’re thinking critically, making connections, and applying what they know in new ways. Ramsden’s concept of deep learning really shines here, as students learn to analyze, synthesize, and create. This also matches up with Erickson et al.’s higher level of _thinking_, where students don’t just understand—they apply and adapt knowledge thoughtfully. Teaching strategies for this stage should involve activities like case studies and complex projects, which encourage students to think independently and apply their knowledge in meaningful ways, fully embodying Barr and Tagg’s _Learning Paradigm_ by placing students in charge of their own intellectual development.
 
 Together, these four models highlight how teaching needs to adapt as students move from surface-level learning to a place where depth, understanding, and real-world application take center stage.
-
-[bibliography]
