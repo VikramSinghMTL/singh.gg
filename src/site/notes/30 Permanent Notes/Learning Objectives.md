@@ -1,5 +1,5 @@
 ---
-{"title":"Learning Objectives","alias":"Learning Outcomes","dg-publish":true,"dg-content-classes":["comic"],"tags":["pedagogy","🪴"],"created":"2024-11-19","modified":"2024-11-20","permalink":"/30-permanent-notes/learning-objectives/","contentClasses":"comic","dgPassFrontmatter":true,"updated":"2024-11-20"}
+{"title":"Learning Objectives","aliases":["Learning Outcomes"],"dg-publish":true,"tags":["pedagogy","🪴"],"created":"2024-11-19","modified":"2024-11-20","permalink":"/30-permanent-notes/learning-objectives/","dgPassFrontmatter":true,"updated":"2024-11-20"}
 ---
 
 
@@ -19,7 +19,7 @@ Effective learning objectives are:
 
 1. **Specific**: Clearly state what students will achieve.
 2. **Measurable**: Allow for assessment of whether students have met the objective.
-3. **Action-Oriented**: Use active verbs that describe observable behaviors.
+3. **Action-Oriented**: Use active verbs that describe observable behaviours.
 4. **Achievable**: Realistic within the scope of the course.
 5. **Relevant**: Tied to course goals and meaningful for students.
 
