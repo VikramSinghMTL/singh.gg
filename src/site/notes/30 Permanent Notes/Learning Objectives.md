@@ -1,15 +1,17 @@
 ---
-{"title":"Learning Objectives","alias":"Learning Outcomes","dg-publish":true,"tags":["pedagogy","🪴"],"created":"2024-11-19","modified":"2024-11-19","permalink":"/30-permanent-notes/learning-objectives/","dgPassFrontmatter":true,"updated":"2024-11-19"}
+{"title":"Learning Objectives","alias":"Learning Outcomes","dg-publish":true,"dg-content-classes":["comic"],"tags":["pedagogy","🪴"],"created":"2024-11-19","modified":"2024-11-19","permalink":"/30-permanent-notes/learning-objectives/","contentClasses":"comic","dgPassFrontmatter":true,"updated":"2024-11-19"}
 ---
 
 
-![Learning Objectives-1.png|400](/img/user/00%20System/Assets/Learning%20Objectives-1.png)
-
-Lion: _“What’s your learning objective for today?”_
-
-Zebra: _“Survive. You?”_
-
-Lion: _“Identify common prey animals.”_
+> [!note]
+>
+> ![Learning Objectives-1.png|400](/img/user/00%20System/Assets/Learning%20Objectives-1.png)
+>
+> Zebra: _“What’s your learning objective for today?”_
+> 
+> Lion: _“Identify common prey animals. You?”_
+> 
+> Zebra: _“Survive.”_
 
 ## Learning Objectives
 
