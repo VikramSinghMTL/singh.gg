@@ -15,19 +15,15 @@ Without clear objectives, it’s easy for a course to drift away from its intend
 
 ### Writing Effective Learning Objectives
 
-Effective learning objectives are:
+Using the [[30 Permanent Notes/SMART Goals\|SMART Goals]] framework, learning objectives should be:
 
-1. **Specific**: Clearly state what students will achieve.
+1. **Specific**: Clearly state what students will achieve using active verbs that describe observable behaviours.
 2. **Measurable**: Allow for assessment of whether students have met the objective.
-3. **Action-Oriented**: Use active verbs that describe observable behaviours.
-4. **Achievable**: Realistic within the scope of the course.
-5. **Relevant**: Tied to course goals and meaningful for students.
+3. **Achievable**: Realistic within the scope of the course.
+4. **Relevant**: Tied to the ministry-given course competencies.
+5. **Time-bound**: Confined to the standard 15-week semester.
 
-One of the best tools for writing objectives is [[30 Permanent Notes/Bloom's Taxonomy\|Bloom's Taxonomy]], which categorizes cognitive processes into levels ranging from basic recall to advanced creation. Using Bloom's active verbs like "analyze," "evaluate," or "design" ensures objectives target the right level of learning.
-
-### Building Effective Learning Objectives
-
-The way Bloom’s revised taxonomy frames learning objectives can help teachers map out clear, intentional paths for student growth. When creating objectives, it’s helpful to focus on what students should be able to _do_ by the end of a lesson or course. For example, if the objective is to help students understand data structures in computer science, a lower-level objective might be “define common data structures” (Factual, Remember), while a higher-level one could be “compare the efficiency of different sorting algorithms” (Conceptual, Analyze).
+One of the best frameworks for writing objectives is [[30 Permanent Notes/Bloom's Taxonomy\|Bloom's Taxonomy]], which categorizes cognitive processes into levels ranging from basic recall to advanced creation. Using Bloom's active verbs like "analyze," "evaluate," or "design" ensures objectives target the right level of learning. The way Bloom’s revised taxonomy frames learning objectives can help teachers map out clear, intentional paths for student growth. When creating objectives, it’s helpful to focus on what students should be able to _do_ by the end of a lesson or course. For example, if the objective is to help students understand data structures in computer science, a lower-level objective might be “define common data structures” (Factual, Remember), while a higher-level one could be “compare the efficiency of different sorting algorithms” (Conceptual, Analyze).
 
 [I’ve even built a tool](https://course.tools) to make creating learning objectives easier. It’s designed to help educators build a table of objectives organized by Bloom’s levels and the Knowledge Dimension. This setup is especially helpful for tracking the depth and progression of student learning across a course.
 

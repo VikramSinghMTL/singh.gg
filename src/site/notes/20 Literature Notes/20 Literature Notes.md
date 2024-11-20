@@ -16,6 +16,7 @@
 - [[20 Literature Notes/chiang2011\|Using Game-Based Learning and Interactive Peer Assessment to Improve Career Goals and Objectives for College Students]]
 - [[20 Literature Notes/cross1987\|Peer group software reviews in university education for software engineering (abstract only)]]
 - [[20 Literature Notes/deci1994\|Promoting Self‐determined Education]]
+- [[20 Literature Notes/doran1981\|There’s a S.M.A.R.T. way to write management’s goals and objectives]]
 - [[20 Literature Notes/erickson2009\|Knowing, Understanding, Thinking, and Learning How to Learn - The Goals of First-Year Instruction]]
 - [[20 Literature Notes/farber2017\|Game-Based Learning in Action]]
 - [[20 Literature Notes/farber2017a\|Gamify your classroom - a field guide to game-based learning]]

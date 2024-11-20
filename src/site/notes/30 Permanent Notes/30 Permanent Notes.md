@@ -20,11 +20,13 @@
 - [[30 Permanent Notes/Goal-Setting Theory\|Goal-Setting Theory]]
 - [[30 Permanent Notes/Improving Peer Code Review Quality with Gamification\|Improving Peer Code Review Quality with Gamification]]
 - [[30 Permanent Notes/Learning Approaches\|Learning Approaches]]
+- [[30 Permanent Notes/Learning Objectives\|Learning Objectives]]
 - [[30 Permanent Notes/Metacognition\|Metacognition]]
 - [[30 Permanent Notes/Motivation\|Motivation]]
 - [[30 Permanent Notes/Peer Code Review Rubric\|Peer Code Review Rubric]]
 - [[30 Permanent Notes/Peer Feedback and Gamification\|Peer Feedback and Gamification]]
 - [[30 Permanent Notes/Self-Determination Theory\|Self-Determination Theory]]
+- [[30 Permanent Notes/SMART Goals\|SMART Goals]]
 - [[30 Permanent Notes/Student Development Stages\|Student Development Stages]]
 
 
