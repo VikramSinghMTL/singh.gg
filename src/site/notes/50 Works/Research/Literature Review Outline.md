@@ -66,8 +66,8 @@ Student-generated peer code reviews often lack depth and specificity. The feedba
 - @indriasari2020
 - @indriasari2023
 - @indriasari2020a
-- @indriasari2021a
 - @indriasari2021
+- @indriasari2021a
 
 { .block-language-dataview}
 
@@ -93,8 +93,8 @@ While gamification relies on extrinsic motivators like rewards and recognition, 
 - @indriasari2023
 - @indriasari2020a
 - @jayasinghe2013
-- @indriasari2021a
 - @indriasari2021
+- @indriasari2021a
 - @indriasari2020
 - @goshevski2017
 
@@ -120,8 +120,8 @@ While these authors have extensively studied gamification in the peer code revie
 - @indriasari2020
 - @indriasari2023
 - @indriasari2020a
-- @indriasari2021a
 - @indriasari2021
+- @indriasari2021a
 
 { .block-language-dataview}
 

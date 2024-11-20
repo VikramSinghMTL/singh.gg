@@ -41,7 +41,7 @@ I often observe students resorting to _surface learning_ behaviors, such as pani
 
 “But it takes too much in class time!” a lot of teachers will refute. To them, I say remember the “what they need to know and what is nice for them to know,” and if you focus on the need to know, I think you can really fit in everything you need to without fearing losing lecture time. Because when you lecture, you have absolutely no idea if they’re even learning anything. As Baxter Magolda suggests, evaluating students in a way that encourages thinking and application, rather than rote memorization, is vital to creating a meaningful, responsive educational experience.
 
-![The Shift from Teaching to Learning Paradigm-1.png|[Tiger by Bud Blake](/img/user/00%20System/Assets/The%20Shift%20from%20Teaching%20to%20Learning%20Paradigm-1.png)
+![The Shift from Teaching to Learning Paradigm-1.png](/img/user/00%20System/Assets/The%20Shift%20from%20Teaching%20to%20Learning%20Paradigm-1.png)
 
 ## References
 

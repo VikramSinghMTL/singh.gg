@@ -7,7 +7,7 @@ Bloom’s Taxonomy has been around since the 1950s, giving teachers a structured
 
 At its core, Bloom’s Taxonomy organizes cognitive tasks into levels, from basic recall to complex analysis and creation. The revised version is particularly focused on action-oriented verbs—words like “describe,” “analyze,” and “create”—because they give teachers clarity in what they want students to achieve. Why verbs? Verbs make the learning outcomes observable and measurable, which is crucial for gauging whether students actually “get it” or are just nodding along. The intent is to shift the focus from static knowledge to dynamic skills, creating active, [[30 Permanent Notes/Learning Approaches\|deep learning experiences]] [@ramsden2003].
 
-## The Knowledge and Cognitive Dimensions
+## Dimensions
 
 Krathwohl’s revision brings in two key dimensions: the _Knowledge Dimension_ and the _Cognitive Process Dimension_. The Knowledge Dimension breaks down into four types:
 
@@ -17,14 +17,6 @@ Krathwohl’s revision brings in two key dimensions: the _Knowledge Dimension_ a
 - **Metacognitive**: Reflecting on one’s own learning and thought processes (think of this as “thinking about thinking”).
 
 Then we have the _Cognitive Process Dimension_, which ranks actions from lower-order thinking skills (like remembering) to higher-order skills (like creating). The idea is to build learning objectives that help students not just remember facts, but actually _use_ and _transform_ knowledge; where students progress from basic knowing to [[30 Permanent Notes/Student Development Stages\|higher-order thinking]] by practicing increasingly complex skills [@erickson2009].
-
-## Building Effective Learning Objectives
-
-The way Bloom’s revised taxonomy frames learning objectives can help teachers map out clear, intentional paths for student growth. When creating objectives, it’s helpful to focus on what students should be able to _do_ by the end of a lesson or course. For example, if the objective is to help students understand data structures in computer science, a lower-level objective might be “define common data structures” (Factual, Remember), while a higher-level one could be “compare the efficiency of different sorting algorithms” (Conceptual, Analyze).
-
-[I’ve even built a tool](https://course.tools) to make creating learning objectives easier. It’s designed to help educators build a table of objectives organized by Bloom’s levels and the Knowledge Dimension. This setup is especially helpful for tracking the depth and progression of student learning across a course.
-
-![Bloom's Taxonomy-1.png](/img/user/00%20System/Assets/Bloom's%20Taxonomy-1.png)
 
 ## Why Bloom’s Taxonomy Still Matters
 

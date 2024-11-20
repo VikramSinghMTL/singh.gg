@@ -64,9 +64,9 @@ If this were a Venn diagram, I would have 3 circles for gamification, peer feedb
 | [[20 Literature Notes/urh2015\|urh2015]]           | The Model for Introduction of Gamification into E-learning in Higher Education         |
 | [[20 Literature Notes/lynch2018\|lynch2018]]       | Play anything - The pleasure of limits, the uses of boredom, and the secret of games   |
 | [[20 Literature Notes/li2011\|li2011]]             | PeerSpace - An Online Collaborative Learning Environment for Computer Science Students |
-| [[20 Literature Notes/boller2017\|boller2017]]     | Play to Learn - Everything You Need to Know About Designing Effective Learning Games   |
 | [[20 Literature Notes/farber2017a\|farber2017a]]   | Gamify your classroom - a field guide to game-based learning                           |
 | [[20 Literature Notes/farber2017\|farber2017]]     | Game-Based Learning in Action                                                          |
+| [[20 Literature Notes/boller2017\|boller2017]]     | Play to Learn - Everything You Need to Know About Designing Effective Learning Games   |
 | [[20 Literature Notes/al-azawi2016\|al-azawi2016]] | Educational Gamification Vs. Game Based Learning - Comparative Study                   |
 
 { .block-language-dataview}
@@ -87,7 +87,6 @@ If this were a Venn diagram, I would have 3 circles for gamification, peer feedb
 
 | File                                                                | Title                                                                                                                                        |
 | ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| [[20 Literature Notes/levesque2006\|levesque2006]]               | A Theory-Based Integrative Model for Learning and Motivation in Higher Education                                                             |
 | [[20 Literature Notes/taing2013\|taing2013]]                     | The relationship between learning goal orientation, goal setting, and performance - a longitudinal study - Goal orientation and goal setting |
 | [[20 Literature Notes/seifert2004\|seifert2004]]                 | Understanding student motivation                                                                                                             |
 | [[20 Literature Notes/ryan1983\|ryan1983]]                       | Relation of reward contingency and interpersonal context to intrinsic motivation - A review and test using cognitive evaluation theory.      |
@@ -97,11 +96,12 @@ If this were a Venn diagram, I would have 3 circles for gamification, peer feedb
 | [[20 Literature Notes/lopez-fernandez2021\|lopez-fernandez2021]] | Comparing Traditional Teaching and Game-Based Learning Using Teacher-Authored Games on Computer Science Education                            |
 | [[20 Literature Notes/locke2002\|locke2002]]                     | Building a practically useful theory of goal setting and task motivation - A 35-year odyssey.                                                |
 | [[20 Literature Notes/llorens-largo2016\|llorens-largo2016]]     | Gamification of the Learning Process - Lessons Learned                                                                                       |
-| [[20 Literature Notes/jayasinghe2013\|jayasinghe2013]]           | Game based learning vs. gamification from the higher education students' perspective                                                         |
+| [[20 Literature Notes/levesque2006\|levesque2006]]               | A Theory-Based Integrative Model for Learning and Motivation in Higher Education                                                             |
 | [[20 Literature Notes/indriasari2023\|indriasari2023]]           | Gamification improves the quality of student peer code review                                                                                |
-| [[20 Literature Notes/indriasari2021a\|indriasari2021a]]         | Improving Student Peer Code Review Using Gamification                                                                                        |
-| [[20 Literature Notes/indriasari2021\|indriasari2021]]           | Investigating Accuracy and Perceived Value of Feedback in Peer Code Review Using Gamification                                                |
 | [[20 Literature Notes/indriasari2020a\|indriasari2020a]]         | Gamification of student peer review in education - A systematic literature review                                                            |
+| [[20 Literature Notes/jayasinghe2013\|jayasinghe2013]]           | Game based learning vs. gamification from the higher education students' perspective                                                         |
+| [[20 Literature Notes/indriasari2021\|indriasari2021]]           | Investigating Accuracy and Perceived Value of Feedback in Peer Code Review Using Gamification                                                |
+| [[20 Literature Notes/indriasari2021a\|indriasari2021a]]         | Improving Student Peer Code Review Using Gamification                                                                                        |
 | [[20 Literature Notes/indriasari2020\|indriasari2020]]           | Gamification of student peer review in education - A systematic literature review                                                            |
 | [[20 Literature Notes/goshevski2017\|goshevski2017]]             | A Review of Gamification Platforms for Higher Education                                                                                      |
 | [[20 Literature Notes/deci1994\|deci1994]]                       | Promoting Self‐determined Education                                                                                                          |
@@ -116,16 +116,16 @@ If this were a Venn diagram, I would have 3 circles for gamification, peer feedb
 | [[20 Literature Notes/polito2021\|polito2021]]                   | A gamified web based system for computer programming learning                                                                |
 | [[20 Literature Notes/polito2019\|polito2019]]                   | 2TSW Automated Assessment of Computer Programming Assignments, in a Gamified Web Based System                                |
 | [[20 Literature Notes/ortiz2016\|ortiz2016]]                     | Gamification in Higher Education and Stem - A Systematic Review of Literature                                                |
-| [[20 Literature Notes/oktaviati2018\|oktaviati2018]]             | The Impact of Using Gamification in Learning Computer Science for Students in University                                     |
 | [[20 Literature Notes/narasareddygari2018\|narasareddygari2018]] | Gamification in Computer Science Education - a Systematic Literature Review                                                  |
+| [[20 Literature Notes/oktaviati2018\|oktaviati2018]]             | The Impact of Using Gamification in Learning Computer Science for Students in University                                     |
 | [[20 Literature Notes/llorens-largo2016\|llorens-largo2016]]     | Gamification of the Learning Process - Lessons Learned                                                                       |
 | [[20 Literature Notes/li2013\|li2013]]                           | Engaging Computer Science Students through Gamification in an Online Social Network Based Collaborative Learning Environment |
-| [[20 Literature Notes/jayasinghe2013\|jayasinghe2013]]           | Game based learning vs. gamification from the higher education students' perspective                                         |
 | [[20 Literature Notes/iosup2014\|iosup2014]]                     | An experience report on using gamification in technical higher education                                                     |
 | [[20 Literature Notes/indriasari2023\|indriasari2023]]           | Gamification improves the quality of student peer code review                                                                |
-| [[20 Literature Notes/indriasari2021a\|indriasari2021a]]         | Improving Student Peer Code Review Using Gamification                                                                        |
-| [[20 Literature Notes/indriasari2021\|indriasari2021]]           | Investigating Accuracy and Perceived Value of Feedback in Peer Code Review Using Gamification                                |
 | [[20 Literature Notes/indriasari2020a\|indriasari2020a]]         | Gamification of student peer review in education - A systematic literature review                                            |
+| [[20 Literature Notes/jayasinghe2013\|jayasinghe2013]]           | Game based learning vs. gamification from the higher education students' perspective                                         |
+| [[20 Literature Notes/indriasari2021\|indriasari2021]]           | Investigating Accuracy and Perceived Value of Feedback in Peer Code Review Using Gamification                                |
+| [[20 Literature Notes/indriasari2021a\|indriasari2021a]]         | Improving Student Peer Code Review Using Gamification                                                                        |
 | [[20 Literature Notes/indriasari2020\|indriasari2020]]           | Gamification of student peer review in education - A systematic literature review                                            |
 | [[20 Literature Notes/ibanez2014\|ibanez2014]]                   | Gamification for Engaging Computer Science Students in Learning Activities - A Case Study                                    |
 | [[20 Literature Notes/garcia-iruela2020\|garcia-iruela2020]]     | Gamification and Computer Science Students’ Activity                                                                         |
@@ -142,9 +142,9 @@ If this were a Venn diagram, I would have 3 circles for gamification, peer feedb
 | [[20 Literature Notes/perez-quinones2009\|perez-quinones2009]] | Exploring Peer Review in the Computer Science Classroom                                       |
 | [[20 Literature Notes/li2006\|li2006]]                         | Using Peer Review to Assess Coding Standards – A Case Study                                   |
 | [[20 Literature Notes/indriasari2023\|indriasari2023]]         | Gamification improves the quality of student peer code review                                 |
-| [[20 Literature Notes/indriasari2021a\|indriasari2021a]]       | Improving Student Peer Code Review Using Gamification                                         |
-| [[20 Literature Notes/indriasari2021\|indriasari2021]]         | Investigating Accuracy and Perceived Value of Feedback in Peer Code Review Using Gamification |
 | [[20 Literature Notes/indriasari2020a\|indriasari2020a]]       | Gamification of student peer review in education - A systematic literature review             |
+| [[20 Literature Notes/indriasari2021\|indriasari2021]]         | Investigating Accuracy and Perceived Value of Feedback in Peer Code Review Using Gamification |
+| [[20 Literature Notes/indriasari2021a\|indriasari2021a]]       | Improving Student Peer Code Review Using Gamification                                         |
 | [[20 Literature Notes/indriasari2020\|indriasari2020]]         | Gamification of student peer review in education - A systematic literature review             |
 | [[20 Literature Notes/hundhausen2013\|hundhausen2013]]         | Talking about code - Integrating pedagogical code reviews into early computing courses        |
 | [[20 Literature Notes/hamer2015\|hamer2015]]                   | A comparison of peer and tutor feedback                                                       |
