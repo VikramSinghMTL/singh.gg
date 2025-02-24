@@ -1,6 +1,7 @@
 ---
-{"title":"Works","created":"2024-09-14","modified":"2024-10-30","dg-publish":true,"dg-permalink":"works","permalink":"/works/","dgPassFrontmatter":true,"updated":"2024-10-30"}
+{"title":"Works","created":"2024-09-14","modified":"2025-02-23","dg-publish":true,"dg-permalink":"works","permalink":"/works/","dgPassFrontmatter":true,"updated":"2025-02-23"}
 ---
+
 
 
 
@@ -16,9 +17,7 @@
 - [[50 Works/My Philosophy of Education\|My Philosophy of Education]]
 - **Pedagogy of Digital Learning**
 	- **assets**
-
 	- **imgs**
-
 	- [[50 Works/Pedagogy of Digital Learning/PED 624 Micro-Teaching\|PED 624 Micro-Teaching]]
 	- [[50 Works/Pedagogy of Digital Learning/Presentation\|Presentation]]
 	- [[50 Works/Pedagogy of Digital Learning/README\|README]]
