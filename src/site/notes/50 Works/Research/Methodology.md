@@ -1,11 +1,13 @@
 ---
-{"title":"Methodology","created":"2024-03-06","tags":null,"dg-publish":true,"modified":"2024-09-13","permalink":"/50-works/research/methodology/","dgPassFrontmatter":true,"updated":"2024-09-13"}
+{"title":"Methodology","tags":null,"dg-publish":true,"created":"2024-03-06","modified":"2025-02-21","permalink":"/50-works/research/methodology/","dgPassFrontmatter":true,"updated":"2025-02-21"}
 ---
 
 
 This project is grounded in the existing literature on PCR, the application of motivational theories (specifically SDT) to education, and the use of GBL in CS. It will contribute to the field by exploring a novel approach to a persistent challenge in CS education–how to cultivate the student motivation essential for effective PCR and the development of crucial software development skills.
 
 ## 4.1 Research Questions
+
+==Stick the questions in the intro paragraph above?==
 
 1. Does a game-based learning intervention increase the quality of feedback provided during CS PCR?
 2. Does the game-based learning intervention influence students' perceived competence, autonomy, and relatedness, as conceptualized by SDT?

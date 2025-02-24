@@ -4,7 +4,6 @@
 
 
 
-
 - [[10 Fleeting Notes/A Brief History & Ethos of the Digital Garden\|A Brief History & Ethos of the Digital Garden]]
 - [[10 Fleeting Notes/Human beings not human doings\|Human beings not human doings]]
 - [[10 Fleeting Notes/Keys to Success\|Keys to Success]]

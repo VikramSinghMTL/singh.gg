@@ -5,6 +5,7 @@
 
 
 - [[20 Literature Notes/ahmad2020\|The Impact of Gamification on Learning Outcomes of Computer Science Majors]]
+- [[20 Literature Notes/akyol2011\|Assessing metacognition in an online community of inquiry]]
 - [[20 Literature Notes/al-azawi2016\|Educational Gamification Vs. Game Based Learning - Comparative Study]]
 - [[20 Literature Notes/allen2010\|Getting Things Done]]
 - [[20 Literature Notes/bandura2012\|On the Functional Properties of Perceived Self-Efficacy Revisited]]
@@ -14,6 +15,7 @@
 - [[20 Literature Notes/boller2017\|Play to Learn - Everything You Need to Know About Designing Effective Learning Games]]
 - [[20 Literature Notes/butler2016\|Gamification to Engage and Motivate Students to Achieve Computer Science Learning Goals]]
 - [[20 Literature Notes/chiang2011\|Using Game-Based Learning and Interactive Peer Assessment to Improve Career Goals and Objectives for College Students]]
+- [[20 Literature Notes/coyle2023\|Is AI a Valid Source]]
 - [[20 Literature Notes/cross1987\|Peer group software reviews in university education for software engineering (abstract only)]]
 - [[20 Literature Notes/deci1994\|Promoting Self‐determined Education]]
 - [[20 Literature Notes/doran1981\|There’s a S.M.A.R.T. way to write management’s goals and objectives]]
@@ -36,6 +38,7 @@
 - [[20 Literature Notes/indriasari2023\|Gamification improves the quality of student peer code review]]
 - [[20 Literature Notes/iosup2014\|An experience report on using gamification in technical higher education]]
 - [[20 Literature Notes/jayasinghe2013\|Game based learning vs. gamification from the higher education students' perspective]]
+- [[20 Literature Notes/keengwe2011\|Fostering Meaningful Student Learning Through Constructivist Pedagogy and Technology Integration]]
 - [[20 Literature Notes/krathwohl2002\|A Revision of Bloom's Taxonomy - An Overview]]
 - [[20 Literature Notes/levesque2006\|A Theory-Based Integrative Model for Learning and Motivation in Higher Education]]
 - [[20 Literature Notes/li2006\|Using Peer Review to Assess Coding Standards – A Case Study]]
@@ -46,6 +49,7 @@
 - [[20 Literature Notes/locke2002\|Building a practically useful theory of goal setting and task motivation - A 35-year odyssey.]]
 - [[20 Literature Notes/lopez-fernandez2021\|Comparing Traditional Teaching and Game-Based Learning Using Teacher-Authored Games on Computer Science Education]]
 - [[20 Literature Notes/lynch2018\|Play anything - The pleasure of limits, the uses of boredom, and the secret of games]]
+- [[20 Literature Notes/mishra2006\|Technological Pedagogical Content Knowledge - A Framework for Teacher Knowledge]]
 - [[20 Literature Notes/mohamedmasrop2019\|Games Based Learning for Computer Science Education - A Systematic Literature Review]]
 - [[20 Literature Notes/moore1994\|Student and Faculty Epistemology in the College Classroom - The Perry Schema of Intellectual and Ethical Development]]
 - [[20 Literature Notes/narasareddygari2018\|Gamification in Computer Science Education - a Systematic Literature Review]]

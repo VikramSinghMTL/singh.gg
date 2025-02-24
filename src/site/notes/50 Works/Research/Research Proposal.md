@@ -106,6 +106,8 @@ A substantial body of research exists regarding the use of gamification within C
 
 This review, while by no means exhaustive, seeks to highlight a significant research gap: the absence of studies specifically examining the use of GBL to improve student motivation and feedback quality within CS PCR. This research project aims to address this gap by exploring if the application of GBL would have a direct impact on the quality of feedback given during PCR. Research in this area has the potential to significantly improve the overall effectiveness of PCR as a learning tool within CS education, ultimately better preparing students for success in their future professional careers.
 
+==State the research questions more explicitly here as per DP.==
+
 
 </div></div>
 
@@ -122,6 +124,8 @@ This review, while by no means exhaustive, seeks to highlight a significant rese
 This project is grounded in the existing literature on PCR, the application of motivational theories (specifically SDT) to education, and the use of GBL in CS. It will contribute to the field by exploring a novel approach to a persistent challenge in CS education–how to cultivate the student motivation essential for effective PCR and the development of crucial software development skills.
 
 ## 4.1 Research Questions
+
+==Stick the questions in the intro paragraph above?==
 
 1. Does a game-based learning intervention increase the quality of feedback provided during CS PCR?
 2. Does the game-based learning intervention influence students' perceived competence, autonomy, and relatedness, as conceptualized by SDT?
@@ -199,33 +203,6 @@ Data will be collected around week 7-8 of the Fall 2024 semester in my Game Prog
 
 
 ## Appendix C: CONSENT FORM
-
-
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/50-works/research/code-review-taxonomy/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
-
-<div class="markdown-embed-title">
-
-# Code Review Taxonomy
-
-</div>
-
-
-
-
-- **S+**: Comments in this category provided positive feedback about a speciﬁc element of the code.
-- **S−**: Comments in this category provided speciﬁc negative feedback about the functionality, style or correctness of the program.
-- **S0**: Comments in this category were speciﬁc, but were not obviously positive or negative in tone.
-- **SA**: Comments in this category provided speciﬁc advice to a student about how to improve their code.
-- **G+**: Comments in this category are general comments that are positive. The comments do not relate to a speciﬁc element of style or requirement speciﬁed in the assignment.
-- **G−**: Comments in this category are general negative comments. They do not refer to any speciﬁc elements of code, but are instead comments directed at the overall quality (summary comments).
-- **G0**: Comments in this category are general comments that do not have either positive or negative connotations.
-- **GA**: Comments in this category provided general advice to peers, but did not refer to speciﬁcs within the code.
-- **PV**: Comments in this category were personal in tone in that they recognised that the comments, although being about a submission, were directed to another person. Many of these were combined with one of the other categories, linked with a general or speciﬁc criticism.
-- **OT**: Comments in this category were off-topic.
-
-
-</div></div>
-
 
 
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/50-works/research/consent-form/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">

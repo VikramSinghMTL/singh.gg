@@ -1,5 +1,5 @@
 ---
-{"title":"Gamification of student peer review in education - A systematic literature review","authors":["[[Theresia Devi Indriasari]]","[[Andrew Luxton-Reilly]]","[[Paul Denny]]"],"date":"2020-11-01","processed":true,"tags":["gamification","computer-science","peer-feedback","motivation"],"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/indriasari2020/","dgPassFrontmatter":true,"updated":"2024-09-13"}
+{"title":"Gamification of student peer review in education - A systematic literature review","authors":["[[Theresia Devi Indriasari]]","[[Andrew Luxton-Reilly]]","[[Paul Denny]]"],"date":"2020-11-01","tags":["gamification","computer-science","peer-feedback","motivation"],"processed":true,"dg-publish":true,"created":"2024-08-30","modified":"2024-09-13","permalink":"/20-literature-notes/indriasari2020/","dgPassFrontmatter":true,"updated":"2024-09-13"}
 ---
 
 

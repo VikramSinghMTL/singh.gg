@@ -1,5 +1,5 @@
 ---
-{"title":"SMART Goals","tags":["learning-objectives","pedagogy","frameworks"],"created":"2024-11-04","modified":"2024-11-04","dg-publish":true,"permalink":"/30-permanent-notes/smart-goals/","dgPassFrontmatter":true,"updated":"2024-11-04"}
+{"title":"SMART Goals","tags":["learning-objectives","pedagogy","framework"],"created":"2024-11-04","modified":"2024-11-04","dg-publish":true,"permalink":"/30-permanent-notes/smart-goals/","dgPassFrontmatter":true,"updated":"2024-11-04"}
 ---
 
 

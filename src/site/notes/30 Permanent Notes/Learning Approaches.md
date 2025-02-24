@@ -5,7 +5,7 @@
 
 Deep and surface learning represent two fundamentally different approaches students take toward learning. A *deep learning* approach involves engaging with content to understand it fully, making meaningful connections, and applying knowledge in various contexts. In contrast, a *surface learning* approach is characterized by rote memorization and fulfilling minimum requirements without seeking to understand the material [@ramsden2003]. When course design fosters interest and relevance, students are more likely to adopt deep learning strategies. However, surface learning often results from excessive workload, assessment pressure, or poorly designed courses that prioritize memorization over understanding.
 
-Constructive alignment [@biggs2012] supports deep learning by ensuring that learning objectives, activities, and assessments are aligned to promote comprehensive engagement with the content. This alignment encourages students to relate new material to what they already know and apply it in practical, problem-solving contexts. *[[30 Permanent Notes/Constructive Alignment\|Backwards Design]]* [@whetten2007] further complements the move towards deep learning by focusing course planning on the intended learning outcomes and ensuring that assessments and activities are structured to lead students toward those outcomes. The integration of *responsive teaching* [@baxtermagolda1992] helps tailor these learning experiences to match students' developmental stages, further reinforcing deep engagement.
+Constructive alignment [@biggs2012] supports deep learning by ensuring that learning objectives, activities, and assessments are aligned to promote comprehensive engagement with the content. This alignment encourages students to relate new material to what they already know and apply it in practical, problem-solving contexts. *[[30 Permanent Notes/Backwards Design\|Backwards Design]]* [@whetten2007] further complements the move towards deep learning by focusing course planning on the intended learning outcomes and ensuring that assessments and activities are structured to lead students toward those outcomes. The integration of *responsive teaching* [@baxtermagolda1992] helps tailor these learning experiences to match students' developmental stages, further reinforcing deep engagement.
 
 ## Relevance
 
@@ -17,7 +17,7 @@ Despite efforts to foster deep learning, students often resort to surface approa
 
 ## Related Concepts
 
-- [[30 Permanent Notes/Constructive Alignment\|Constructive Alignment]]
+- [[30 Permanent Notes/Backwards Design\|Backwards Design]]
 - [[Responsive Teaching\|Responsive Teaching]]
 - [[Backward Design\|Backward Design]]
 
