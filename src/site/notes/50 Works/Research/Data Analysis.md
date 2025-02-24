@@ -11,8 +11,8 @@ Since the mean (4.64), median (5), and mode (5) are all relatively high, you can
 
 - The mean being slightly lower than the median and mode suggests a slight left skew (some responses lower than 5 are pulling the average down).
 - Most participants enjoy games: The high central tendency values suggest that gaming is a common and well-liked activity.
-- Minimal disagreement: There are likely very few low ratings (1s or 2s), reinforcing that negative or neutral attitudes toward gaming are uncommon in your sample.
-- Relevance for your study: If your study involves game-based learning or gamification, this is a positive indicator that students are receptive to games as an educational tool.
+- Minimal disagreement: There are likely very few low ratings (1s or 2s), reinforcing that negative or neutral attitudes toward gaming are uncommon in the sample.
+- Relevance for the study: If the study involves game-based learning or gamification, this is a positive indicator that students are receptive to games as an educational tool.
 
 ### Q2. What types of games do you enjoy playing?
 
@@ -34,34 +34,34 @@ Since the mean (4.64), median (5), and mode (5) are all relatively high, you can
 |drinking games!|1|
 |Boulder problems (rock climbing)|1|
 
-Given that your research focuses on peer code review, self-determination theory, and game-based learning in computer science education, here’s how the game preference data connects to your research:
+Given that the research focuses on peer code review, self-determination theory, and game-based learning in computer science education, here’s how the game preference data connects to the research:
 
 1. High Engagement with Games (Strong Suitability for Game-Based Learning)
 
 	- 39 out of 42 respondents enjoy video games (console or PC), and many also enjoy board games (28) and card games (26).
-	- This suggests that your student population is highly receptive to games, making game-based learning (GBL) an appropriate and engaging instructional strategy.
-	- The prevalence of board and card games could also support the design of a peer feedback card game, reinforcing the idea that your approach aligns with student interests.
+	- This suggests that the student population is highly receptive to games, making game-based learning (GBL) an appropriate and engaging instructional strategy.
+	- The prevalence of board and card games could also support the design of a peer feedback card game, reinforcing the idea that the approach aligns with student interests.
 
 2. Potential for Motivation via Game Mechanics (Self-Determination Theory)
 
 	- Self-determination theory (SDT) emphasizes autonomy, competence, and relatedness as key factors for intrinsic motivation.
-	- Since many students already enjoy gaming, your game-based peer review system may leverage intrinsic motivation rather than relying solely on external incentives.
+	- Since many students already enjoy gaming, the game-based peer review system may leverage intrinsic motivation rather than relying solely on external incentives.
 	- The fact that both digital and analogue games are well-represented suggests you could incorporate mechanics from both (e.g., digital badges for competence, cooperative/competitive elements for relatedness, and choices for autonomy).
 
 3. Reinforcing Peer Feedback Through Familiar Mechanics
 
-	- Since many students enjoy strategy-based games like board/card games, they may already have experience with structured rules, decision-making, and turn-based interactions—elements you can integrate into your peer feedback game.
+	- Since many students enjoy strategy-based games like board/card games, they may already have experience with structured rules, decision-making, and turn-based interactions—elements you can integrate into the peer feedback game.
 	- If students already enjoy structured gameplay, it suggests they might engage well with a game-like system that provides clear feedback loops and progression mechanics.
 
 4. Designing the Peer Feedback Game: Digital vs. Analogue
 
-	- Since video games are the most popular but many students also play board and card games, your game can incorporate both digital and physical mechanics:
+	- Since video games are the most popular but many students also play board and card games, the game can incorporate both digital and physical mechanics:
 	- A digital leaderboard or point system to track feedback quality.
 	- A physical or digital card game format where students exchange feedback through structured prompts.
 
 Conclusion: Strong Justification for a Game-Based Feedback System
 
-- The overwhelming preference for games in general reinforces the pedagogical viability of game-based learning in your course.
+- The overwhelming preference for games in general reinforces the pedagogical viability of game-based learning in the course.
 - The diversity in game preferences suggests flexibility: Some students may engage more with digital elements, while others might appreciate structured, turn-based analogue mechanics.
 - This data supports the feasibility of integrating game mechanics into peer code review, aligning with SDT principles to enhance motivation and engagement.
 
@@ -84,7 +84,7 @@ Conclusion: Strong Justification for a Game-Based Feedback System
 	- This could increase intrinsic motivation by making feedback feel like a game challenge rather than a chore.
 3. Balancing Design for Less Frequent Players
 	- A minority (7 play monthly, 4 rarely play) may not engage with overly complex game mechanics.
-	- Your design should ensure onboarding is smooth and feedback tasks are intuitive, even for those who don’t game often.
+	- My design should ensure onboarding is smooth and feedback tasks are intuitive, even for those who don’t game often.
 
 ### Q4. What do you enjoy most about playing games?
 
@@ -126,7 +126,7 @@ Conclusion: Strong Justification for a Game-Based Feedback System
 
 1. Limited Prior Exposure to Game-Based Learning (GBL)
 	- Most students have rarely (24) or never (10) participated in game-based learning.
-	- This suggests that your peer feedback game might be a novel experience, requiring clear onboarding to ensure students understand how it works.
+	- This suggests that the peer feedback game might be a novel experience, requiring clear onboarding to ensure students understand how it works.
 2. Potential for Increased Engagement
 	- Since many students enjoy games but haven’t experienced GBL much, this presents an opportunity to introduce an engaging and effective new learning strategy.
 	- Their lack of prior exposure may lead to curiosity or skepticism, so explaining why and how the game improves feedback will be key.
@@ -221,7 +221,7 @@ The mean (4.79), median (5), and mode (5) for the question “I enjoyed playing 
 4. Implications for Scaling the Approach
 	- Since the game was widely enjoyed, this suggests it could be expanded or iterated upon to further enhance learning outcomes.
 	- If students already enjoyed this implementation, refining mechanics, stakes, or rewards could deepen engagement.
-	- It may also indicate that game-based peer review could be useful in other courses beyond your own.
+	- It may also indicate that game-based peer review could be useful in other courses beyond the own.
 
 ### Q2. Do you have any feedback about the mechanics or design of the card game?
 
@@ -235,7 +235,7 @@ From the extracted comments, the responses indicate the following key takeaways:
 	- This indicates that while the core mechanics were enjoyable, there is room to introduce more complexity or strategic elements.
 3. Appreciation for Competitive Elements
 	- A few students mentioned enjoying the competitive aspects of the game, suggesting that scoring, ranking, or challenge-based elements were motivating factors.
-	- This aligns with your pre-test findings that many students prefer competitive games, reinforcing the idea that leaderboards, point tracking, or win conditions might increase engagement.
+	- This aligns with the pre-test findings that many students prefer competitive games, reinforcing the idea that leaderboards, point tracking, or win conditions might increase engagement.
 
 After reviewing the responses, the feedback can be grouped into three main thematic categories:
 
@@ -245,7 +245,7 @@ After reviewing the responses, the feedback can be grouped into three main thema
 	- “I love this game, it’s very fun to play.”
 	- “It is pretty fun. Publish the game:)”
 	- Implications:
-	- The game successfully made peer feedback engaging, validating your game-based approach.
+	- The game successfully made peer feedback engaging, validating the game-based approach.
 	- High enjoyment suggests that students may be more motivated to engage in the feedback process.
 
 2. Suggestions for Improvement (Expansion)
@@ -253,7 +253,7 @@ After reviewing the responses, the feedback can be grouped into three main thema
 	- “I feel like there should be more power-ups in the game.”
 	- Implications:
 	- Students may appreciate added mechanics or depth to keep the experience fresh.
-	- You could explore adding different power-ups, new challenges, or more player agency in future iterations.
+	- I could explore adding different power-ups, new challenges, or more player agency in future iterations.
 
 3. Competitive & Strategic Elements (Motivation)
 	- Example Responses:
@@ -270,7 +270,7 @@ Next Steps & Recommendations
 
 	- Explore competitive elements carefully, ensuring that students who prefer collaboration are still engaged.
 
-### Q3. Did participating in the card game influence your approach to giving or receiving peer feedback?
+### Q3. Did participating in the card game influence the approach to giving or receiving peer feedback?
 
 #### Positively Motivated by the Game (21 responses)
 
@@ -434,7 +434,7 @@ SDT Interpretation:
 Example Responses:
 
 - “The game made me a bit competitive, which affected the way I gave feedback to have a better chance of winning the card game.”
-- “I think it was just a fun way to try your best at giving peer feedback.”
+- “I think it was just a fun way to try the best at giving peer feedback.”
 - “Its a very good game for peer feedback; we learn more and how to participate in group activities and get feedback from others to improve in learning a lot.”
 - “It’s a fun and unique way of motivating people to put effort in. I wasn’t thinking about it while giving feedback, but it did make me happy that I got a fun little reward for putting in the effort.”
 
@@ -471,7 +471,7 @@ Relatedness	6	The game made peer review feel more social and interactive, increa
 
 External Pressure	2	A small number of students felt pressured, suggesting room for improvement in game balance.
 
-Key Takeaways for Your Research
+Key Takeaways for My Research
 
 1. Competence-driven motivation is the most significant factor (24 students)
 
@@ -508,56 +508,44 @@ Potential Enhancements Based on SDT
 - Ensure that performance tracking is transparent but not punitive.
 - Offer low-stakes game iterations where students can experiment with feedback styles without fear of judgment.
 
-Final Thoughts: How SDT Aligns with Your Research
+Final Thoughts: How SDT Aligns with My Research
 
-- Your game-based peer review aligns strongly with SDT’s competence and relatedness principles, confirming its pedagogical value.
+- My game-based peer review aligns strongly with SDT’s competence and relatedness principles, confirming its pedagogical value.
 - Fine-tuning the balance between extrinsic rewards and intrinsic motivation will make the system more adaptive to different student engagement styles.
 - Game-based learning enhances feedback engagement, making peer assessment more interactive, meaningful, and skill-building.
 
 ## Likert Scale Pre-Post Comparison
 
-### Results
+- Independent T-tests were conducted to compare the pre-test and post-test scores for three categories: Autonomy, Competence, and Relatedness.
+- One-tailed p-values were used since we hypothesized that post-test scores would be higher.
 
-**1. Statistical Tests:**
-
-- **Independent T-tests** were conducted to compare the pre-test and post-test scores for three categories: **Autonomy, Competence, and Relatedness**.
-- **One-tailed p-values** were used since we hypothesized that post-test scores would be higher.
-
-**2. Key Findings:**
-
-|**Category**|**One-Tailed p-value**|**Significance**|**Effect Size (Cohen’s d)**|**Interpretation**|
+|Category|One-Tailed p-value|Significance|Effect Size (Cohen’s d)|Interpretation|
 |---|---|---|---|---|
-|**Autonomy**|**0.0079**|**Significant (p < 0.05)**|**0.55 (moderate effect)**|Meaningful improvement in **Autonomy** after the intervention.|
-|**Competence**|**0.296**|Not significant|**0.12 (small effect)**|No meaningful change in **Competence**.|
-|**Relatedness**|**0.0295**|**Significant (p < 0.05)**|**0.43 (moderate effect)**|Noticeable improvement in **Relatedness**.|
+|Autonomy|0.0079|Significant (p < 0.05)|0.55 (moderate effect)|Meaningful improvement in Autonomy after the intervention.|
+|Competence|0.296|Not significant|0.12 (small effect)|No meaningful change in Competence.|
+|Relatedness|0.0295|Significant (p < 0.05)|0.43 (moderate effect)|Noticeable improvement in Relatedness.|
 
-**3. Interpretation:**
-
-- **Autonomy** significantly improved from pre-test to post-test (**p = 0.0079**), with a **moderate effect size (d = 0.55)**. This suggests that the intervention had a meaningful impact on students’ sense of control over their feedback.
-- **Relatedness** also showed a statistically significant increase (**p = 0.0295**) with a **moderate effect size (d = 0.43)**. This indicates that students felt more connected to their peers after the intervention.
-- **Competence did not significantly change** (**p = 0.296**) and had a **small effect size (d = 0.12)**, meaning the intervention did not have a meaningful impact on students’ perceived competence in giving feedback.
-
-**4. Visual Summary:**
+- Autonomy significantly improved from pre-test to post-test (p = 0.0079), with a moderate effect size (d = 0.55). This suggests that the intervention had a meaningful impact on students’ sense of control over their feedback.
+- Relatedness also showed a statistically significant increase (p = 0.0295) with a moderate effect size (d = 0.43). This indicates that students felt more connected to their peers after the intervention.
+- Competence did not significantly change (p = 0.296) and had a small effect size (d = 0.12), meaning the intervention did not have a meaningful impact on students’ perceived competence in giving feedback.
 
 ![Pre-Test vs. Post-Test Scores by Category.png](/img/user/00%20System/Assets/Pre-Test%20vs.%20Post-Test%20Scores%20by%20Category.png)
 
 A bar chart showed clear increases in **Autonomy and Relatedness**, while **Competence remained nearly the same**, reinforcing the statistical findings.
 
-**Final Takeaway:**
-
-Your intervention **significantly improved Autonomy and Relatedness**, but **did not impact Competence**. This suggests that while students felt more in control and connected to their peers, their confidence in the **quality of their feedback** remained unchanged. You may want to investigate whether additional support is needed to improve their sense of **competence**.
+The intervention **significantly improved Autonomy and Relatedness**, but **did not impact Competence**. This suggests that while students felt more in control and connected to their peers, their confidence in the **quality of their feedback** remained unchanged. I may want to investigate whether additional support is needed to improve their sense of **competence**.
 
 ### Research Question Alignment
 
-Your research question explores whether the game-based learning intervention influenced students’ perceived competence, autonomy, and relatedness, as conceptualized by Self-Determination Theory (SDT) (Deci & Ryan, 2000).
+My research question explores whether the game-based learning intervention influenced students’ perceived competence, autonomy, and relatedness, as conceptualized by Self-Determination Theory (SDT) (Deci & Ryan, 2000).
 
-Your results indicate that the intervention had a significant impact on Autonomy and Relatedness but did not significantly affect Competence. Below, I discuss these findings in relation to SDT.
+My results indicate that the intervention had a significant impact on Autonomy and Relatedness but did not significantly affect Competence. Below, I discuss these findings in relation to SDT.
 
 #### Autonomy – Significant Increase (p = 0.0079, d = 0.55, Moderate Effect)
 
-SDT suggests that Autonomy is enhanced when learners feel they have control over their learning experiences (Deci & Ryan, 2000). In your study, the game-based learning intervention significantly improved Autonomy, suggesting that the game mechanics (e.g., linking feedback quality to game resources) may have reinforced students’ sense of control over their feedback contributions.
+SDT suggests that Autonomy is enhanced when learners feel they have control over their learning experiences (Deci & Ryan, 2000). In the study, the game-based learning intervention significantly improved Autonomy, suggesting that the game mechanics (e.g., linking feedback quality to game resources) may have reinforced students’ sense of control over their feedback contributions.
 
-This aligns with previous research on game-based learning, which indicates that gamification elements—such as choice, agency, and meaningful consequences—can enhance Autonomy by giving students control over their progress (Deterding, 2015). Your findings suggest that integrating game mechanics into peer feedback effectively supports students’ sense of autonomy.
+This aligns with previous research on game-based learning, which indicates that gamification elements—such as choice, agency, and meaningful consequences—can enhance Autonomy by giving students control over their progress (Deterding, 2015). My findings suggest that integrating game mechanics into peer feedback effectively supports students’ sense of autonomy.
 
 #### Competence – No Significant Change (p = 0.296, d = 0.12, Small Effect)
 
@@ -572,13 +560,13 @@ These results suggest that while the game encouraged participation, students may
 
 #### Relatedness – Significant Increase (p = 0.0295, d = 0.43, Moderate Effect)
 
-SDT posits that Relatedness improves when students feel connected to others and perceive their contributions as meaningful (Deci & Ryan, 2000). Your intervention led to a significant increase in Relatedness, suggesting that the peer feedback process within the game helped students feel more connected to their peers.
+SDT posits that Relatedness improves when students feel connected to others and perceive their contributions as meaningful (Deci & Ryan, 2000). My intervention led to a significant increase in Relatedness, suggesting that the peer feedback process within the game helped students feel more connected to their peers.
 
 This aligns with research showing that collaborative game-based learning environments can strengthen peer interactions by making social engagement a meaningful component of the experience (Sailer et al., 2017). The game likely helped students see peer feedback as a shared experience rather than an isolated task, which increased their sense of connection with their classmates.
 
 Implications for Game-Based Learning Design
 
-Your findings contribute to the understanding of game-based learning interventions in higher education. Based on these results, future iterations of the intervention could be improved by:
+My findings contribute to the understanding of game-based learning interventions in higher education. Based on these results, future iterations of the intervention could be improved by:
 1.	Enhancing Competence Support:
 	- Providing structured training on effective feedback before integrating it into the game.
 	- Incorporating real-time feedback or exemplars to help students see what “good feedback” looks like.
@@ -589,7 +577,7 @@ Your findings contribute to the understanding of game-based learning interventio
 	- Encouraging more reflective peer discussions on feedback received.
 	- Creating shared team-based game mechanics where students collaborate on feedback strategies.
 
-Your study demonstrates that game-based learning can effectively support Autonomy and Relatedness, reinforcing SDT’s predictions about the importance of agency and social connection in learning environments. However, the lack of significant change in Competence suggests that game mechanics alone may not be enough to build students’ confidence in giving feedback. Future refinements could include explicit skill-building strategies to complement the motivational benefits of gamification.
+My study demonstrates that game-based learning can effectively support Autonomy and Relatedness, reinforcing SDT’s predictions about the importance of agency and social connection in learning environments. However, the lack of significant change in Competence suggests that game mechanics alone may not be enough to build students’ confidence in giving feedback. Future refinements could include explicit skill-building strategies to complement the motivational benefits of gamification.
 
 ## Code Review Taxonomy Scores
 
