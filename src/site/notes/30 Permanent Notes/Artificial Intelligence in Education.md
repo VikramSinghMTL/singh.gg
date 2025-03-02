@@ -7,7 +7,7 @@ Artificial Intelligence (AI) is reshaping education by influencing learning, ass
 
 ## [[20 Literature Notes/coyle2023\|AI Literacy & Source Evaluation]]
 
-AI-generated text is probabilistic, not factual, meaning it can generate plausible but false information (i.e. hallucinations) [@coyle2023]. Teaching AI literacy involves integrating critical thinking, media literacy, and [[Digital Competency\|digital competency]] into coursework. Students and educators must develop AI literacy skills, including:
+AI-generated text is probabilistic, not factual, meaning it can generate plausible but false information (i.e. hallucinations) [@coyle2023]. Teaching AI literacy involves integrating critical thinking, media literacy, and [[30 Permanent Notes/Digital Competency\|digital competency]] into coursework. Students and educators must develop AI literacy skills, including:
 
   - **Prompt engineering**: Asking AI the right questions to refine responses.
   - **Verification methods**: Cross-checking AI-generated claims with credible sources.

@@ -4,7 +4,6 @@
 
 
 
-
 - **CKAD**
 	- [[50 Works/CKAD/Article Summary\|Article Summary]]
 	- [[50 Works/CKAD/Journal\|Journal]]
@@ -17,15 +16,23 @@
 - [[50 Works/My Philosophy of Education\|My Philosophy of Education]]
 - **Pedagogy of Digital Learning**
 	- **assets**
+
 	- **imgs**
+
+	- [[50 Works/Pedagogy of Digital Learning/Interview Notes\|Interview Notes]]
 	- [[50 Works/Pedagogy of Digital Learning/PED 624 Micro-Teaching\|PED 624 Micro-Teaching]]
 	- [[50 Works/Pedagogy of Digital Learning/Presentation\|Presentation]]
 	- [[50 Works/Pedagogy of Digital Learning/README\|README]]
 	- **Slide Templates**
 		- [[50 Works/Pedagogy of Digital Learning/Slide Templates/tpl-footer\|tpl-footer]]
 		- [[50 Works/Pedagogy of Digital Learning/Slide Templates/tpl-icons\|tpl-icons]]
+		- [[50 Works/Pedagogy of Digital Learning/Slide Templates/tpl-learning-objectives\|tpl-learning-objectives]]
 		- [[50 Works/Pedagogy of Digital Learning/Slide Templates/tpl-left-content-right-image\|tpl-left-content-right-image]]
+		- [[50 Works/Pedagogy of Digital Learning/Slide Templates/tpl-title-content-footer\|tpl-title-content-footer]]
 		- [[50 Works/Pedagogy of Digital Learning/Slide Templates/tpl-title-image-footer\|tpl-title-image-footer]]
+		- [[50 Works/Pedagogy of Digital Learning/Slide Templates/tpl-title-left-content-right-image\|tpl-title-left-content-right-image]]
+		- [[50 Works/Pedagogy of Digital Learning/Slide Templates/tpl-title-left-list-3-right-image\|tpl-title-left-list-3-right-image]]
+		- [[50 Works/Pedagogy of Digital Learning/Slide Templates/tpl-title-left-list-4-right-image\|tpl-title-left-list-4-right-image]]
 	- **templates**
 		- [[50 Works/Pedagogy of Digital Learning/templates/tpl-con-2-1-box\|tpl-con-2-1-box]]
 		- [[50 Works/Pedagogy of Digital Learning/templates/tpl-con-3-2\|tpl-con-3-2]]

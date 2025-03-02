@@ -612,3 +612,11 @@ Final Conclusion
 - This means you can confidently state that the intervention led to higher quality peer feedback, based on statistically significant evidence.
 
 ## Aligning Peer Feedback Quality Results with Attitudes Toward Feedback & Self-Determination Theory (SDT)
+
+## Val Comments
+
+- Mention Q6 in limitations (discussion) section, acknowledge that we don't know if including it would have had an impact on the findings. In future research, they should make sure to measure this. Super quick note, recognize it's there, but no need to go into great detail.
+- Discussion starts with a summary of the findings, then the strength of the studies, then limitations
+- Based on the pieces I read and put together in the lit review, it allowed me to come up with my hypothesis, in the discussion "based on so and so and so and so, it's consistent with the lit that gaming increases motivation autonomy/competence/relatedness".
+- What will be more challenging will be to talk about why students didn't feel more competent
+- Tables and figures used in place of sentences that would otherwise be too wordy to understand

@@ -37,6 +37,9 @@ A Code Review Taxonomy [@hamer2015; @indriasari2023] (Appendix B) will designate
 
 T-tests or ANOVA will be used to compare mean scores on IMI sub-scales between the game-based and non-game-based groups. This will assess differences in motivational outcomes as a result of the type of PCR approach. Frequency counts will be generated for each type of feedback provided by both groups using the code review taxonomy. Chi-square tests will be used to compare the prevalence of different feedback types between the two groups.
 
+- Still working on the data analysis so we can skip this section for now.
+- Reminder: Students who were absent from either the pre or post were excluded since we can't pair them up with the other test.
+
 ## 4.7 Ethical Considerations
 
 The researcher's dual role as an instructor and researcher presents potential for coercion, thus the researcher will not be present during the data collection phase if this is seen as problematic. If so, The facilitator will be a colleague from the JAC Computer Science program or the research supervisor. Explicitly informed consent (Appendix C) and measures to protect student confidentiality and grades are crucial, so all student data will be anonymized by the intervention facilitator to reduce the researcher's bias. Student will be informed that they can opt-out at any point even after the data is collected. All students will be given the GBL experience after the data collection phase to ensure equity of treatment. The data will be collected through either a Moodle or Microsoft form. In either case, the anonymized data will be held on Canadian servers.

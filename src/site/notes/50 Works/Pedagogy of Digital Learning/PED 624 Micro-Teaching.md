@@ -1,11 +1,11 @@
 ---
-{"title":"PED 624 Micro-Teaching","css":"css/vik.css","dg-publish":true,"created":"2025-02-18","modified":"2025-02-23","permalink":"/50-works/pedagogy-of-digital-learning/ped-624-micro-teaching/","dgPassFrontmatter":true,"updated":"2025-02-23"}
+{"title":"PED 624 Micro-Teaching","css":"css/vik.css","dg-publish":true,"created":"2025-02-18","modified":"2025-02-24","permalink":"/50-works/pedagogy-of-digital-learning/ped-624-micro-teaching/","dgPassFrontmatter":true,"updated":"2025-02-24"}
 ---
 
 
-## Perusall <!-- element class="r-fit-text" -->
+## Increasing Social Presence Through Interactive Reading
 
-### A Research-Based Approach <!-- element class="r-fit-text" -->
+Vikram Singh | University of Sherbrooke | 2025-02-25 <!-- element style="font-size: 0.5em;" -->
 
 note: Welcome everyone! Today, I’ll show how Perusall is more than just a reading tool—it's grounded in strong pedagogical frameworks that enhance learning in meaningful ways.
 
@@ -13,25 +13,33 @@ note: Welcome everyone! Today, I’ll show how Perusall is more than just a read
 
 <!-- slide data-auto-animate data-auto-animate-id="challenge" -->
 
-## The Challenge
+### What issues do you face with reading engagement in your classes?
 
-note: Many educators struggle with student engagement in assigned readings. Traditional methods don’t always provide insights into student thinking, and discussions can feel disconnected from the material.
+<split left="3" right="1" gap="1">
 
---
+::: block
 
-<!-- slide data-auto-animate data-auto-animate-id="challenge" -->
+<i class="icon fas fa-comment"/> Write your responses in the chat, or
 
-## The Challenge
+<i class="icon fas fa-microphone"/> Feel free to unmute your mic!
+
+:::
+
+::: block
 
 ![PED 624 Micro-Teaching-3.gif](/img/user/00%20System/Assets/PED%20624%20Micro-Teaching-3.gif)
 
+:::
+
+</split>
+
 note: Many educators struggle with student engagement in assigned readings. Traditional methods don’t always provide insights into student thinking, and discussions can feel disconnected from the material.
 
 --
 
 <!-- slide data-auto-animate data-auto-animate-id="challenge" -->
 
-## The Challenge
+### What issues do you face with reading engagement in your classes?
 
 <split left="3" right="1" gap="1">
 
@@ -39,7 +47,7 @@ note: Many educators struggle with student engagement in assigned readings. Trad
 
 - <i class="fas fa-book-open"/> Without structured support, students may **skim readings** without deep engagement or reflection.
 + <i class="fas fa-comments"/> Traditional forums often feel **disconnected from the text**, making it difficult to sustain meaningful dialogue.
-+ <i class="fas fa-eye-slash"/> Instructors struggle to **assess cognitive engagement**, as passive reading leaves little trace of understanding.
++ <i class="fas fa-pen"/> Instructors struggle to **assess cognitive engagement**, as passive reading leaves little trace of understanding.
 
 :::
 
@@ -57,7 +65,7 @@ note: Many educators struggle with student engagement in assigned readings. Trad
 
 <!-- slide data-auto-animate data-auto-animate-restart data-auto-animate-id="solution" -->
 
-## The Solution
+## A Solution
 
 note: Perusall transforms reading into an interactive, social experience. Students discuss concepts directly within the text, allowing instructors to track engagement and identify gaps in understanding.
 
@@ -65,17 +73,23 @@ note: Perusall transforms reading into an interactive, social experience. Studen
 
 <!-- slide data-auto-animate data-auto-animate-id="solution" -->
 
-## The Solution
+## A Solution
 
 ![Perusall main logo.](https://cdn.prod.website-files.com/650de2cdb48e0f9865830785/66abd2aece84f8f60a4b4b02_Perusall%20logo.png)
 
+<grid drag="100 10" drop="0 90" align="right">
+
+(Miller et al., 2018) <!-- element style="font-size: 0.75em; color: #888" -->
+
+</grid>
+
 note: Perusall transforms reading into an interactive, social experience. Students discuss concepts directly within the text, allowing instructors to track engagement and identify gaps in understanding.
 
 --
 
 <!-- slide data-auto-animate data-auto-animate-id="solution" -->
 
-## The Solution
+## A Solution
 
 <split left="1" right="3" gap="1">
 
@@ -87,17 +101,33 @@ note: Perusall transforms reading into an interactive, social experience. Studen
 
 ::: block <!-- element class="icon-list" -->
 
-- <i class="fas fa-tools"/> A **collaborative annotation tool** for active reading.
-+ <i class="fas fa-comments"/> Encourages **discussion directly in the text**.
-+ <i class="fas fa-chart-line"/> Automates **engagement tracking** for formative assessment.
+- <i class="fas fa-tools"/> Perusall is a **collaborative annotation tool** for active reading.
++ <i class="fas fa-comments"/> It encourages **discussion directly in the text**.
++ <i class="fas fa-chart-line"/> It automates **engagement tracking** for formative assessment.
 
 :::
 
 </split>
 
+<grid drag="100 10" drop="0 90" align="right">
+
+(Miller et al., 2018) <!-- element style="font-size: 0.75em; color: #888" -->
+
+</grid>
+
 note: Perusall transforms reading into an interactive, social experience. Students discuss concepts directly within the text, allowing instructors to track engagement and identify gaps in understanding.
 
 ---
+
+## Learning Objectives
+
+By the end of this activity, you will be able to:
+
+1) **Analyze** how Perusall facilitates engagement with readings through collaborative annotation.
+2) **Annotate** key elements of the course outline for discussion.
+3) **Evaluate** the benefits of using Perusall to support student interaction and comprehension in a digital learning environment.
+
+--
 
 ## Let's Try It
 
@@ -107,7 +137,10 @@ note: Perusall transforms reading into an interactive, social experience. Studen
 4. Once logged in, click on "My Courses" at the top, then "Pedagogy of Digital Learning".
 5. Click "Perusall".
 
-note: Something
+note:
+
+1. Green bar that says "Work on Assignment".
+2. Dialogue to take the tour > Click "end tour".
 
 --
 
@@ -115,8 +148,8 @@ note: Something
 
 ::: block <!-- element class="icon-list" -->
 
-- <i class="far fa-hand-point-right"/> **Choose** a *learning objective* from the course outline that stands out to you.
-- <i class="fas fa-highlighter"/> ==**Highlight**== and write an *annotation* explaining either:
+- <i class="far fa-hand-point-right"/> **Choose** a _learning objective_ from the course outline that stands out to you.
+- <i class="fas fa-highlighter"/> ==**Highlight**== and write an _annotation_ explaining either:
 	- A **question** you have about its meaning or application.
 	- A **connection** to your teaching experience.
 	- A **suggestion** on how it could be clarified or expanded.
@@ -176,6 +209,12 @@ Teachers can **scaffold learning** by embedding guiding questions and responding
 
 </split>
 
+<grid drag="100 10" drop="0 90" align="right">
+
+(Garrison et al., 2000) <!-- element style="font-size: 0.75em; color: #888" -->
+
+</grid>
+
 note: The **Community of Inquiry (CoI) framework** emphasizes deep and meaningful online learning. Perusall supports all three presences by making reading an interactive, social experience.
 
 --
@@ -206,6 +245,12 @@ note: The **Community of Inquiry (CoI) framework** emphasizes deep and meaningfu
 **Communication** <!-- element data-id="dc" style="color: limegreen;" -->
 </grid>
 
+<grid drag="100 10" drop="0 90" align="right">
+
+(MÉES, 2019) <!-- element style="font-size: 0.75em; color: #888" -->
+
+</grid>
+
 note: The **Québec Digital Competency Framework** outlines 12 dimensions of digital literacy. Perusall aligns with multiple competencies by fostering **collaboration, communication, and critical engagement** with academic texts.
 
 --
@@ -218,7 +263,7 @@ note: The **Québec Digital Competency Framework** outlines 12 dimensions of dig
 
 </grid>
 
-<grid drag="100 90" drop="-80 10">
+<grid drag="100 90" drop="-100 10">
 
 ![PED 624 Micro-Teaching-5.png](/img/user/00%20System/Assets/PED%20624%20Micro-Teaching-5.png)
 
@@ -254,6 +299,12 @@ Perusall provides a structured way for students to express their thoughts direct
 
 </grid>
 
+<grid drag="100 10" drop="0 90" align="right">
+
+(MÉES, 2019) <!-- element style="font-size: 0.75em; color: #888" -->
+
+</grid>
+
 note: The **Québec Digital Competency Framework** outlines 12 dimensions of digital literacy. Perusall aligns with multiple competencies by fostering **collaboration, communication, and critical engagement** with academic texts.
 
 ---
@@ -261,10 +312,25 @@ note: The **Québec Digital Competency Framework** outlines 12 dimensions of dig
 ## Key Takeaways
 
 - Perusall **enhances student engagement** through interactive reading.
-- Grounded in **CoI** and **Digital Competency** Frameworks.
-- Supports deeper learning, collaboration, and assessment.
++ Grounded in **CoI** and **Digital Competency** Frameworks.
++ Supports student communication and collaboration.
 
 note: To summarize, Perusall isn’t just a tool—it’s a **research-backed strategy** that fosters deeper engagement, collaborative learning, and better comprehension.
+
+---
+
+## References
+
+::: block <!-- element class="references" style="font-size: 0.45em;" -->
+
+1. Bored Back To School GIF by Muffin & Nuts [Digital image]. (2021). Retrieved from <https://giphy.com/gifs/book-library-muffin-and-nuts-2xnO6tTIYYFE2j3IqQ>
+2. Garrison, R., Anderson, T., & Archer, W. (2000). Critical inquiry in a text-based environment: computer conferencing in higher education. _Internet and Higher Education_, 2(2–3), 87–105. [https://doi-org.ezproxy.lib.ucalgary.ca/10.1016/S1096-7516(00)00016-6](https://doi-org.ezproxy.lib.ucalgary.ca/10.1016/S1096-7516\(00\)00016-6)
+3. Miller, K., Lukoff, B., King, G., & Mazur, E. (2018). Use of a Social Annotation Platform for Pre-Class Reading Assignments in a Flipped Introductory Physics Class. _Frontiers in Education_, _3_, 8. [https://doi.org/10.3389/feduc.2018.00008](https://doi.org/10.3389/feduc.2018.00008)
+4. Ministère de l’éducation et de l’enseignement supérieur. (2019). _Digital competency framework_. <https://www.education.gouv.qc.ca>
+5. Perusall Logo [Digital image]. (2025). Retrieved from <https://www.perusall.com/logos-artwork-brand-kit>
+6. Whats Up Hello Sticker by Holler Studios [Digital image]. (2023). Retrieved from <https://giphy.com/stickers/HollerStudios-duck-holler-studios-qwak-7lTUgVeYpeNWbdFrVG>
+
+:::
 
 ---
 
@@ -275,17 +341,3 @@ note: To summarize, Perusall isn’t just a tool—it’s a **research-backed st
 Questions? Comments?
 
 note: I appreciate your time! I'm happy to take any questions about Perusall and its applications in digital pedagogy.
-
----
-
-## References
-
-::: block <!-- element class="references" style="font-size: 0.5em;" -->
-
-1. Bored Back To School GIF by Muffin & Nuts [Digital image]. (2021). Retrieved from https://giphy.com/gifs/book-library-muffin-and-nuts-2xnO6tTIYYFE2j3IqQ
-2. Garrison, R., Anderson, T., & Archer, W. (2000). Critical inquiry in a text-based environment: computer conferencing in higher education. _Internet and Higher Education_, 2(2–3), 87–105. [https://doi-org.ezproxy.lib.ucalgary.ca/10.1016/S1096-7516(00)00016-6](https://doi-org.ezproxy.lib.ucalgary.ca/10.1016/S1096-7516\(00\)00016-6)
-3. Ministère de l’éducation et de l’enseignement supérieur. (2019). _Digital competency framework_. https://www.education.gouv.qc.ca
-4. Perusall Logo [Digital image]. (2025). Retrieved from https://www.perusall.com/logos-artwork-brand-kit
-5. Whats Up Hello Sticker by Holler Studios [Digital image]. (2023). Retrieved from https://giphy.com/stickers/HollerStudios-duck-holler-studios-qwak-7lTUgVeYpeNWbdFrVG
-
-:::
