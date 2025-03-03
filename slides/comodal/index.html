@@ -1,0 +1,2286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>MTP Comodal Training</title>
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/white.css" id="theme" />
+    <link rel="stylesheet" href="plugin/highlight/zenburn.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="plugin/customcontrols/style.css">
+
+	<link rel="stylesheet" href="plugin/reveal-pointer/pointer.css" />
+
+    <link rel="stylesheet" href="css/vik.css" />
+
+    <script defer src="dist/fontawesome/all.min.js"></script>
+
+	<script type="text/javascript">
+		var forgetPop = true;
+		function onPopState(event) {
+			if(forgetPop){
+				forgetPop = false;
+			} else {
+				parent.postMessage(event.target.location.href, "app://obsidian.md");
+			}
+        }
+		window.onpopstate = onPopState;
+		window.onmessage = event => {
+			if(event.data == "reload"){
+				window.document.location.reload();
+			}
+			forgetPop = true;
+		}
+
+		function fitElements(){
+			const itemsToFit = document.getElementsByClassName('fitText');
+			for (const item in itemsToFit) {
+				if (Object.hasOwnProperty.call(itemsToFit, item)) {
+					var element = itemsToFit[item];
+					fitElement(element,1, 1000);
+					element.classList.remove('fitText');
+				}
+			}
+		}
+
+		function fitElement(element, start, end){
+
+			let size = (end + start) / 2;
+			element.style.fontSize = `${size}px`;
+
+			if(Math.abs(start - end) < 1){
+				while(element.scrollHeight > element.offsetHeight){
+					size--;
+					element.style.fontSize = `${size}px`;
+				}
+				return;
+			}
+
+			if(element.scrollHeight > element.offsetHeight){
+				fitElement(element, start, size);
+			} else {
+				fitElement(element, size, end);
+			}		
+		}
+
+
+		document.onreadystatechange = () => {
+			fitElements();
+			if (document.readyState === 'complete') {
+				if (window.location.href.indexOf("?export") != -1){
+					parent.postMessage(event.target.location.href, "app://obsidian.md");
+				}
+				if (window.location.href.indexOf("print-pdf") != -1){
+					let stateCheck = setInterval(() => {
+						clearInterval(stateCheck);
+						window.print();
+					}, 250);
+				}
+			}
+	};
+
+
+        </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# MTP Comodal Training
+
+Vikram Singh | University of Sherbrooke | 2025-03-03
+</div>
+
+<aside class="notes"><ul>
+<li><input disabled="" type="checkbox"> Host slides</li>
+<li><input disabled="" type="checkbox"> Backup of slides on USB</li>
+<li><input disabled="" type="checkbox"> Start Teams call on phone with earbud.</li>
+<li><input disabled="" type="checkbox"> Provide list of challenges for second activity.</li>
+<li><input disabled="" type="checkbox"> Load a YouTube video to demo sharing.</li>
+<li><input disabled="" type="checkbox"> Create a document in OneDrive to demo permissions.</li>
+</ul>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="position: absolute; left: 0%; top: 0%; height: 30%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+## Learning Objectives
+
+By the end of this training session, you will be able to:
+
+</div>
+
+<ol class="fa-ol">
+<div class="" style="position: absolute; left: 8%; top: 29%; height: 70%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+<li class=""><span class="fa-li"><i class="fas fa-book-open"></i></span><b>Define</b> what a comodal class is and its key characteristics.</li>
+<li class="fragment"><span class="fa-li"><i class="fas fa-magnifying-glass"></i></span><b>Identify</b> common challenges in comodal teaching.</li>
+<li class="fragment"><span class="fa-li"><i class="fas fa-lightbulb"></i></span><b>Describe</b> strategies to address these challenges.</li>
+<li class="fragment"><span class="fa-li"><i class="fas fa-pen-ruler"></i></span><b>Design</b> a comodal class that ensures equitable participation for both online and face-to-face students.</li>
+
+
+
+
+</div>
+</ol>
+
+<div class="" style="position: absolute; left: 70%; top: 30%; height: 70%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<div class="block">
+
+<img src="00 System/Assets/Stickers/Compass.gif" alt="" style="object-fit: scale-down">
+
+
+</div>
+
+
+
+</div>
+</div></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: style="text-align: justify" class="drop" data-auto-animate="true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Definition
+
+<span data-id="sentence1" style="color: #333;"><i class="fas fa-quote-left fa-3x fa-pull-left"></i> A **comodal** class is a _synchronous_ learning experience where both _online_ and _face-to-face_ participants engage **simultaneously and equitably** in the same session. </span><span data-id="sentence1" style="color: #DDD;"> Comodal delivery requires intentional design to ensure that all students, regardless of their location, have access to the same instructional content, opportunities for interaction, and meaningful participation. </span><span data-id="sentence1" style="color: #DDD;"> Effective comodal instruction leverages **digital tools, structured facilitation, and pedagogical strategies** <i class="fas fa-quote-right fa-3x fa-pull-right"></i> to create a seamless and inclusive teaching and learning environment. </span>
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: justify" class="drop" data-auto-animate="true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Definition
+
+<span data-id="sentence1" style="color: #333;"><i class="fas fa-quote-left fa-3x fa-pull-left"></i> A **comodal** class is a _synchronous_ learning experience where both _online_ and _face-to-face_ participants engage **simultaneously and equitably** in the same session. </span><span data-id="sentence1" style="color: #333;"> Comodal delivery requires intentional design to ensure that all students, regardless of their location, have access to the same instructional content, opportunities for interaction, and meaningful participation. </span><span data-id="sentence1" style="color: #DDD;"> Effective comodal instruction leverages **digital tools, structured facilitation, and pedagogical strategies** <i class="fas fa-quote-right fa-3x fa-pull-right"></i> to create a seamless and inclusive teaching and learning environment. </span>
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: justify" class="drop" data-auto-animate="true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Definition
+
+<span data-id="sentence1" style="color: #333;"><i class="fas fa-quote-left fa-3x fa-pull-left"></i> A **comodal** class is a _synchronous_ learning experience where both _online_ and _face-to-face_ participants engage **simultaneously and equitably** in the same session. </span><span data-id="sentence1" style="color: #333;"> Comodal delivery requires intentional design to ensure that all students, regardless of their location, have access to the same instructional content, opportunities for interaction, and meaningful participation. </span><span data-id="sentence1" style="color: #333;"> Effective comodal instruction leverages **digital tools, structured facilitation, and pedagogical strategies** <i class="fas fa-quote-right fa-3x fa-pull-right"></i> to create a seamless and inclusive teaching and learning environment. </span>
+</div></script></section></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Abbreviations
+
+<div class="block">
+
+<!-- .element: style="font-size: 1.5em" class="list-table" -->
+
+|                                                   |         |                          |
+|:-----------------------------------------------: |:------ |:----------------------- |
+|       <i class="fa-solid fa-school fa-lg lavender"></i>       | **F2F** | Face-to-Face Participant |
+|        <i class="fa-solid fa-home fa-lg maroon"></i>        | **ONL** | Online Participant       |
+| <i class="fa-solid fa-chalkboard-teacher fa-lg yellow"></i> | **RP**  | Resource Person          |
+|      <i class="fa-solid fa-headset fa-lg green"></i>       | **TS**  | Technical Support Person |
+
+</div>
+</div></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+### Activity 1/2: Challenges of Comodal
+
+</div>
+
+<ul class="fa-ul">
+<div class="" style="position: absolute; left: 8%; top: 17%; height: 50%; width: 63%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<li><span class="fa-li"><i class="fas fa-lightbulb"></i></span>Identify potential <b>challenges</b> in a comodal class and devise <b>solutions</b> for both the <b>RP</b> and the <b>TS</b>.</li>
+<li class="fragment"><span class="fa-li"><i class="fas fa-table"></i></span>Fill in the table below with the challenges, solutions, and responsibilities.</li>
+
+</div>
+</ul>
+
+<div class="" style="position: absolute; left: 69%; top: 15%; height: 50%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<img src="00 System/Assets/Stickers/Frog Computer Smash.gif" alt="" style="object-fit: scale-down">
+
+
+</div>
+
+<div class="fragment" style="font-size: 0.8em; position: absolute; left: 0%; top: 70%; height: 30%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+| <i class="fa-solid fa-square-xmark"></i> Challenge | <i class="fa-solid fa-square-check"></i> Solution | <i class="fas fa-chalkboard-teacher"></i> RP | <i class="fas fa-headset"></i> TS |
+|-----------------------------|-----------------------------|---------------------------------|---------------------------------|
+| Poor audio for ONL participants | Use an external mic and do sound checks | Speak directly into the mic, check in with ONL students | Monitor audio via Teams, troubleshoot issues |
+
+</div>
+</div>
+
+<aside class="notes"><p>Time: 10m</p>
+<ul>
+<li>This activity raises awareness of comodal difficulties and best practices.</li>
+<li>Online students often experience audio, engagement, and accessibility issues.</li>
+<li>Monitor the chat &amp; online whiteboard to ensure online students contribute equally.</li>
+<li>Take photos of the whiteboard and upload to Teams for online accessibility.</li>
+</ul>
+<h3 id="discussion">Discussion</h3>
+<ol>
+<li>Which challenges were most common?</li>
+<li>Were there overlapping responsibilities between RP &amp; TS?</li>
+<li>What were the most creative solutions shared?</li>
+</ol>
+<h3 id="key-takeaway">Key Takeaway</h3>
+<p>Pre-planning and clear communication between RP and Tech Support prevents most issues before they happen.</p>
+</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+<div class="block">
+
+### Groups
+
+</div>
+
+
+
+</div>
+
+<div class="" style="position: absolute; left: 0%; top: 20%; height: 60%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+
+
+
+
+
+
+<split evenly gap="1">
+
+<div class="block">
+
+<!-- .element: style="border-radius: 0.5em; color: white; text-align: left; padding: 0.8em; box-sizing: border-box" class="maroon-bg" -->
+
+#### Group 1 <!-- .element: style="color: white" -->
+
+<i class="fas fa-school" style="color: white;"></i> Vik
+
+<i class="fas fa-home" style="color: white;"></i> Sharon
+
+<i class="fas fa-school" style="color: white;"></i> Priscila
+
+</div>
+
+
+
+<div class="block">
+
+<!-- .element: style="border-radius: 0.5em; color: white; text-align: left; padding: 0.8em; box-sizing: border-box" class="yellow-bg" -->
+
+#### Group 2 <!-- .element: style="color: white" -->
+
+<i class="fas fa-school" style="color: white;"></i> Alex
+
+<i class="fas fa-home" style="color: white;"></i> Sean
+
+<i class="fas fa-home" style="color: white;"></i> Willie
+
+</div>
+
+
+
+<div class="block">
+
+<!-- .element: style="border-radius: 0.5em; color: white; text-align: left; padding: 0.8em; box-sizing: border-box" class="green-bg" -->
+
+#### Group 3 <!-- .element: style="color: white" -->
+
+<i class="fas fa-home" style="color: white;"></i> Rania
+
+<i class="fas fa-home" style="color: white;"></i> Paul
+
+<i class="fas fa-home" style="color: white;"></i> Lorelie
+
+</div>
+
+
+
+<div class="block">
+
+<!-- .element: style="border-radius: 0.5em; color: white; text-align: left; padding: 0.8em; box-sizing: border-box" class="lavender-bg" -->
+
+#### Group 4 <!-- .element: style="color: white" -->
+
+<i class="fas fa-school" style="color: white;"></i> Felipe
+
+<i class="fas fa-school" style="color: white;"></i> Nadine
+
+<i class="fas fa-school" style="color: white;"></i> Dianne
+
+</div>
+
+
+
+</split>
+
+<br>
+
+Groups 1, 2, 3 work on [PowerPoint](https://usherbrooke-my.sharepoint.com/:p:/g/personal/sinv1501_usherbrooke_ca/EXBsSK4itkVPnDg8ZP1_mWYB3Ji-1H_B8lj8sRXtecLLKA?e=zNWNG8). Group 4 on class whiteboard.
+
+
+
+
+</div>
+
+<div class="" style="position: absolute; left: 0%; top: 80%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+<div class="block">
+
+<i class="fas fa-home"></i> = ONL <i class="fas fa-school" style="padding-left: 1em;"></i> = F2F
+
+</div>
+
+
+
+
+</div>
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="block">
+
+<!-- .element: style="font-size: 0.55em" -->
+
+|  | <i class="fa-solid fa-square-xmark"></i> Challenge | <i class="fa-solid fa-square-check"></i> Solution | <i class="fas fa-chalkboard-teacher"></i> RP Responsibility | <i class="fas fa-headset"></i> TS Responsibility |
+|:--:|-----------------------------|-----------------------------|---------------------------------|---------------------------------|
+| <i class="fas fa-volume-mute"></i> | Poor audio for ONL participants | Use an external mic and do sound checks | Speak directly into the mic, check in with ONL students | Monitor audio via Teams, troubleshoot issues |
+| <i class="fas fa-user-slash"></i> | ONL participants feel ignored | Regularly engage ONL students and monitor chat | Look at the camera, check chat frequently | Alert RP when ONL students raise hands, monitor chat |
+| <i class="fas fa-comments"></i> | Delayed participation due to online lag | Allow extra time for responses (5-second pause) | Wait before moving on, repeat key points | Inform RP if ONL responses are delayed |
+| <i class="fas fa-expand"></i> | Presentation not visible to ONL | Screen share directly in Teams | Share slides digitally, avoid pointing camera at screen | Verify that ONL students can see shared content |
+| <i class="fas fa-map"></i> | Inaccessible in-class materials for ONL | Provide digital versions in advance | Ensure all materials are digitized | Upload/share materials in chat |
+| <i class="fas fa-users"></i> | Breakout rooms are difficult to manage | Use clear instructions and noise suppression | Give structured tasks, check in on groups | Set up breakout rooms, assist ONL groups |
+| <i class="fas fa-microphone-slash"></i> | Echo or feedback when playing videos | Mute classroom mic and share system audio | Remind TS to mute class mic | Monitor sound and confirm ONL audio clarity |
+| <i class="fas fa-film"></i> | ONL participants can't see in-class activities | Capture & upload whiteboard or group work | Summarize key points, take photos if needed | Upload images/files to Teams in real-time |
+| <i class="fas fa-circle"></i> | Session not recorded for later review | Ensure recording starts at the beginning | Remind TS to record | Start and verify session recording |
+
+</div>
+</div>
+
+<aside class="notes"><ul>
+<li>This activity raises awareness of comodal difficulties and best practices.</li>
+<li>Online students often experience audio, engagement, and accessibility issues.</li>
+<li>Monitor the chat &amp; online whiteboard to ensure online students contribute equally.</li>
+<li>Take photos of the whiteboard and upload to Teams for online accessibility.</li>
+</ul>
+</aside></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<div class="block">
+
+### RP Responsibilities
+
+</div>
+
+
+
+</div>
+
+<ol class="fa-ol">
+<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<li class="">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-chalkboard-teacher fa-lg"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+Prepare instructional materials in advance and share them with the TS. Remember the TS is **not responsible** for creating class materials.
+
+</div>
+
+
+
+</li>
+
+<li class="fragment">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-pen-ruler fa-lg"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+Design activities with comodal participation in mind. Have a digital equivalent to every analogue component.
+
+</div>
+
+
+
+</li>
+
+<li class="fragment">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-key fa-lg"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+Ensure digital accessibility (permissions) of physical materials for online students.
+
+</div>
+
+
+
+</li>
+
+</div>
+</ol>
+
+<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<div class="block">
+
+<img src="00 System/Assets/Stickers/Corgi Teacher.gif" alt="" style="object-fit: scale-down">
+
+
+</div>
+
+
+
+</div>
+</div>
+
+<aside class="notes"><p>Time: 20m</p>
+<ul>
+<li>Show how to use an incognito browser to test links.</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<div class="block">
+
+### RP Responsibilities
+
+</div>
+
+
+
+</div>
+
+<ol class="fa-ol">
+<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<li class="">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-clock"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+Allocate extra time as comodal activities often take longer than expected.
+
+</div>
+
+
+
+</li>
+
+<li class="fragment">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-eye"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+Make the end of activities visible to all students by quickly sharing in-class work digitally.
+
+</div>
+
+
+
+</li>
+
+<li class="fragment">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-desktop"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+Screen share presentations via Teams; do not point the camera at the board.
+
+</div>
+
+
+
+</li>
+
+</div>
+</ol>
+
+<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<div class="block">
+
+<img src="00 System/Assets/Stickers/Corgi Teacher.gif" alt="" style="object-fit: scale-down">
+
+
+</div>
+
+
+
+</div>
+</div>
+
+<aside class="notes"><ul>
+<li>TS can share participants&#39; work by taking pictures and uploading them to Teams.</li>
+<li>Ideally, there&#39;d be a tablet in case the RP wants to handwrite something. Alternatives for this are to use the mouse to write on a digital whiteboard, or have the TS write in the chat what the RP is writing on the board.</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<div class="block">
+
+### RP Responsibilities
+
+</div>
+
+
+
+</div>
+
+<ol class="fa-ol">
+<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<li class="">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-video"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+Look at the camera when addressing the class to engage online participants.
+
+</div>
+
+
+
+</li>
+
+<li class="fragment">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-hourglass-half"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+Pause after asking questions to account for online lag (5-second wait).
+
+</div>
+
+
+
+</li>
+
+<li class="fragment">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-comments"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+Regularly check in with online participants to make them feel included and part of the class.
+
+</div>
+
+
+
+</li>
+
+</div>
+</ol>
+
+<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<div class="block">
+
+<img src="00 System/Assets/Stickers/Corgi Teacher.gif" alt="" style="object-fit: scale-down">
+
+
+</div>
+
+
+
+</div>
+</div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<div class="block">
+
+### TS Responsibilities
+
+</div>
+
+
+
+</div>
+
+<ol class="fa-ol">
+<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<li class="">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-volume-up fa-lg"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+**Conduct a sound check** with online participants ~10 minutes before class starts.
+
+</div>
+
+
+
+</li>
+
+<li class="fragment">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-wrench fa-lg"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+**Facilitate in-class activities** by troubleshooting technical or logistical issues.
+
+</div>
+
+
+
+</li>
+
+<li class="fragment">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-share-square fa-lg"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+**Distribute digital materials** and verify accessibility for all students.
+
+</div>
+
+
+
+</li>
+
+</div>
+</ol>
+
+<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<div class="block">
+
+<img src="00 System/Assets/Stickers/Angry Typing.gif" alt="" style="object-fit: scale-down">
+
+
+</div>
+
+
+
+</div>
+</div>
+
+<aside class="notes"></aside></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<div class="block">
+
+### TS Responsibilities
+
+</div>
+
+
+
+</div>
+
+<ol class="fa-ol">
+<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<li class="">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-camera fa-lg"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+**Capture and upload in-class work** (e.g., photos of whiteboard notes) for online students.
+
+</div>
+
+
+
+</li>
+
+<li class="fragment">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-headphones fa-lg"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+**Monitor the Teams call** to ensure clear audio and video quality.
+
+</div>
+
+
+
+</li>
+
+<li class="fragment">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-hand fa-lg"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+**Alert the RP** when online participants raise their hands.
+
+</div>
+
+
+
+</li>
+
+</div>
+</ol>
+
+<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<div class="block">
+
+<img src="00 System/Assets/Stickers/Angry Typing.gif" alt="" style="object-fit: scale-down">
+
+
+</div>
+
+
+
+</div>
+</div>
+
+<aside class="notes"></aside></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<div class="block">
+
+### TS Responsibilities
+
+</div>
+
+
+
+</div>
+
+<ol class="fa-ol">
+<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<li class="">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-comments fa-lg"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+**Monitor the chat** and relay important messages to the RP.
+
+</div>
+
+
+
+</li>
+
+<li class="fragment">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-users fa-lg"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+**Manage breakout rooms** and assist with group coordination.
+
+</div>
+
+
+
+</li>
+
+<li class="fragment">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-circle fa-lg"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+**Hit the record button** to ensure the session is available for review.
+
+</div>
+
+
+
+</li>
+
+</div>
+</ol>
+
+<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<div class="block">
+
+<img src="00 System/Assets/Stickers/Angry Typing.gif" alt="" style="object-fit: scale-down">
+
+
+</div>
+
+
+
+</div>
+</div>
+
+<aside class="notes"></aside></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate="true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+<div class="block">
+
+### Arranging Groups
+
+</div>
+
+
+
+</div>
+
+<div class="" style="position: absolute; left: 0%; top: 20%; height: 60%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+
+
+
+
+
+
+<div class="block">
+
+<!-- .element: style="font-size: 1.5em" -->
+
+Participants
+
+<span data-id="people1" style="display:inline;"><i class="fas fa-home maroon"></i> <i class="fas fa-home maroon"></i> <i class="fas fa-home maroon"></i></span> <span data-id="people2" style="display:inline;"><i class="fas fa-school lavender"></i> <i class="fas fa-school lavender"></i> <i class="fas fa-school lavender"></i></span> <span data-id="people3" style="display:inline;"><i class="fas fa-school lavender"></i> <i class="fas fa-school lavender"></i> <i class="fas fa-school lavender"></i></span>
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+<div class="" style="position: absolute; left: 0%; top: 80%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+<div class="block">
+
+<i class="fas fa-home maroon"></i> = ONL <i class="fas fa-school lavender" style="padding-left: 1em;"></i> = F2F
+
+</div>
+
+
+
+
+</div>
+</div>
+
+<aside class="notes"><p>Time: 30m</p>
+</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate="true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+<div class="block">
+
+### Arranging Groups
+
+</div>
+
+
+
+</div>
+
+<div class="" style="position: absolute; left: 0%; top: 20%; height: 60%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+
+
+
+
+
+
+<div class="block">
+
+<!-- .element: style="font-size: 1.5em" -->
+
+<split gap="1">
+
+<div class="block">
+
+<br>
+
+Group 1
+
+Group 2
+
+Group 3
+
+</div>
+
+
+
+<div class="block">
+
+<!-- .element: style="border: solid 5px #BBB" -->
+
+</div>
+
+
+
+<div class="block">
+
+Participants
+
+<span data-id="people1" style="display: block;"><i class="fas fa-home maroon"></i> <i class="fas fa-home maroon"></i> <i class="fas fa-home maroon"></i></span>
+
+<span data-id="people2" style="display: block;"><i class="fas fa-school lavender"></i> <i class="fas fa-school lavender"></i> <i class="fas fa-school lavender"></i></span>
+
+<span data-id="people3" style="display: block;"><i class="fas fa-school lavender"></i> <i class="fas fa-school lavender"></i> <i class="fas fa-school lavender"></i></span>
+
+</div>
+
+
+
+</split>
+
+</div>
+
+
+
+
+
+
+</div>
+
+<div class="" style="position: absolute; left: 0%; top: 80%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+<div class="block">
+
+<i class="fas fa-home maroon"></i> = ONL <i class="fas fa-school lavender" style="padding-left: 1em;"></i> = F2F
+
+</div>
+
+
+
+
+</div>
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate="true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+<div class="block">
+
+### Arranging Groups
+
+</div>
+
+
+
+</div>
+
+<div class="" style="position: absolute; left: 0%; top: 20%; height: 60%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+
+
+
+
+
+
+<div class="block">
+
+<!-- .element: style="font-size: 1.5em" -->
+
+<split gap="1">
+
+<div class="block">
+
+<!-- .element: style="padding-top: 1.5em" -->
+
+Group 1
+
+Group 2
+
+Group 3
+
+</div>
+
+
+
+<div class="block">
+
+<!-- .element: style="border: solid 5px #BBB" -->
+
+</div>
+
+
+
+<div class="block">
+
+Strategy A
+
+<i class="fas fa-home maroon"></i> <i class="fas fa-home maroon"></i> <i class="fas fa-home maroon"></i>
+
+<i class="fas fa-school lavender"></i> <i class="fas fa-school lavender"></i> <i class="fas fa-school lavender"></i>
+
+<i class="fas fa-school lavender"></i> <i class="fas fa-school lavender"></i> <i class="fas fa-school lavender"></i>
+
+</div>
+
+
+
+<div class="block">
+
+<!-- .element: style="border: solid 5px #BBB" -->
+
+</div>
+
+
+
+<div class="block">
+
+Strategy B
+
+<i class="fas fa-home maroon"></i> <i class="fas fa-school lavender"></i> <i class="fas fa-school lavender"></i>
+
+<i class="fas fa-home maroon"></i> <i class="fas fa-school lavender"></i> <i class="fas fa-school lavender"></i>
+
+<i class="fas fa-home maroon"></i> <i class="fas fa-school lavender"></i> <i class="fas fa-school lavender"></i>
+
+</div>
+
+
+
+</split>
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+<div class="" style="position: absolute; left: 0%; top: 80%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+<div class="block">
+
+<i class="fas fa-home maroon"></i> = ONL <i class="fas fa-school lavender" style="padding-left: 1em;"></i> = F2F
+
+</div>
+
+
+
+
+</div>
+</div>
+
+<aside class="notes"><p>This configuration is better for the online participants since they get to switch up who they&#39;re with for different group activities. Since we only have one or two F2F classes now per course, this is probably less of an issue.</p>
+</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<div class="block">
+
+### Arranging Groups
+
+</div>
+
+
+
+</div>
+
+<ol class="fa-ol">
+<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<li class="">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-exclamation-triangle"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+**Challenge:** Ensuring clear communication between online and in-class participants without ambient noise interference.
+
+</div>
+
+
+
+</li>
+
+<li class="fragment">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-door-open"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+If possible, move the F2F group and a laptop to another classroom.
+
+</div>
+
+
+
+</li>
+
+<li class="fragment">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-expand-arrows-alt"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+Maximize the distance by placing ONL and their F2F group in the furthest corners of the room.
+
+</div>
+
+
+
+</li>
+
+</div>
+</ol>
+
+<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<div class="block">
+
+<img src="00 System/Assets/Stickers/Video Call.gif" alt="" style="object-fit: scale-down">
+
+
+</div>
+
+
+
+</div>
+
+
+<!-- .slide: data-auto-animate="true" -->
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<div class="block">
+
+### Arranging Groups
+
+</div>
+
+
+
+</div>
+
+<ol class="fa-ol">
+<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<li class="">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-walking"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+If needed, move into the hall with a table and chairs (though this may be inconvenient).
+
+</div>
+
+
+
+</li>
+
+<li class="fragment">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-volume-mute"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+Turn on Teams' "Noise Suppression" to filter out background noise.
+
+</div>
+
+
+
+</li>
+
+<li class="fragment">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-user"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+If only one ONL is in a breakout group, no need to create a separate Teams room.
+
+</div>
+
+
+
+</li>
+
+</div>
+</ol>
+
+<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<div class="block">
+
+<img src="00 System/Assets/Stickers/Video Call.gif" alt="" style="object-fit: scale-down">
+
+
+</div>
+
+
+
+</div>
+</div></script></section></section><section  data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<div class="block">
+
+### Showing Videos
+
+</div>
+
+
+
+</div>
+
+<ol class="fa-ol">
+<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<li class="">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-volume-high fa-lg"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+Toggle "include computer sound" if you want to share your screen with the video playing.
+
+</div>
+
+
+
+</li>
+
+<li class="fragment">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-link fa-lg"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+Or, you can share the link to the video in the chat and the online participants can watch in their browsers independently.
+
+</div>
+
+
+
+</li>
+
+<li class="fragment">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-microphone-slash fa-lg"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+If you do share the link, mute the classroom mic to avoid any echo or feedback when playing videos.
+
+</div>
+
+
+
+</li>
+
+</div>
+</ol>
+
+<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<div class="block">
+
+<img src="00 System/Assets/Stickers/Watching Movie.gif" alt="" style="object-fit: scale-down">
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</split>
+</div>
+
+<aside class="notes"><ul>
+<li>If you have time, you can share a random YouTube video.</li>
+</ul>
+</aside></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+### Activity 2/2: Plan a Comodal Class
+
+</div>
+
+<ul class="fa-ul">
+<div class="" style="font-size: 0.8em; position: absolute; left: 8%; top: 18%; height: 50%; width: 63%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<li class=""><span class="fa-li"><i class="fas fa-chalkboard fa-lg"></i></span>Choose one class from a course you've taught before that contains one or more activities.</li>
+<li class="fragment"><span class="fa-li"><i class="fas fa-table fa-lg"></i></span>Fill out the table below, or choose your own planning method!</li>
+<li class="fragment"><span class="fa-li"><i class="fas fa-circle-up fa-lg"></i></span>If you've already taught this in a comodal setting, what could be improved upon?</li>
+
+</div>
+</ul>
+
+<div class="" style="position: absolute; left: 69%; top: 15%; height: 50%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<img src="00 System/Assets/Stickers/Drawing.gif" alt="" style="object-fit: scale-down">
+
+
+</div>
+
+<div class="fragment" style="font-size: 0.7em; position: absolute; left: 0%; top: 70%; height: 30%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+| Time   | Activity           | F2F Setup                  | ONL Setup                                   | RP Focus                                              | TS Focus                                  |
+| ------ | ------------------ | -------------------------- | ------------------------------------------- | ----------------------------------------------------- | ----------------------------------------- |
+| 10 min | Lecture on topic X | Project slides, whiteboard | Screen share slides, use digital whiteboard | Engage both F2F and online students, make eye contact | Ensure screen sharing works, monitor chat |
+
+</div>
+</div>
+
+<aside class="notes"><p>Time: 40m</p>
+<ul>
+<li>This activity helps participants think proactively about comodal design.  </li>
+<li>Encourage groups to review each other&#39;s plans and suggest improvements.  </li>
+<li>Take photos of F2F whiteboards &amp; upload to Teams so online participants can engage.</li>
+</ul>
+<h3 id="discussion">Discussion</h3>
+<ol>
+<li>If you’ve already taught this in a comodal setting, what worked and what didn’t?  </li>
+<li>How can you improve it for the next time?  </li>
+<li>Each group shares their comodal class plan with the room.</li>
+</ol>
+</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+<div class="block">
+
+### Groups
+
+</div>
+
+
+
+</div>
+
+<div class="" style="position: absolute; left: 0%; top: 20%; height: 60%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+
+
+
+
+
+
+<split evenly gap="1">
+
+<div class="block">
+
+<!-- .element: style="border-radius: 0.5em; color: white; text-align: left; padding: 0.8em; box-sizing: border-box" class="maroon-bg" -->
+
+#### Group 1 <!-- .element: style="color: white" -->
+
+<i class="fas fa-school" style="color: white;"></i> Vik
+
+<i class="fas fa-home" style="color: white;"></i> Sharon
+
+<i class="fas fa-school" style="color: white;"></i> Priscila
+
+</div>
+
+
+
+<div class="block">
+
+<!-- .element: style="border-radius: 0.5em; color: white; text-align: left; padding: 0.8em; box-sizing: border-box" class="yellow-bg" -->
+
+#### Group 2 <!-- .element: style="color: white" -->
+
+<i class="fas fa-school" style="color: white;"></i> Alex
+
+<i class="fas fa-home" style="color: white;"></i> Sean
+
+<i class="fas fa-home" style="color: white;"></i> Willie
+
+</div>
+
+
+
+<div class="block">
+
+<!-- .element: style="border-radius: 0.5em; color: white; text-align: left; padding: 0.8em; box-sizing: border-box" class="green-bg" -->
+
+#### Group 3 <!-- .element: style="color: white" -->
+
+<i class="fas fa-home" style="color: white;"></i> Rania
+
+<i class="fas fa-home" style="color: white;"></i> Paul
+
+<i class="fas fa-home" style="color: white;"></i> Lorelie
+
+</div>
+
+
+
+<div class="block">
+
+<!-- .element: style="border-radius: 0.5em; color: white; text-align: left; padding: 0.8em; box-sizing: border-box" class="lavender-bg" -->
+
+#### Group 4 <!-- .element: style="color: white" -->
+
+<i class="fas fa-school" style="color: white;"></i> Felipe
+
+<i class="fas fa-school" style="color: white;"></i> Nadine
+
+<i class="fas fa-school" style="color: white;"></i> Dianne
+
+</div>
+
+
+
+</split>
+
+<br>
+
+Groups 1, 2, 3 work on [PowerPoint](https://usherbrooke-my.sharepoint.com/:p:/g/personal/sinv1501_usherbrooke_ca/EXBsSK4itkVPnDg8ZP1_mWYB3Ji-1H_B8lj8sRXtecLLKA?e=zNWNG8). Group 4 on class whiteboard.
+
+
+
+
+</div>
+
+<div class="" style="position: absolute; left: 0%; top: 80%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+<div class="block">
+
+<i class="fas fa-home"></i> = ONL <i class="fas fa-school" style="padding-left: 1em;"></i> = F2F
+
+</div>
+
+
+
+
+</div>
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="block">
+
+<!-- .element: style="font-size: 0.8em" -->
+
+| Time   | Activity           | F2F Setup                  | ONL Setup                                  | RP Focus                                              | TS Focus                                                  |
+| ------ | ------------------ | -------------------------- | --------------------------------------------- | ----------------------------------------------------- | --------------------------------------------------------- |
+| 10 min | Lecture on topic X | Project slides, whiteboard | Screen share slides, use digital whiteboard   | Engage both F2F and online students, make eye contact | Ensure screen sharing works, monitor chat                 |
+| 15 min | Group discussion   | Small group clusters       | Assign breakout rooms                         | Check in on F2F groups                                | Monitor & manage breakout rooms, alert RP to issues       |
+| 20 min | Hands-on activity  | Provide physical materials | Have digital equivalents (PDFs, online tools) | Ensure online students get equal participation        | Distribute digital files, test links, troubleshoot issues |
+
+</div>
+</div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<div class="block">
+
+### Community of Inquiry
+
+</div>
+
+
+
+</div>
+
+<ol class="fa-ol">
+<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<li class="">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-users"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+**Social Presence**: Ensuring engagement and interaction among both F2F and ONL students.
+
+</div>
+
+
+
+</li>
+
+<li class="fragment">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-lightbulb"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+**Cognitive Presence**: Facilitating deep learning through structured activities that work for all participants.
+
+</div>
+
+
+
+</li>
+
+<li class="fragment">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-chalkboard-teacher"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+**Teaching Presence**: Designing, guiding, and adapting learning experiences to support equitable participation.
+
+</div>
+
+
+
+</li>
+
+</div>
+</ol>
+
+<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<div class="block">
+
+<img src="00 System/Assets/Community of Inquiry.png" alt="" style="object-fit: scale-down">
+
+
+</div>
+
+
+
+</div>
+</div>
+
+<aside class="notes"><h4 id="key-considerations">Key Considerations</h4>
+<ol>
+<li>How do we create a sense of community across both modalities?</li>
+<li>What strategies foster deep learning in comodal settings?</li>
+<li>How do RPs and TS ensure equal access and engagement?</li>
+</ol>
+<ul>
+<li>The CoI model helps structure meaningful online and in-person learning.</li>
+<li>Social presence: Encourage F2F-ONL interaction (e.g., breakout groups, chat monitoring).</li>
+<li>Cognitive presence: Use well-structured activities that translate across both formats.</li>
+<li>Teaching presence: Requires clear facilitation, tech support, and adaptability.</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<div class="block">
+
+### Digital Competency Framework
+
+</div>
+
+
+
+</div>
+
+<ol class="fa-ol">
+
+<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<li class="">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-network-wired"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+Leveraging technology to enable students to **communicate & collaborate** together.
+
+</div>
+
+
+
+</li>
+
+<li class="fragment">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-puzzle-piece"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+Using different platforms to foster **creativity** both in class and online.
+
+</div>
+
+
+
+</li>
+
+<li class="fragment">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-universal-access"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+Designing **accessible** activities that work for both groups equitably.
+
+</div>
+
+
+
+</li>
+
+<li class="fragment">
+
+<span class="fa-li">
+
+<div class="block">
+
+<i class="fas fa-search"></i>
+
+</div>
+
+
+
+</span>
+
+<div class="block">
+
+Increasing **digital literacy** in students by navigating online resources effectively.
+
+</div>
+
+
+
+</li>
+
+</div>
+
+</ol>
+
+<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+<div class="block">
+
+<img src="00 System/Assets/Digital Competency Framework.png" alt="" style="object-fit: scale-down">
+
+
+</div>
+
+
+
+</div>
+</div>
+
+<aside class="notes"><h4 id="key-considerations">Key Considerations</h4>
+<ol>
+<li>How do we use technology to bridge the gap between F2F and ONL students?</li>
+<li>What tools and strategies ensure inclusive, accessible learning?</li>
+<li>How does comodal teaching develop students&#39; digital competencies?</li>
+</ol>
+<ul>
+<li>Digital competency is key to comodal success.</li>
+<li>Collaboration: Online chat, breakout rooms, shared docs, peer review.</li>
+<li>Technology integration: Screen sharing, noise suppression, recording tools.</li>
+<li>Accessibility: Provide alternative formats, check for technical issues.</li>
+<li>Critical digital literacy: Ensure students can navigate digital learning spaces effectively.</li>
+</ul>
+</aside></script></section></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### References
+
+<div class="block">
+
+<!-- .element: style="font-size: 0.47em" class="references" -->
+
+1. Chill Cinema Sticker by Capsen [Digital image]. (2018). Retrieved from <https://giphy.com/stickers/movie-cinema-watch-2eKfq00HWfb91flICf>
+2. Compass Sticker by EmojiVid [Digital image]. (2020). Retrieved from <https://giphy.com/stickers/emoji-direction-compass-VdcrzQAm1R0Hoe1yzm>
+3. Drawing Office Sticker by fric [Digital image]. (2025). Retrieved from <https://giphy.com/stickers/emoji-direction-compass-VdcrzQAm1R0Hoe1yzm>
+4. Friendship Working Sticker by おめがちゃん [Digital image]. (2020). Retrieved from <https://giphy.com/stickers/transparent-online-usapipi-W3NjuxoCNrfTLGJxfX>
+5. Garrison, R., Anderson, T., & Archer, W. (2000). Critical inquiry in a text-based environment: computer conferencing in higher education. _Internet and Higher Education_, 2(2–3), 87–105. [https://doi-org.ezproxy.lib.ucalgary.ca/10.1016/S1096-7516(00)00016-6](https://doi-org.ezproxy.lib.ucalgary.ca/10.1016/S1096-7516\(00\)00016-6)
+6. Happy Fun Sticker by Kennysgifs [Digital image]. (2022). Retrieved from <https://giphy.com/stickers/cartoon-loop-kawaii-bPdzSyA3CswM4mGKSn>
+7. Ministère de l’éducation et de l’enseignement supérieur. (2019). _Digital competency framework_. <https://www.education.gouv.qc.ca>
+8. Welsh Corgi Teacher Sticker by Lazy Corgi [Digital image]. (2022). Retrieved from <https://giphy.com/stickers/lazy-corgi-ZiT4BATmuZ5brqUxvb>
+9. Whats Up Hello Sticker by Holler Studios [Digital image]. (2023). Retrieved from <https://giphy.com/stickers/HollerStudios-duck-holler-studios-qwak-7lTUgVeYpeNWbdFrVG>
+10. Work Love Sticker by illusbyjo [Digital image]. (2024). Retrieved from <https://giphy.com/stickers/love-illusbyjo-atelierbyjo-u7Q3bJnID2DJ6ydItj>
+
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+<div class="block">
+
+### Thank You
+
+</div>
+
+
+
+</div>
+
+<div class="" style="position: absolute; left: 0%; top: 20%; height: 60%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+
+
+
+
+
+
+<img src="00 System/Assets/Stickers/Waving.gif" alt="" style="object-fit: scale-down">
+
+
+
+
+
+</div>
+
+<div class="" style="position: absolute; left: 0%; top: 80%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+<div class="block">
+
+Questions? Comments?
+
+</div>
+
+
+
+
+</div>
+</div></script></section></div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/math/math.js"></script>
+	<script src="plugin/mermaid/mermaid.js"></script>
+	<script src="plugin/chart/chart.min.js"></script>
+	<script src="plugin/chart/plugin.js"></script>
+	<script src="plugin/customcontrols/plugin.js"></script>
+	<script src="plugin/reveal-pointer/pointer.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+	  function isLight(color) {
+		let hex = color.replace('#', '');
+
+		// convert #fff => #ffffff
+		if(hex.length == 3){
+			hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`;
+		}
+
+		const c_r = parseInt(hex.substr(0, 2), 16);
+		const c_g = parseInt(hex.substr(2, 2), 16);
+		const c_b = parseInt(hex.substr(4, 2), 16);
+		const brightness = ((c_r * 299) + (c_g * 587) + (c_b * 114)) / 1000;
+		return brightness > 155;
+	}
+
+	var bgColor = getComputedStyle(document.documentElement).getPropertyValue('--r-background-color').trim();
+	var isLight = isLight(bgColor);
+
+	if(isLight){
+		document.body.classList.add('has-light-background');
+	} else {
+		document.body.classList.add('has-dark-background');
+	}
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath.MathJax3,
+		  RevealMermaid,
+		  RevealChart,
+		  RevealCustomControls,
+	      RevealPointer,
+        ],
+
+
+    	allottedTime: 120 * 1000,
+
+		mathjax3: {
+			mathjax: 'plugin/math/mathjax/tex-mml-chtml.js',
+		},
+		markdown: {
+		  gfm: true,
+		  mangle: true,
+		  pedantic: false,
+		  smartLists: false,
+		  smartypants: false,
+		},
+
+		mermaid: {
+			theme: isLight ? 'default' : 'dark',
+		},
+
+		customcontrols: {
+			controls: [
+			]
+		},
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"width":1920,"height":1080,"margin":0.04,"controls":true,"progress":true,"slideNumber":false,"transition":"slide","transitionSpeed":"default"}, queryOptions);
+    </script>
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+
+  <!-- created with Advanced Slides -->
+</html>
