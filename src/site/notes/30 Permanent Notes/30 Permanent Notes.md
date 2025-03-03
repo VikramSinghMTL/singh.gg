@@ -11,7 +11,7 @@
 - [[30 Permanent Notes/Bloom's Taxonomy\|Bloom's Taxonomy]]
 - [[30 Permanent Notes/Code Review Taxonomy\|Code Review Taxonomy]]
 - [[30 Permanent Notes/Community of Inquiry\|Community of Inquiry]]
-- [[30 Permanent Notes/Comodal Training Outline\|Comodal Training]]
+- [[30 Permanent Notes/Comodal Class Delivery\|Comodal Training]]
 - [[30 Permanent Notes/Computer Science Students and Collaboration\|Computer Science Students and Collaboration]]
 - [[30 Permanent Notes/Computer Science Students and Debugging\|Computer Science Students and Debugging]]
 - [[30 Permanent Notes/Computer Science Students and Metacognition\|Computer Science Students and Metacognition]]

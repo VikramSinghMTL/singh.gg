@@ -3,6 +3,16 @@
 ---
 
 
+## Slide Presentations
+
+- I use this Obsidian plugin https://mszturc.github.io/obsidian-advanced-slides/
+- Which writes presentations using https://revealjs.com
+- I can insert icons from https://fontawesome.com
+- Add GIFs/stickers from https://giphy.com
+- Templates are in `00 System/Templates/Slide Templates`
+- TODO: Where should I keep all the slides?
+- TODO: It would be cool if I could write a slides file, and have the Digital Garden (Eleventy/Vercel) pipeline have them automatically hosted an available at singh.gg.
+
 ## Goals
 
 - Task tracker that tells me what the next task I need to do is for a given project.

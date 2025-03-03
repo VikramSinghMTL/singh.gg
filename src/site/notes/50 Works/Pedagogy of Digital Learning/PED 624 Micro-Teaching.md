@@ -1,5 +1,5 @@
 ---
-{"title":"PED 624 Micro-Teaching","css":"css/vik.css","dg-publish":true,"created":"2025-02-18","modified":"2025-02-24","permalink":"/50-works/pedagogy-of-digital-learning/ped-624-micro-teaching/","dgPassFrontmatter":true,"updated":"2025-02-24"}
+{"title":"PED 624 Micro-Teaching","css":"css/vik.css","dg-publish":true,"created":"2025-02-18","modified":"2025-02-24","tags":["slides"],"permalink":"/50-works/pedagogy-of-digital-learning/ped-624-micro-teaching/","dgPassFrontmatter":true,"updated":"2025-02-24"}
 ---
 
 
@@ -27,7 +27,7 @@ note: Welcome everyone! Today, I’ll show how Perusall is more than just a read
 
 ::: block
 
-![PED 624 Micro-Teaching-3.gif](/img/user/00%20System/Assets/PED%20624%20Micro-Teaching-3.gif)
+![Reading.gif](/img/user/00%20System/Assets/Stickers/Reading.gif)
 
 :::
 
@@ -53,7 +53,7 @@ note: Many educators struggle with student engagement in assigned readings. Trad
 
 ::: block <!-- element class="center-vertical" -->
 
-![PED 624 Micro-Teaching-3.gif](/img/user/00%20System/Assets/PED%20624%20Micro-Teaching-3.gif)
+![Reading.gif](/img/user/00%20System/Assets/Stickers/Reading.gif)
 
 :::
 
@@ -336,7 +336,7 @@ note: To summarize, Perusall isn’t just a tool—it’s a **research-backed st
 
 ## Thank You
 
-![PED 624 Micro-Teaching-2.gif|200](/img/user/00%20System/Assets/PED%20624%20Micro-Teaching-2.gif)
+![Waving.gif|200](/img/user/00%20System/Assets/Stickers/Waving.gif)
 
 Questions? Comments?
 
