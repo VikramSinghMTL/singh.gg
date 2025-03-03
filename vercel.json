@@ -5,7 +5,6 @@
 	"devCommand": "npm run start",
 	"routes": [
 		{ "handle": "filesystem" },
-		{ "src": "/(.*)", "status": 404, "dest": "/404" },
-		{ "slides": "/slides", "status": 200, "dest": "/slides" }
+		{ "src": "/(.*)", "status": 404, "dest": "/404" }
 	]
 }
