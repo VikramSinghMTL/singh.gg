@@ -156,11 +156,11 @@ Conclusion: Strong Justification for a Game-Based Feedback System
 
 ### Q7. Do you prefer playing games alone or with others?
 
-|Preference|Count|
-|---|---|
-|With others|27|
-|No preference|11|
-|Alone|4|
+| Preference    | Count |
+| ------------- | ----- |
+| With others   | 27    |
+| No preference | 11    |
+| Alone         | 4     |
 
 ![Data Analysis-6.png](/img/user/00%20System/Assets/Data%20Analysis-6.png)
 
@@ -176,11 +176,11 @@ Conclusion: Strong Justification for a Game-Based Feedback System
 
 ### Q8. Do you prefer competitive or cooperative games?
 
-|Game Preference|Count|
-|---|---|
-|Competitive (I enjoy games where I compete against others)|22|
-|No preference|12|
-|Cooperative (I enjoy games where I work with others toward a common goal)|8|
+| Game Preference                                                           | Count |
+| ------------------------------------------------------------------------- | ----- |
+| Competitive (I enjoy games where I compete against others)                | 22    |
+| No preference                                                             | 12    |
+| Cooperative (I enjoy games where I work with others toward a common goal) | 8     |
 
 ![Data Analysis-7.png](/img/user/00%20System/Assets/Data%20Analysis-7.png)
 

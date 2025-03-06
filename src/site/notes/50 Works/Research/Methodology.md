@@ -1,49 +1,99 @@
 ---
-{"title":"Methodology","tags":null,"dg-publish":true,"created":"2024-03-06","modified":"2025-02-21","permalink":"/50-works/research/methodology/","dgPassFrontmatter":true,"updated":"2025-02-21"}
+{"title":"Methodology","tags":[],"dg-publish":true,"created":"2024-03-06","modified":"2025-03-05","permalink":"/50-works/research/methodology/","dgPassFrontmatter":true,"updated":"2025-03-05"}
 ---
 
 
-This project is grounded in the existing literature on PCR, the application of motivational theories (specifically SDT) to education, and the use of GBL in CS. It will contribute to the field by exploring a novel approach to a persistent challenge in CS education–how to cultivate the student motivation essential for effective PCR and the development of crucial software development skills.
-
-## 4.1 Research Questions
-
-==Stick the questions in the intro paragraph above?==
+This study is grounded in existing literature on Peer Code Review (PCR), the application of motivational theories—specifically Self-Determination Theory (SDT)—to education, and the use of Game-Based Learning (GBL) in Computer Science (CS) education. It contributes to the field by exploring a novel approach to a persistent challenge in CS education: how to cultivate the student motivation essential for effective PCR and the development of crucial software development skills. Specifically, this study seeks to determine whether a game-based learning intervention increases the quality of feedback provided during CS PCR and whether it influences students' perceived competence, autonomy, and relatedness, as conceptualized by SDT.
 
 1. Does a game-based learning intervention increase the quality of feedback provided during CS PCR?
 2. Does the game-based learning intervention influence students' perceived competence, autonomy, and relatedness, as conceptualized by SDT?
 
-## 4.2 Research Design
+## 4.1 Research Design
 
-This study will employ a quantitative quasi-experimental design. A two-group post-test design will allow for the investigation of how a GBL intervention influences both the quality of feedback provided during CS PCR and students' self-reported motivation in alignment with SDT.
+This study employed a mixed-methods pre-post experimental design to investigate the impact of a GBL intervention on both the quality of feedback provided during CS PCR and students' self-reported motivation in alignment with SDT. The target population consisted of third-year CS students at the CEGEP level in Quebec, selected due to their advanced programming experience and the critical role of PCR in preparing them for collaborative software development practices. The study was conducted within two sections of a Game Programming course in the CS program at John Abbott College, with a sample size of 42 students in the pre-test and 39 students in the post-test for motivation analysis, and 37 students for the analysis of feedback quality. Data collection took place during Week 10 (pre-test) and Week 12 (post-test) of the Fall 2024 semester, allowing for an assessment of changes in student motivation and feedback quality over time. A pre-test/post-test approach was used to assess changes over time within the same group of students rather than comparing two separate groups.
 
-## 4.3 Target population
+## 4.2 Procedure
 
-The target population is third-year CS students at the CEGEP level in Quebec. This population is selected due to their advanced programming experience and the critical role of PCR in preparing them for collaborative software development practices. The study will be conducted within two sections of an advanced programming course in the CS program at John Abbott College, with a sample population of approximately 30-45 students.
+The sequence of activities in this study is visually represented in the following sequence diagram, which distinguishes between asynchronous and synchronous phases of the intervention:
 
-## 4.4 Procedure
+```mermaid
+sequenceDiagram
+    %% Define Actors
+    actor Student
+    actor Instructor
+    participant Moodle
+    participant Game
 
-At the beginning of the Fall 2024 semester, the students will be informed that their teacher is conducting a research project about PCR. They will be notified that around week 10, all students (approximately 30-45) will engage in a PCR exercise during their regular class time. Participants will be in one of two groups. Group A students will engage in PCR after playing a game specifically designed to employ code review concepts and methods. Alternatively, the game will be unrelated to code review, but prime the cognitive abilities to provide quality feedback. For this reason, The rules and logistics of the game for group A are yet to be determined. Group B students will use the traditional PCR method currently employed in the course. Both groups will use the PCR rubric (Appendix A). Immediately following the PCR exercise, both groups will complete the Intrinsic Motivation Inventory (IMI) [@ryan1983] (Appendix D).
+    rect rgb(180, 190, 254) # Light blue for Pre-Intervention (Async)
+    Note over Student, Moodle: Pre-Intervention (Asynchronous, Week 9)
+    Student->>Moodle: Submits peer feedback
+    Instructor->>Moodle: Scrapes & scores feedback
+    Moodle-->>Instructor: Provides feedback quality scores
+    Instructor->>Game: Assigns yellow cards based on feedback quality
+    end
 
-## 4.5 Instruments
+    rect rgb(166, 227, 161) # Light green for Class Session 1 (Sync)
+    Note over Student, Instructor: Class Session 1 (Synchronous, Week 10)
+    Instructor->>Student: Informed consent & Pre-test survey
+    Instructor->>Student: Explains game rules & hands out cards
+    Student->>Game: Plays first game session
+    Instructor->>Student: Reveals feedback-based card distribution
+    end
 
-The IMI is a validated Likert-style survey which measures student motivation in the context of PCR, including sub-scales for competence, autonomy, relatedness, and enjoyment. It uses a 7-point scale where 1 is "not at all true" and 7 is "very true". The questions will be rephrased slightly contextualizing the PCR experience. Examples are:
+    rect rgb(249, 226, 175) # Light yellow for Post-Intervention (Async)
+    Note over Student, Moodle: Post-Intervention (Asynchronous, Week 11)
+    Student->>Moodle: Submits second peer feedback
+    Instructor->>Moodle: Scores updated feedback
+    Moodle-->>Instructor: Provides updated scores
+    Instructor->>Game: Assigns new yellow cards
+    end
 
-1. I think peer code review is an important activity.
-2. I think I am pretty good at peer code review.
+    rect rgb(243, 139, 168) # Light red for Class Session 2 (Sync)
+    Note over Student, Instructor: Class Session 2 (Synchronous, Week 12)
+    Instructor->>Student: Distributes updated game cards
+    Student->>Game: Plays second game session
+    Instructor->>Student: Post-test survey
+    end
+```
 
-A Code Review Taxonomy [@hamer2015; @indriasari2023] (Appendix B) will designate comments within categories such as "positive", "negative", "advice/action", as well as the specificity of these comments (general or code-specific).
+### Pre-Intervention Phase
 
-## 4.6 Data Analysis
+Prior to this study, students had been engaging in peer feedback activities since the early weeks of the semester, using the Peer Code Review Rubric (Appendix A) as a reference for evaluating their peers' work. This rubric provided a structured framework that guided their feedback, ensuring consistency and clarity in their evaluations. These prior experiences with peer review helped establish a baseline understanding of feedback expectations before the intervention was introduced.
 
-T-tests or ANOVA will be used to compare mean scores on IMI sub-scales between the game-based and non-game-based groups. This will assess differences in motivational outcomes as a result of the type of PCR approach. Frequency counts will be generated for each type of feedback provided by both groups using the code review taxonomy. Chi-square tests will be used to compare the prevalence of different feedback types between the two groups.
+Prior to the intervention, students participated in asynchronous peer feedback through Moodle’s Workshop activity. Each student provided feedback on their peers’ work, and this feedback was extracted using a custom scraper (Appendix E) developed by the researcher. The feedback was anonymized and analyzed using a Large Language Model (LLM) [@openai2024], which categorized comments based on a Code Review Taxonomy (Appendix B). These categorized scores were then converted into numerical values through a JavaScript-based scoring script.
 
-- Still working on the data analysis so we can skip this section for now.
-- Reminder: Students who were absent from either the pre or post were excluded since we can't pair them up with the other test.
+The scores determined the number of yellow action cards that each student received at the beginning of the game, introducing a performance-based starting condition for the intervention.
 
-## 4.7 Ethical Considerations
+### Intervention Phase
 
-The researcher's dual role as an instructor and researcher presents potential for coercion, thus the researcher will not be present during the data collection phase if this is seen as problematic. If so, The facilitator will be a colleague from the JAC Computer Science program or the research supervisor. Explicitly informed consent (Appendix C) and measures to protect student confidentiality and grades are crucial, so all student data will be anonymized by the intervention facilitator to reduce the researcher's bias. Student will be informed that they can opt-out at any point even after the data is collected. All students will be given the GBL experience after the data collection phase to ensure equity of treatment. The data will be collected through either a Moodle or Microsoft form. In either case, the anonymized data will be held on Canadian servers.
+During a synchronous class session, students first completed the informed consent form and the pre-test, which measured perceived competence, autonomy, and relatedness. They were then placed into groups of four and received physical card decks for gameplay. The instructor displayed a table assigning yellow cards to each student, prompting curiosity about the distribution.
 
-## 4.8 Timeline
+Students played the game under standard conditions, engaging with mechanics centered around resource management, strategy, and competition. Since this was a Game Programming course, the entities within the game were all based on fundamental game development concepts. Students aimed to build four key structures—State Machine, Sprite, Timer, and Collision—by collecting and trading resource cards while managing setbacks introduced by special action cards. While the game itself did not directly involve peer feedback, its competitive structure introduced an incentive-based framework that was later linked to students' feedback quality in the debriefing session. After gameplay, it was revealed that the initial yellow card distribution was based on their previous peer feedback quality, emphasizing the relationship between quality feedback and game resources.
 
-Data will be collected around week 7-8 of the Fall 2024 semester in my Game Programming course. The collection process will last between 1.5-3 hours during a period of one class. After the data is collected, the data will be analyzed in the latter half of the Fall 2024 semester into the Winter 2025 semester. The final paper will be finalized in Winter 2025 and submitted in Spring 2025. The results will be shared during MEC953.
+### Post-Intervention Phase
+
+Following the first game session, students completed another asynchronous peer feedback activity through Moodle, knowing that their feedback quality would impact their performance in a future game session. The second iteration of the game followed the same structure as the first, with students receiving yellow cards based on their new feedback quality scores. After playing the game for the second time, students completed the post-test survey, measuring changes in their perceptions of competence, autonomy, and relatedness.
+
+## 4.3 Instruments
+
+### Intrinsic Motivation Inventory (IMI)
+
+The IMI is a validated Likert-style survey that measures student motivation in PCR, assessing sub-scales for competence, autonomy, relatedness, and enjoyment. It utilizes a 5-point scale (1 = "not at all true” to 5 = "very true"). Survey questions were adapted to reflect the PCR experience. For example, competence-related questions included statements such as, "I think I am pretty good at peer code review" and "I am satisfied with my ability to assess my peers’ code." Autonomy-related items asked students whether they felt they had choices in how they provided peer feedback or whether they had input in deciding how to evaluate their peers’ work. Relatedness was assessed through questions that explored whether students felt connected to their peers during the peer review process and whether they felt comfortable giving feedback. Enjoyment-focused questions measured whether students found the peer review process enjoyable and whether they had fun participating. The full list of pre-test and post-test survey questions is included in Appendix D to provide a comprehensive view of the assessment instrument.
+
+### Code Review Taxonomy
+
+A Code Review Taxonomy (Hamer et al., 2015; Indriasari et al., 2023) categorized feedback comments into distinct types. Feedback was classified as either positive or negative, depending on whether it reinforced correct implementation or identified issues. Additionally, comments were categorized based on whether they provided actionable advice or suggestions for improvement. The taxonomy also distinguished between general feedback, which addressed broader coding concepts, and code-specific feedback, which focused on particular lines of code or implementation details. These categories provided a structured framework for analyzing feedback quality.
+
+## 4.4 Data Analysis
+
+Data analysis focused on assessing changes between preand post-test measures, as well as evaluating improvements in peer feedback quality. The Wilcoxon Signed-Rank Test was applied to analyze pre-post differences in feedback quality scores. Each student provided feedback to three peers in both the preand post-intervention phases. The median feedback quality score from each student's three evaluations was used for the Wilcoxon analysis to account for variability across different peer reviews. To assess changes in perceived competence, autonomy, and relatedness, paired t-tests were conducted. Additionally, descriptive statistics such as mean and median scores were calculated for each variable to provide a clearer picture of the trends in student motivation and feedback quality over time.
+
+Students who were absent from either the pre-test or post-test were excluded from the analysis of feedback quality, as their responses could not be matched across both time points. However, all responses were retained for the motivation analysis since those measures were unpaired and anonymous.
+
+## 4.5 Ethical Considerations
+
+The researcher’s dual role as instructor and researcher introduced potential concerns regarding coercion. To mitigate this, explicit informed consent was obtained (Appendix C), and students were informed that participation was voluntary, with the option to withdraw at any time. Pre-test and post-test survey responses were anonymous, ensuring that students' self-reported motivation data remained confidential. However, feedback quality data was not anonymized, as it was necessary to track individual students' feedback performance to assign their starting resources in the game-based intervention. The students were informed that their grades were not impacted by their participation. Additionally, the study adhered to institutional ethical guidelines, ensuring that all data was stored securely on Canadian servers using both Moodle and Microsoft Forms.
+
+## 4.6 Placement of Supplementary Materials
+
+Consider including the Card Game Description in Appendix E and an overview of the Scraper & Scoring Scripts in Appendix F, with links to relevant documentation.
