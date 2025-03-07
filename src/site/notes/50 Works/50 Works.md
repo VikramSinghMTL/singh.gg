@@ -32,7 +32,7 @@
 	- [[50 Works/Research/Game Intervention\|Game Intervention]]
 	- [[50 Works/Research/Intrinsic Motivation Inventory\|Intrinsic Motivation Inventory (IMI)]]
 	- [[50 Works/Research/Literature Review Outline\|Literature Review Outline]]
-	- [[50 Works/CKID/Literature Review\|Literature Review]]
+	- [[50 Works/CKID/Literature Review\|Literature Review 2.0]]
 	- [[50 Works/Research/Methodology\|Methodology]]
 	- **Pecha Kucha**
 		- [[50 Works/Research/Pecha Kucha/Critical Path Pecha Kucha\|Critical Path Pecha Kucha]]

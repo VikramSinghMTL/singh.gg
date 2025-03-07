@@ -1,12 +1,9 @@
 ---
-{"title":"Methodology","tags":[],"dg-publish":true,"created":"2024-03-06","modified":"2025-03-05","permalink":"/50-works/research/methodology/","dgPassFrontmatter":true,"updated":"2025-03-05"}
+{"title":"Methodology","dg-publish":true,"created":"2024-03-06","modified":"2025-03-06","permalink":"/50-works/research/methodology/","dgPassFrontmatter":true,"updated":"2025-03-06"}
 ---
 
 
 This study is grounded in existing literature on Peer Code Review (PCR), the application of motivational theories—specifically Self-Determination Theory (SDT)—to education, and the use of Game-Based Learning (GBL) in Computer Science (CS) education. It contributes to the field by exploring a novel approach to a persistent challenge in CS education: how to cultivate the student motivation essential for effective PCR and the development of crucial software development skills. Specifically, this study seeks to determine whether a game-based learning intervention increases the quality of feedback provided during CS PCR and whether it influences students' perceived competence, autonomy, and relatedness, as conceptualized by SDT.
-
-1. Does a game-based learning intervention increase the quality of feedback provided during CS PCR?
-2. Does the game-based learning intervention influence students' perceived competence, autonomy, and relatedness, as conceptualized by SDT?
 
 ## 4.1 Research Design
 
@@ -14,7 +11,7 @@ This study employed a mixed-methods pre-post experimental design to investigate 
 
 ## 4.2 Procedure
 
-The sequence of activities in this study is visually represented in the following sequence diagram, which distinguishes between asynchronous and synchronous phases of the intervention:
+The sequence of activities in this study is visually represented in Figure 1, which distinguishes between asynchronous and synchronous phases of the intervention:
 
 ```mermaid
 sequenceDiagram
@@ -60,7 +57,7 @@ sequenceDiagram
 
 Prior to this study, students had been engaging in peer feedback activities since the early weeks of the semester, using the Peer Code Review Rubric (Appendix A) as a reference for evaluating their peers' work. This rubric provided a structured framework that guided their feedback, ensuring consistency and clarity in their evaluations. These prior experiences with peer review helped establish a baseline understanding of feedback expectations before the intervention was introduced.
 
-Prior to the intervention, students participated in asynchronous peer feedback through Moodle’s Workshop activity. Each student provided feedback on their peers’ work, and this feedback was extracted using a custom scraper (Appendix E) developed by the researcher. The feedback was anonymized and analyzed using a Large Language Model (LLM) [@openai2024], which categorized comments based on a Code Review Taxonomy (Appendix B). These categorized scores were then converted into numerical values through a JavaScript-based scoring script.
+Prior to the intervention, students participated in asynchronous peer feedback through Moodle’s Workshop activity [@moodle2024]. Each student provided feedback on their peers’ work, and this feedback was extracted using a custom scraper (Appendix E) developed by the researcher. The feedback was anonymized and analyzed using a Large Language Model (LLM) [@openai2024], which categorized comments based on a Code Review Taxonomy (Appendix B). These categorized scores were then converted into numerical values through a JavaScript-based scoring script (Appendix F).
 
 The scores determined the number of yellow action cards that each student received at the beginning of the game, introducing a performance-based starting condition for the intervention.
 
@@ -93,7 +90,3 @@ Students who were absent from either the pre-test or post-test were excluded f
 ## 4.5 Ethical Considerations
 
 The researcher’s dual role as instructor and researcher introduced potential concerns regarding coercion. To mitigate this, explicit informed consent was obtained (Appendix C), and students were informed that participation was voluntary, with the option to withdraw at any time. Pre-test and post-test survey responses were anonymous, ensuring that students' self-reported motivation data remained confidential. However, feedback quality data was not anonymized, as it was necessary to track individual students' feedback performance to assign their starting resources in the game-based intervention. The students were informed that their grades were not impacted by their participation. Additionally, the study adhered to institutional ethical guidelines, ensuring that all data was stored securely on Canadian servers using both Moodle and Microsoft Forms.
-
-## 4.6 Placement of Supplementary Materials
-
-Consider including the Card Game Description in Appendix E and an overview of the Scraper & Scoring Scripts in Appendix F, with links to relevant documentation.
