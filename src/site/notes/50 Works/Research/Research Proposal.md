@@ -80,9 +80,9 @@ In this study, I want to examine the quality of PCR feedback and GBL through the
 
 ## 3.1 The Importance of PCR
 
-Peer code review (PCR) is one of the best ways for students to learn programming beyond simply writing their own code. It teaches them how to analyze and critique someone else’s work, which, in turn, makes them better at spotting mistakes in their own. This process is common in professional software development, where developers review and critique each other’s code regularly [@cross1987; @indriasari2020a]. In the classroom, PCR helps students understand coding standards, best practices, and software design principles. But, it’s not only about technical skills. Students also practice communicating their ideas, justifying their decisions, and learning from different approaches to the same problem [@indriasari2020a; @petersen2018].
+Peer code review (PCR) is one of the best ways for students to learn programming beyond simply writing their own code. It teaches them how to analyze and critique someone else’s work, which, in turn, makes them better at spotting mistakes in their own. This process is common in professional software development, where developers review and critique each other’s code regularly [@cross1987; @indriasari2020a]. In the classroom, PCR helps students understand coding standards, best practices, and software design principles. But it’s not only about technical skills. Students also practice communicating their ideas, justifying their decisions, and learning from different approaches to the same problem [@indriasari2020a; @petersen2018].
 
-There’s a lot to gain from seeing how someone else thinks through a problem. Students might realize that there’s a simpler way to solve something or that they have been making the same mistake without noticing. Reviewing peer code pushes them to ask, “Why did they do it this way?” and “Would my approach be better?” This kind of critical thinking strengthens problem-solving skills and helps them adapt to new programming concepts [@indriasari2020a; @perez-quinones2009]. It also helps them recognize patterns—common errors, smart solutions, and efficient techniques they might not have encountered otherwise [@li2006; @petersen2018].
+There’s a lot to gain from seeing how someone else thinks through a problem. Students might realize that there’s a simpler way to solve something or that they have been making the same mistake without noticing. Reviewing peer code pushes them to ask, “Why did they do it this way?” and “Would my approach be better?” This kind of critical thinking strengthens problem-solving skills and helps them adapt to new programming concepts [@indriasari2020a; @perez-quinones2009]. It also helps them recognize patterns such as common errors, smart solutions, and efficient techniques they might not have encountered otherwise [@li2006; @petersen2018].
 
 PCR also builds self-awareness, helping students reflect on their own coding habits as they critique their peers’ work. Seeing mistakes or alternative approaches in someone else’s code can prompt students to ask whether they are making similar errors or if they could structure their own code more effectively [@brown2020]. This reflective process reinforces their understanding of key programming concepts, as articulating feedback requires them to evaluate and explain their reasoning clearly [@hamer2009; @hundhausen2013]. Additionally, knowing that their own work will be reviewed by peers makes students more deliberate in their coding decisions, leading to clearer, better-documented programs. Over time, this process fosters accountability and a sense of ownership over their work, preparing them for the expectations of professional software development [@hamer2009; @indriasari2020a].
 
@@ -163,6 +163,7 @@ This study employed a mixed-methods pre-post experimental design to investigate 
 
 The sequence of activities in this study is visually represented in Figure 1, which distinguishes between asynchronous and synchronous phases of the intervention:
 
+
 ```mermaid
 sequenceDiagram
     %% Define Actors
@@ -172,7 +173,7 @@ sequenceDiagram
     participant Game
 
     rect rgb(180, 190, 254) # Light blue for Pre-Intervention (Async)
-    Note over Student, Moodle: Pre-Intervention (Asynchronous, Week 9)
+    Note over Student, Game: Pre-Intervention (Asynchronous, Week 9)
     Student->>Moodle: Submits peer feedback
     Instructor->>Moodle: Scrapes & scores feedback
     Moodle-->>Instructor: Provides feedback quality scores
@@ -180,7 +181,7 @@ sequenceDiagram
     end
 
     rect rgb(166, 227, 161) # Light green for Class Session 1 (Sync)
-    Note over Student, Instructor: Class Session 1 (Synchronous, Week 10)
+    Note over Student, Game: Class Session 1 (Synchronous, Week 10)
     Instructor->>Student: Informed consent & Pre-test survey
     Instructor->>Student: Explains game rules & hands out cards
     Student->>Game: Plays first game session
@@ -188,7 +189,7 @@ sequenceDiagram
     end
 
     rect rgb(249, 226, 175) # Light yellow for Post-Intervention (Async)
-    Note over Student, Moodle: Post-Intervention (Asynchronous, Week 11)
+    Note over Student, Game: Post-Intervention (Asynchronous, Week 11)
     Student->>Moodle: Submits second peer feedback
     Instructor->>Moodle: Scores updated feedback
     Moodle-->>Instructor: Provides updated scores
@@ -196,7 +197,7 @@ sequenceDiagram
     end
 
     rect rgb(243, 139, 168) # Light red for Class Session 2 (Sync)
-    Note over Student, Instructor: Class Session 2 (Synchronous, Week 12)
+    Note over Student, Game: Class Session 2 (Synchronous, Week 12)
     Instructor->>Student: Distributes updated game cards
     Student->>Game: Plays second game session
     Instructor->>Student: Post-test survey
@@ -207,9 +208,7 @@ sequenceDiagram
 
 Prior to this study, students had been engaging in peer feedback activities since the early weeks of the semester, using the Peer Code Review Rubric (Appendix A) as a reference for evaluating their peers' work. This rubric provided a structured framework that guided their feedback, ensuring consistency and clarity in their evaluations. These prior experiences with peer review helped establish a baseline understanding of feedback expectations before the intervention was introduced.
 
-Prior to the intervention, students participated in asynchronous peer feedback through Moodle’s Workshop activity [@moodle2024]. Each student provided feedback on their peers’ work, and this feedback was extracted using a custom scraper (Appendix E) developed by the researcher. The feedback was anonymized and analyzed using a Large Language Model (LLM) [@openai2024], which categorized comments based on a Code Review Taxonomy (Appendix B). These categorized scores were then converted into numerical values through a JavaScript-based scoring script (Appendix F).
-
-The scores determined the number of yellow action cards that each student received at the beginning of the game, introducing a performance-based starting condition for the intervention.
+Prior to the intervention, students participated in asynchronous peer feedback through Moodle’s Workshop activity [@moodle2024]. Each student provided feedback on their peers’ work, and this feedback was extracted using a custom scraper (Appendix E) developed by the researcher. The feedback was anonymized and analyzed using a Large Language Model (LLM) [@openai2024], which categorized comments based on a Code Review Taxonomy (Appendix B). These categorized scores were then converted into numerical values through a JavaScript-based scoring script (Appendix F). The scores determined the number of yellow action cards that each student received at the beginning of the game, introducing a performance-based starting condition for the intervention.
 
 ### Intervention Phase
 

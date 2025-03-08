@@ -13,6 +13,7 @@ This study employed a mixed-methods pre-post experimental design to investigate 
 
 The sequence of activities in this study is visually represented in Figure 1, which distinguishes between asynchronous and synchronous phases of the intervention:
 
+
 ```mermaid
 sequenceDiagram
     %% Define Actors
@@ -22,7 +23,7 @@ sequenceDiagram
     participant Game
 
     rect rgb(180, 190, 254) # Light blue for Pre-Intervention (Async)
-    Note over Student, Moodle: Pre-Intervention (Asynchronous, Week 9)
+    Note over Student, Game: Pre-Intervention (Asynchronous, Week 9)
     Student->>Moodle: Submits peer feedback
     Instructor->>Moodle: Scrapes & scores feedback
     Moodle-->>Instructor: Provides feedback quality scores
@@ -30,7 +31,7 @@ sequenceDiagram
     end
 
     rect rgb(166, 227, 161) # Light green for Class Session 1 (Sync)
-    Note over Student, Instructor: Class Session 1 (Synchronous, Week 10)
+    Note over Student, Game: Class Session 1 (Synchronous, Week 10)
     Instructor->>Student: Informed consent & Pre-test survey
     Instructor->>Student: Explains game rules & hands out cards
     Student->>Game: Plays first game session
@@ -38,7 +39,7 @@ sequenceDiagram
     end
 
     rect rgb(249, 226, 175) # Light yellow for Post-Intervention (Async)
-    Note over Student, Moodle: Post-Intervention (Asynchronous, Week 11)
+    Note over Student, Game: Post-Intervention (Asynchronous, Week 11)
     Student->>Moodle: Submits second peer feedback
     Instructor->>Moodle: Scores updated feedback
     Moodle-->>Instructor: Provides updated scores
@@ -46,7 +47,7 @@ sequenceDiagram
     end
 
     rect rgb(243, 139, 168) # Light red for Class Session 2 (Sync)
-    Note over Student, Instructor: Class Session 2 (Synchronous, Week 12)
+    Note over Student, Game: Class Session 2 (Synchronous, Week 12)
     Instructor->>Student: Distributes updated game cards
     Student->>Game: Plays second game session
     Instructor->>Student: Post-test survey
@@ -57,9 +58,7 @@ sequenceDiagram
 
 Prior to this study, students had been engaging in peer feedback activities since the early weeks of the semester, using the Peer Code Review Rubric (Appendix A) as a reference for evaluating their peers' work. This rubric provided a structured framework that guided their feedback, ensuring consistency and clarity in their evaluations. These prior experiences with peer review helped establish a baseline understanding of feedback expectations before the intervention was introduced.
 
-Prior to the intervention, students participated in asynchronous peer feedback through Moodle’s Workshop activity [@moodle2024]. Each student provided feedback on their peers’ work, and this feedback was extracted using a custom scraper (Appendix E) developed by the researcher. The feedback was anonymized and analyzed using a Large Language Model (LLM) [@openai2024], which categorized comments based on a Code Review Taxonomy (Appendix B). These categorized scores were then converted into numerical values through a JavaScript-based scoring script (Appendix F).
-
-The scores determined the number of yellow action cards that each student received at the beginning of the game, introducing a performance-based starting condition for the intervention.
+Prior to the intervention, students participated in asynchronous peer feedback through Moodle’s Workshop activity [@moodle2024]. Each student provided feedback on their peers’ work, and this feedback was extracted using a custom scraper (Appendix E) developed by the researcher. The feedback was anonymized and analyzed using a Large Language Model (LLM) [@openai2024], which categorized comments based on a Code Review Taxonomy (Appendix B). These categorized scores were then converted into numerical values through a JavaScript-based scoring script (Appendix F). The scores determined the number of yellow action cards that each student received at the beginning of the game, introducing a performance-based starting condition for the intervention.
 
 ### Intervention Phase
 
