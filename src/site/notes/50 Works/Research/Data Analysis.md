@@ -111,7 +111,7 @@ Conclusion: Strong Justification for a Game-Based Feedback System
 	- If peer feedback feels engaging rather than stressful, students may participate more actively and provide better-quality reviews.
 3. Incorporating Competition for Motivation (Self-Determination Theory)
 	- Competition (29) is a strong motivator, suggesting that leaderboards, ranking systems, or progress tracking could enhance participation.
-	- This ties into SDT’s competence and relatedness, as students may feel more motivated to improve their feedback to “win” in some way.
+	- This ties into SDT’s competence and relatedness, as students may feel more motivated to improve their feedback to "win" in some way.
 
 ### Q5. Have you ever participated in learning activities through games in other courses?
 
@@ -186,7 +186,7 @@ Conclusion: Strong Justification for a Game-Based Feedback System
 
 1. Competitive Elements May Increase Engagement in Peer Review
 	- 22 students prefer competitive games, suggesting that leaderboards, point-based rankings, or challenge-based peer feedback could enhance motivation.
-	- This aligns with Self-Determination Theory’s competence principle, where students may strive to improve feedback quality to “win” or outperform others.
+	- This aligns with Self-Determination Theory’s competence principle, where students may strive to improve feedback quality to "win" or outperform others.
 2. Balancing for Cooperative Players & Neutral Preferences
 	- 8 students prefer cooperative games, meaning some students may engage better with collaborative peer feedback mechanisms (e.g., team-based peer review or shared goal challenges).
 	- 12 students have no preference, giving flexibility in incorporating both competitive and cooperative mechanics.
@@ -202,7 +202,7 @@ Conclusion: Strong Justification for a Game-Based Feedback System
 
 ![Data Analysis-8.png](/img/user/00%20System/Assets/Data%20Analysis-8.png)
 
-The mean (4.79), median (5), and mode (5) for the question “I enjoyed playing the card game.” suggest that the vast majority of students had a very positive experience with the game.
+The mean (4.79), median (5), and mode (5) for the question "I enjoyed playing the card game." suggest that the vast majority of students had a very positive experience with the game.
 
 1. Strong Validation for Game-Based Learning in Peer Code Review
 	- A high median and mode of 5 indicates that the game was well-received, reinforcing the effectiveness of game-based learning (GBL) in this context.
@@ -228,10 +228,10 @@ The mean (4.79), median (5), and mode (5) for the question “I enjoyed playing 
 From the extracted comments, the responses indicate the following key takeaways:
 
 1. Overall Positive Reception
-	- Multiple students described the game as “fun,” indicating that they enjoyed the gameplay and found it engaging.
-	- Some explicitly stated “I love this game” and even suggested publishing it, which reinforces the success of integrating game mechanics into peer feedback.
+	- Multiple students described the game as "fun," indicating that they enjoyed the gameplay and found it engaging.
+	- Some explicitly stated "I love this game" and even suggested publishing it, which reinforces the success of integrating game mechanics into peer feedback.
 2. Desire for More Depth & Features
-	- Some students suggested adding “more power-ups” or additional mechanics to enhance gameplay variety.
+	- Some students suggested adding "more power-ups" or additional mechanics to enhance gameplay variety.
 	- This indicates that while the core mechanics were enjoyable, there is room to introduce more complexity or strategic elements.
 3. Appreciation for Competitive Elements
 	- A few students mentioned enjoying the competitive aspects of the game, suggesting that scoring, ranking, or challenge-based elements were motivating factors.
@@ -241,23 +241,23 @@ After reviewing the responses, the feedback can be grouped into three main thema
 
 1. Engagement & Fun (Positive)
 	- Example Responses:
-	- “It is really fun.”
-	- “I love this game, it’s very fun to play.”
-	- “It is pretty fun. Publish the game:)”
+	- "It is really fun."
+	- "I love this game, it’s very fun to play."
+	- "It is pretty fun. Publish the game:)"
 	- Implications:
 	- The game successfully made peer feedback engaging, validating the game-based approach.
 	- High enjoyment suggests that students may be more motivated to engage in the feedback process.
 
 2. Suggestions for Improvement (Expansion)
 	- Example Responses:
-	- “I feel like there should be more power-ups in the game.”
+	- "I feel like there should be more power-ups in the game."
 	- Implications:
 	- Students may appreciate added mechanics or depth to keep the experience fresh.
 	- I could explore adding different power-ups, new challenges, or more player agency in future iterations.
 
 3. Competitive & Strategic Elements (Motivation)
 	- Example Responses:
-	- “I like the competitiveness of the game.”
+	- "I like the competitiveness of the game."
 	- Implications:
 	- Some students were particularly motivated by competition, which aligns with their preference for competitive games.
 	- Consider enhancing scoring mechanisms, challenges, or ranking systems to deepen engagement.
@@ -278,13 +278,13 @@ These students explicitly stated that the game increased their motivation, engag
 
 Example Responses:
 
-	- “It gave me an incentive to put more effort and details into my peer feedback than before.”
+	- "It gave me an incentive to put more effort and details into my peer feedback than before."
 
-	- “100%, before I only put ‘good job’ or ‘error in x.js’ but now I went in-depth knowing it would give me an edge while playing the game.”
+	- "100%, before I only put ‘good job’ or ‘error in x.js’ but now I went in-depth knowing it would give me an edge while playing the game."
 
-	- “Yes, I spent more time correcting other people’s assignments.”
+	- "Yes, I spent more time correcting other people’s assignments."
 
-	- “Of course, by nature, I am quite competitive, so my goal was to get the most amount of cards available. Previously, I would peer grade as quickly as I could, whereas now I did it properly, reading through code to make sure things worked as intended and as efficiently as they could.”
+	- "Of course, by nature, I am quite competitive, so my goal was to get the most amount of cards available. Previously, I would peer grade as quickly as I could, whereas now I did it properly, reading through code to make sure things worked as intended and as efficiently as they could."
 
 Relevance to Research:
 
@@ -300,13 +300,13 @@ These students acknowledged the game but did not feel it significantly changed t
 
 Example Responses:
 
-	- “Not really, but I did find the concept fun.”
+	- "Not really, but I did find the concept fun."
 
-	- “It didn’t pose too much of an impact on my assessment of peers’ work.”
+	- "It didn’t pose too much of an impact on my assessment of peers’ work."
 
-	- “Knowing that the cards I would get for the card game was impacted by my peer review assessment, it didn’t really impact the way I graded people or in the game.”
+	- "Knowing that the cards I would get for the card game was impacted by my peer review assessment, it didn’t really impact the way I graded people or in the game."
 
-	- “Not necessarily. My approach for giving peer feedback is being as fair as possible, and I don’t let the thought of it affecting the card game sway my decisions.”
+	- "Not necessarily. My approach for giving peer feedback is being as fair as possible, and I don’t let the thought of it affecting the card game sway my decisions."
 
 Relevance to Research:
 
@@ -322,11 +322,11 @@ These students noted a change in their thought process or effort level, but not 
 
 Example Responses:
 
-	- “The game made me a bit competitive, which affected the way I gave feedback to have a better chance of winning the card game.”
+	- "The game made me a bit competitive, which affected the way I gave feedback to have a better chance of winning the card game."
 
-	- “Yes, the card game influenced me to give more feedback but up to a certain degree. I wouldn’t go too out of my way, but if it was an easy bug fix that I could provide, I would give them the feedback on it.”
+	- "Yes, the card game influenced me to give more feedback but up to a certain degree. I wouldn’t go too out of my way, but if it was an easy bug fix that I could provide, I would give them the feedback on it."
 
-	- “Knowing that you get more yellow cards definitely prompted me to give more in-depth peer feedback.”
+	- "Knowing that you get more yellow cards definitely prompted me to give more in-depth peer feedback."
 
 Relevance to Research:
 
@@ -342,11 +342,11 @@ These students either felt pressured, confused, or did not have a positive exper
 
 Example Responses:
 
-	- “I forgot to do peer feedback due to having a lot of things going on during the week, but I think in a setting with less stress, I’d be a lot more motivated to give good feedback.”
+	- "I forgot to do peer feedback due to having a lot of things going on during the week, but I think in a setting with less stress, I’d be a lot more motivated to give good feedback."
 
-	- “Today was the first day that I played the card game, and honestly, I had no idea how it worked, so I never thought of the card game when I was grading before.”
+	- "Today was the first day that I played the card game, and honestly, I had no idea how it worked, so I never thought of the card game when I was grading before."
 
-	- “After the card game, I felt that the bar for effort in grading was set from our previous results. It put pressure to either match how we graded previously or improve, while discouraging doing any less than that. So it was more motivating in my opinion.”
+	- "After the card game, I felt that the bar for effort in grading was set from our previous results. It put pressure to either match how we graded previously or improve, while discouraging doing any less than that. So it was more motivating in my opinion."
 
 Relevance to Research:
 
@@ -399,11 +399,11 @@ From the 39 responses, we can categorize their alignment with these SDT componen
 
 Example Responses:
 
-- “It gave me an incentive to put more effort and details into my peer feedback than before.”
-- “100%, before I only put ‘good job’ or ‘error in x.js’ but now I went in-depth knowing it would give me an edge while playing the game.”
-- “I now want to give better feedback to receive better cards and beat the others.”
-- “Knowing that I wasn’t dealt the best hand of yellow cards (which means that my feedback was lacking in some way), it made me more implicated in giving feedback. I spent more time thinking about what I could say and added more details.”
-- “Of course, by nature, I am quite competitive, so my goal was to get the most amount of cards available. Previously, I would peer-grade as quickly as I could, whereas now I did it properly, reading through code to make sure things worked as intended and as efficiently as they could.”
+- "It gave me an incentive to put more effort and details into my peer feedback than before."
+- "100%, before I only put ‘good job’ or ‘error in x.js’ but now I went in-depth knowing it would give me an edge while playing the game."
+- "I now want to give better feedback to receive better cards and beat the others."
+- "Knowing that I wasn’t dealt the best hand of yellow cards (which means that my feedback was lacking in some way), it made me more implicated in giving feedback. I spent more time thinking about what I could say and added more details."
+- "Of course, by nature, I am quite competitive, so my goal was to get the most amount of cards available. Previously, I would peer-grade as quickly as I could, whereas now I did it properly, reading through code to make sure things worked as intended and as efficiently as they could."
 
 SDT Interpretation:
 
@@ -417,9 +417,9 @@ SDT Interpretation:
 
 Example Responses:
 
-- “Not necessarily. My approach for giving peer feedback is being as fair as possible, and I don’t let the thought of it affecting the card game sway my decisions.”
-- “Knowing that the cards I would get for the card game was impacted by my peer review assessment, it didn’t really impact the way I graded people or in the game.”
-- “Not really, I just noted what they lost points for and how they could fix it if it wasn’t too long to fit in the text.”
+- "Not necessarily. My approach for giving peer feedback is being as fair as possible, and I don’t let the thought of it affecting the card game sway my decisions."
+- "Knowing that the cards I would get for the card game was impacted by my peer review assessment, it didn’t really impact the way I graded people or in the game."
+- "Not really, I just noted what they lost points for and how they could fix it if it wasn’t too long to fit in the text."
 
 SDT Interpretation:
 
@@ -433,10 +433,10 @@ SDT Interpretation:
 
 Example Responses:
 
-- “The game made me a bit competitive, which affected the way I gave feedback to have a better chance of winning the card game.”
-- “I think it was just a fun way to try the best at giving peer feedback.”
-- “Its a very good game for peer feedback; we learn more and how to participate in group activities and get feedback from others to improve in learning a lot.”
-- “It’s a fun and unique way of motivating people to put effort in. I wasn’t thinking about it while giving feedback, but it did make me happy that I got a fun little reward for putting in the effort.”
+- "The game made me a bit competitive, which affected the way I gave feedback to have a better chance of winning the card game."
+- "I think it was just a fun way to try the best at giving peer feedback."
+- "Its a very good game for peer feedback; we learn more and how to participate in group activities and get feedback from others to improve in learning a lot."
+- "It’s a fun and unique way of motivating people to put effort in. I wasn’t thinking about it while giving feedback, but it did make me happy that I got a fun little reward for putting in the effort."
 
 SDT Interpretation:
 
@@ -450,8 +450,8 @@ SDT Interpretation:
 
 Example Responses:
 
-- “After the card game, I felt that the bar for effort in grading was set from our previous results. It put pressure to either match how we graded previously or improve, while discouraging doing any less than that.”
-- “I forgot to do peer feedback due to having a lot of things going on during the week, but I think in a setting with less stress, I’d be a lot more motivated to give good feedback.”
+- "After the card game, I felt that the bar for effort in grading was set from our previous results. It put pressure to either match how we graded previously or improve, while discouraging doing any less than that."
+- "I forgot to do peer feedback due to having a lot of things going on during the week, but I think in a setting with less stress, I’d be a lot more motivated to give good feedback."
 
 SDT Interpretation:
 
@@ -573,7 +573,7 @@ My findings contribute to the understanding of game-based learning interventions
 
 1. Enhancing Competence Support:
 	- Providing structured training on effective feedback before integrating it into the game.
-	- Incorporating real-time feedback or exemplars to help students see what “good feedback” looks like.
+	- Incorporating real-time feedback or exemplars to help students see what "good feedback" looks like.
 2. Sustaining Autonomy:
 	- Allowing students to customize aspects of their feedback process to maintain their sense of agency.
 	- Offering multiple game paths or strategic choices that further reinforce meaningful control.
