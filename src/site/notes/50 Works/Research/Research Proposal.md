@@ -163,7 +163,6 @@ This study employed a mixed-methods pre-post experimental design to investigate 
 
 The sequence of activities in this study is visually represented in Figure 1, which distinguishes between asynchronous and synchronous phases of the intervention:
 
-
 ```mermaid
 sequenceDiagram
     %% Define Actors
@@ -208,7 +207,22 @@ sequenceDiagram
 
 Prior to this study, students had been engaging in peer feedback activities since the early weeks of the semester, using the Peer Code Review Rubric (Appendix A) as a reference for evaluating their peers' work. This rubric provided a structured framework that guided their feedback, ensuring consistency and clarity in their evaluations. These prior experiences with peer review helped establish a baseline understanding of feedback expectations before the intervention was introduced.
 
-Prior to the intervention, students participated in asynchronous peer feedback through Moodle’s Workshop activity [@moodle2024]. Each student provided feedback on their peers’ work, and this feedback was extracted using a custom scraper (Appendix E) developed by the researcher. The feedback was anonymized and analyzed using a Large Language Model (LLM) [@openai2024], which categorized comments based on a Code Review Taxonomy (Appendix B). These categorized scores were then converted into numerical values through a JavaScript-based scoring script (Appendix F). The scores determined the number of yellow action cards that each student received at the beginning of the game, introducing a performance-based starting condition for the intervention.
+Prior to the intervention, students participated in asynchronous peer feedback through Moodle’s Workshop activity [@moodle2024]. Each student provided feedback on their peers’ work, and this feedback was extracted using a custom scraper (Appendix E) developed by the researcher. The extracted feedback was anonymized and analyzed using a Large Language Model (LLM) [@openai2024], which categorized comments based on a Code Review Taxonomy (Appendix B). The taxonomy classifies feedback into distinct categories that reflect specificity and constructiveness, such as “SA” (Strong Actionable), “G+” (General Positive), or “G0” (General Neutral). To quantify the quality of feedback for analysis, each taxonomy category was assigned a numerical score using a predefined conversion system (Table 1). These scores were then used to determine the number of yellow action cards received at the start of the game, introducing a performance-based starting condition for the intervention.
+
+Table 1
+
+Numerical Conversion of Feedback Quality Scores
+
+|Code|Description|Score|
+|---|---|---|
+|SA|Strong Actionable|5|
+|S+/S-|Specific Positive/Negative|4|
+|S0|Specific Neutral|3|
+|G+/G-/GA|General Positive/Negative/Advice|2|
+|G0/PV|General Neutral/Placeholder Value|1|
+|OT|Off-topic/Irrelevant|0|
+
+Each student provided feedback on three peers, and the median of these three numerical scores was used as their individual feedback quality score in statistical analysis.
 
 ### Intervention Phase
 
@@ -232,13 +246,11 @@ A Code Review Taxonomy (Hamer et al., 2015; Indriasari et al., 2023) categorized
 
 ## 4.4 Data Analysis
 
-Data analysis focused on assessing changes between preand post-test measures, as well as evaluating improvements in peer feedback quality. The Wilcoxon Signed-Rank Test was applied to analyze pre-post differences in feedback quality scores. Each student provided feedback to three peers in both the preand post-intervention phases. The median feedback quality score from each student's three evaluations was used for the Wilcoxon analysis to account for variability across different peer reviews. To assess changes in perceived competence, autonomy, and relatedness, paired t-tests were conducted. Additionally, descriptive statistics such as mean and median scores were calculated for each variable to provide a clearer picture of the trends in student motivation and feedback quality over time.
-
-Students who were absent from either the pre-test or post-test were excluded from the analysis of feedback quality, as their responses could not be matched across both time points. However, all responses were retained for the motivation analysis since those measures were unpaired and anonymous.
+Data analysis focused on assessing changes between pre and post-test measures, as well as evaluating improvements in peer feedback quality. The Wilcoxon Signed-Rank Test was applied to analyze pre-post differences in feedback quality scores. Each student provided feedback to three peers in both the pre and post-intervention phases. The median feedback quality score from each student's three evaluations was used for the Wilcoxon analysis to account for variability across different peer reviews. To assess changes in perceived competence, autonomy, and relatedness, paired t-tests were conducted on the mean scores of the questions corresponding to each respective SDT motivation sub-scale. Additionally, descriptive statistics such as mean and median scores were calculated for each variable to provide a clearer picture of the trends in student motivation and feedback quality over time.
 
 ## 4.5 Ethical Considerations
 
-The researcher’s dual role as instructor and researcher introduced potential concerns regarding coercion. To mitigate this, explicit informed consent was obtained (Appendix C), and students were informed that participation was voluntary, with the option to withdraw at any time. Pre-test and post-test survey responses were anonymous, ensuring that students' self-reported motivation data remained confidential. However, feedback quality data was not anonymized, as it was necessary to track individual students' feedback performance to assign their starting resources in the game-based intervention. The students were informed that their grades were not impacted by their participation. Additionally, the study adhered to institutional ethical guidelines, ensuring that all data was stored securely on Canadian servers using both Moodle and Microsoft Forms.
+The researcher’s dual role as instructor and researcher introduced potential concerns regarding coercion. To mitigate this, explicit informed consent was obtained (Appendix C), and students were informed that participation was voluntary, with the option to withdraw at any time. Pre-test and post-test survey responses were anonymous, ensuring that students' self-reported motivation data remained confidential. However, feedback quality data was not anonymized, as it was necessary to track individual students' feedback performance to assign their starting resources in the game-based intervention. The students were informed that their grades were not impacted by their participation. Additionally, the study adhered to institutional ethical guidelines, ensuring that all data was stored securely on Canadian servers using both the Moodle learning management system and Microsoft Forms.
 
 
 </div></div>

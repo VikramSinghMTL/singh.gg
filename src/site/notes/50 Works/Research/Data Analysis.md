@@ -1,5 +1,5 @@
 ---
-{"title":"Data Analysis","dg-publish":true,"created":"2025-02-17","modified":"2025-02-20","permalink":"/50-works/research/data-analysis/","dgPassFrontmatter":true,"updated":"2025-02-20"}
+{"title":"Data Analysis","dg-publish":true,"created":"2025-02-17","modified":"2025-03-08","permalink":"/50-works/research/data-analysis/","dgPassFrontmatter":true,"updated":"2025-03-08"}
 ---
 
 
@@ -529,7 +529,7 @@ Final Thoughts: How SDT Aligns with My Research
 - Relatedness also showed a statistically significant increase (p = 0.0295) with a moderate effect size (d = 0.43). This indicates that students felt more connected to their peers after the intervention.
 - Competence did not significantly change (p = 0.296) and had a small effect size (d = 0.12), meaning the intervention did not have a meaningful impact on students’ perceived competence in giving feedback.
 
-![Pre-Test vs. Post-Test Scores by Category.png](/img/user/00%20System/Assets/Pre-Test%20vs.%20Post-Test%20Scores%20by%20Category.png)
+![[Pre-Test vs. Post-Test Scores by Category.png\|Pre-Test vs. Post-Test Scores by Category.png]]
 
 A bar chart showed clear increases in **Autonomy and Relatedness**, while **Competence remained nearly the same**, reinforcing the statistical findings.
 
@@ -552,9 +552,12 @@ This aligns with previous research on game-based learning, which indicates that 
 A surprising result is that Competence did not significantly increase, despite the intervention. According to SDT, Competence improves when learners experience success, receive constructive feedback, and are given challenges that match their skill level (Ryan & Deci, 2017).
 
 Possible explanations for this result:
-	•	Lack of sufficient scaffolding: If students were unsure how to give effective feedback, they might not have experienced enough mastery experiences to feel more competent.
-	•	Delayed competence gains: It’s possible that competence gains require longer-term practice before students internalize their improvement.
-	•	Game dynamics focused more on motivation than skill-building: While the game influenced engagement, it may not have explicitly improved students’ feedback skills.
+
+	-	Lack of sufficient scaffolding: If students were unsure how to give effective feedback, they might not have experienced enough mastery experiences to feel more competent.
+
+	-	Delayed competence gains: It’s possible that competence gains require longer-term practice before students internalize their improvement.
+
+	-	Game dynamics focused more on motivation than skill-building: While the game influenced engagement, it may not have explicitly improved students’ feedback skills.
 
 These results suggest that while the game encouraged participation, students may still require explicit skill-building activities (e.g., structured training in giving feedback) to develop their perceived competence.
 
@@ -567,13 +570,14 @@ This aligns with research showing that collaborative game-based learning environ
 Implications for Game-Based Learning Design
 
 My findings contribute to the understanding of game-based learning interventions in higher education. Based on these results, future iterations of the intervention could be improved by:
-1.	Enhancing Competence Support:
+
+1. Enhancing Competence Support:
 	- Providing structured training on effective feedback before integrating it into the game.
 	- Incorporating real-time feedback or exemplars to help students see what “good feedback” looks like.
-2.	Sustaining Autonomy:
+2. Sustaining Autonomy:
 	- Allowing students to customize aspects of their feedback process to maintain their sense of agency.
 	- Offering multiple game paths or strategic choices that further reinforce meaningful control.
-3.	Deepening Relatedness:
+3. Deepening Relatedness:
 	- Encouraging more reflective peer discussions on feedback received.
 	- Creating shared team-based game mechanics where students collaborate on feedback strategies.
 
