@@ -13,11 +13,11 @@ When it came to gameplay preferences, 64% of students preferred playing with oth
 
 ## Peer Feedback Quality
 
-Descriptive statistics for feedback quality scores ($N=37$) are presented in Table X. Each student provided three separate peer feedback scores which were analyzed using a Code Review Taxonomy (Appendix B) and assigned a numerical score based on predefined criteria (see Table 1 in Methodology). These scores ranged from 0 (off-topic/irrelevant feedback) to 5 (strong actionable feedback).
+Descriptive statistics for feedback quality scores ($N=37$) are presented in Table 2. Each student provided three separate peer feedback scores which were analyzed using a Code Review Taxonomy (Appendix B) and assigned a numerical score based on predefined criteria (see Table 1 in Methodology). These scores ranged from 0 (off-topic/irrelevant feedback) to 5 (strong actionable feedback).
 
-Table X
+**Table 2**
 
-Descriptive Statistics for Feedback Quality
+_Descriptive Statistics for Feedback Quality_
 
 |                    | Pre-Test | Post-Test |
 | ------------------ | -------- | --------- |
@@ -30,21 +30,21 @@ The median feedback quality score was 2.95 (pre) and 3.84 (post), indicating an 
 
 A visual representation of the distribution of pre and post-intervention feedback quality scores is shown in Figure X. As depicted in the box plot, post-test feedback scores demonstrated an increase in median values.
 
-Figure X
+**Figure 2**
 
-Pre and Post-Intervention Peer Feedback Scores
+_Pre and Post-Intervention Peer Feedback Scores_
 
-![Results-5.png](/img/user/00%20System/Assets/Results-5.png)
+![Results-1.png](/img/user/00%20System/Assets/Results-1.png)
 
 A Wilcoxon signed-rank test was conducted to assess whether the median feedback quality scores significantly increased after the intervention. The results indicated that post-intervention feedback scores ($Mdn=4.0$) were significantly higher than pre-intervention scores ($Mdn=3.0$), $z=-3.09, p<.05$.
 
 ## Motivation Sub-Scales
 
-Descriptive statistics for feedback quality scores are presented in Table X.
+Descriptive statistics for feedback quality scores are presented in Table 3.
 
-Table X
+**Table 3**
 
-Descriptive Statistics for Motivation Scores
+_Descriptive Statistics for Motivation Scores_
 
 |                    | Autonomy Pre | Autonomy Post | Competence Pre | Competence Post | Relatedness Pre | Relatedness Post |
 | ------------------ | ------------ | ------------- | -------------- | --------------- | --------------- | ---------------- |
@@ -55,25 +55,25 @@ Descriptive Statistics for Motivation Scores
 
 Mean scores for autonomy, competence, and relatedness increased from pre-test to post-test, though the extent of these changes varied.
 
-Figure X presents box plots comparing pre and post-test scores for autonomy, competence, and relatedness.
+Figure 3 presents box plots comparing pre and post-test scores for autonomy, competence, and relatedness.
 
-Figure X
+**Figure 3**
 
-Pre and Post-Test Scores for Autonomy, Competence, and Relatedness
+_Pre and Post-Test Scores for Autonomy, Competence, and Relatedness_
 
-![Results-4.png](/img/user/00%20System/Assets/Results-4.png)
+![Results-2.png](/img/user/00%20System/Assets/Results-2.png)
 
 The distributions indicate that while autonomy showed a noticeable increase, changes in competence and relatedness were less pronounced.
 
 A series of independent t-tests, as seen in Table X, were conducted to examine differences in perceived autonomy, competence, and relatedness before and after the game-based learning intervention.
 
-Table X
+**Table 4**
 
-Independent T-Test Results for SDT Constructs
+_Independent T-Test Results for SDT Sub-Scales_
 
 | Sub-Scale   | Pre-Test Mean (SD) | Post-Test Mean (SD) | t(79) | p (two-tail) |
 | ----------- | ------------------ | ------------------- | ----- | ------------ |
-| Autonomy    | 3.39 (0.72)        | 3.78 (0.69)         | -2.46 | 0.016 *      |
+| Autonomy    | 3.39 (0.72)        | 3.78 (0.69)         | -2.46 | 0.016        |
 | Competence  | 3.52 (0.76)        | 3.61 (0.76)         | -0.54 | 0.592        |
 | Relatedness | 3.29 (0.86)        | 3.67 (0.93)         | -1.92 | 0.058        |
 
@@ -83,16 +83,18 @@ The results indicate a statistically significant increase in autonomy at the $α
 
 As a secondary measure of the intervention's effectiveness, students were asked to rate their enjoyment of the peer feedback card game. The results indicate a high level of engagement, with a mean of 4.79 (on a 5-point scale) and a median and mode of 5, suggesting that most students strongly agreed that they enjoyed playing the game.
 
-Students also provided open-ended responses to the following question: _"Did participating in the card game influence your approach to giving or receiving peer feedback? Please describe any specific ways the game affected your motivation, engagement, or quality of feedback, or if it had no impact."_ A thematic analysis revealed four primary themes: increased motivation due to game mechanics, no significant change in feedback approach, awareness of feedback impact but not strong motivation, and perceived pressure or lack of understanding. The distribution of responses is summarized in Table X.
+Students also provided open-ended responses to the following question: _"Did participating in the card game influence your approach to giving or receiving peer feedback? Please describe any specific ways the game affected your motivation, engagement, or quality of feedback, or if it had no impact."_ A thematic analysis revealed four primary themes: increased motivation due to game mechanics, no significant change in feedback approach, awareness of feedback impact but not strong motivation, and perceived pressure or lack of understanding. The distribution of responses is summarized in Table 5.
 
-Table X: Thematic Breakdown of Student Feedback
+**Table 5**
 
-|Theme|Number of Responses (N=39)|
-|---|---|
-|Increased motivation due to game mechanics|21|
-|No significant change in feedback approach|8|
-|Awareness of feedback impact but not strongly motivated|6|
-|Perceived pressure or lack of understanding|4|
+_Thematic Breakdown of Student Feedback_
+
+| Theme                                                   | Number of Responses (N=39) |
+| ------------------------------------------------------- | -------------------------- |
+| Increased motivation due to game mechanics              | 21                         |
+| No significant change in feedback approach              | 8                          |
+| Awareness of feedback impact but not strongly motivated | 6                          |
+| Perceived pressure or lack of understanding             | 4                          |
 
 Over half of the students (54%) reported that the game-based intervention increased their motivation to provide better feedback. Many described the incentive structure as a driving force behind their engagement, with one student stating, _"100%, before I only put 'good job' or 'error in x.js,' but now I went in-depth knowing it would give me an edge while playing the game."_ Another noted, _"It simply motivated me to look at their code further and give more insightful feedback."_ Many students noted increased motivation, as evidenced by their detailed responses.
 
