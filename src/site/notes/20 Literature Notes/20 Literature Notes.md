@@ -1,6 +1,7 @@
 ---
-{"title":"Literature Notes","created":"2024-09-14","modified":"2024-09-14","dg-publish":true,"dg-permalink":"literature-notes","permalink":"/literature-notes/","dgPassFrontmatter":true,"updated":"2024-09-14"}
+{"title":"Literature Notes","created":"2024-09-14","modified":"2025-03-09","dg-publish":true,"dg-permalink":"literature-notes","permalink":"/literature-notes/","dgPassFrontmatter":true,"updated":"2025-03-09"}
 ---
+
 
 
 
