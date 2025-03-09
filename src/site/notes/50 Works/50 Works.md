@@ -1,6 +1,7 @@
 ---
-{"title":"Works","created":"2024-09-14","modified":"2025-02-23","dg-publish":true,"dg-permalink":"works","permalink":"/works/","dgPassFrontmatter":true,"updated":"2025-02-23"}
+{"title":"Works","created":"2024-09-14","modified":"2025-03-09","dg-publish":true,"dg-permalink":"works","permalink":"/works/","dgPassFrontmatter":true,"updated":"2025-03-09"}
 ---
+
 
 
 
@@ -34,7 +35,7 @@
 	- [[50 Works/Research/Intrinsic Motivation Inventory\|Intrinsic Motivation Inventory (IMI)]]
 	- [[50 Works/Research/Introduction\|Introduction]]
 	- [[50 Works/Research/Literature Review Outline\|Literature Review Outline]]
-	- [[50 Works/CKID/Literature Review\|Literature Review 2.0]]
+	- [[50 Works/CKID/Literature Review\|Literature Review]]
 	- [[50 Works/Research/Methodology\|Methodology]]
 	- **Pecha Kucha**
 		- [[50 Works/Research/Pecha Kucha/Critical Path Pecha Kucha\|Critical Path Pecha Kucha]]
