@@ -4,7 +4,6 @@
 
 
 
-
 - **CKAD**
 	- [[50 Works/CKAD/Article Summary\|Article Summary]]
 	- [[50 Works/CKAD/Journal\|Journal]]
@@ -44,5 +43,6 @@
 	- [[50 Works/Research/Research Proposal\|Research Proposal]]
 	- [[50 Works/Research/Results\|Results]]
 	- [[50 Works/Research/Structuring Knowledge\|Structuring Knowledge]]
+	- [[50 Works/Research/The Game\|The Game]]
 
 

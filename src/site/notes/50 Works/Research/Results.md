@@ -1,5 +1,5 @@
 ---
-{"title":"Results","created":"2025-02-17","modified":"2025-03-08","dg-publish":true,"permalink":"/50-works/research/results/","dgPassFrontmatter":true,"updated":"2025-03-08"}
+{"title":"Results","created":"2025-02-17","modified":"2025-03-09","dg-publish":true,"permalink":"/50-works/research/results/","dgPassFrontmatter":true,"updated":"2025-03-09"}
 ---
 
 
@@ -20,11 +20,11 @@ Descriptive statistics for feedback quality scores ($N=37$) are presented in Tab
 _Descriptive Statistics for Feedback Quality_
 
 |                    | Pre-Test | Post-Test |
-| ------------------ | -------- | --------- |
-| Mean               | 2.95     | 3.84      |
-| Median             | 3        | 4         |
-| Mode               | 2        | 4         |
-| Standard Deviation | 1.25     | 1.14      |
+| ------------------ |:------: |:-------: |
+| Mean               |   2.95   |   3.84    |
+| Median             |    3     |     4     |
+| Mode               |    2     |     4     |
+| Standard Deviation |   1.25   |   1.14    |
 
 The median feedback quality score was 2.95 (pre) and 3.84 (post), indicating an upward shift in feedback ratings.
 
@@ -46,12 +46,11 @@ Descriptive statistics for feedback quality scores are presented in Table 3.
 
 _Descriptive Statistics for Motivation Scores_
 
-|                    | Autonomy Pre | Autonomy Post | Competence Pre | Competence Post | Relatedness Pre | Relatedness Post |
-| ------------------ | ------------ | ------------- | -------------- | --------------- | --------------- | ---------------- |
-| Mean               | 3.39         | 3.78          | 3.52           | 3.61            | 3.29            | 3.67             |
-| Median             | 3.67         | 3.67          | 3.50           | 3.67            | 3.50            | 4.00             |
-| Mode               | 3.67         | 3.33          | 3.33           | 3.67            | 3.50            | 4.00             |
-| Standard Deviation | 0.72         | 0.69          | 0.76           | 0.76            | 0.86            | 0.93             |
+|           | Autonomy Pre | Autonomy Post | Competence Pre | Competence Post | Relatedness Pre | Relatedness Post |
+| --------- |:----------: |:-----------: |:------------: |:-------------: |:-------------: |:--------------: |
+| Mean (SD) | 3.39 (0.72)  |  3.78 (0.69)  |  3.52 (0.76)   |   3.61 (0.76)   |   3.29 (0.86)   |   3.67 (0.93)    |
+| Median    |     3.67     |     3.67      |      3.50      |      3.67       |      3.50       |       4.00       |
+| Mode      |     3.67     |     3.33      |      3.33      |      3.67       |      3.50       |       4.00       |
 
 Mean scores for autonomy, competence, and relatedness increased from pre-test to post-test, though the extent of these changes varied.
 
@@ -72,10 +71,10 @@ A series of independent t-tests, as seen in Table X, were conducted to examine d
 _Independent T-Test Results for SDT Sub-Scales_
 
 | Sub-Scale   | Pre-Test Mean (SD) | Post-Test Mean (SD) | t(79) | p (two-tail) |
-| ----------- | ------------------ | ------------------- | ----- | ------------ |
-| Autonomy    | 3.39 (0.72)        | 3.78 (0.69)         | -2.46 | 0.016        |
-| Competence  | 3.52 (0.76)        | 3.61 (0.76)         | -0.54 | 0.592        |
-| Relatedness | 3.29 (0.86)        | 3.67 (0.93)         | -1.92 | 0.058        |
+| ----------- |:----------------: |:-----------------: |:---: |:----------: |
+| Autonomy    |    3.39 (0.72)     |     3.78 (0.69)     | -2.46 |    0.016     |
+| Competence  |    3.52 (0.76)     |     3.61 (0.76)     | -0.54 |    0.592     |
+| Relatedness |    3.29 (0.86)     |     3.67 (0.93)     | -1.92 |    0.058     |
 
 The results indicate a statistically significant increase in autonomy at the $α=0.05$ threshold, with post-test scores ($M=3.78, SD=0.69$) being significantly higher than pre-test scores ($M=3.39, SD=0.72$), $t(79)=-2.46, p=.016$, suggesting that the intervention positively influenced students' sense of autonomy. However, no significant differences were found in competence, where post-test scores ($M=3.61, SD=0.76$) did not significantly differ from pre-test scores ($M=3.52, SD=0.76$), $t(79)=-0.54, p=.592$. Similarly, relatedness showed a marginal increase, but the difference did not reach statistical significance, with post-test scores ($M=3.67, SD=0.93$) compared to pre-test scores ($M=3.29, SD=0.86$), $t(79)=-1.92, p=.058$. These findings suggest that while the intervention had a measurable effect on students' perceived autonomy, its impact on competence and relatedness was not statistically significant.
 
@@ -90,11 +89,11 @@ Students also provided open-ended responses to the following question: _"Did par
 _Thematic Breakdown of Student Feedback_
 
 | Theme                                                   | Number of Responses (N=39) |
-| ------------------------------------------------------- | -------------------------- |
-| Increased motivation due to game mechanics              | 21                         |
-| No significant change in feedback approach              | 8                          |
-| Awareness of feedback impact but not strongly motivated | 6                          |
-| Perceived pressure or lack of understanding             | 4                          |
+| ------------------------------------------------------- |:------------------------: |
+| Increased motivation due to game mechanics              |             21             |
+| No significant change in feedback approach              |             8              |
+| Awareness of feedback impact but not strongly motivated |             6              |
+| Perceived pressure or lack of understanding             |             4              |
 
 Over half of the students (54%) reported that the game-based intervention increased their motivation to provide better feedback. Many described the incentive structure as a driving force behind their engagement, with one student stating, _"100%, before I only put 'good job' or 'error in x.js,' but now I went in-depth knowing it would give me an edge while playing the game."_ Another noted, _"It simply motivated me to look at their code further and give more insightful feedback."_ Many students noted increased motivation, as evidenced by their detailed responses.
 
