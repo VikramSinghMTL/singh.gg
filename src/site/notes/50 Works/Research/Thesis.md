@@ -1,5 +1,5 @@
 ---
-{"title":"Thesis","created":"2024-04-27","modified":"2025-03-09","dg-publish":true,"permalink":"/50-works/research/thesis/","dgPassFrontmatter":true,"updated":"2025-03-09"}
+{"title":"Thesis","created":"2024-04-27","modified":"2025-03-09","dg-publish":true,"dg-show-toc":true,"permalink":"/50-works/research/thesis/","dgShowToc":true,"dgPassFrontmatter":true,"updated":"2025-03-09"}
 ---
 
 
