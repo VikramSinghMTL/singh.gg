@@ -1,7 +1,15 @@
 ---
-{"title":"Research Proposal","created":"2024-04-27","dg-publish":true,"tags":null,"modified":"2024-09-13","permalink":"/50-works/research/research-proposal/","dgPassFrontmatter":true,"updated":"2024-09-13"}
+{
+    'title': 'Research Proposal',
+    'created': '2024-04-27',
+    'dg-publish': true,
+    'tags': null,
+    'modified': '2024-09-13',
+    'permalink': '/50-works/research/research-proposal/',
+    'dgPassFrontmatter': true,
+    'updated': '2024-09-13',
+}
 ---
-
 
 ## ABSTRACT
 
@@ -11,21 +19,16 @@
 
 ## LIST OF ACRONYMS
 
-- CS: Computer Science
-- PCR: Peer Code Review
-- GBL: Games-based Learning
-- SDT: Self-Determination Theory
-- IMI: Intrinsic Motivation Inventory
-- CRT: Code Review Taxonomy
+-   CS: Computer Science
+-   PCR: Peer Code Review
+-   GBL: Games-based Learning
+-   SDT: Self-Determination Theory
+-   IMI: Intrinsic Motivation Inventory
+-   CRT: Code Review Taxonomy
 
 ## CHAPTER 1: PROBLEM STATEMENT
 
-
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/50-works/research/problem-statement/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
-
-
-
-
 
 PCR is a fundamental part of being a professional software developer [@li2006#p. 9]. This is a process that is done when a developer makes a change or add to the already existing codebase. One or more of their teammates will evaluate and make suggestions on the code based on an agreed upon style guide and general coding best practices. These suggestions include, but are not limited to, variable and function naming conventions, spacing, comments, size and scope of functions. The developer then has to implement the feedback from their peers, often creating a dialogue with the team that leads to uncovering more related issues with the codebase. This process is critical in the quality assurance of the application and is commonly enacted by most software companies. Despite this requirement, the research suggests that students lack motivation to give quality peer feedback during the code review process [@indriasari2021a]. To give quality peer feedback, students must be engaged in the process. The literature states that students learn better by doing than by passively listening [@powell2009] and that students can deepen their own learning through peer assessment [@race2001].
 
@@ -37,18 +40,11 @@ Lastly, the logistics of organizing and managing PCR sessions can also pose chal
 
 Addressing these challenges is crucial to enhancing the effectiveness of PCR and maximizing its benefits for CS students. Implementing strategies to motivate students, providing training on giving and receiving constructive feedback, and fostering an inclusive and supportive peer review environment are essential steps towards overcoming these obstacles.
 
-
 </div></div>
-
 
 ## CHAPTER 2: CONCEPTUAL FRAMEWORK
 
-
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/50-works/research/conceptual-framework/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
-
-
-
-
 
 Providing effective code review feedback is a crucial skill for CS students as they prepare to enter the workforce [@sadowski2018]. From my experience as a professional software developer in the industry, I know that PCR is a fundamental skill for programmers. From my experience as a CS student, I know that traditional academic approaches do not always engage or motivate learners especially for the PCR process. On the other end, as a CS teacher, I have seen firsthand how disengaged students can be during PCR sessions. Providing superficial feedback benefits neither the reviewer nor the reviewee. I want to help create a classroom environment where feedback is constructive and where students feel empowered as part of the development process. It is important to create an environment where feedback is constructive and empowers students as part of the development process [@hattie2007]. This is particularly crucial for developing essential skills in professional software developers, such as giving effective feedback during PCR.
 
@@ -60,12 +56,9 @@ As an avid player of both digital and analogue games, I find that my experience 
 
 In this study, I want to examine the quality of PCR feedback and GBL through the lens of student motivation and SDT. Observing the influence of GBL on the quality of feedback provided during PCR will be the key focus of this research. By harnessing the potential of GBL to transform PCR into a more intrinsically motivating, and subsequently, more valuable learning experience, my ultimate goal is to develop GBL interventions that increase student engagement, leading to higher-quality feedback that benefits everyone involved.
 
-
 </div></div>
 
-
 ## CHAPTER 3: LITERATURE REVIEW
-
 
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/50-works/research/literature-review/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
@@ -74,9 +67,6 @@ In this study, I want to examine the quality of PCR feedback and GBL through the
 # Literature Review
 
 </div>
-
-
-
 
 ## The Importance of PCR
 
@@ -104,7 +94,7 @@ Addressing these three psychological needs, competence, autonomy, and relatednes
 
 Two pedagogical approaches have gained attention for enhancing student motivation through game elements: gamification and game-based learning (GBL). While both incorporate game concepts into education, they do so in distinct ways. Gamification adds game-like features to a non-game activity, whereas GBL turns the learning process into a game itself [@jayasinghe2013; @al-azawi2016]. In the context of PCR, gamification might involve awarding points or badges for completed reviews, while GBL could transform peer review into an interactive game experience.
 
-In education, gamification typically involves introducing elements such as badges, levels/leaderboards, achievements, and points [@nicholson2012] to make coursework more engaging. The key distinction is that students are not playing a game related to the subject matter; instead, traditional learning tasks like quizzes, assignments, or peer reviews are layered with an external reward system inspired by games [@jayasinghe2013]. This approach primarily drives extrinsic motivation, where students are encouraged to participate in order to earn rewards or avoid penalties rather than out of genuine interest in the task. For example, students may be more inclined to complete peer reviews if doing so earns them points or a higher leaderboard ranking. While gamified peer review systems can lead to an increase in the number of reviews and bug identifications, the quality of comments may not significantly improve, suggesting that extrinsic rewards alone are insufficient for fostering meaningful engagement [@khandelwal2017].
+In education, gamification typically involves introducing elements such as badges, levels/leaderboards, achievements, and points [@nicholson2015] to make coursework more engaging. The key distinction is that students are not playing a game related to the subject matter; instead, traditional learning tasks like quizzes, assignments, or peer reviews are layered with an external reward system inspired by games [@jayasinghe2013]. This approach primarily drives extrinsic motivation, where students are encouraged to participate in order to earn rewards or avoid penalties rather than out of genuine interest in the task. For example, students may be more inclined to complete peer reviews if doing so earns them points or a higher leaderboard ranking. While gamified peer review systems can lead to an increase in the number of reviews and bug identifications, the quality of comments may not significantly improve, suggesting that extrinsic rewards alone are insufficient for fostering meaningful engagement [@khandelwal2017].
 
 Studies suggest that gamification can positively influence student motivation and participation. In higher education, integrating points and badges into learning activities has been linked to increased student engagement and time spent on tasks [@goshevski2017; @llorens-largo2016; @oktaviati2018]. In CS education specifically, gamification has been associated with higher enthusiasm and persistence. For example, when game elements were added to a peer review system in a programming course, students showed greater willingness to participate in PCR than in a non-gamified setting [@indriasari2023].
 
@@ -140,18 +130,11 @@ Recognizing this gap, the present literature review highlights the need for rese
 
 Exploring GBL in PCR aligns with the broader goal of fostering intrinsic motivation in learners. If GBL proves to be more effective than traditional methods or simple gamification, it could significantly enhance the effectiveness of PCR as a learning tool. This study aims to address this gap by investigating whether a game-based learning strategy can improve both student motivation and the quality of peer feedback in a CS course. By doing so, we seek to contribute empirical evidence on whether GBL provides a meaningful advantage over gamification in engaging students in high-quality peer code review.
 
-
 </div></div>
-
 
 ## CHAPTER 4: METHODOLOGY
 
-
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/50-works/research/methodology/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
-
-
-
-
 
 This study is grounded in existing literature on Peer Code Review (PCR), the application of motivational theories, specifically Self-Determination Theory (SDT), and the use of Game-Based Learning (GBL) in Computer Science (CS) education. It contributes to the field by exploring a novel approach to a persistent challenge in CS education: how to cultivate the student motivation essential for effective PCR and the development of crucial software development skills. Specifically, this study seeks to determine whether a game-based learning intervention increases the quality of feedback provided during CS PCR and whether it influences students' perceived competence, autonomy, and relatedness, as conceptualized by SDT.
 
@@ -165,7 +148,7 @@ The sequence of activities in this study is visually represented in Figure 1, wh
 
 **Figure 1**
 
-*Intervention Sequence Diagram*
+_Intervention Sequence Diagram_
 
 ```mermaid
 sequenceDiagram
@@ -215,16 +198,16 @@ Prior to the intervention, students participated in asynchronous peer feedback t
 
 **Table 1**
 
-*Numerical Conversion of Feedback Quality Scores*
+_Numerical Conversion of Feedback Quality Scores_
 
-|Code|Description|Score|
-|---|---|---|
-|SA|Strong Actionable|5|
-|S+/S-|Specific Positive/Negative|4|
-|S0|Specific Neutral|3|
-|G+/G-/GA|General Positive/Negative/Advice|2|
-|G0/PV|General Neutral/Placeholder Value|1|
-|OT|Off-topic/Irrelevant|0|
+| Code     | Description                       | Score |
+| -------- | --------------------------------- | ----- |
+| SA       | Strong Actionable                 | 5     |
+| S+/S-    | Specific Positive/Negative        | 4     |
+| S0       | Specific Neutral                  | 3     |
+| G+/G-/GA | General Positive/Negative/Advice  | 2     |
+| G0/PV    | General Neutral/Placeholder Value | 1     |
+| OT       | Off-topic/Irrelevant              | 0     |
 
 To ensure that the game could be reasonably completed within a class session, a simulation was developed (Appendix F) to play 1000 rounds of the game under varying conditions. The results indicated that the average game lasted 13 turns, with the longest game reaching 24 turns. In terms of duration, the simulation estimated an average game time of 19 minutes, with the longest recorded game taking 35 minutes. These findings informed the design choices, such as the number of starting resources and the inclusion of time-limiting mechanics to maintain feasibility within the allotted class period.
 
@@ -260,9 +243,7 @@ The researcher’s dual role as instructor and researcher introduced potential c
 
 Pre-test and post-test survey responses were anonymous, ensuring that students’ self-reported motivation data remained confidential. However, peer feedback quality data was not anonymized, as tracking individual performance was necessary for assigning starting resources in the game-based intervention. To protect student privacy, only the researcher had access to identifiable data, and all reports of findings used anonymized data. Students were explicitly informed that their grades would not be affected by their participation. The study adhered to institutional ethical guidelines, and all collected data was stored securely on Canadian servers using the Moodle LMS and Microsoft Forms.
 
-
 </div></div>
-
 
 ## CHAPTER 5: CLOSING STATEMENT
 
@@ -272,7 +253,6 @@ Pre-test and post-test survey responses were anonymous, ensuring that students�
 
 ## Appendix B: CODE REVIEW TAXONOMY
 
-
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/50-works/research/code-review-taxonomy/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
 <div class="markdown-embed-title">
@@ -281,32 +261,22 @@ Pre-test and post-test survey responses were anonymous, ensuring that students�
 
 </div>
 
-
-
-
-- **S+**: Comments in this category provided positive feedback about a speciﬁc element of the code.
-- **S−**: Comments in this category provided speciﬁc negative feedback about the functionality, style or correctness of the program.
-- **S0**: Comments in this category were speciﬁc, but were not obviously positive or negative in tone.
-- **SA**: Comments in this category provided speciﬁc advice to a student about how to improve their code.
-- **G+**: Comments in this category are general comments that are positive. The comments do not relate to a speciﬁc element of style or requirement speciﬁed in the assignment.
-- **G−**: Comments in this category are general negative comments. They do not refer to any speciﬁc elements of code, but are instead comments directed at the overall quality (summary comments).
-- **G0**: Comments in this category are general comments that do not have either positive or negative connotations.
-- **GA**: Comments in this category provided general advice to peers, but did not refer to speciﬁcs within the code.
-- **PV**: Comments in this category were personal in tone in that they recognised that the comments, although being about a submission, were directed to another person. Many of these were combined with one of the other categories, linked with a general or speciﬁc criticism.
-- **OT**: Comments in this category were off-topic.
-
+-   **S+**: Comments in this category provided positive feedback about a speciﬁc element of the code.
+-   **S−**: Comments in this category provided speciﬁc negative feedback about the functionality, style or correctness of the program.
+-   **S0**: Comments in this category were speciﬁc, but were not obviously positive or negative in tone.
+-   **SA**: Comments in this category provided speciﬁc advice to a student about how to improve their code.
+-   **G+**: Comments in this category are general comments that are positive. The comments do not relate to a speciﬁc element of style or requirement speciﬁed in the assignment.
+-   **G−**: Comments in this category are general negative comments. They do not refer to any speciﬁc elements of code, but are instead comments directed at the overall quality (summary comments).
+-   **G0**: Comments in this category are general comments that do not have either positive or negative connotations.
+-   **GA**: Comments in this category provided general advice to peers, but did not refer to speciﬁcs within the code.
+-   **PV**: Comments in this category were personal in tone in that they recognised that the comments, although being about a submission, were directed to another person. Many of these were combined with one of the other categories, linked with a general or speciﬁc criticism.
+-   **OT**: Comments in this category were off-topic.
 
 </div></div>
 
-
 ## Appendix C: CONSENT FORM
 
-
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/50-works/research/consent-form/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
-
-
-
-
 
 ## Purpose
 
@@ -342,24 +312,17 @@ If you have any questions about your rights or treatment during this study, plea
 
 I attest that I have read the above information and freely consent to participate in the study on peer code review within the context of my 420-5P6 Game Programming course during the Fall 2024 semester at John Abbott College. I understand that my peer feedback data from the course assignments, which may include identifiable information, will be used to facilitate the card game activity and subsequent analysis. I also acknowledge that while this data may be referenced during the activity, my name or any other personal identifiers will not appear in the final research report.
 
-- Student Name
-- Student ID
-- Date
+-   Student Name
+-   Student ID
+-   Date
 
 I wish to receive the results of the study. My email is:
 
-
 </div></div>
-
 
 ## Appendix D: INTRINSIC MOTIVATION INVENTORY
 
-
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/50-works/research/intrinsic-motivation-inventory/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
-
-
-
-
 
 ## Scale Description
 
@@ -408,65 +371,65 @@ not at all true | somewhat true | very true
 
 ### Interest/Enjoyment
 
-- I enjoyed doing this activity very much.
-- This activity was fun to do.
-- I thought this was a boring activity. (R)
-- This activity did not hold my attention at all. (R)
-- I would describe this activity as very interesting. I thought this activity was quite enjoyable.
-- While I was doing this activity, I was thinking about how much I enjoyed it.
+-   I enjoyed doing this activity very much.
+-   This activity was fun to do.
+-   I thought this was a boring activity. (R)
+-   This activity did not hold my attention at all. (R)
+-   I would describe this activity as very interesting. I thought this activity was quite enjoyable.
+-   While I was doing this activity, I was thinking about how much I enjoyed it.
 
 ### Perceived Competence
 
-- I think I am pretty good at this activity.
-- I think I did pretty well at this activity, compared to other students. After working at this activity for awhile, I felt pretty competent.
-- I am satisfied with my performance at this task. I was pretty skilled at this activity.
-- This was an activity that I couldn't do very well. (R)
+-   I think I am pretty good at this activity.
+-   I think I did pretty well at this activity, compared to other students. After working at this activity for awhile, I felt pretty competent.
+-   I am satisfied with my performance at this task. I was pretty skilled at this activity.
+-   This was an activity that I couldn't do very well. (R)
 
 ### Effort/Importance
 
-- I put a lot of effort into this.
-- I didn't try very hard to do well at this activity. (R)
-- I tried very hard on this activity.
-- It was important to me to do well at this task. I didn't put much energy into this. (R)
+-   I put a lot of effort into this.
+-   I didn't try very hard to do well at this activity. (R)
+-   I tried very hard on this activity.
+-   It was important to me to do well at this task. I didn't put much energy into this. (R)
 
 ### Pressure/Tension
 
-- I did not feel nervous at all while doing this. (R)
-- I felt very tense while doing this activity.
-- I was very relaxed in doing these. (R)
-- I was anxious while working on this task.
-- I felt pressured while doing these.
+-   I did not feel nervous at all while doing this. (R)
+-   I felt very tense while doing this activity.
+-   I was very relaxed in doing these. (R)
+-   I was anxious while working on this task.
+-   I felt pressured while doing these.
 
 ### Perceived Choice
 
-- I believe I had some choice about doing this activity.
-- I felt like it was not my own choice to do this task. (R)
-- I didn't really have a choice about doing this task. (R)
-- I felt like I had to do this. (R)
-- I did this activity because I had no choice. (R)
-- I did this activity because I wanted to.
-- I did this activity because I had to. (R)
+-   I believe I had some choice about doing this activity.
+-   I felt like it was not my own choice to do this task. (R)
+-   I didn't really have a choice about doing this task. (R)
+-   I felt like I had to do this. (R)
+-   I did this activity because I had no choice. (R)
+-   I did this activity because I wanted to.
+-   I did this activity because I had to. (R)
 
 ### Value/Usefulness
 
-- I believe this activity could be of some value to me.
-- I think that doing this activity is useful for _blank_.
-- I think this is important to do because it can _blank_.
-- I would be willing to do this again because it has some value to me.
-- I think doing this activity could help me to _blank_.
-- I believe doing this activity could be beneficial to me.
-- I think this is an important activity.
+-   I believe this activity could be of some value to me.
+-   I think that doing this activity is useful for _blank_.
+-   I think this is important to do because it can _blank_.
+-   I would be willing to do this again because it has some value to me.
+-   I think doing this activity could help me to _blank_.
+-   I believe doing this activity could be beneficial to me.
+-   I think this is an important activity.
 
 ### Relatedness
 
-- I felt really distant to this person. (R)
-- I really doubt that this person and I would ever be friends. (R)
-- I felt like I could really trust this person.
-- I'd like a chance to interact with this person more often.
-- I'd really prefer not to interact with this person in the future. (R)
-- I don't feel like I could really trust person. (R)
-- It is likely that this person and I could become friends if we interacted a lot.
-- I feel close to this person.
+-   I felt really distant to this person. (R)
+-   I really doubt that this person and I would ever be friends. (R)
+-   I felt like I could really trust this person.
+-   I'd like a chance to interact with this person more often.
+-   I'd really prefer not to interact with this person in the future. (R)
+-   I don't feel like I could really trust person. (R)
+-   It is likely that this person and I could become friends if we interacted a lot.
+-   I feel close to this person.
 
 **Constructing the IMI for your study.** First, decide which of the variables (factors) you want to use, based on what theoretical questions you are addressing. Then, use the items from those factors, randomly ordered. If you use the value/usefulness items, you will need to complete the three items as appropriate. In other words, if you were studying whether the person believes an activity is useful for improving concentration, or becoming a better basketball player, or whatever, then fill in the blanks with that information. If you do not want to refer to a particular outcome, then just truncate the items with its being useful, helpful, or important.
 
@@ -510,10 +473,10 @@ not at all true | somewhat true | very true
 
 **Scoring information**. Begin by reverse scoring items # 2, 9, 11, 14, 19, 21. In other words, subtract the item response from 8, and use the result as the item score for that item. This way, a higher score will indicate more of the concept described in the subscale name. Thus, a higher score on pressure/tension means the person felt more pressured and tense; a higher score on perceived competence means the person felt more competent; and so on. Then calculate subscale scores by averaging the items scores for the items on each subscale. They are as follows. The (R) after an item number is just a reminder that the item score is the reverse of the participant's response on that item.
 
-- Interest/enjoyment: 1, 5, 8, 10, 14 (R), 17, 20
-- Perceived competence: 4, 7, 12, 16, 22
-- Perceived choice: 3, 11 (R), 15, 19 (R), 21 (R)
-- Pressure/tension: 2 (R), 6, 9 (R), 13, 18
+-   Interest/enjoyment: 1, 5, 8, 10, 14 (R), 17, 20
+-   Perceived competence: 4, 7, 12, 16, 22
+-   Perceived choice: 3, 11 (R), 15, 19 (R), 21 (R)
+-   Pressure/tension: 2 (R), 6, 9 (R), 13, 18
 
 The subscale scores can then be used as dependent variables, predictors, or mediators, depending on the research questions being addressed.
 
@@ -542,8 +505,8 @@ not at all true | somewhat true | very true
 
 concept described in the subscale name. Then calculate subscale scores by averaging the items scores for the items on each subscale. They are shown below. The (R) after an item number is just a reminder that the item score is the reverse of the participant's response on that item.
 
-- Interest/enjoyment: 1, 3 (R), 5, 7, 9
-- Perceived competence: 4, 6
+-   Interest/enjoyment: 1, 3 (R), 5, 7, 9
+-   Perceived competence: 4, 6
     Pressure/tension: 2 (R), 8
 
 ---
@@ -587,9 +550,9 @@ not at all true | somewhat true | very true
 
 **Scoring information**. Begin by reverse scoring items # 8, 12, 14, 18, 20, and 24 by subtracting the item response from 8 and using the result as the item score for that item. Then calculate subscale scores by averaging the items scores for the items on each subscale. They are shown below. The (R) after an item number is just a reminder that the item score is the reverse of the participant's response on that item.
 
-- Interest/enjoyment: 3, 5, 7, 11, 12 (R), 15, 17, 23
-- Value/usefulness: 1, 4, 6, 10, 13, 16, 19, 21, 25
-- Perceived choice: 2, 8 (R), 9, 14 (R), 18 (R), 20 (R), 22, 24 (R)
+-   Interest/enjoyment: 3, 5, 7, 11, 12 (R), 15, 17, 23
+-   Value/usefulness: 1, 4, 6, 10, 13, 16, 19, 21, 25
+-   Perceived choice: 2, 8 (R), 9, 14 (R), 18 (R), 20 (R), 22, 24 (R)
 
 ---
 
@@ -634,12 +597,10 @@ not at all true | somewhat true | very true
 
 **Scoring information**. Begin by reverse scoring items # 2, 3, 6, 12, 14, 16, 18, 21, 25, 27, and 28 by subtracting the item response from 8 and using the result as the item score for that item. Then calculate subscale scores by averaging the items scores for the items on each subscale. They are shown below. The (R) after an item number is just a reminder that the item score is the reverse of the participant's response on that item.
 
-- Relatedness: 2 (R), 6 (R), 10, 13, 16 (R), 21 (R), 24, 26
-- Interest/enjoyment: 1, 5, 7, 8, 11, 18 (R), 22
-- Perceived choice: 4, 14 (R), 19, 25 (R), 28 (R)
-- Pressure/tension: 3 (R), 9, 12 (R), 17, 23
-- Effort: 15, 20, 27 (R), 29
-
+-   Relatedness: 2 (R), 6 (R), 10, 13, 16 (R), 21 (R), 24, 26
+-   Interest/enjoyment: 1, 5, 7, 8, 11, 18 (R), 22
+-   Perceived choice: 4, 14 (R), 19, 25 (R), 28 (R)
+-   Pressure/tension: 3 (R), 9, 12 (R), 17, 23
+-   Effort: 15, 20, 27 (R), 29
 
 </div></div>
-
