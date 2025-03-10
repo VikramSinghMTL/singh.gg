@@ -36,13 +36,12 @@
 	- [[50 Works/Research/Literature Review Outline\|Literature Review Outline]]
 	- [[50 Works/CKID/Literature Review\|Literature Review]]
 	- [[50 Works/Research/Methodology\|Methodology]]
-	- **Pecha Kucha**
-		- [[50 Works/Research/Pecha Kucha/Critical Path Pecha Kucha\|Critical Path Pecha Kucha]]
 	- [[50 Works/Research/Pre-Test & Post-Test\|Pre-Test & Post-Test]]
 	- [[50 Works/Research/Problem Statement\|Problem Statement]]
 	- [[50 Works/Research/Research Proposal\|Research Proposal]]
 	- [[50 Works/Research/Results\|Results]]
 	- [[50 Works/Research/Structuring Knowledge\|Structuring Knowledge]]
 	- [[50 Works/Research/The Game\|The Game]]
+	- [[50 Works/Research/Thesis\|Thesis]]
 
 
