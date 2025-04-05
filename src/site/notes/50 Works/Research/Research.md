@@ -16,8 +16,6 @@
 
 ![Thesis Poster.png](/img/user/00%20System/Assets/Thesis%20Poster.png)
 
-![[Thesis Poster.svg\|Thesis Poster.svg]]
-
 
 
 - [[50 Works/Research/Abstract\|Abstract]]
