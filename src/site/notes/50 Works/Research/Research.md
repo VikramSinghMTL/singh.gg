@@ -5,7 +5,9 @@
 
 ## Making Peer Feedback Playable
 
-<iframe width="1269" height="714" src="https://www.youtube.com/embed/n6z8iapyhXk" title="Making Peer Feedback Playable" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div style="display: flex; justify-content: center;">
+  <iframe style="aspect-ratio: 16 / 9; width: 100% !important;" src="https://www.youtube.com/embed/n6z8iapyhXk" title="Making Peer Feedback Playable" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 ## Game Rules
 
