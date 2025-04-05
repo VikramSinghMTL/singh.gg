@@ -7,6 +7,10 @@
 
 ![Making Peer Feedback Playable](https://youtu.be/n6z8iapyhXk)
 
+## Game Rules
+
+![Card Game Instructions.png](/img/user/00%20System/Assets/Card%20Game%20Instructions.png)
+
 ## Poster
 
 ![Thesis Poster.png](/img/user/00%20System/Assets/Thesis%20Poster.png)
