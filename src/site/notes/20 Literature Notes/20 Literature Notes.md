@@ -4,11 +4,11 @@
 
 
 
-
 - [[20 Literature Notes/ahmad2020\|The Impact of Gamification on Learning Outcomes of Computer Science Majors]]
 - [[20 Literature Notes/akyol2011\|Assessing metacognition in an online community of inquiry]]
 - [[20 Literature Notes/al-azawi2016\|Educational Gamification Vs. Game Based Learning - Comparative Study]]
 - [[20 Literature Notes/allen2010\|Getting Things Done]]
+- [[20 Literature Notes/ashenafi2017\|Peer-assessment in higher education – twenty-first century practices, challenges and the way forward]]
 - [[20 Literature Notes/bandura2012\|On the Functional Properties of Perceived Self-Efficacy Revisited]]
 - [[20 Literature Notes/barr1995\|From Teaching to Learning - A New Paradigm For Undergraduate Education]]
 - [[20 Literature Notes/baxtermagolda1992\|Teaching Responsively to Different Ways of Knowing]]
@@ -23,6 +23,7 @@
 - [[20 Literature Notes/erickson2009\|Knowing, Understanding, Thinking, and Learning How to Learn - The Goals of First-Year Instruction]]
 - [[20 Literature Notes/farber2017\|Game-Based Learning in Action]]
 - [[20 Literature Notes/farber2017a\|Gamify your classroom - a field guide to game-based learning]]
+- [[20 Literature Notes/fink2003\|Creating Significant Learning Experiences - An Integrated Approach to Designing College Courses]]
 - [[20 Literature Notes/forte2022\|Building a Second Brain]]
 - [[20 Literature Notes/friedrich2019\|Effectiveness of peer review as cooperative web-based learning method applied out-of-class in a role playing game - A case study by quasi-experimental approach]]
 - [[20 Literature Notes/garcia-iruela2020\|Gamification and Computer Science Students’ Activity]]
@@ -67,6 +68,7 @@
 - [[20 Literature Notes/ramsden2003\|Approaches to Learning]]
 - [[20 Literature Notes/ryan1983\|Relation of reward contingency and interpersonal context to intrinsic motivation - A review and test using cognitive evaluation theory.]]
 - [[20 Literature Notes/sadowski2018\|Modern code review - a case study at google]]
+- [[20 Literature Notes/salen2003\|Rules of play - Game design fundamentals]]
 - [[20 Literature Notes/schmitz2011\|Game Based Learning for Computer Science Education]]
 - [[20 Literature Notes/seifert2004\|Understanding student motivation]]
 - [[20 Literature Notes/sitthiworachart2004\|Effective Peer Assessment for Learning Computer Programming]]

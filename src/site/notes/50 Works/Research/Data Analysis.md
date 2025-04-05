@@ -18,21 +18,21 @@ Since the mean (4.64), median (5), and mode (5) are all relatively high, you can
 
 ![Data Analysis-1.png](/img/user/00%20System/Assets/Data%20Analysis-1.png)
 
-|Game Type|Count|
-|---|---|
-|Total|42|
-|Video games (console or PC)|39|
-|Board games|28|
-|Card games|26|
-|Mobile games|25|
-|Sports|23|
-|Puzzles|19|
-|Role-playing games (ex. Dungeons & Dragons)|13|
-|Mind/strategy games|1|
-|VR|1|
-|Strategy|1|
-|drinking games!|1|
-|Boulder problems (rock climbing)|1|
+| Game Type                                   | Count |
+| ------------------------------------------- | ----- |
+| Total                                       | 42    |
+| Video games (console or PC)                 | 39    |
+| Board games                                 | 28    |
+| Card games                                  | 26    |
+| Mobile games                                | 25    |
+| Sports                                      | 23    |
+| Puzzles                                     | 19    |
+| Role-playing games (ex. Dungeons & Dragons) | 13    |
+| Mind/strategy games                         | 1     |
+| VR                                          | 1     |
+| Strategy                                    | 1     |
+| drinking games!                             | 1     |
+| Boulder problems (rock climbing)            | 1     |
 
 Given that the research focuses on peer code review, self-determination theory, and game-based learning in computer science education, here’s how the game preference data connects to the research:
 
@@ -69,12 +69,12 @@ Conclusion: Strong Justification for a Game-Based Feedback System
 
 ![Data Analysis-2.png](/img/user/00%20System/Assets/Data%20Analysis-2.png)
 
-|Frequency|Count|
-|---|---|
-|Frequently (a few times a week)|17|
-|Always (everyday)|14|
-|Occasionally (a few times a month)|7|
-|Rarely (a few times a year)|4|
+| Frequency                          | Count |
+| ---------------------------------- | ----- |
+| Frequently (a few times a week)    | 17    |
+| Always (everyday)                  | 14    |
+| Occasionally (a few times a month) | 7     |
+| Rarely (a few times a year)        | 4     |
 
 1. Frequent Gaming Habits Support Game-Based Learning (GBL)
 	- Most students play games frequently (17 play weekly, 14 play daily), indicating they are comfortable engaging with game mechanics.
@@ -88,18 +88,18 @@ Conclusion: Strong Justification for a Game-Based Feedback System
 
 ### Q4. What do you enjoy most about playing games?
 
-|Enjoyment Factor|Count|
-|---|---|
-|Total|42|
-|Relaxation/Fun|38|
-|Strategic Thinking|31|
-|Problem-Solving|30|
-|Competition|29|
-|Social Interaction|26|
-|Achieving Goals|25|
-|immersion|1|
-|Creativity|1|
-|Story (video games)|1|
+| Enjoyment Factor    | Count |
+| ------------------- | ----- |
+| Total               | 42    |
+| Relaxation/Fun      | 38    |
+| Strategic Thinking  | 31    |
+| Problem-Solving     | 30    |
+| Competition         | 29    |
+| Social Interaction  | 26    |
+| Achieving Goals     | 25    |
+| immersion           | 1     |
+| Creativity          | 1     |
+| Story (video games) | 1     |
 
 ![Data Analysis-3.png](/img/user/00%20System/Assets/Data%20Analysis-3.png)
 
@@ -115,12 +115,12 @@ Conclusion: Strong Justification for a Game-Based Feedback System
 
 ### Q5. Have you ever participated in learning activities through games in other courses?
 
-|Previous Experience|Count|
-|---|---|
-|Rarely (once or twice per semester)|24|
-|Never|10|
-|Occasionally¬†(every few weeks)|6|
-|Frequently¬†(weekly or more often)|2|
+| Previous Experience                 | Count |
+| ----------------------------------- | ----- |
+| Rarely (once or twice per semester) | 24    |
+| Never                               | 10    |
+| Occasionally¬†(every few weeks)     | 6     |
+| Frequently¬†(weekly or more often)  | 2     |
 
 ![Data Analysis-4.png](/img/user/00%20System/Assets/Data%20Analysis-4.png)
 
@@ -136,11 +136,11 @@ Conclusion: Strong Justification for a Game-Based Feedback System
 
 ### Q6. How familiar are you with card games specifically?
 
-|Familiarity Level|Count|
-|---|---|
-|Somewhat familiar|24|
-|Very familiar|16|
-|Not at all familiar|2|
+| Familiarity Level   | Count |
+| ------------------- | ----- |
+| Somewhat familiar   | 24    |
+| Very familiar       | 16    |
+| Not at all familiar | 2     |
 
 ![Data Analysis-5.png](/img/user/00%20System/Assets/Data%20Analysis-5.png)
 
@@ -326,7 +326,7 @@ Example Responses:
 
 	- "Yes, the card game influenced me to give more feedback but up to a certain degree. I wouldn’t go too out of my way, but if it was an easy bug fix that I could provide, I would give them the feedback on it."
 
-	- "Knowing that you get more yellow cards definitely prompted me to give more in-depth peer feedback."
+	- "Knowing that you get more yellow action cards definitely prompted me to give more in-depth peer feedback."
 
 Relevance to Research:
 
@@ -356,12 +356,12 @@ Relevance to Research:
 
 	- While peer review should challenge students to improve, balancing competition with constructive, low-pressure engagement is key.
 
-|Category|Number of Responses|
-|---|---|
-|Positively Motivated by the Game|	21|
-|Neutral or Minimal Impact	|8|
-|Increased Awareness But Not Strongly Motivating|	6|
-|Negative or Unclear Impact	|4|
+| Category                                        | Number of Responses |
+| ----------------------------------------------- | ------------------- |
+| Positively Motivated by the Game                | 21                  |
+| Neutral or Minimal Impact                       | 8                   |
+| Increased Awareness But Not Strongly Motivating | 6                   |
+| Negative or Unclear Impact                      | 4                   |
 
 1. Game-based peer review can significantly increase motivation for a majority of students (21 out of 39).
 	- Many students put more effort into feedback, reviewed code more deeply, and refined their comments.
@@ -402,7 +402,7 @@ Example Responses:
 - "It gave me an incentive to put more effort and details into my peer feedback than before."
 - "100%, before I only put ‘good job’ or ‘error in x.js’ but now I went in-depth knowing it would give me an edge while playing the game."
 - "I now want to give better feedback to receive better cards and beat the others."
-- "Knowing that I wasn’t dealt the best hand of yellow cards (which means that my feedback was lacking in some way), it made me more implicated in giving feedback. I spent more time thinking about what I could say and added more details."
+- "Knowing that I wasn’t dealt the best hand of yellow action cards (which means that my feedback was lacking in some way), it made me more implicated in giving feedback. I spent more time thinking about what I could say and added more details."
 - "Of course, by nature, I am quite competitive, so my goal was to get the most amount of cards available. Previously, I would peer-grade as quickly as I could, whereas now I did it properly, reading through code to make sure things worked as intended and as efficiently as they could."
 
 SDT Interpretation:
@@ -519,11 +519,11 @@ Final Thoughts: How SDT Aligns with My Research
 - Independent T-tests were conducted to compare the pre-test and post-test scores for three categories: Autonomy, Competence, and Relatedness.
 - One-tailed p-values were used since we hypothesized that post-test scores would be higher.
 
-|Category|One-Tailed p-value|Significance|Effect Size (Cohen’s d)|Interpretation|
-|---|---|---|---|---|
-|Autonomy|0.0079|Significant (p < 0.05)|0.55 (moderate effect)|Meaningful improvement in Autonomy after the intervention.|
-|Competence|0.296|Not significant|0.12 (small effect)|No meaningful change in Competence.|
-|Relatedness|0.0295|Significant (p < 0.05)|0.43 (moderate effect)|Noticeable improvement in Relatedness.|
+| Category    | One-Tailed p-value | Significance           | Effect Size (Cohen’s d) | Interpretation                                             |
+| ----------- | ------------------ | ---------------------- | ----------------------- | ---------------------------------------------------------- |
+| Autonomy    | 0.0079             | Significant (p < 0.05) | 0.55 (moderate effect)  | Meaningful improvement in Autonomy after the intervention. |
+| Competence  | 0.296              | Not significant        | 0.12 (small effect)     | No meaningful change in Competence.                        |
+| Relatedness | 0.0295             | Significant (p < 0.05) | 0.43 (moderate effect)  | Noticeable improvement in Relatedness.                     |
 
 - Autonomy significantly improved from pre-test to post-test (p = 0.0079), with a moderate effect size (d = 0.55). This suggests that the intervention had a meaningful impact on students’ sense of control over their feedback.
 - Relatedness also showed a statistically significant increase (p = 0.0295) with a moderate effect size (d = 0.43). This indicates that students felt more connected to their peers after the intervention.
@@ -586,7 +586,7 @@ My study demonstrates that game-based learning can effectively support Autonomy 
 ## Code Review Taxonomy Scores
 
 1. Initial Approach: Paired t-Test
-	- Since each row represents the same student before and after an intervention, a paired t-test was conducted.
+	- Since each row represents the same student before and after an intervention, a paired _t_-test was conducted.
 	- The results showed:
 	- t-statistic = 3.19
 	- Two-tailed p-value = 0.0019
@@ -594,7 +594,7 @@ My study demonstrates that game-based learning can effectively support Autonomy 
 	- Conclusion: The one-tailed test indicated statistically significant improvement in feedback quality.
 
 2. Checking Normality of Differences
-	- The t-test assumes that the differences (Post - Pre) are normally distributed.
+	- The _t_-test assumes that the differences (Post - Pre) are normally distributed.
 	- A Shapiro-Wilk normality test on the differences found:
 	- p-value = 0.0002 (< 0.05), meaning the differences are not normally distributed.
 	- The histogram and Q-Q plot confirmed this, indicating a deviation from a normal distribution.
@@ -608,7 +608,7 @@ My study demonstrates that game-based learning can effectively support Autonomy 
 
 Final Conclusion
 
-- The initial paired t-test was not fully appropriate due to the non-normal distribution of differences.
+- The initial paired _t_-test was not fully appropriate due to the non-normal distribution of differences.
 - However, the Wilcoxon signed-rank test confirmed the same conclusion:
 
 → Students’ feedback quality significantly improved from Pre to Post.

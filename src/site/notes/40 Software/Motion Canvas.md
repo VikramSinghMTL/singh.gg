@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"created":"2024-08-29","modified":"2024-09-13","permalink":"/40-software/motion-canvas/","dgPassFrontmatter":true,"updated":"2024-09-13"}
+{"title":"Motion Canvas","dg-publish":true,"created":"2024-08-29","modified":"2025-03-12","permalink":"/40-software/motion-canvas/","dgPassFrontmatter":true,"updated":"2025-03-12"}
 ---
 
 

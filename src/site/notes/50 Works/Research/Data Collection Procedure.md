@@ -10,15 +10,15 @@
 - [ ] Provide the **Microsoft Forms link for the pre-test survey** and ensure all students complete it on their devices.
 - [ ] Confirm that all students have submitted the pre-test survey before starting gameplay.
 - [ ] Have the students play the card game, monitoring gameplay, taking notes, answering any questions.
-  
+
 ## Two Weeks Later
 
-- [ ] Prepare the adjusted yellow card distribution based on previous data and feedback.
-- [ ] Reintroduce the game with the new yellow card distribution, reviewing any adjustments to gameplay if needed.
+- [ ] Prepare the adjusted yellow action card distribution based on previous data and feedback.
+- [ ] Reintroduce the game with the new yellow action card distribution, reviewing any adjustments to gameplay if needed.
 - [ ] Play the card game with students, monitoring gameplay and answering any questions.
 - [ ] Provide the **Microsoft Forms link for the post-test survey** after gameplay, instructing students to complete it immediately.
 - [ ] Confirm that all students have submitted the post-test survey before ending the session.
-  
+
 ## After Each Session
 
 - [ ] Close the consent and pre-test forms.
@@ -47,4 +47,3 @@
 - Mentioning that my students that I love get to be a part of my masters journey.
 - Being in the room while they're filling out the survey.
 - Telling them how the yellows are calculated (ask Paul about this one).
-

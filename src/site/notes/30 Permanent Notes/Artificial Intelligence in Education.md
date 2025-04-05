@@ -3,6 +3,12 @@
 ---
 
 
+To check out:
+
+- [We need to talk about vibe coding...](https://www.youtube.com/watch?v=IyzQ-Ev-JBQ)
+
+---
+
 Artificial Intelligence (AI) is reshaping education by influencing learning, assessment, instructional design, and information literacy. AI tools such as ChatGPT introduce new opportunities and challenges in pedagogy, requiring educators to rethink traditional teaching methods and student engagement strategies.
 
 ## [[20 Literature Notes/coyle2023\|AI Literacy & Source Evaluation]]

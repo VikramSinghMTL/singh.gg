@@ -1,34 +1,13 @@
 ---
-{"title":"Gamification","dg-publish":true,"tags":["🪴"],"created":"2024-08-30","modified":"2024-09-13","permalink":"/30-permanent-notes/gamification/","dgPassFrontmatter":true,"updated":"2024-09-13"}
+{"title":"Gamification","dg-publish":true,"tags":["🪴"],"created":"2024-08-30","modified":"2025-03-26","permalink":"/30-permanent-notes/gamification/","dgPassFrontmatter":true,"updated":"2025-03-26"}
 ---
 
 
-- Badges and levels ([[Extrinsic Motivation\|Extrinsic Motivation]]) vs stories and narrative ([[Intrinsic Motivation\|Intrinsic Motivation]]).
-    - Rewards based gamification vs meaning based gamification
-- Many studies mention [[30 Permanent Notes/Self-Determination Theory\|self-determinism theory]].
-- All the studies so far outline how to do gamification in the classroom and report their results with the platforms they used.
-- Gamification generally seems to get positive results in the conclusion and data sections.
-- I feel like this can only work well if the game is tightly coupled to the learning objectives. Like, slapping a kahoot onto something and calling it gamification seems disingenuous. However, lots of people report success with kahoot so who am I.
+Gamification is a pedagogical approach that has gained attention for enhancing student motivation through game elements. This approach adds game-like features to a non-game activity by introducing elements such as badges, levels/leaderboards, achievements, and points [@deterding2011; @nicholson2015] to make coursework more engaging. Studies suggest that gamification can positively influence student motivation in higher education by integrating gamified learning activities [@goshevski2017; @llorens-largo2016; @oktaviati2018]. In CS education specifically, gamification has been associated with higher enthusiasm and persistence. For example, when game elements were added to a peer review system in a programming course, students showed greater willingness to participate in PCR than in a non-gamified setting [@indriasari2023].
 
-## Research Questions
+Gamifying PCR can take various forms. One approach is to use a dedicated platform that tracks and rewards peer review contributions. Students might earn points for each piece of feedback they provide, unlock badges for reviewing a certain number of peers or identifying critical issues, and see their progress on a class leaderboard [@khandelwal2017]. These systems introduce elements of competition and achievement, making the peer review process more engaging. Researchers have tested these ideas, demonstrating that incorporating challenges and progression levels into PCR increased both the quantity and certain aspects of the quality of student feedback [@indriasari2021a].
 
-## Theoretical Frameworks
-
-## Challenges
-
-- Teacher time
-- Platform complexity
-- Student motivation
-
-## Platforms
-
-- ClassCraft
-- Kahoot!
-- Rezzly
-- Seppo
-- Youtopia
-- PeerSpace
-- 2TSW
+While gamification has been shown to be most effective when it satisfies SDT's psychological needs [@kam2018], it primarily relies on extrinsic motivation, where students are encouraged to participate to earn rewards or avoid penalties rather than out of genuine interest in the task. For example, students may be more inclined to complete peer reviews if doing so earns them points or a higher leaderboard ranking. While gamification can increase participation, it does not always lead to deeper engagement or higher-quality peer feedback [@khandelwal2017]. A key limitation of gamification is that motivation often declines once rewards are removed or the novelty fades [@papastergiou2009]. This pattern is consistent with the _overjustification effect_, which posits that external rewards can reduce intrinsic motivation in a task over time [@deci1971; @lepper1973]. This raises the question of whether a more immersive, intrinsically motivating approach could be more effective.
 
 ## Ideas
 
