@@ -1,1263 +1,1421 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-    <title>Pedagogy of Digital Learning - Class 1</title>
-    <link rel="stylesheet" href="dist/reset.css">
-    <link rel="stylesheet" href="dist/reveal.css" />
-    <link rel="stylesheet" href="css/slides-extended.css" />
-    <link rel="stylesheet" href="dist/theme/white.css" id="theme" />
-    <link rel="stylesheet" href="plugin/highlight/zenburn.css" />
-    <link rel="stylesheet" href="plugin/customcontrols/style.css">
-
-
-    <link rel="stylesheet" href="css/vik.css" />
-
-    <script defer src="dist/fontawesome/all.min.js"></script>
-    <script defer src="plugin/load-mathjax.js"></script>
-
-    <script type="text/javascript">
-        function pageInIframe() {
-            return (window.location !== window.parent.location);
-        }
-
-        let forgetPop = true;
-        function onPopState(event) {
-            if(forgetPop){
-                forgetPop = false;
-            } else if( pageInIframe()) {
-                parent.postMessage(event.target.location.href, "app://obsidian.md");
-            }
-        }
-        window.onpopstate = onPopState;
-        window.onmessage = event => {
-            if(event.data == "reload"){
-                window.document.location.reload();
-            }
-            forgetPop = true;
-        }
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+
+		<title>Pedagogy of Digital Learning - Class 1</title>
+		<link rel="stylesheet" href="slides/reveal/reset.css" />
+		<link rel="stylesheet" href="slides/reveal/reveal.css" />
+		<link rel="stylesheet" href="slides/css/slides-extended.css" />
+		<link
+			rel="stylesheet"
+			href="slides/reveal/theme/white.css"
+			id="theme"
+		/>
+		<link rel="stylesheet" href="slides/plugin/highlight/zenburn.css" />
+		<link rel="stylesheet" href="slides/plugin/customcontrols/style.css" />
+
+		<link rel="stylesheet" href="slides/css/vik.css" />
+
+		<script defer src="slides/reveal/fontawesome/all.min.js"></script>
+		<script defer src="slides/plugin/load-mathjax.js"></script>
+
+		<script type="text/javascript">
+			function pageInIframe() {
+				return window.location !== window.parent.location;
+			}
+
+			let forgetPop = true;
+			function onPopState(event) {
+				if (forgetPop) {
+					forgetPop = false;
+				} else if (pageInIframe()) {
+					parent.postMessage(
+						event.target.location.href,
+						'app://obsidian.md'
+					);
+				}
+			}
+			window.onpopstate = onPopState;
+			window.onmessage = (event) => {
+				if (event.data == 'reload') {
+					window.document.location.reload();
+				}
+				forgetPop = true;
+			};
+
+			function fitElements() {
+				const itemsToFit = document.getElementsByClassName('fitText');
+				for (const item in itemsToFit) {
+					if (Object.hasOwnProperty.call(itemsToFit, item)) {
+						const element = itemsToFit[item];
+						fitElement(element, 1, 1000);
+						element.classList.remove('fitText');
+					}
+				}
+			}
+
+			function fitElement(element, start, end) {
+				let size = (end + start) / 2;
+				element.style.fontSize = `${size}px`;
+
+				if (Math.abs(start - end) < 1) {
+					while (element.scrollHeight > element.offsetHeight) {
+						size--;
+						element.style.fontSize = `${size}px`;
+					}
+					return;
+				}
+
+				if (element.scrollHeight > element.offsetHeight) {
+					fitElement(element, start, size);
+				} else {
+					fitElement(element, size, end);
+				}
+			}
+
+			document.onreadystatechange = () => {
+				fitElements();
+				if (document.readyState === 'complete') {
+					if (
+						pageInIframe() &&
+						window.location.href.indexOf('?export') != -1
+					) {
+						parent.postMessage(
+							event.target.location.href,
+							'app://obsidian.md'
+						);
+					}
+					if (window.location.href.indexOf('print-pdf') != -1) {
+						let stateCheck = setInterval(() => {
+							clearInterval(stateCheck);
+							window.print();
+						}, 250);
+					}
+				}
+			};
+		</script>
+	</head>
 
-        function fitElements() {
-            const itemsToFit = document.getElementsByClassName('fitText');
-            for (const item in itemsToFit) {
-                if (Object.hasOwnProperty.call(itemsToFit, item)) {
-                    const element = itemsToFit[item];
-                    fitElement(element, 1, 1000);
-                    element.classList.remove('fitText');
-                }
-            }
-        }
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-        function fitElement(element, start, end) {
+						## Pedagogy of Digital Learning
 
-            let size = (end + start) / 2;
-            element.style.fontSize = `${size}px`;
+						Vikram Singh | Class 1 | May 15, 2025
+						</div>
 
-            if (Math.abs(start - end) < 1) {
-                while (element.scrollHeight > element.offsetHeight) {
-                    size--;
-                    element.style.fontSize = `${size}px`;
-                }
-                return;
-            }
+						<aside class="notes"><ul>
+						<li><input disabled="" type="checkbox"> Test links (Moodle, Mentimeter, Padlet)</li>
+						<li><input disabled="" type="checkbox"> Teams call backup ready</li>
+						<li><input disabled="" type="checkbox"> Survey results loaded</li>
+						</ul>
+						</aside>
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: style="text-align: left" class="drop" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-            if (element.scrollHeight > element.offsetHeight) {
-                fitElement(element, start, size);
-            } else {
-                fitElement(element, size, end);
-            }
-        }
+						<div class="" style="position: absolute; left: 0%; top: 0%; height: 30%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
-        document.onreadystatechange = () => {
-            fitElements();
-            if (document.readyState === 'complete') {
-                if (pageInIframe() && window.location.href.indexOf("?export") != -1){
-                    parent.postMessage(event.target.location.href, "app://obsidian.md");
-                }
-                if (window.location.href.indexOf("print-pdf") != -1){
-                    let stateCheck = setInterval(() => {
-                        clearInterval(stateCheck);
-                        window.print();
-                    }, 250);
-                }
-            }
-        };
-    </script>
-</head>
 
-<body>
-    <div class="reveal">
-        <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+						## Learning Objectives
 
-## Pedagogy of Digital Learning
+						By the end of this, you will be able to:
 
-Vikram Singh | Class 1 | May 15, 2025
-</div>
+						</div>
 
-<aside class="notes"><ul>
-<li><input disabled="" type="checkbox"> Test links (Moodle, Mentimeter, Padlet)</li>
-<li><input disabled="" type="checkbox"> Teams call backup ready</li>
-<li><input disabled="" type="checkbox"> Survey results loaded</li>
-</ul>
-</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+						<ol class="fa-ol">
+						<div class="" style="position: absolute; left: 8%; top: 29%; height: 70%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 30%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
 
-## Learning Objectives
 
-By the end of this, you will be able to:
 
-</div>
+						<li class=""><span class="fa-li"><i class="fas fa-book-open"></i></span><b>Reflect</b> on the choices we make when integrating technology in our teaching.</li>
+						<li class="fragment"><span class="fa-li"><i class="fas fa-compass-drafting"></i></span><b>Explore</b> the TPACK framework and Learning Technology by Design.</li>
+						<li class="fragment"><span class="fa-li"><i class="fas fa-pen-ruler"></i></span><b>Connect</b> personal teaching experiences with pedagogical and technological knowledge.</li>
+						<li class="fragment"><span class="fa-li"><i class="fas fa-sitemap"></i></span><b>Understand</b> expectations for key assessments in this course.</li>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 8%; top: 29%; height: 70%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
 
 
+						</div>
+						</ol>
 
-<li class=""><span class="fa-li"><i class="fas fa-book-open"></i></span><b>Reflect</b> on the choices we make when integrating technology in our teaching.</li>
-<li class="fragment"><span class="fa-li"><i class="fas fa-compass-drafting"></i></span><b>Explore</b> the TPACK framework and Learning Technology by Design.</li>
-<li class="fragment"><span class="fa-li"><i class="fas fa-pen-ruler"></i></span><b>Connect</b> personal teaching experiences with pedagogical and technological knowledge.</li>
-<li class="fragment"><span class="fa-li"><i class="fas fa-sitemap"></i></span><b>Understand</b> expectations for key assessments in this course.</li>
+						<div class="" style="position: absolute; left: 70%; top: 30%; height: 70%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
+						<div class="block">
 
+						<img src="slides/00 System/Assets/Stickers/Compass.gif" alt="" style="object-fit: scale-down">
 
 
-</div>
-</ol>
+						</div>
 
-<div class="" style="position: absolute; left: 70%; top: 30%; height: 70%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<div class="block">
+						</div>
+						</div>
 
-<img src="00 System/Assets/Stickers/Compass.gif" alt="" style="object-fit: scale-down">
+						<aside class="notes"></aside>
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: style="text-align: left" class="drop" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+						<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-</div>
 
+						<div class="block">
 
+						## Agenda
 
-</div>
-</div>
+						</div>
 
-<aside class="notes"></aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+						</div>
 
-<div class="block">
 
-## Agenda
+						<div class="" style="position: absolute; left: 0%; top: 20%; height: 80%; width: 70%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-</div>
 
 
 
-</div>
 
 
-<div class="" style="position: absolute; left: 0%; top: 20%; height: 80%; width: 70%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+						1. Welcome & icebreaker
+						2. Course Objectives
+						3. TPACK
+						4. Learning Technology by Design
+						5. Assessment Tasks
+						6. CoI Tasks
 
 
 
 
+						</div>
 
+						<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-1. Welcome & icebreaker
-2. Course Objectives
-3. TPACK
-4. Learning Technology by Design
-5. Assessment Tasks
-6. CoI Tasks
 
+						<div class="block">
 
+						<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWxkZGNqNnJxZHZlMmNzNDh3ZW1nZnU1bXl2d3BiaTFqbmhwcmo0MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/C3gFgVk7UFS8TUmZ2J/giphy.gif" alt="" style="object-fit: scale-down">
 
 
-</div>
+						</div>
 
-<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<div class="block">
 
-<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWxkZGNqNnJxZHZlMmNzNDh3ZW1nZnU1bXl2d3BiaTFqbmhwcmo0MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/C3gFgVk7UFS8TUmZ2J/giphy.gif" alt="" style="object-fit: scale-down">
+						</div>
+						</div>
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+						<img src="slides/00 System/Assets/Getting to know you title.png" alt="" style="object-fit: scale-down">
+						</div>
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-</div>
+						<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
+						### Course Objectives
 
+						</div>
 
-</div>
-</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+						<div class="flex-even" style="position: absolute; left: 0%; top: 20%; height: 20%; width: 100%; display: flex; flex-direction: row; align-items: flex-start; justify-content: space-around" align="top">
 
-<img src="00 System/Assets/Getting to know you title.png" alt="" style="object-fit: scale-down">
-</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+						<div class="block">
 
+						<!-- .element: class="fragment" data-fragment-index="1" -->
 
-### Course Objectives
+						<i class="fas fa-network-wired fa-3x"></i>
 
-</div>
+						</div>
 
-<div class="flex-even" style="position: absolute; left: 0%; top: 20%; height: 20%; width: 100%; display: flex; flex-direction: row; align-items: flex-start; justify-content: space-around" align="top">
 
 
-<div class="block">
+						<div class="block">
 
-<!-- .element: class="fragment" data-fragment-index="1" -->
+						<!-- .element: class="fragment" data-fragment-index="2" -->
 
-<i class="fas fa-network-wired fa-3x"></i>
+						<i class="fas fa-laptop-code fa-3x"></i>
 
-</div>
+						</div>
 
 
 
-<div class="block">
+						<div class="block">
 
-<!-- .element: class="fragment" data-fragment-index="2" -->
+						<!-- .element: class="fragment" data-fragment-index="3" -->
 
-<i class="fas fa-laptop-code fa-3x"></i>
+						<i class="fas fa-user-shield fa-3x"></i>
 
-</div>
+						</div>
 
 
 
-<div class="block">
+						<div class="block">
 
-<!-- .element: class="fragment" data-fragment-index="3" -->
+						<!-- .element: class="fragment" data-fragment-index="4" -->
 
-<i class="fas fa-user-shield fa-3x"></i>
+						<i class="fas fa-robot fa-3x"></i>
 
-</div>
+						</div>
 
 
 
-<div class="block">
+						</div>
 
-<!-- .element: class="fragment" data-fragment-index="4" -->
+						<div class="flex-even" style="position: absolute; left: 0%; top: 40%; height: 60%; width: 100%; display: flex; flex-direction: row; align-items: flex-start; justify-content: space-around" align="top">
 
-<i class="fas fa-robot fa-3x"></i>
 
-</div>
+						<div class="block">
 
+						<!-- .element: class="fragment" data-fragment-index="1" -->
 
+						**Investigate** how digital tools and infrastructure support instructional design in your college context.
 
-</div>
+						</div>
 
-<div class="flex-even" style="position: absolute; left: 0%; top: 40%; height: 60%; width: 100%; display: flex; flex-direction: row; align-items: flex-start; justify-content: space-around" align="top">
 
 
-<div class="block">
+						<div class="block">
 
-<!-- .element: class="fragment" data-fragment-index="1" -->
+						<!-- .element: class="fragment" data-fragment-index="2" -->
 
-**Investigate** how digital tools and infrastructure support instructional design in your college context.
+						**Evaluate** and apply digital tools to design technology-enhanced learning activities and assessments.
 
-</div>
+						</div>
 
 
 
-<div class="block">
+						<div class="block">
 
-<!-- .element: class="fragment" data-fragment-index="2" -->
+						<!-- .element: class="fragment" data-fragment-index="3" -->
 
-**Evaluate** and apply digital tools to design technology-enhanced learning activities and assessments.
+						**Reflect** on digital citizenship and responsible technology integration in teaching.
 
-</div>
+						</div>
 
 
 
-<div class="block">
+						<div class="block">
 
-<!-- .element: class="fragment" data-fragment-index="3" -->
+						<!-- .element: class="fragment" data-fragment-index="4" -->
 
-**Reflect** on digital citizenship and responsible technology integration in teaching.
+						**Examine** the implications of generative AI on teaching, learning, and assessment.
 
-</div>
+						</div>
 
 
 
-<div class="block">
+						</div>
+						</div>
 
-<!-- .element: class="fragment" data-fragment-index="4" -->
+						<aside class="notes"></aside>
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-**Examine** the implications of generative AI on teaching, learning, and assessment.
+						<img src="slides/00 System/Assets/TPACK.png" alt="" style="object-fit: scale-down">
+						</div>
 
-</div>
+						<aside class="notes"></aside>
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+						<!-- .slide: template="" -->
 
+						## Mentimeter
 
-</div>
-</div>
+						<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3Judm5wYWkwcTF0ZzlwNmRqbTlmc2pwM2U4Z3MwYmVvcGQzMWdxOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/MF3pE1wwVczhKkaSlg/giphy.gif" alt="" style="object-fit: scale-down">
 
-<aside class="notes"></aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<img src="00 System/Assets/TPACK.png" alt="" style="object-fit: scale-down">
-</div>
+						Learning objective for this course: **Experience a variety of tools.**
 
-<aside class="notes"></aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+						For example, polling!
+						</div>
+					</script>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<!-- .slide: template="" -->
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-## Mentimeter
 
-<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3Judm5wYWkwcTF0ZzlwNmRqbTlmc2pwM2U4Z3MwYmVvcGQzMWdxOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/MF3pE1wwVczhKkaSlg/giphy.gif" alt="" style="object-fit: scale-down">
+							<div class="block">
 
+							### Evolution of a Cegep Teacher
 
-Learning objective for this course: **Experience a variety of tools.**
+							</div>
 
-For example, polling!
-</div></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 4%; top: 19%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-### Evolution of a Cegep Teacher
 
-</div>
 
+							<!-- .slide: data-auto-animate template="" -->
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 4%; top: 19%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+							**Content Knowledge**
 
+							You're hired for your expertise in your discipline.
 
+							- You know your subject well.
+							- This is (usually) your starting point as a teacher.
 
-<!-- .slide: data-auto-animate template="" -->
 
 
 
-**Content Knowledge**
+							</div>
+							</ol>
 
-You're hired for your expertise in your discipline.
+							<div class="" style="position: absolute; left: 50%; top: 20%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-- You know your subject well.
-- This is (usually) your starting point as a teacher.
 
+							<div class="block">
 
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 100%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
+							<img src="slides/00 System/Assets/content-knowledge.png" alt="" style="object-fit: scale-down" data-id="ck">
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 50%; top: 20%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+							</div>
 
 
-<div class="block">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 100%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<img src="00 System/Assets/content-knowledge.png" alt="" style="object-fit: scale-down" data-id="ck">
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-</div>
 
-</div>
+							<div class="block">
 
+							### Evolution of a Cegep Teacher
 
+							</div>
 
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 4%; top: 19%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-### Evolution of a Cegep Teacher
 
-</div>
 
+							<!-- .slide: data-auto-animate template="" -->
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 4%; top: 19%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+							**Pedagogical Knowledge**
 
+							As you go along, you learn to:
 
+							- Plan lessons
+							- Run in-class activities
+							- Make and grade assessments
+							- Manage the classroom
 
-<!-- .slide: data-auto-animate template="" -->
+							This is foundational "teacher training."
 
 
 
-**Pedagogical Knowledge**
 
-As you go along, you learn to:
 
-- Plan lessons
-- Run in-class activities
-- Make and grade assessments
-- Manage the classroom
+							</div>
+							</ol>
 
-This is foundational "teacher training."
+							<div class="" style="position: absolute; left: 50%; top: 20%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
+							<div class="block">
 
+							<div class="" style="position: absolute; left: 10%; top: 0%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
+							<img src="slides/00 System/Assets/content-knowledge.png" alt="" style="opacity: 0.1; object-fit: scale-down" data-id="ck">
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 50%; top: 20%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+							<div class="" style="position: absolute; left: 45%; top: 40%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
+							<img src="slides/00 System/Assets/pedagogical-knowledge.png" alt="" style="object-fit: scale-down" data-id="pk">
 
-<div class="block">
+							</div>
 
-<div class="" style="position: absolute; left: 10%; top: 0%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+							</div>
 
-<img src="00 System/Assets/content-knowledge.png" alt="" style="opacity: 0.1; object-fit: scale-down" data-id="ck">
 
-</div>
 
-<div class="" style="position: absolute; left: 45%; top: 40%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+							</div>
+							</div>
 
-<img src="00 System/Assets/pedagogical-knowledge.png" alt="" style="object-fit: scale-down" data-id="pk">
+							<aside class="notes"><p>Maybe this comes from colleagues in your department, attending workshops and ped days, talking with your ped councillors, etc.</p>
+							</aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-</div>
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-</div>
 
+							<div class="block">
 
+							### Evolution of a Cegep Teacher
 
-</div>
-</div>
+							</div>
 
-<aside class="notes"><p>Maybe this comes from colleagues in your department, attending workshops and ped days, talking with your ped councillors, etc.</p>
-</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 4%; top: 19%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-### Evolution of a Cegep Teacher
 
-</div>
 
+							<!-- .slide: data-auto-animate template="" -->
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 4%; top: 19%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+							**Pedagogical Content Knowledge**
 
+							<div class="block">
 
+							<!-- .element: style="font-size: 0.9em" -->
 
-<!-- .slide: data-auto-animate template="" -->
+							You begin to transform subject matter for teaching.
 
+							- What teaching approaches fit your content?
+							- How can you sequence ideas for better learning?
+							- What are common misconceptions?
+							- Using things like analogies, illustrations, examples, explanations, demonstrations, etc.
 
+							</div>
 
-**Pedagogical Content Knowledge**
 
-<div class="block">
 
-<!-- .element: style="font-size: 0.9em" -->
 
-You begin to transform subject matter for teaching.
 
-- What teaching approaches fit your content?
-- How can you sequence ideas for better learning?
-- What are common misconceptions?
-- Using things like analogies, illustrations, examples, explanations, demonstrations, etc.
 
-</div>
 
+							</div>
+							</ol>
 
+							<div class="" style="position: absolute; left: 50%; top: 20%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
+							<div class="block">
 
+							<div class="" style="position: absolute; left: 10%; top: 0%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
+							<img src="slides/00 System/Assets/content-knowledge.png" alt="" style="object-fit: scale-down" data-id="ck">
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 50%; top: 20%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+							<div class="" style="position: absolute; left: 45%; top: 0%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
+							<img src="slides/00 System/Assets/pedagogical-knowledge.png" alt="" style="object-fit: scale-down" data-id="pk">
 
-<div class="block">
+							</div>
 
-<div class="" style="position: absolute; left: 10%; top: 0%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+							</div>
 
-<img src="00 System/Assets/content-knowledge.png" alt="" style="object-fit: scale-down" data-id="ck">
 
-</div>
 
-<div class="" style="position: absolute; left: 45%; top: 0%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+							</div>
+							</div>
 
-<img src="00 System/Assets/pedagogical-knowledge.png" alt="" style="object-fit: scale-down" data-id="pk">
+							<aside class="notes"><p>This is building up your teacher toolbox through experience.</p>
+							</aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-</div>
+							<!-- .slide: template="" -->
 
-</div>
+							## Mentimeter
 
+							<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3Judm5wYWkwcTF0ZzlwNmRqbTlmc2pwM2U4Z3MwYmVvcGQzMWdxOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/MF3pE1wwVczhKkaSlg/giphy.gif" alt="" style="object-fit: scale-down">
 
 
-</div>
-</div>
+							Learning objective for this course: **Experience a variety of tools.**
 
-<aside class="notes"><p>This is building up your teacher toolbox through experience.</p>
-</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							For example, polling!
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<!-- .slide: template="" -->
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-## Mentimeter
 
-<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3Judm5wYWkwcTF0ZzlwNmRqbTlmc2pwM2U4Z3MwYmVvcGQzMWdxOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/MF3pE1wwVczhKkaSlg/giphy.gif" alt="" style="object-fit: scale-down">
+							<div class="block">
 
+							### Evolution of a Cegep Teacher
 
-Learning objective for this course: **Experience a variety of tools.**
+							</div>
 
-For example, polling!
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 4%; top: 19%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-### Evolution of a Cegep Teacher
 
-</div>
 
+							<!-- .slide: data-auto-animate template="" -->
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 4%; top: 19%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+							**Technological Knowledge**
 
+							You already probably use generic tools from industry like:
 
+							- Email
+							- Word
+							- PowerPoint
+							- Zoom or Teams
 
-<!-- .slide: data-auto-animate template="" -->
+							This is basic tech literacy.
 
 
 
-**Technological Knowledge**
 
-You already probably use generic tools from industry like:
+							</div>
+							</ol>
 
-- Email
-- Word
-- PowerPoint
-- Zoom or Teams
+							<div class="" style="position: absolute; left: 50%; top: 20%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-This is basic tech literacy.
 
+							<div class="block">
 
+							<div class="" style="position: absolute; left: 10%; top: 0%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
+							<img src="slides/00 System/Assets/content-knowledge.png" alt="" style="opacity: 0.1; object-fit: scale-down" data-id="ck">
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 50%; top: 20%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+							<div class="" style="position: absolute; left: 45%; top: 0%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
+							<img src="slides/00 System/Assets/pedagogical-knowledge.png" alt="" style="opacity: 0.1; object-fit: scale-down" data-id="pk">
 
-<div class="block">
+							</div>
 
-<div class="" style="position: absolute; left: 10%; top: 0%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+							<div class="" style="position: absolute; left: 27%; top: 50%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
-<img src="00 System/Assets/content-knowledge.png" alt="" style="opacity: 0.1; object-fit: scale-down" data-id="ck">
+							<img src="slides/00 System/Assets/technical-knowledge.png" alt="" style="object-fit: scale-down" data-id="tk">
 
-</div>
+							</div>
 
-<div class="" style="position: absolute; left: 45%; top: 0%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+							</div>
 
-<img src="00 System/Assets/pedagogical-knowledge.png" alt="" style="opacity: 0.1; object-fit: scale-down" data-id="pk">
 
-</div>
 
-<div class="" style="position: absolute; left: 27%; top: 50%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<img src="00 System/Assets/technical-knowledge.png" alt="" style="object-fit: scale-down" data-id="tk">
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-</div>
 
-</div>
+							<div class="block">
 
+							### Evolution of a Cegep Teacher
 
+							</div>
 
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 4%; top: 19%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-### Evolution of a Cegep Teacher
 
-</div>
 
+							<!-- .slide: data-auto-animate template="" -->
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 4%; top: 19%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+							**Technological Content Knowledge**
 
+							You use tools specific to your discipline:
 
+							- IDEs for programming
+							- CAD for engineering
+							- Grammar software
+							- Photo and video editing
 
-<!-- .slide: data-auto-animate template="" -->
+							Technology deepens your subject matter practice.
 
 
 
-**Technological Content Knowledge**
 
-You use tools specific to your discipline:
+							</div>
+							</ol>
 
-- IDEs for programming
-- CAD for engineering
-- Grammar software
-- Photo and video editing
+							<div class="" style="position: absolute; left: 50%; top: 20%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-Technology deepens your subject matter practice.
 
+							<div class="block">
 
+							<div class="" style="position: absolute; left: 10%; top: 0%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
+							<img src="slides/00 System/Assets/content-knowledge.png" alt="" style="object-fit: scale-down" data-id="ck">
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 50%; top: 20%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+							<div class="" style="position: absolute; left: 45%; top: 0%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
+							<img src="slides/00 System/Assets/pedagogical-knowledge.png" alt="" style="opacity: 0.1; object-fit: scale-down" data-id="pk">
 
-<div class="block">
+							</div>
 
-<div class="" style="position: absolute; left: 10%; top: 0%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+							<div class="" style="position: absolute; left: 10%; top: 35%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
-<img src="00 System/Assets/content-knowledge.png" alt="" style="object-fit: scale-down" data-id="ck">
+							<img src="slides/00 System/Assets/technical-knowledge.png" alt="" style="object-fit: scale-down" data-id="tk">
 
-</div>
+							</div>
 
-<div class="" style="position: absolute; left: 45%; top: 0%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+							</div>
 
-<img src="00 System/Assets/pedagogical-knowledge.png" alt="" style="opacity: 0.1; object-fit: scale-down" data-id="pk">
 
-</div>
 
-<div class="" style="position: absolute; left: 10%; top: 35%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<img src="00 System/Assets/technical-knowledge.png" alt="" style="object-fit: scale-down" data-id="tk">
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-</div>
 
-</div>
+							<div class="block">
 
+							### Evolution of a Cegep Teacher
 
+							</div>
 
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 4%; top: 19%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-### Evolution of a Cegep Teacher
 
-</div>
 
+							<!-- .slide: data-auto-animate template="" -->
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 4%; top: 19%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+							**Technological Pedagogical Knowledge**
 
+							- Moodle or Teams
+							- Omnivox, Lea, MIO
+							- Digital quizzes, forums, checklists*
+							- Online discussions or [video feedback](https://eductive.ca/en/resource/using-interactive-video-rubrics-to-support-student-success/)
 
+							You become intentional about using tech to support pedagogy.
 
-<!-- .slide: data-auto-animate template="" -->
 
 
 
-**Technological Pedagogical Knowledge**
+							</div>
+							</ol>
 
-- Moodle or Teams
-- Omnivox, Lea, MIO
-- Digital quizzes, forums, checklists*
-- Online discussions or [video feedback](https://eductive.ca/en/resource/using-interactive-video-rubrics-to-support-student-success/)
+							<div class="" style="position: absolute; left: 50%; top: 20%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-You become intentional about using tech to support pedagogy.
 
+							<div class="block">
 
+							<div class="" style="position: absolute; left: 10%; top: 0%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
+							<img src="slides/00 System/Assets/content-knowledge.png" alt="" style="opacity: 0.1; object-fit: scale-down" data-id="ck">
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 50%; top: 20%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+							<div class="" style="position: absolute; left: 45%; top: 0%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
+							<img src="slides/00 System/Assets/pedagogical-knowledge.png" alt="" style="object-fit: scale-down" data-id="pk">
 
-<div class="block">
+							</div>
 
-<div class="" style="position: absolute; left: 10%; top: 0%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+							<div class="" style="position: absolute; left: 45%; top: 35%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
-<img src="00 System/Assets/content-knowledge.png" alt="" style="opacity: 0.1; object-fit: scale-down" data-id="ck">
+							<img src="slides/00 System/Assets/technical-knowledge.png" alt="" style="object-fit: scale-down" data-id="tk">
 
-</div>
+							</div>
 
-<div class="" style="position: absolute; left: 45%; top: 0%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+							</div>
 
-<img src="00 System/Assets/pedagogical-knowledge.png" alt="" style="object-fit: scale-down" data-id="pk">
 
-</div>
 
-<div class="" style="position: absolute; left: 45%; top: 35%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<img src="00 System/Assets/technical-knowledge.png" alt="" style="object-fit: scale-down" data-id="tk">
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-</div>
 
-</div>
+							<div class="block">
 
+							### Full TPACK: Bringing It All Together
 
+							</div>
 
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 4%; top: 19%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-### Full TPACK: Bringing It All Together
 
-</div>
 
+							<!-- .slide: data-auto-animate template="" -->
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 4%; top: 19%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+							Now we're in **TPACK** territory:
 
+							- You design learning experiences where tech, pedagogy, and content all work together
+							- Each decision affects the others
 
+							Let's explore this through an activity…
 
-<!-- .slide: data-auto-animate template="" -->
 
 
 
-Now we're in **TPACK** territory:
+							</div>
+							</ol>
 
-- You design learning experiences where tech, pedagogy, and content all work together
-- Each decision affects the others
+							<div class="" style="position: absolute; left: 50%; top: 20%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-Let's explore this through an activity…
 
+							<div class="block">
 
+							<div class="" style="position: absolute; left: 10%; top: 0%; height: 55%; width: 55%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
+							<img src="slides/00 System/Assets/content-knowledge.png" alt="" style="object-fit: scale-down" data-id="ck">
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 50%; top: 20%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+							<div class="" style="position: absolute; left: 45%; top: 0%; height: 55%; width: 55%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
+							<img src="slides/00 System/Assets/pedagogical-knowledge.png" alt="" style="object-fit: scale-down" data-id="pk">
 
-<div class="block">
+							</div>
 
-<div class="" style="position: absolute; left: 10%; top: 0%; height: 55%; width: 55%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+							<div class="" style="position: absolute; left: 27%; top: 35%; height: 55%; width: 55%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
-<img src="00 System/Assets/content-knowledge.png" alt="" style="object-fit: scale-down" data-id="ck">
+							<img src="slides/00 System/Assets/technical-knowledge.png" alt="" style="object-fit: scale-down" data-id="tk">
 
-</div>
+							</div>
 
-<div class="" style="position: absolute; left: 45%; top: 0%; height: 55%; width: 55%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+							</div>
 
-<img src="00 System/Assets/pedagogical-knowledge.png" alt="" style="object-fit: scale-down" data-id="pk">
 
-</div>
 
-<div class="" style="position: absolute; left: 27%; top: 35%; height: 55%; width: 55%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<img src="00 System/Assets/technical-knowledge.png" alt="" style="object-fit: scale-down" data-id="tk">
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-</div>
 
-</div>
+							<div class="block">
 
+							### Activity: TPACK Brainstorm (10 Minutes)
 
+							</div>
 
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-### Activity: TPACK Brainstorm (10 Minutes)
 
-</div>
 
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							<div class="block">
 
+							<!-- .element: style="font-size: 0.7em" -->
 
+							You're about to be dropped into one of **seven random breakout groups**, each representing a piece of the TPACK framework: CK, PK, TK, PCK, TCK, TPK, or TPACK.
 
+							Each group will collaborate on a shared PowerPoint slide ([link in chat](https://usherbrooke.sharepoint.com/:p:/r/sites/PED624-PedagogyofDigitalLearning-Summer2025/Documents%20partages/General/Class%201%20-%20TPACK%20Brainstorm.pptx?d=wca4dba15b37442258d11261d1d4f07ae&csf=1&web=1&e=3yIkIL)):
 
+							- Your slide number will be at the top of the breakout room window, use that to find your group's slide number (ex. Room 1 = Slide 1)
+							- Add your ideas, examples, and explanations using **text, images, arrows, memes** - get creative!
+							- What does your slice of TPACK mean?
+							- What are some real teaching examples of it?
+							- How does it show up in your practice?
 
+							</div>
 
-<div class="block">
 
-<!-- .element: style="font-size: 0.7em" -->
 
-You're about to be dropped into one of **seven random breakout groups**, each representing a piece of the TPACK framework: CK, PK, TK, PCK, TCK, TPK, or TPACK.
 
-Each group will collaborate on a shared PowerPoint slide ([link in chat](https://usherbrooke.sharepoint.com/:p:/r/sites/PED624-PedagogyofDigitalLearning-Summer2025/Documents%20partages/General/Class%201%20-%20TPACK%20Brainstorm.pptx?d=wca4dba15b37442258d11261d1d4f07ae&csf=1&web=1&e=3yIkIL)):
 
-- Your slide number will be at the top of the breakout room window, use that to find your group's slide number (ex. Room 1 = Slide 1)
-- Add your ideas, examples, and explanations using **text, images, arrows, memes** - get creative!
-- What does your slice of TPACK mean?
-- What are some real teaching examples of it?
-- How does it show up in your practice?
 
-</div>
+							</div>
+							</ol>
 
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
+							<div class="block">
 
+							<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXFvbTdsZmZ0bWtrcTh6c3V4N3kyN2NybzI1dncyeTF5dWRqc3gxYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LiauwXZqx2TKUI1ITW/giphy.gif" alt="" style="object-fit: scale-down">
 
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<div class="block">
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXFvbTdsZmZ0bWtrcTh6c3V4N3kyN2NybzI1dncyeTF5dWRqc3gxYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LiauwXZqx2TKUI1ITW/giphy.gif" alt="" style="object-fit: scale-down">
+							## Mentimeter - Last time
 
+							<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3Judm5wYWkwcTF0ZzlwNmRqbTlmc2pwM2U4Z3MwYmVvcGQzMWdxOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/MF3pE1wwVczhKkaSlg/giphy.gif" alt="" style="object-fit: scale-down">
 
-</div>
 
+							Learning objective for this course: **Experience a variety of tools.**
 
+							For example, polling!
+							</div>
+						</script>
+					</section>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+						My relationship with technology sometimes feels like
 
-## Mentimeter - Last time
+						<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWhyN3B3N2E3a3I0cHhzbnJqMWc0enh5eWJ3ZWlsMmMxMzYwZXFtdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oz8xtBx06mcZWoNJm/giphy.gif" alt="" style="width: 1100px; object-fit: fill">
 
-<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3Judm5wYWkwcTF0ZzlwNmRqbTlmc2pwM2U4Z3MwYmVvcGQzMWdxOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/MF3pE1wwVczhKkaSlg/giphy.gif" alt="" style="object-fit: scale-down">
 
+						Put a GIF in chat!
+						</div>
 
-Learning objective for this course: **Experience a variety of tools.**
+						<aside class="notes"><p>Especially in Computer Science where technology changes so rapidly.</p>
+						</aside>
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: style="text-align: left" class="drop" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-For example, polling!
-</div></script></section></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+						<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-My relationship with technology sometimes feels like
 
-<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWhyN3B3N2E3a3I0cHhzbnJqMWc0enh5eWJ3ZWlsMmMxMzYwZXFtdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oz8xtBx06mcZWoNJm/giphy.gif" alt="" style="width: 1100px; object-fit: fill">
+						<div class="block">
 
+						### Two questions I have about the article…
 
-Put a GIF in chat!
-</div>
+						</div>
 
-<aside class="notes"><p>Especially in Computer Science where technology changes so rapidly.</p>
-</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+						</div>
 
-<div class="block">
+						<ol class="fa-ol">
+						<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-### Two questions I have about the article…
 
-</div>
 
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+						- Can you think of examples of technologies that have (mostly) _disappeared_ since 2006 when the article was written?
+						- Examples of _invisible_ technology in a **1980s** classroom?
+						- Examples of _invisible_ technology in **today's** classroom?
 
 
 
 
 
+						</div>
+						</ol>
 
-- Can you think of examples of technologies that have (mostly) _disappeared_ since 2006 when the article was written?
-- Examples of _invisible_ technology in a **1980s** classroom?
-- Examples of _invisible_ technology in **today's** classroom?
+						<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
+						<div class="block">
 
+						<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjBhdnB6eGYzeXQ0dnBoNndzdHRxZm9obmJubjJlenp5YXUxZnNtNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/8ynOqCkWDpf5C/giphy.gif" alt="" style="object-fit: scale-down">
 
 
-</div>
-</ol>
+						</div>
 
-<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<div class="block">
+						</div>
+						</div>
 
-<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjBhdnB6eGYzeXQ0dnBoNndzdHRxZm9obmJubjJlenp5YXUxZnNtNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/8ynOqCkWDpf5C/giphy.gif" alt="" style="object-fit: scale-down">
+						<aside class="notes"><ul>
+						<li>Books, blackboards, paper...</li>
+						<li>Computer for the teacher, projector, screen…</li>
+						</ul>
+						</aside>
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+						<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2xvankyZHdvbnZxNWk5c2oxcjEzYjNteGp0ZDAyc21mNTVlMTJiYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/yvmvDbzVk7mK2JOYJG/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
+						</div>
+					</script>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-</div>
+							<div class="" style="position: absolute; left: 5%; top: 5%; height: 50%; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
 
+							<span data-id="sentence1" style="color: #333;font-size:0.9em;"><i class="fas fa-quote-left fa-3x fa-pull-left"></i> The addition of a new technology is not the same as adding another module to a course. It often raises fundamental questions about content and pedagogy that can overwhelm even experienced instructors... <mark>But newer technologies often disrupt the status quo, requiring teachers to reconfigure not just their understanding of technology but of all three components.</mark> <i class="fas fa-quote-right fa-3x fa-pull-right"></i>
 
-</div>
-</div>
+							</div>
 
-<aside class="notes"><ul>
-<li>Books, blackboards, paper...</li>
-<li>Computer for the teacher, projector, screen…</li>
-</ul>
-</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							<div class="" style="position: absolute; left: 0%; top: 50%; height: 50%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
-<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2xvankyZHdvbnZxNWk5c2oxcjEzYjNteGp0ZDAyc21mNTVlMTJiYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/yvmvDbzVk7mK2JOYJG/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
-</div></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate="true" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							<img src="slides/00 System/Assets/whos-that-pokemon.png" alt="" style="object-fit: scale-down">
 
-<div class="" style="position: absolute; left: 5%; top: 5%; height: 50%; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+							</div>
 
+							<div class="" style="position: absolute; left: -10%; top: 50%; height: 50%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
-<span data-id="sentence1" style="color: #333;font-size:0.9em;"><i class="fas fa-quote-left fa-3x fa-pull-left"></i> The addition of a new technology is not the same as adding another module to a course. It often raises fundamental questions about content and pedagogy that can overwhelm even experienced instructors... <mark>But newer technologies often disrupt the status quo, requiring teachers to reconfigure not just their understanding of technology but of all three components.</mark> <i class="fas fa-quote-right fa-3x fa-pull-right"></i>
+							<img src="slides/00 System/Assets/blob.png" alt="" style="opacity: 1; object-fit: scale-down">
 
-</div>
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 50%; height: 50%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+							<div class="" style="position: absolute; left: 5%; top: 5%; height: 50%; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
-<img src="00 System/Assets/whos-that-pokemon.png" alt="" style="object-fit: scale-down">
 
-</div>
+							<span data-id="sentence1" style="color: #333;font-size:0.9em;"><i class="fas fa-quote-left fa-3x fa-pull-left"></i> The addition of a new technology is not the same as adding another module to a course. It often raises fundamental questions about content and pedagogy that can overwhelm even experienced instructors... <mark>But newer technologies often disrupt the status quo, requiring teachers to reconfigure not just their understanding of technology but of all three components.</mark> <i class="fas fa-quote-right fa-3x fa-pull-right"></i>
 
-<div class="" style="position: absolute; left: -10%; top: 50%; height: 50%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+							</div>
 
-<img src="00 System/Assets/blob.png" alt="" style="opacity: 1; object-fit: scale-down">
+							<div class="" style="position: absolute; left: 0%; top: 50%; height: 50%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate="true" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							<img src="slides/00 System/Assets/whos-that-pokemon.png" alt="" style="object-fit: scale-down">
 
-<div class="" style="position: absolute; left: 5%; top: 5%; height: 50%; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+							</div>
 
+							<div class="" style="position: absolute; left: -10%; top: 50%; height: 50%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
-<span data-id="sentence1" style="color: #333;font-size:0.9em;"><i class="fas fa-quote-left fa-3x fa-pull-left"></i> The addition of a new technology is not the same as adding another module to a course. It often raises fundamental questions about content and pedagogy that can overwhelm even experienced instructors... <mark>But newer technologies often disrupt the status quo, requiring teachers to reconfigure not just their understanding of technology but of all three components.</mark> <i class="fas fa-quote-right fa-3x fa-pull-right"></i>
+							<img src="slides/00 System/Assets/blob.png" alt="" style="opacity: 0; object-fit: scale-down">
 
-</div>
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 50%; height: 50%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+							<div class="" style="position: absolute; left: 5%; top: 5%; height: 90%; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
-<img src="00 System/Assets/whos-that-pokemon.png" alt="" style="object-fit: scale-down">
 
-</div>
+							<i class="fas fa-quote-left fa-3x fa-pull-left"></i><mark>The incorporation of a new technology</mark> or new medium for teaching suddenly <mark>forces us to confront basic educational issues</mark> because this new technology or medium reconstructs the dynamic equilibrium among all three elements... The addition of a new technology is not the same as adding another module to a course. <mark>It often raises fundamental questions about content and pedagogy</mark> <i class="fas fa-quote-right fa-3x fa-pull-right"></i> <mark>that can overwhelm even experienced instructors.</mark>
 
-<div class="" style="position: absolute; left: -10%; top: 50%; height: 50%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+							(Mishra and Koehler, 2006, p. 1030)
 
-<img src="00 System/Assets/blob.png" alt="" style="opacity: 0; object-fit: scale-down">
+							</div>
+							</div>
 
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							<aside class="notes"><p>Think of this in relation to the pandemic and AI.</p>
+							</aside>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 5%; top: 5%; height: 90%; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<i class="fas fa-quote-left fa-3x fa-pull-left"></i><mark>The incorporation of a new technology</mark> or new medium for teaching suddenly <mark>forces us to confront basic educational issues</mark> because this new technology or medium reconstructs the dynamic equilibrium among all three elements... The addition of a new technology is not the same as adding another module to a course. <mark>It often raises fundamental questions about content and pedagogy</mark> <i class="fas fa-quote-right fa-3x fa-pull-right"></i> <mark>that can overwhelm even experienced instructors.</mark>
+							<div class="block">
 
-(Mishra and Koehler, 2006, p. 1030)
+							### Learning Technology by Design
 
-</div>
-</div>
+							</div>
 
-<aside class="notes"><p>Think of this in relation to the pandemic and AI.</p>
-</aside></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 4%; top: 19%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-### Learning Technology by Design
 
-</div>
 
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 4%; top: 19%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							- What exactly is "by design"?
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->601: Student-centred approach
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->602: Authentic assessments
+							- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->This means **you**!
 
 
 
 
 
+							</div>
+							</ol>
 
-- What exactly is "by design"?
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->601: Student-centred approach
-- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->602: Authentic assessments
-- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->This means **you**!
+							<div class="" style="position: absolute; left: 50%; top: 20%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
+							<div class="block">
 
+							<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzl5NXRwajNzamhxdTZrcHQ4aTVvdTF4amRoNDB0bmR6bjNuZDFvNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/fldfO2X6SBo4T0Jz6c/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
 
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 50%; top: 20%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<div class="block">
+							</div>
+							</div>
 
-<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzl5NXRwajNzamhxdTZrcHQ4aTVvdTF4amRoNDB0bmR6bjNuZDFvNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/fldfO2X6SBo4T0Jz6c/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
+							<aside class="notes"><p>That phrase always went over my head because to me it&#39;s overly fanciful.</p>
+							</aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-</div>
 
+							<div class="block">
 
+							### Learning Technology by Design
 
-</div>
-</div>
+							</div>
 
-<aside class="notes"><p>That phrase always went over my head because to me it&#39;s overly fanciful.</p>
-</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-### Learning Technology by Design
 
-</div>
 
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							Don't choose a tool just because...
 
+							- it is available
+							- it is easy
+							- you know it
+							- it is trendy
 
+							Learn the tool that fits your purpose and your **learning objective**!
 
 
 
 
-Don't choose a tool just because...
 
-- it is available
-- it is easy
-- you know it
-- it is trendy
+							</div>
+							</ol>
 
-Learn the tool that fits your purpose and your **learning objective**!
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
+							<div class="block">
 
+							<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2twYnl5cnZpNWhzeHczYjI4eGJjM2FvcDdxbHV4M2d6d2RwcWtuayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/yDpe2fEZQhVnYputqX/giphy.gif" alt="This or that" style="object-fit: scale-down">
 
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<div class="block">
+							</div>
+							</div>
 
-<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2twYnl5cnZpNWhzeHczYjI4eGJjM2FvcDdxbHV4M2d6d2RwcWtuayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/yDpe2fEZQhVnYputqX/giphy.gif" alt="This or that" style="object-fit: scale-down">
+							<aside class="notes"></aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+							<img src="slides/00 System/Assets/design-process.png" alt="" style="width: 1000px; object-fit: fill">
 
-</div>
 
+							[From 13-minute video by Matthew Koehler about TPACK history](https://www.youtube.com/watch?v=ZCq9yH5sINc)
+							</div>
 
+							<aside class="notes"></aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-</div>
-</div>
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-<aside class="notes"></aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<img src="00 System/Assets/design-process.png" alt="" style="width: 1000px; object-fit: fill">
+							<div class="block">
 
+							### Lesson Planning & Backwards Design
 
-[From 13-minute video by Matthew Koehler about TPACK history](https://www.youtube.com/watch?v=ZCq9yH5sINc)
-</div>
+							</div>
 
-<aside class="notes"></aside></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
 
-### Lesson Planning & Backwards Design
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-</div>
 
+							<li class="">
 
+							<span class="fa-li">
 
-</div>
+							<div class="block">
 
-<ol class="fa-ol">
+							<i class="fas fa-bullseye fa-lg"></i>
 
-<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+							</div>
 
 
-<li class="">
 
-<span class="fa-li">
+							</span>
 
-<div class="block">
+							<div class="block">
 
-<i class="fas fa-bullseye fa-lg"></i>
+							**Learning Objective**: What do you want the students to learn?
 
-</div>
+							</div>
 
 
 
-</span>
+							</li>
 
-<div class="block">
+							<li class="fragment">
 
-**Learning Objective**: What do you want the students to learn?
+							<span class="fa-li">
 
-</div>
+							<div class="block">
 
+							<i class="fas fa-receipt fa-lg"></i>
 
+							</div>
 
-</li>
 
-<li class="fragment">
 
-<span class="fa-li">
+							</span>
 
-<div class="block">
+							<div class="block">
 
-<i class="fas fa-receipt fa-lg"></i>
+							**Assessment**: What evidence will the student provide to prove they learned?
 
-</div>
+							</div>
 
 
 
-</span>
+							</li>
 
-<div class="block">
+							<li class="fragment">
 
-**Assessment**: What evidence will the student provide to prove they learned?
+							<span class="fa-li">
 
-</div>
+							<div class="block">
 
+							<i class="fas fa-quote-left fa-lg"></i>
 
+							</div>
 
-</li>
 
-<li class="fragment">
 
-<span class="fa-li">
+							</span>
 
-<div class="block">
+							<div class="block">
 
-<i class="fas fa-quote-left fa-lg"></i>
+							**Instructional Strategy**: How will they practice what you want them to learn?
 
-</div>
+							</div>
 
 
 
-</span>
+							</li>
 
-<div class="block">
+							<li class="fragment">
 
-**Instructional Strategy**: How will they practice what you want them to learn?
+							<span class="fa-li">
 
-</div>
+							<div class="block">
 
+							<i class="fas fa-toolbox fa-lg"></i>
 
+							</div>
 
-</li>
 
-<li class="fragment">
 
-<span class="fa-li">
+							</span>
 
-<div class="block">
+							<div class="block">
 
-<i class="fas fa-toolbox fa-lg"></i>
+							**Technology**: What tool supports this objective best? <!-- .element: style="text-align: left" -->
 
-</div>
+							</div>
 
 
 
-</span>
+							</li>
 
-<div class="block">
+							</div>
 
-**Technology**: What tool supports this objective best? <!-- .element: style="text-align: left" -->
+							</ol>
 
-</div>
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
+							<div class="block">
 
-</li>
+							<img src="slides/00 System/Assets/Stickers/Corgi Teacher.gif" alt="" style="object-fit: scale-down">
 
-</div>
 
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<div class="block">
+							</div>
 
-<img src="00 System/Assets/Stickers/Corgi Teacher.gif" alt="" style="object-fit: scale-down">
 
 
-</div>
 
 
 
-</div>
 
 
 
@@ -1276,644 +1434,736 @@ Learn the tool that fits your purpose and your **learning objective**!
 
 
 
+							<div class="flex-even" style="position: absolute; left: 68%; top: 80%; height: 20%; width: 30%; display: flex; flex-direction: row; align-items: center; justify-content: space-around" >
 
 
+							⬅️ This comes last! <!-- .element: class="fragment fade-left" -->
 
+							</div>
+							</div>
 
+							<aside class="notes"><p>Backwards design!</p>
+							</aside>
+						</script>
+					</section>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+						## TPACK Survey Results
 
-<div class="flex-even" style="position: absolute; left: 68%; top: 80%; height: 20%; width: 30%; display: flex; flex-direction: row; align-items: center; justify-content: space-around" >
+						[Google Forms](https://docs.google.com/forms/d/19KKgx62S2oxgq4Iuc5iN5fgCzWPn6vVwgy4xeHfS8_0/edit#responses)
 
+						<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3Judm5wYWkwcTF0ZzlwNmRqbTlmc2pwM2U4Z3MwYmVvcGQzMWdxOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/MF3pE1wwVczhKkaSlg/giphy.gif" alt="" style="width: 700px; object-fit: fill">
+						</div>
+					</script>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-⬅️ This comes last! <!-- .element: class="fragment fade-left" -->
+							### Assessments
 
-</div>
-</div>
+							| Assessment Task                 | Due                              | AI  |  %  |
+							| ------------------------------- | -------------------------------- |:-: |:-: |
+							| 1. Journal                      | June 4                           |  1  | 10  |
+							| 2. Survey of Tools              | Post: May 28<br>Reply: June 1    |  2  | 20  |
+							| 3. Develop an Activity using IT | Draft: June 12<br>Reply: June 18 |  3  | 30  |
+							| 4. AI Assessment Redesign       | Draft: June 19<br>Reply: July 4  |  4  | 20  |
+							| 5. Contribution to the CoI      | July 4                           |  0  | 20  |
+							</div>
 
-<aside class="notes"><p>Backwards design!</p>
-</aside></script></section></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							<aside class="notes"></aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-## TPACK Survey Results
+							<div class="flex-even" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: space-around" >
 
-[Google Forms](https://docs.google.com/forms/d/19KKgx62S2oxgq4Iuc5iN5fgCzWPn6vVwgy4xeHfS8_0/edit#responses)
 
-<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3Judm5wYWkwcTF0ZzlwNmRqbTlmc2pwM2U4Z3MwYmVvcGQzMWdxOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/MF3pE1wwVczhKkaSlg/giphy.gif" alt="" style="width: 700px; object-fit: fill">
-</div></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate="true" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							### Assessments: AI Policy <!-- .element: data-id="title" -->
 
-### Assessments
+							</div>
 
-| Assessment Task                 | Due                              | AI  |  %  |
-| ------------------------------- | -------------------------------- |:-: |:-: |
-| 1. Journal                      | June 4                           |  1  | 10  |
-| 2. Survey of Tools              | Post: May 28<br>Reply: June 1    |  2  | 20  |
-| 3. Develop an Activity using IT | Draft: June 12<br>Reply: June 18 |  3  | 30  |
-| 4. AI Assessment Redesign       | Draft: June 19<br>Reply: July 4  |  4  | 20  |
-| 5. Contribution to the CoI      | July 4                           |  0  | 20  |
-</div>
+							<div class="flex-even" style="position: absolute; left: 0%; top: 20%; height: 20%; width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: space-around" >
 
-<aside class="notes"></aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate="true" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="flex-even" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: space-around" >
+							<img src="slides/00 System/Assets/icon_niveau_0.png" alt="" style="object-fit: scale-down" class="fragment" data-fragment-index="1">
 
 
-### Assessments: AI Policy <!-- .element: data-id="title" -->
+							<img src="slides/00 System/Assets/icon_niveau_1.png" alt="" style="object-fit: scale-down" class="fragment" data-fragment-index="2">
 
-</div>
 
-<div class="flex-even" style="position: absolute; left: 0%; top: 20%; height: 20%; width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: space-around" >
+							<img src="slides/00 System/Assets/icon_niveau_2.png" alt="" style="object-fit: scale-down" class="fragment" data-fragment-index="3">
 
 
-<img src="00 System/Assets/icon_niveau_0.png" alt="" style="object-fit: scale-down" class="fragment" data-fragment-index="1">
+							<img src="slides/00 System/Assets/icon_niveau_3.png" alt="" style="object-fit: scale-down" class="fragment" data-fragment-index="4">
 
 
-<img src="00 System/Assets/icon_niveau_1.png" alt="" style="object-fit: scale-down" class="fragment" data-fragment-index="2">
+							<img src="slides/00 System/Assets/icon_niveau_4.png" alt="" style="object-fit: scale-down" class="fragment" data-fragment-index="5">
 
 
-<img src="00 System/Assets/icon_niveau_2.png" alt="" style="object-fit: scale-down" class="fragment" data-fragment-index="3">
+							</div>
 
+							<div class="flex-even" style="font-size: 0.8em; position: absolute; left: 0%; top: 40%; height: 20%; width: 100%; display: flex; flex-direction: row; align-items: flex-start; justify-content: space-around" align="top">
 
-<img src="00 System/Assets/icon_niveau_3.png" alt="" style="object-fit: scale-down" class="fragment" data-fragment-index="4">
 
+							LEVEL 0 <!-- .element: class="fragment" data-fragment-index="1" -->
 
-<img src="00 System/Assets/icon_niveau_4.png" alt="" style="object-fit: scale-down" class="fragment" data-fragment-index="5">
+							LEVEL 1 <!-- .element: class="fragment" data-fragment-index="2" -->
 
+							LEVEL 2 <!-- .element: class="fragment" data-fragment-index="3" -->
 
-</div>
+							LEVEL 3 <!-- .element: class="fragment" data-fragment-index="4" -->
 
-<div class="flex-even" style="font-size: 0.8em; position: absolute; left: 0%; top: 40%; height: 20%; width: 100%; display: flex; flex-direction: row; align-items: flex-start; justify-content: space-around" align="top">
+							LEVEL 4 <!-- .element: class="fragment" data-fragment-index="5" -->
 
+							</div>
 
-LEVEL 0 <!-- .element: class="fragment" data-fragment-index="1" -->
+							<div class="flex-even" style="font-size: 0.8em; position: absolute; left: 0%; top: 45%; height: 20%; width: 100%; display: flex; flex-direction: row; align-items: flex-start; justify-content: space-around" align="top">
 
-LEVEL 1 <!-- .element: class="fragment" data-fragment-index="2" -->
 
-LEVEL 2 <!-- .element: class="fragment" data-fragment-index="3" -->
+							Prohibited Use <!-- .element: class="fragment" data-fragment-index="1" -->
 
-LEVEL 3 <!-- .element: class="fragment" data-fragment-index="4" -->
+							Limited Use <!-- .element: class="fragment" data-fragment-index="2" -->
 
-LEVEL 4 <!-- .element: class="fragment" data-fragment-index="5" -->
+							Targeted Use <!-- .element: class="fragment" data-fragment-index="3" -->
 
-</div>
+							Framed Use <!-- .element: class="fragment" data-fragment-index="4" -->
 
-<div class="flex-even" style="font-size: 0.8em; position: absolute; left: 0%; top: 45%; height: 20%; width: 100%; display: flex; flex-direction: row; align-items: flex-start; justify-content: space-around" align="top">
+							Free Use <!-- .element: class="fragment" data-fragment-index="5" -->
 
+							</div>
 
-Prohibited Use <!-- .element: class="fragment" data-fragment-index="1" -->
+							<div class="flex-even" style="font-size: 0.9em; position: absolute; left: 0%; top: 55%; height: 20%; width: 100%; display: flex; flex-direction: row; align-items: flex-start; justify-content: space-around" align="top">
 
-Limited Use <!-- .element: class="fragment" data-fragment-index="2" -->
 
-Targeted Use <!-- .element: class="fragment" data-fragment-index="3" -->
+							Zero authorization. <!-- .element: class="fragment" data-fragment-index="1" -->
 
-Framed Use <!-- .element: class="fragment" data-fragment-index="4" -->
+							Authorized to assist the student in their use of language. <!-- .element: class="fragment" data-fragment-index="2" -->
 
-Free Use <!-- .element: class="fragment" data-fragment-index="5" -->
+							Authorized to improve work produced by the student. <!-- .element: class="fragment" data-fragment-index="3" -->
 
-</div>
+							Authorized to produce work that will be improved. <!-- .element: class="fragment" data-fragment-index="4" -->
 
-<div class="flex-even" style="font-size: 0.9em; position: absolute; left: 0%; top: 55%; height: 20%; width: 100%; display: flex; flex-direction: row; align-items: flex-start; justify-content: space-around" align="top">
+							No specific restrictions are imposed. <!-- .element: class="fragment" data-fragment-index="5" -->
 
+							</div>
+							</div>
 
-Zero authorization. <!-- .element: class="fragment" data-fragment-index="1" -->
+							<aside class="notes"></aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-Authorized to assist the student in their use of language. <!-- .element: class="fragment" data-fragment-index="2" -->
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-Authorized to improve work produced by the student. <!-- .element: class="fragment" data-fragment-index="3" -->
 
-Authorized to produce work that will be improved. <!-- .element: class="fragment" data-fragment-index="4" -->
+							<div class="block">
 
-No specific restrictions are imposed. <!-- .element: class="fragment" data-fragment-index="5" -->
+							### Assessment Task 1: Journal
 
-</div>
-</div>
+							</div>
 
-<aside class="notes"></aside></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-### Assessment Task 1: Journal
 
-</div>
 
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							Reflect on the [_Digital Competency Framework_](https://www.education.gouv.qc.ca/fileadmin/site_web/documents/ministere/Cadre-reference-competence-num-AN.pdf) by the Ministère de l'Éducation et de l'Enseignement supérieur.
 
+							- How has technology impacted your teaching?
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Where do you see opportunity?
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->How do you see yourself integrating this framework?
+							- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Do you see any challenges?
+							- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Remember, this isn't a summary!
 
 
 
 
 
-Reflect on the [_Digital Competency Framework_](https://www.education.gouv.qc.ca/fileadmin/site_web/documents/ministere/Cadre-reference-competence-num-AN.pdf) by the Ministère de l'Éducation et de l'Enseignement supérieur.
+							</div>
+							</ol>
 
-- How has technology impacted your teaching?
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Where do you see opportunity?
-- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->How do you see yourself integrating this framework?
-- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Do you see any challenges?
-- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Remember, this isn't a summary!
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
+							<div class="block">
 
+							<img src="slides/00 System/Assets/Digital Competency Framework.png" alt="" style="object-fit: scale-down">
 
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<div class="block">
+							</div>
+							</div>
 
-<img src="00 System/Assets/Digital Competency Framework.png" alt="" style="object-fit: scale-down">
+							<aside class="notes"><p>The digital competency framework was developed in Quebec over a two-year period and published in 2019. In January 2020, before the pandemic forced teachers online, there was very little interest in this document in the Anglophone Cegeps. Fast forward to June 2020 where we saw almost 500 English college teachers participate in workshops around the framework. Reflect on how this framework can it be used in your teaching practice. Include a self-reflection paragraph.</p>
+							</aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-</div>
 
+							<div class="block">
 
+							### Assessment Task 2: Survey of Tools
 
-</div>
-</div>
+							</div>
 
-<aside class="notes"><p>The digital competency framework was developed in Quebec over a two-year period and published in 2019. In January 2020, before the pandemic forced teachers online, there was very little interest in this document in the Anglophone Cegeps. Fast forward to June 2020 where we saw almost 500 English college teachers participate in workshops around the framework. Reflect on how this framework can it be used in your teaching practice. Include a self-reflection paragraph.</p>
-</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-### Assessment Task 2: Survey of Tools
 
-</div>
 
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							1. Choose a pedagogical challenge
+							1. &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Survey 3 potential tools
+							1. &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Evaluate fit (pros/cons)
+							1. &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Share on Moodle Forum (by May 28th)
+							1. &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Respond to 2 peers (by June 1st)
+							1. &shy;<!-- .element: class="fragment" data-fragment-index="5" -->Post self-reflection (by June 4th)
 
+							Details can be found on Moodle and in the Course Outline.
 
 
 
 
+							</div>
+							</ol>
 
-1. Choose a pedagogical challenge
-1. &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Survey 3 potential tools
-1. &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Evaluate fit (pros/cons)
-1. &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Share on Moodle Forum (by May 28th)
-1. &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Respond to 2 peers (by June 1st)
-1. &shy;<!-- .element: class="fragment" data-fragment-index="5" -->Post self-reflection (by June 4th)
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-Details can be found on Moodle and in the Course Outline.
 
+							<div class="block">
 
+							<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHdmZzloa3djYTloN3VsMXN6emJ2eHpjaHRyc3p3NHkxdGtwNGtxNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/rlW2uw0j5F74Dv6zEB/giphy.gif" alt="" style="object-fit: scale-down">
 
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<div class="block">
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHdmZzloa3djYTloN3VsMXN6emJ2eHpjaHRyc3p3NHkxdGtwNGtxNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/rlW2uw0j5F74Dv6zEB/giphy.gif" alt="" style="object-fit: scale-down">
+							<img src="slides/00 System/Assets/top-tools-for-learning-2024.png" alt="" style="width: 1500px; object-fit: fill">
 
 
-</div>
+							Jane Hart, Top 100 Tools for Learning 2024, [TopTools4Learning.com](https://toptools4learning.com/)
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+							### Assessment Task 2: Survey of Tools Forums
 
+							<div class="block">
 
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							<!-- .element: style="font-size: 0.8em" -->
 
-<img src="00 System/Assets/top-tools-for-learning-2024.png" alt="" style="width: 1500px; object-fit: fill">
+							| Languages         | Sciences, Tech, and Business | Nursing, Special Ed, and Health | Geography, Arts, Indigenous Support |
+							|:----------------:|:----------------------------:|:--------------------------------:|:-----------------------------------:|
+							| Noemie           | Neveen                       | Louis-Philippe                   | Heather                             |
+							| Dane             | Tor                          | Sabrina Z.                         | Sabrina F.                            |
+							| Alexander        | Elzahraa                     | Alireza                          | Ilana                               |
+							| Victoria         | Meghrig                      | April                            | Robin-Dimitrije                     |
+							| Tanya            | Sean                         | Sarah                            |                                     |
+							| Michelle         | Elisa                        | Erika                            |                                     |
+							| Francis          | Leonardo                     |                                  |                                     |
+							| Anna             |                              |                                  |                                     |
+							| Carolyn          |                              |                                  |                                     |
 
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-Jane Hart, Top 100 Tools for Learning 2024, [TopTools4Learning.com](https://toptools4learning.com/)
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-### Assessment Task 2: Survey of Tools Forums
 
-<div class="block">
+							<div class="block">
 
-<!-- .element: style="font-size: 0.8em" -->
+							### Assessment Task 5: Community of Inquiry
 
-| Languages         | Sciences, Tech, and Business | Nursing, Special Ed, and Health | Geography, Arts, Indigenous Support |
-|:----------------:|:----------------------------:|:--------------------------------:|:-----------------------------------:|
-| Noemie           | Neveen                       | Louis-Philippe                   | Heather                             |
-| Dane             | Tor                          | Sabrina Z.                         | Sabrina F.                            |
-| Alexander        | Elzahraa                     | Alireza                          | Ilana                               |
-| Victoria         | Meghrig                      | April                            | Robin-Dimitrije                     |
-| Tanya            | Sean                         | Sarah                            |                                     |
-| Michelle         | Elisa                        | Erika                            |                                     |
-| Francis          | Leonardo                     |                                  |                                     |
-| Anna             |                              |                                  |                                     |
-| Carolyn          |                              |                                  |                                     |
+							</div>
 
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 4%; top: 19%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-### Assessment Task 5: Community of Inquiry
 
-</div>
 
+							<!-- .slide: data-auto-animate template="" -->
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 4%; top: 19%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+							- Measures your engagement in learning activities over the whole course (ex. forums, glossary, discussions, etc.).
+							- Fill out a form near the end as a self-assessment.
 
 
 
-<!-- .slide: data-auto-animate template="" -->
 
+							</div>
+							</ol>
 
+							<div class="" style="position: absolute; left: 50%; top: 20%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-- Measures your engagement in learning activities over the whole course (ex. forums, glossary, discussions, etc.).
-- Fill out a form near the end as a self-assessment.
 
+							<div class="block">
 
+							<img src="slides/00 System/Assets/Community of Inquiry.png" alt="" style="object-fit: scale-down">
 
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 50%; top: 20%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<div class="block">
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<img src="00 System/Assets/Community of Inquiry.png" alt="" style="object-fit: scale-down">
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-</div>
+							<div class="block">
 
+							### Assessment Task 5: Community of Inquiry
 
+							</div>
 
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-### Assessment Task 5: Community of Inquiry
 
-</div>
 
+							<!-- .slide: data-auto-animate template="" -->
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+							1. **Padlet**: What technology does your college support?
+								- Teams Channels for coordination
+								- Due: May 22
+							1. &shy;<!-- .element: class="fragment" data-fragment-index="1" -->**Glossary Contributions**: Add 3 ed. tech. terms and visuals.
+								- 1st by May 22, 2nd by May 29, 3rd by June 5
+								- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->You will be quizzed! 😈
 
 
 
-<!-- .slide: data-auto-animate template="" -->
 
+							</div>
+							</ol>
 
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-1. **Padlet**: What technology does your college support?
-	- Teams Channels for coordination
-	- Due: May 22
-1. &shy;<!-- .element: class="fragment" data-fragment-index="1" -->**Glossary Contributions**: Add 3 ed. tech. terms and visuals.
-	- 1st by May 22, 2nd by May 29, 3rd by June 5
-	- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->You will be quizzed! 😈
 
+							<div class="block">
 
+							<img src="slides/00 System/Assets/Community of Inquiry.png" alt="" style="object-fit: scale-down">
 
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<div class="block">
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<img src="00 System/Assets/Community of Inquiry.png" alt="" style="object-fit: scale-down">
+							### Padlet Groups
 
+							| Group              | Members                                      |
+							|--------------------|----------------------------------------------|
+							| John Abbott 1      | Heather, Sabrina, Ilana, Zahraa              |
+							| John Abbott 2      | Meghrig, Anna, Robin, Alireza                |
+							| Dawson             | Neveen, Louis-Philippe, Sabrina, Erika       |
+							| Vanier             | April, Elisa, Sean                           |
+							| Montreal Colleges  | Alex, Tanya, Tor                             |
+							| Regional Colleges 1| Noémie, Dane, Carolyn                        |
+							| Regional Colleges 2| Victoria, Sarah, Michelle, Francis           |
+							| TBD                | Leonardo                                     |
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-</div>
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
+							<div class="block">
 
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							### Interactive Videos
 
-### Padlet Groups
+							</div>
 
-| Group              | Members                                      |
-|--------------------|----------------------------------------------|
-| John Abbott 1      | Heather, Sabrina, Ilana, Zahraa              |
-| John Abbott 2      | Meghrig, Anna, Robin, Alireza                |
-| Dawson             | Neveen, Louis-Philippe, Sabrina, Erika       |
-| Vanier             | April, Elisa, Sean                           |
-| Montreal Colleges  | Alex, Tanya, Tor                             |
-| Regional Colleges 1| Noémie, Dane, Carolyn                        |
-| Regional Colleges 2| Victoria, Sarah, Michelle, Francis           |
-| TBD                | Leonardo                                     |
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-### Interactive Videos
 
-</div>
 
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							Throughout the semester, you will be asked to watch videos, some will have a quiz at the end and others will have the quiz questions embedded in the video.
 
+							A variety of software has been used, so as you are watching the videos, pay attention to not only the content, but the user experience of each of the different tools.
 
 
 
 
+							</div>
+							</ol>
 
-Throughout the semester, you will be asked to watch videos, some will have a quiz at the end and others will have the quiz questions embedded in the video.
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-A variety of software has been used, so as you are watching the videos, pay attention to not only the content, but the user experience of each of the different tools.
 
+							<div class="block">
 
+							<img src="slides/00 System/Assets/Stickers/Watching.gif" alt="" style="object-fit: scale-down">
 
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<div class="block">
+							</div>
+							</div>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<img src="00 System/Assets/Stickers/Watching.gif" alt="" style="object-fit: scale-down">
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-</div>
+							<div class="block">
 
+							### Blended Learning Hours
 
+							</div>
 
-</div>
-</div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-### Blended Learning Hours
 
-</div>
 
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							- Traditional 2 credit course = 30 hours class time + 60 hours of homework for a total of 90 hours
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->BL 2 credit course = 18 hours synchronous class time (six 3-hour classes) + **72 hours asynchronous work** (combination of collaborative and independent work) for a total of 90 hours
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Average 15 hours per week (synchronous + asynchronous)
 
 
 
 
 
+							</div>
+							</ol>
 
-- Traditional 2 credit course = 30 hours class time + 60 hours of homework for a total of 90 hours
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->BL 2 credit course = 18 hours synchronous class time (six 3-hour classes) + **72 hours asynchronous work** (combination of collaborative and independent work) for a total of 90 hours
-- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Average 15 hours per week (synchronous + asynchronous)
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
+							<div class="block">
 
+							<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXNxbXB1aHd2bjlkbXFvZHNsZjdseWRzd2hkOXh3Y3A0YzFqM2llaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/f4OLUuKcgMseHcNsON/giphy.gif" alt="" style="width: 400px; object-fit: fill">
 
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<div class="block">
+							</div>
+							</div>
 
-<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXNxbXB1aHd2bjlkbXFvZHNsZjdseWRzd2hkOXh3Y3A0YzFqM2llaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/f4OLUuKcgMseHcNsON/giphy.gif" alt="" style="width: 400px; object-fit: fill">
+							<aside class="notes"><p>This is what you signed up for! Really makes you think about what we make our students go through.</p>
+							</aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
-</div>
 
+							<div class="block">
 
+							### Before Next Class
 
-</div>
-</div>
+							</div>
 
-<aside class="notes"><p>This is what you signed up for! Really makes you think about what we make our students go through.</p>
-</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
+							</div>
 
-<div class="block">
+							<div class="" style="position: absolute; left: 0%; top: 20%; height: 60%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
 
-### Before Next Class
 
-</div>
 
 
 
-</div>
 
-<div class="" style="position: absolute; left: 0%; top: 20%; height: 60%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
 
+							- Start thinking about the journal topic
+							- Start to explore at least 1/3 tools
+							- Schedule meeting with your techno-pedagogue
+							- Post Padlet link by May 22
+							- Watch 2 assigned videos (with questions)
 
 
 
 
+							</div>
 
+							<div class="" style="position: absolute; left: 0%; top: 80%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
-- Start thinking about the journal topic
-- Start to explore at least 1/3 tools
-- Schedule meeting with your techno-pedagogue
-- Post Padlet link by May 22
-- Watch 2 assigned videos (with questions)
 
+							<div class="block">
 
+							Everything can be found in the Moodle calendar!
 
+							</div>
 
-</div>
 
-<div class="" style="position: absolute; left: 0%; top: 80%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
 
-<div class="block">
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-Everything can be found in the Moodle calendar!
+							### Register for SALTISE
 
-</div>
+							Both Meghrig and I are giving sessions at the SALTISE conference (June 4/5 at Dawson College) and it would be awesome if you came!
 
+							- 📝 [Register Here](https://www.saltise.ca/saltise-conference/conference-registration/)
+							- 🧠 [Meghrig's Session](https://www.saltise.ca/event/t-07-equity-and-inclusion-in-curriculum-and-design)
+							- 🃏 [Vik's Session](https://www.saltise.ca/event/il-10-gamifying-feedback/)
 
+							SALTISE is "_based on the ideals of implementing evidence-based pedagogy involving instructional innovations and often leveraging the use of educational technology to promote improved learning_."
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+							## See you next week
 
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							<img src="slides/00 System/Assets/Stickers/Waving.gif" alt="ng.gif" style="object-fit: scale-down">
 
-### Register for SALTISE
 
-Both Meghrig and I are giving sessions at the SALTISE conference (June 4/5 at Dawson College) and it would be awesome if you came!
+							Questions? Comments?
+							</div>
 
-- 📝 [Register Here](https://www.saltise.ca/saltise-conference/conference-registration/)
-- 🧠 [Meghrig's Session](https://www.saltise.ca/event/t-07-equity-and-inclusion-in-curriculum-and-design)
-- 🃏 [Vik's Session](https://www.saltise.ca/event/il-10-gamifying-feedback/)
+							<aside class="notes"><p>Thanks everyone! It&#39;s been an absolute pleasure :)</p>
+							</aside>
+						</script>
+					</section>
+				</section>
+			</div>
+		</div>
 
-SALTISE is "_based on the ideals of implementing evidence-based pedagogy involving instructional innovations and often leveraging the use of educational technology to promote improved learning_."
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+		<script src="slides/reveal/reveal.js"></script>
+		<script src="slides/plugin/notes/notes.js"></script>
+		<script src="slides/plugin/markdown/markdown.js"></script>
+		<script src="slides/plugin/highlight/highlight.js"></script>
 
-## See you next week
+		<script src="slides/plugin/zoom/zoom.js"></script>
+		<script src="slides/plugin/math/math.js"></script>
+		<script src="slides/plugin/mermaid/mermaid.js"></script>
+		<script src="slides/plugin/chart/chart.umd.js"></script>
+		<script src="slides/plugin/chart/plugin.js"></script>
+		<script src="slides/plugin/customcontrols/plugin.js"></script>
 
-<img src="00 System/Assets/Stickers/Waving.gif" alt="ng.gif" style="object-fit: scale-down">
+		<script>
+			function extend() {
+				const target = {};
+				for (let i = 0; i < arguments.length; i++) {
+					const source = arguments[i];
+					for (const key in source) {
+						if (source.hasOwnProperty(key)) {
+							target[key] = source[key];
+						}
+					}
+				}
+				return target;
+			}
 
+			function isLight(color) {
+				let hex = color.replace('#', '');
 
-Questions? Comments?
-</div>
+				// convert #fff => #ffffff
+				if (hex.length == 3) {
+					hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`;
+				}
 
-<aside class="notes"><p>Thanks everyone! It&#39;s been an absolute pleasure :)</p>
-</aside></script></section></section></div>
-    </div>
+				const c_r = parseInt(hex.substr(0, 2), 16);
+				const c_g = parseInt(hex.substr(2, 2), 16);
+				const c_b = parseInt(hex.substr(4, 2), 16);
+				const brightness = (c_r * 299 + c_g * 587 + c_b * 114) / 1000;
+				return brightness > 155;
+			}
 
-    <script src="dist/reveal.js"></script>
-    <script src="plugin/notes/notes.js"></script>
-    <script src="plugin/markdown/markdown.js"></script>
-    <script src="plugin/highlight/highlight.js"></script>
+			const bgColor = getComputedStyle(document.documentElement)
+				.getPropertyValue('--r-background-color')
+				.trim();
 
-    <script src="plugin/zoom/zoom.js"></script>
-    <script src="plugin/math/math.js"></script>
-    <script src="plugin/mermaid/mermaid.js"></script>
-    <script src="plugin/chart/chart.umd.js"></script>
-    <script src="plugin/chart/plugin.js"></script>
-    <script src="plugin/customcontrols/plugin.js"></script>
+			if (isLight(bgColor)) {
+				document.body.classList.add('has-light-background');
+			} else {
+				document.body.classList.add('has-dark-background');
+			}
 
-    <script>
-        function extend() {
-            const target = {};
-            for (let i = 0; i < arguments.length; i++) {
-                const source = arguments[i];
-                for (const key in source) {
-                    if (source.hasOwnProperty(key)) {
-                        target[key] = source[key];
-                    }
-                }
-            }
-            return target;
-        }
+			// default options to init reveal.js
+			const defaultOptions = {
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				transition: 'default', // none/fade/slide/convex/concave/zoom
+				plugins: [
+					RevealMarkdown,
+					RevealHighlight,
+					RevealZoom,
+					RevealNotes,
+					RevealMath.MathJax3,
+					RevealMermaid,
+					RevealChart,
+					RevealCustomControls,
+				],
+				allottedTime: 120 * 1000,
+				mathjax3: {
+					mathjax: 'slides/plugin/math/mathjax/tex-chtml-full.js',
+				},
+				markdown: {
+					gfm: true,
+					mangle: false,
+					pedantic: false,
+					smartLists: false,
+					smartypants: false,
+				},
+				mermaid: {
+					theme: isLight ? 'default' : 'dark',
+				},
+				customcontrols: {
+					controls: [],
+				},
+			};
 
-        function isLight(color) {
-            let hex = color.replace('#', '');
+			if (pageInIframe()) {
+				defaultOptions.scrollActivationWidth = 5;
+			}
 
-            // convert #fff => #ffffff
-            if (hex.length == 3) {
-                hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`;
-            }
+			// options from URL query string
+			const queryOptions = Reveal().getQueryHash() || {};
 
-            const c_r = parseInt(hex.substr(0, 2), 16);
-            const c_g = parseInt(hex.substr(2, 2), 16);
-            const c_b = parseInt(hex.substr(4, 2), 16);
-            const brightness = ((c_r * 299) + (c_g * 587) + (c_b * 114)) / 1000;
-            return brightness > 155;
-        }
+			const options = extend(
+				defaultOptions,
+				{
+					controls: true,
+					progress: true,
+					slideNumber: false,
+					center: true,
+					transition: 'slide',
+					transitionSpeed: 'default',
+					width: 1920,
+					height: 1080,
+					margin: 0.04,
+				},
+				queryOptions
+			);
+		</script>
 
-        const bgColor = getComputedStyle(document.documentElement).getPropertyValue('--r-background-color').trim();
-
-        if (isLight(bgColor)) {
-            document.body.classList.add('has-light-background');
-        } else {
-            document.body.classList.add('has-dark-background');
-        }
-
-        // default options to init reveal.js
-        const defaultOptions = {
-            controls: true,
-            progress: true,
-            history: true,
-            center: true,
-            transition: 'default', // none/fade/slide/convex/concave/zoom
-            plugins: [
-                RevealMarkdown,
-                RevealHighlight,
-                RevealZoom,
-                RevealNotes,
-                RevealMath.MathJax3,
-                RevealMermaid,
-                RevealChart,
-                RevealCustomControls,
-            ],
-            allottedTime: 120 * 1000,
-            mathjax3: {
-                mathjax: 'plugin/math/mathjax/tex-chtml-full.js',
-            },
-            markdown: {
-                gfm: true,
-                mangle: false,
-                pedantic: false,
-                smartLists: false,
-                smartypants: false,
-            },
-            mermaid: {
-                theme: isLight ? 'default' : 'dark',
-            },
-            customcontrols: {
-                controls: [
-                ]
-            },
-        };
-
-        if ( pageInIframe() ) {
-            defaultOptions.scrollActivationWidth = 5;
-        }
-
-        // options from URL query string
-        const queryOptions = Reveal().getQueryHash() || {};
-
-        const options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":false,"center":true,"transition":"slide","transitionSpeed":"default","width":1920,"height":1080,"margin":0.04}, queryOptions);
-    </script>
-
-    <script>
-      Reveal.initialize(options);
-    </script>
-    <!-- created with Slides Extended reveal.html template -->
-</body>
+		<script>
+			Reveal.initialize(options);
+		</script>
+		<!-- created with Slides Extended reveal.html template -->
+	</body>
 </html>
