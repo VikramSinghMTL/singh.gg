@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+	--rosewater: #dc8a78;
+	--flamingo: #dd7878;
+	--pink: #ea76cb;
+	--mauve: #8839ef;
+	--red: #d20f39;
+	--maroon: #e64553;
+	--peach: #fe640b;
+	--yellow: #df8e1d;
+	--green: #40a02b;
+	--teal: #179299;
+	--sky: #04a5e5;
+	--sapphire: #209fb5;
+	--blue: #1e66f5;
+	--lavender: #7287fd;
+	--text: #4c4f69;
+}
+
+.rosewater {
+	color: var(--rosewater);
+}
+
+.rosewater-bg {
+	background-color: var(--rosewater);
+}
+
+.flamingo {
+	color: var(--flamingo);
+}
+
+.flamingo-bg {
+	background-color: var(--flamingo);
+}
+
+.pink {
+	color: var(--pink);
+}
+
+.pink-bg {
+	background-color: var(--pink);
+}
+
+.mauve {
+	color: var(--mauve);
+}
+
+.mauve-bg {
+	background-color: var(--mauve);
+}
+
+.red {
+	color: var(--red);
+}
+
+.red-bg {
+	background-color: var(--red);
+}
+
+.maroon {
+	color: var(--maroon);
+}
+
+.maroon-bg {
+	background-color: var(--maroon);
+}
+
+.peach {
+	color: var(--peach);
+}
+
+.peach-bg {
+	background-color: var(--peach);
+}
+
+.yellow {
+	color: var(--yellow);
+}
+
+.yellow-bg {
+	background-color: var(--yellow);
+}
+
+.green {
+	color: var(--green);
+}
+
+.green-bg {
+	background-color: var(--green);
+}
+
+.teal {
+	color: var(--teal);
+}
+
+.teal-bg {
+	background-color: var(--teal);
+}
+
+.sky {
+	color: var(--sky);
+}
+
+.sky-bg {
+	background-color: var(--sky);
+}
+
+.sapphire {
+	color: var(--sapphire);
+}
+
+.sapphire-bg {
+	background-color: var(--sapphire);
+}
+
+.blue {
+	color: var(--blue);
+}
+
+.blue-bg {
+	background-color: var(--blue);
+}
+
+.lavender {
+	color: var(--lavender);
+}
+
+.lavender-bg {
+	background-color: var(--lavender);
+}
+
+.text {
+	color: var(--text);
+}
+
+.text-bg {
+	background-color: var(--text);
+}
+
+.reveal {
+	font-family: "Quicksand", sans-serif;
+	background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/dust_scratches.png");
+	/* font-size: min(10vw, 10vh); */
+	font-size: 60px;
+}
+
+.reveal .slides {
+	/* border: solid red; */
+	transform: scale(calc(100vw / 1920), calc(100vh / 1080));
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+	font-family: "Quicksand", serif;
+	font-weight: 700;
+}
+
+.icon-list ul {
+	list-style-type: none;
+	list-style-position: outside;
+	margin: 0;
+	/* font-size: 0.75em; */
+}
+
+/* .icon-list ul li:nth-of-type(1) svg, div.fragment:nth-of-type(1) svg { color: var(--text); }
+.icon-list ul li:nth-of-type(2) svg, div.fragment:nth-of-type(2) svg { color: var(--green); }
+.icon-list ul li:nth-of-type(3) svg, div.fragment:nth-of-type(3) svg { color: var(--peach); } */
+
+/* top and bottom padding for all list items
+that are not the first or last */
+.icon-list li {
+	/* padding: 0.3em; */
+}
+
+.list-table table {
+	/* border-collapse: collapse; */
+	margin: 0 1em;
+	height: 100%;
+}
+
+.list-table table tr,
+.list-table table td,
+.list-table table th {
+	border: none;
+}
+
+svg { color: var(--text); }
+
+.center-vertical {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.references ol {
+	list-style: none;
+	text-indent: -40px;
+	margin-left: 40px;
+	line-height: 2em;
+}
+
+ul.fa-ul, ol.fa-ol {
+	list-style-type: none;
+}
+
+ul.fa-ul li, ol.fa-ol li {
+	padding-left: 0.25em;
+}
+
+.fa-li {
+	padding-top: 0.25em;
+}
+
+.reveal table th {
+	text-align: center;
+}
