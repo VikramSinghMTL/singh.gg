@@ -1,1267 +1,1527 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-    <title>Pedagogy of Digital Learning - Class 2</title>
-    <link rel="stylesheet" href="dist/reset.css">
-    <link rel="stylesheet" href="dist/reveal.css" />
-    <link rel="stylesheet" href="css/slides-extended.css" />
-    <link rel="stylesheet" href="dist/theme/white.css" id="theme" />
-    <link rel="stylesheet" href="plugin/highlight/zenburn.css" />
-    <link rel="stylesheet" href="plugin/customcontrols/style.css">
-
-
-    <link rel="stylesheet" href="css/vik.css" />
-
-    <script defer src="dist/fontawesome/all.min.js"></script>
-    <script defer src="plugin/load-mathjax.js"></script>
-
-    <script type="text/javascript">
-        function pageInIframe() {
-            return (window.location !== window.parent.location);
-        }
-
-        let forgetPop = true;
-        function onPopState(event) {
-            if(forgetPop){
-                forgetPop = false;
-            } else if( pageInIframe()) {
-                parent.postMessage(event.target.location.href, "app://obsidian.md");
-            }
-        }
-        window.onpopstate = onPopState;
-        window.onmessage = event => {
-            if(event.data == "reload"){
-                window.document.location.reload();
-            }
-            forgetPop = true;
-        }
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+
+		<title>Pedagogy of Digital Learning - Class 2</title>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/dist/reset.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/dist/reveal.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/css/slides-extended.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/dist/theme/white.css"
+			id="theme"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/plugin/highlight/zenburn.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/plugin/customcontrols/style.css"
+		/>
+
+		<link rel="stylesheet" href="https://www.singh.gg/slides/css/vik.css" />
+
+		<script
+			defer
+			src="https://www.singh.gg/slides/dist/fontawesome/all.min.js"
+		></script>
+		<script
+			defer
+			src="https://www.singh.gg/slides/plugin/load-mathjax.js"
+		></script>
+
+		<script type="text/javascript">
+			function pageInIframe() {
+				return window.location !== window.parent.location;
+			}
+
+			let forgetPop = true;
+			function onPopState(event) {
+				if (forgetPop) {
+					forgetPop = false;
+				} else if (pageInIframe()) {
+					parent.postMessage(
+						event.target.location.href,
+						'app://obsidian.md'
+					);
+				}
+			}
+			window.onpopstate = onPopState;
+			window.onmessage = (event) => {
+				if (event.data == 'reload') {
+					window.document.location.reload();
+				}
+				forgetPop = true;
+			};
+
+			function fitElements() {
+				const itemsToFit = document.getElementsByClassName('fitText');
+				for (const item in itemsToFit) {
+					if (Object.hasOwnProperty.call(itemsToFit, item)) {
+						const element = itemsToFit[item];
+						fitElement(element, 1, 1000);
+						element.classList.remove('fitText');
+					}
+				}
+			}
+
+			function fitElement(element, start, end) {
+				let size = (end + start) / 2;
+				element.style.fontSize = `${size}px`;
+
+				if (Math.abs(start - end) < 1) {
+					while (element.scrollHeight > element.offsetHeight) {
+						size--;
+						element.style.fontSize = `${size}px`;
+					}
+					return;
+				}
+
+				if (element.scrollHeight > element.offsetHeight) {
+					fitElement(element, start, size);
+				} else {
+					fitElement(element, size, end);
+				}
+			}
+
+			document.onreadystatechange = () => {
+				fitElements();
+				if (document.readyState === 'complete') {
+					if (
+						pageInIframe() &&
+						window.location.href.indexOf('?export') != -1
+					) {
+						parent.postMessage(
+							event.target.location.href,
+							'app://obsidian.md'
+						);
+					}
+					if (window.location.href.indexOf('print-pdf') != -1) {
+						let stateCheck = setInterval(() => {
+							clearInterval(stateCheck);
+							window.print();
+						}, 250);
+					}
+				}
+			};
+		</script>
+	</head>
 
-        function fitElements() {
-            const itemsToFit = document.getElementsByClassName('fitText');
-            for (const item in itemsToFit) {
-                if (Object.hasOwnProperty.call(itemsToFit, item)) {
-                    const element = itemsToFit[item];
-                    fitElement(element, 1, 1000);
-                    element.classList.remove('fitText');
-                }
-            }
-        }
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-        function fitElement(element, start, end) {
+							## Pedagogy of Digital Learning
 
-            let size = (end + start) / 2;
-            element.style.fontSize = `${size}px`;
+							Vikram Singh | Class 2 | May 22, 2025
+							</div>
 
-            if (Math.abs(start - end) < 1) {
-                while (element.scrollHeight > element.offsetHeight) {
-                    size--;
-                    element.style.fontSize = `${size}px`;
-                }
-                return;
-            }
+							<aside class="notes"></aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-            if (element.scrollHeight > element.offsetHeight) {
-                fitElement(element, start, size);
-            } else {
-                fitElement(element, size, end);
-            }
-        }
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 30%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
-        document.onreadystatechange = () => {
-            fitElements();
-            if (document.readyState === 'complete') {
-                if (pageInIframe() && window.location.href.indexOf("?export") != -1){
-                    parent.postMessage(event.target.location.href, "app://obsidian.md");
-                }
-                if (window.location.href.indexOf("print-pdf") != -1){
-                    let stateCheck = setInterval(() => {
-                        clearInterval(stateCheck);
-                        window.print();
-                    }, 250);
-                }
-            }
-        };
-    </script>
-</head>
 
-<body>
-    <div class="reveal">
-        <div class="slides"><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							## Learning Objectives
 
-## Pedagogy of Digital Learning
+							By the end of this, you will be able to:
 
-Vikram Singh | Class 2 | May 22, 2025
-</div>
+							</div>
 
-<aside class="notes"></aside></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 29%; height: 70%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 30%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
 
-## Learning Objectives
 
-By the end of this, you will be able to:
 
-</div>
+							<div class="block">
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 8%; top: 29%; height: 70%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+							<!-- .element: style="font-size: 0.85em" -->
 
+							<li class=""><span class="fa-li"><i class="fas fa-comments"></i></span><b>Share</b> educational technology available at your institutions and discuss challenges.</li>
+							<li class="fragment"><span class="fa-li"><i class="fas fa-filter"></i></span><b>Identify</b> criteria for evaluating educational tools in a collaborative setting.</li>
+							<li class="fragment"><span class="fa-li"><i class="fas fa-diagram-project"></i></span><b>Contrast</b> SAMR and PICRAT as models for integrating technology into teaching.</li>
+							<li class="fragment"><span class="fa-li"><i class="fas fa-brain"></i></span><b>Reflect</b> on your own practice using the Keengwe reading and digital pedagogy models.</li>
+							<li class="fragment"><span class="fa-li"><i class="fas fa-eye"></i></span><b>Analyze</b> ways to track engagement in online and blended environments using the Community of Inquiry framework.</li>
 
+							</div>
 
 
 
-<div class="block">
 
-<!-- .element: style="font-size: 0.85em" -->
 
-<li class=""><span class="fa-li"><i class="fas fa-comments"></i></span><b>Share</b> educational technology available at your institutions and discuss challenges.</li>
-<li class="fragment"><span class="fa-li"><i class="fas fa-filter"></i></span><b>Identify</b> criteria for evaluating educational tools in a collaborative setting.</li>
-<li class="fragment"><span class="fa-li"><i class="fas fa-diagram-project"></i></span><b>Contrast</b> SAMR and PICRAT as models for integrating technology into teaching.</li>
-<li class="fragment"><span class="fa-li"><i class="fas fa-brain"></i></span><b>Reflect</b> on your own practice using the Keengwe reading and digital pedagogy models.</li>
-<li class="fragment"><span class="fa-li"><i class="fas fa-eye"></i></span><b>Analyze</b> ways to track engagement in online and blended environments using the Community of Inquiry framework.</li>
 
-</div>
 
+							</div>
+							</ol>
 
+							<div class="" style="position: absolute; left: 70%; top: 30%; height: 70%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
+							<div class="block">
 
+							<img src="https://www.singh.gg/slides/00 System/Assets/Stickers/Compass.gif" alt="" style="object-fit: scale-down">
 
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 70%; top: 30%; height: 70%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<div class="block">
+							</div>
+							</div>
 
-<img src="00 System/Assets/Stickers/Compass.gif" alt="" style="object-fit: scale-down">
+							<aside class="notes"></aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-</div>
 
+							<div class="block">
 
+							## Agenda
 
-</div>
-</div>
+							</div>
 
-<aside class="notes"></aside></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
 
-## Agenda
+							<div class="" style="position: absolute; left: 0%; top: 20%; height: 80%; width: 70%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-</div>
 
 
 
-</div>
 
 
-<div class="" style="position: absolute; left: 0%; top: 20%; height: 80%; width: 70%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							1. IT Padlet Presentations
+							2. Keengwe Article Discussion
+							3. Evaluating Tools & Checklist
+							4. SAMR vs PICRAT
+							5. Zotero Workflow
+							6. CoI & Tracking Engagement
 
 
 
 
+							</div>
 
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-1. IT Padlet Presentations
-2. Keengwe Article Discussion
-3. Evaluating Tools & Checklist
-4. SAMR vs PICRAT
-5. Zotero Workflow
-6. CoI & Tracking Engagement
 
+							<div class="block">
 
+							<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWxkZGNqNnJxZHZlMmNzNDh3ZW1nZnU1bXl2d3BiaTFqbmhwcmo0MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/C3gFgVk7UFS8TUmZ2J/giphy.gif" alt="" style="object-fit: scale-down">
 
 
-</div>
+							</div>
 
-<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<div class="block">
 
-<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWxkZGNqNnJxZHZlMmNzNDh3ZW1nZnU1bXl2d3BiaTFqbmhwcmo0MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/C3gFgVk7UFS8TUmZ2J/giphy.gif" alt="" style="object-fit: scale-down">
+							</div>
+							</div>
+						</script>
+					</section>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+						## Reflective Practitioner
 
-</div>
+						<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ21veWFoM283aGY3NTJqdjZ5b2JsMWd2NnE2ejR6b3d4YXNwcWR1bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XIqCQx02E1U9W/giphy.gif" alt="" style="width: 1400px; object-fit: fill">
 
 
+						Keep a notebook, or a "for next time" file.
+						</div>
 
+						<aside class="notes"><p>After every class, take one minute to write your thoughts down. After every reading, same thing.</p>
+						</aside>
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: style="text-align: left" class="drop" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-</div>
-</div></script></section></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+						<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-## Reflective Practitioner
 
-<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ21veWFoM283aGY3NTJqdjZ5b2JsMWd2NnE2ejR6b3d4YXNwcWR1bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XIqCQx02E1U9W/giphy.gif" alt="" style="width: 1400px; object-fit: fill">
+						<div class="block">
 
+						## IT Padlet Presentations
 
-Keep a notebook, or a "for next time" file.
-</div>
+						</div>
 
-<aside class="notes"><p>After every class, take one minute to write your thoughts down. After every reading, same thing.</p>
-</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+						</div>
 
-<div class="block">
+						<ol class="fa-ol">
+						<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-## IT Padlet Presentations
 
-</div>
 
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+						We've got a ton of Padlets but only so much time, so I need volunteers! 😬
 
+						1. Regional 1
+						2. JAC 1 or 2
+						3. Regional 2
+						4. Dawson
+						5. Montreal
+						6. Vanier
 
+						Be sure to leave a comment or two in the Padlet forum.
 
 
 
 
-We've got a ton of Padlets but only so much time, so I need volunteers! 😬
 
-1. Regional 1
-2. JAC 1 or 2
-3. Regional 2
-4. Dawson
-5. Montreal
-6. Vanier
+						</div>
+						</ol>
 
-Be sure to leave a comment or two in the Padlet forum.
+						<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
+						<div class="block">
 
+						<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzlxc3Fqcm83d3JkczVlcndvZXd3dHphZDRobmR1ZGhoemVneW4zaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/HrSSS1rG7dcQtKRiqb/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
 
 
-</div>
-</ol>
+						</div>
 
-<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<div class="block">
+						</div>
+						</div>
 
-<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzlxc3Fqcm83d3JkczVlcndvZXd3dHphZDRobmR1ZGhoemVneW4zaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/HrSSS1rG7dcQtKRiqb/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
+						<aside class="notes"><p>Have students present their Padlets and ask:</p>
+						<ul>
+						<li>What surprised you?</li>
+						<li>What seems missing?</li>
+						<li>What challenges came up?</li>
+						</ul>
+						</aside>
+					</script>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+							## Keengwe Discussion
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-</div>
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
+							<div class="block">
 
-</div>
-</div>
+							## Key Argument: Tech ≠ Learning
 
-<aside class="notes"><p>Have students present their Padlets and ask:</p>
-<ul>
-<li>What surprised you?</li>
-<li>What seems missing?</li>
-<li>What challenges came up?</li>
-</ul>
-</aside></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							</div>
 
-## Keengwe Discussion
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-## Key Argument: Tech ≠ Learning
 
-</div>
 
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Just placing technology in classrooms is not enough.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Teachers need the **skills, training, and mindset** to integrate tech meaningfully.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Constructivist pedagogy + purposeful tech = better learning outcomes.
 
 
 
 
+							</div>
+							</ol>
 
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Just placing technology in classrooms is not enough.
-- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Teachers need the **skills, training, and mindset** to integrate tech meaningfully.
-- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Constructivist pedagogy + purposeful tech = better learning outcomes.
 
+							<div class="block">
 
+							<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWc0djc5ZmluazhvcjQ3NG05MWQ3ZXJtOHFzb3VoMzV4OHBhOThqdyZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/5rjjsDcFz85WXHDNtM/giphy.gif" alt="Stressed Girl Sticker by Holler Studios" style="object-fit: scale-down">
 
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<div class="block">
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWc0djc5ZmluazhvcjQ3NG05MWQ3ZXJtOHFzb3VoMzV4OHBhOThqdyZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/5rjjsDcFz85WXHDNtM/giphy.gif" alt="Stressed Girl Sticker by Holler Studios" style="object-fit: scale-down">
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-</div>
+							<div class="block">
 
+							## Constructivist Pedagogy
 
+							</div>
 
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-## Constructivist Pedagogy
 
-</div>
 
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Students learn by doing, reflecting, collaborating.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Teachers shift from content deliverers to facilitators and guides.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Technology supports this by offering rich, interactive learning environments.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Learning is active, social, and contextual.
 
 
 
 
+							</div>
+							</ol>
 
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Students learn by doing, reflecting, collaborating.
-- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Teachers shift from content deliverers to facilitators and guides.
-- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Technology supports this by offering rich, interactive learning environments.
-- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Learning is active, social, and contextual.
 
+							<div class="block">
 
+							<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXV4cnlidDljdDB1MnA2ZDNiMndvd2J5dGFsYmpqcjM4bnloNDJ1aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/TBCVggEb9DzSHTUI19/giphy.gif" alt="" style="object-fit: scale-down">
 
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<div class="block">
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXV4cnlidDljdDB1MnA2ZDNiMndvd2J5dGFsYmpqcjM4bnloNDJ1aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/TBCVggEb9DzSHTUI19/giphy.gif" alt="" style="object-fit: scale-down">
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-</div>
+							<div class="block">
 
+							## Barriers to Integration
 
+							</div>
 
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-## Barriers to Integration
 
-</div>
 
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->**External** (first-order): lack of time, equipment, training, tech support.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->**Internal** (second-order): beliefs, attitudes, fear of change, confidence.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Teachers often revert to how *they* were taught.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Belief in tech's pedagogical value is the strongest predictor of use.
 
 
 
 
+							</div>
+							</ol>
 
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->**External** (first-order): lack of time, equipment, training, tech support.
-- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->**Internal** (second-order): beliefs, attitudes, fear of change, confidence.
-- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Teachers often revert to how *they* were taught.
-- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Belief in tech's pedagogical value is the strongest predictor of use.
 
+							<div class="block">
 
+							<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3MxZXhtZnB2anFvOWJ0YmlmeGp1cGowZWtnYTgzeTNub2tsdDBodSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/CQxeLBCgNjlS4PicS6/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
 
+							</div>
 
-</div>
-</ol>
 
-<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="block">
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3MxZXhtZnB2anFvOWJ0YmlmeGp1cGowZWtnYTgzeTNub2tsdDBodSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/CQxeLBCgNjlS4PicS6/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
 
-</div>
+							<div class="block">
 
+							## What Helps?
 
+							</div>
 
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-## What Helps?
 
-</div>
 
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Time to explore tools and collaborate with peers.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Strong administrative and technical support.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Ongoing, content-specific professional development.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Peer-led learning communities that share and troubleshoot together.
 
 
 
 
+							</div>
+							</ol>
 
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Time to explore tools and collaborate with peers.
-- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Strong administrative and technical support.
-- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Ongoing, content-specific professional development.
-- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Peer-led learning communities that share and troubleshoot together.
 
+							<div class="block">
 
+							<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2prNWRrOWd6eGUzM2xtdGdyejNrcmE3bnZiOTFjeGpyd3JxYjg5MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/hKw9S2uJuFyzZfBVzC/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
 
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<div class="block">
+							</div>
+							</div>
+						</script>
+					</section>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2prNWRrOWd6eGUzM2xtdGdyejNrcmE3bnZiOTFjeGpyd3JxYjg5MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/hKw9S2uJuFyzZfBVzC/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
+						<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2xvankyZHdvbnZxNWk5c2oxcjEzYjNteGp0ZDAyc21mNTVlMTJiYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/yvmvDbzVk7mK2JOYJG/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
+						</div>
+					</script>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-</div>
 
+							<div class="block">
 
+							### Activity: Tool Evaluation Checklist
 
-</div>
-</div></script></section></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							</div>
 
-<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2xvankyZHdvbnZxNWk5c2oxcjEzYjNteGp0ZDAyc21mNTVlMTJiYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/yvmvDbzVk7mK2JOYJG/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
-</div></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-### Activity: Tool Evaluation Checklist
 
-</div>
 
+							<!-- .slide: data-auto-animate template="" -->
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+							- What do *you* look for when deciding whether to use a tech tool?
+							- We'll build a shared checklist in teams.
+							- Consider: pedagogy, usability, access, privacy, support, etc.
+							- Click on the sheet corresponding to your breakout room number.
+							- First team to finish wins!
 
 
 
-<!-- .slide: data-auto-animate template="" -->
 
+							</div>
+							</ol>
 
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-- What do *you* look for when deciding whether to use a tech tool?
-- We'll build a shared checklist in teams.
-- Consider: pedagogy, usability, access, privacy, support, etc.
-- Click on the sheet corresponding to your breakout room number.
-- First team to finish wins!
 
+							<div class="block">
 
+							<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnk1dXg5dmI4N3Z1dzN3eWxxaG5vNXlyeW5ycHJ3eW0xa2I2eGE2MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/TcjZUPeeT2DlyNZnhQ/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
 
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<div class="block">
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnk1dXg5dmI4N3Z1dzN3eWxxaG5vNXlyeW5ycHJ3eW0xa2I2eGE2MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/TcjZUPeeT2DlyNZnhQ/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
+							### Activity: Tool Evaluation Checklist
 
+							<iframe width="100%" height="80%" src="https://spinthewheel.io/wheels/AOAqLD68Ri5cvrb6AmrN" title="Spinthewheel.io"></iframe>
 
-</div>
+							[All the instructions are in this Excel file.](https://usherbrooke.sharepoint.com/❌/s/PED624-PedagogyofDigitalLearning-Summer2025/EbqZObGoLydKsXsQjmy3RMQBQQ7NVqOACJMHx8kNTHKvCw?e=MDrzp6) <!-- .element: style="font-size: 0.8em" -->
+							</div>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 100%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate="true" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							<img src="https://www.singh.gg/slides/00 System/Assets/SAMR.png" alt="The SAMR Model" style="object-fit: scale-down">
 
-### Activity: Tool Evaluation Checklist
 
-<iframe width="100%" height="80%" src="https://spinthewheel.io/wheels/AOAqLD68Ri5cvrb6AmrN" title="Spinthewheel.io"></iframe>
+							</div>
+							</div>
 
-[All the instructions are in this Excel file.](https://usherbrooke.sharepoint.com/❌/s/PED624-PedagogyofDigitalLearning-Summer2025/EbqZObGoLydKsXsQjmy3RMQBQQ7NVqOACJMHx8kNTHKvCw?e=MDrzp6) <!-- .element: style="font-size: 0.8em" -->
-</div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate="true" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							<aside class="notes"><ul>
+							<li>What did you think of the H5P video? Have you ever seen anything like it?</li>
+							<li>Does anyone use interactive videos?</li>
+							</ul>
+							</aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 100%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<img src="00 System/Assets/SAMR.png" alt="The SAMR Model" style="object-fit: scale-down">
+							### My Issue with SAMR
 
+							</div>
 
-</div>
-</div>
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 100%; width: 40%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-<aside class="notes"><ul>
-<li>What did you think of the H5P video? Have you ever seen anything like it?</li>
-<li>Does anyone use interactive videos?</li>
-</ul>
-</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate="true" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+							<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTVqdzE5emRxZDVqMTk5eTZ5Z2k2dGN5ZnljeTluaWFwMnVpb3FwdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/KXPbrv2MTWygDburRc/giphy.gif" alt="" style="object-fit: scale-down">
 
 
-### My Issue with SAMR
+							</div>
 
-</div>
+							<div class="" style="position: absolute; left: 20%; top: 0%; height: 100%; width: 80%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 100%; width: 40%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							<img src="https://www.singh.gg/slides/00 System/Assets/SAMR.png" alt="The SAMR Model" style="object-fit: scale-down">
 
-<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTVqdzE5emRxZDVqMTk5eTZ5Z2k2dGN5ZnljeTluaWFwMnVpb3FwdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/KXPbrv2MTWygDburRc/giphy.gif" alt="" style="object-fit: scale-down">
 
+							</div>
+							</div>
 
-</div>
+							<aside class="notes"><p>I was reviewing SAMR and asked ChatGPT what it&#39;s even good for. I have a hard time with frameworks sometimes because they&#39;re nice and all, but what&#39;s the purpose?</p>
+							</aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 20%; top: 0%; height: 100%; width: 80%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<img src="00 System/Assets/SAMR.png" alt="The SAMR Model" style="object-fit: scale-down">
+							### My Issue with SAMR
 
+							</div>
 
-</div>
-</div>
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 100%; width: 40%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-<aside class="notes"><p>I was reviewing SAMR and asked ChatGPT what it&#39;s even good for. I have a hard time with frameworks sometimes because they&#39;re nice and all, but what&#39;s the purpose?</p>
-</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate="true" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+							<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHpzMzBhczA5dngxOTdmeW83NGJqNHZxbGliYTJyMTZjaWF6bGw5NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/rQNY1TP5TUqPAKgx2A/giphy.gif" alt="" style="object-fit: scale-down">
 
 
-### My Issue with SAMR
+							</div>
 
-</div>
+							<div class="" style="position: absolute; left: 20%; top: 0%; height: 100%; width: 80%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 100%; width: 40%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							<img src="https://www.singh.gg/slides/00 System/Assets/SAMR.png" alt="The SAMR Model" style="object-fit: scale-down">
 
-<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHpzMzBhczA5dngxOTdmeW83NGJqNHZxbGliYTJyMTZjaWF6bGw5NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/rQNY1TP5TUqPAKgx2A/giphy.gif" alt="" style="object-fit: scale-down">
 
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-</div>
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-<div class="" style="position: absolute; left: 20%; top: 0%; height: 100%; width: 80%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							### My Issue with SAMR
 
-<img src="00 System/Assets/SAMR.png" alt="The SAMR Model" style="object-fit: scale-down">
+							</div>
 
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 100%; width: 40%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate="true" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+							<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHpzMzBhczA5dngxOTdmeW83NGJqNHZxbGliYTJyMTZjaWF6bGw5NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/rQNY1TP5TUqPAKgx2A/giphy.gif" alt="" style="object-fit: scale-down">
 
 
-### My Issue with SAMR
+							</div>
 
-</div>
+							<div class="" style="position: absolute; left: 40%; top: 0%; height: 100%; width: 60%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 100%; width: 40%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							SAMR alone is shallow. You can complement it with:
 
-<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHpzMzBhczA5dngxOTdmeW83NGJqNHZxbGliYTJyMTZjaWF6bGw5NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/rQNY1TP5TUqPAKgx2A/giphy.gif" alt="" style="object-fit: scale-down">
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->**TPACK**: so they think about how tech intersects with content and pedagogy.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->**PICRAT**: helps answer: "Is this tool passive/interactive and does it replace/amplify/transform?"
 
+							</div>
+							</div>
 
-</div>
+							<aside class="notes"><p>I was like what the hell is PICRAT?? So I did some digging...</p>
+							</aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 40%; top: 0%; height: 100%; width: 60%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+							🖼️ 🐀 <!-- .element: style="font-size: 10em" -->
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/bfvuG620Bto" title="PICRAT for Effective Technology Integration in Teaching" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-SAMR alone is shallow. You can complement it with:
+							<iframe width="100%" height="100%" src="https://picrat.com/" title="PICRAT for Effective Technology Integration in Teaching"></iframe>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->**TPACK**: so they think about how tech intersects with content and pedagogy.
-- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->**PICRAT**: helps answer: "Is this tool passive/interactive and does it replace/amplify/transform?"
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
-</div>
-</div>
 
-<aside class="notes"><p>I was like what the hell is PICRAT?? So I did some digging...</p>
-</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate="true" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							<div class="block">
 
-🖼️ 🐀 <!-- .element: style="font-size: 10em" -->
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							### 🖼️ What is PICRAT? 🐀
 
-<iframe width="100%" height="100%" src="https://www.youtube.com/embed/bfvuG620Bto" title="PICRAT for Effective Technology Integration in Teaching" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							</div>
 
-<iframe width="100%" height="100%" src="https://picrat.com/" title="PICRAT for Effective Technology Integration in Teaching"></iframe>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
+							</div>
 
-<div class="block">
+							<div class="" style="position: absolute; left: 0%; top: 20%; height: 60%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
 
-### 🖼️ What is PICRAT? 🐀
 
-</div>
 
 
 
-</div>
 
-<div class="" style="position: absolute; left: 0%; top: 20%; height: 60%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
 
+							- A model for **technology integration** in teacher education
+							- What are students doing with the technology?
+								- **Passive**, **Interactive**, or **Creative**
+							- How does the technology impact the teacher's pedagogy?
+								- **Replacement**, **Amplification**, or **Transformation**
+							- Activities are placed in a **3×3 matrix** to reflect both dimensions
+							- Designed to be **clear**, **student-focused**, and **practically useful**
 
 
 
 
 
+							</div>
 
-- A model for **technology integration** in teacher education
-- What are students doing with the technology?
-	- **Passive**, **Interactive**, or **Creative**
-- How does the technology impact the teacher's pedagogy?
-	- **Replacement**, **Amplification**, or **Transformation**
-- Activities are placed in a **3×3 matrix** to reflect both dimensions
-- Designed to be **clear**, **student-focused**, and **practically useful**
+							<div class="" style="position: absolute; left: 0%; top: 80%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
 
 
 
+							</div>
+							</div>
 
-</div>
+							<aside class="notes"></aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 80%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+							### The PICRAT Framework
 
+							|             |            Replacement            |           Amplification           |              Transformation              |
+							| ----------- |:-------------------------------: |:-------------------------------: |:--------------------------------------: |
+							| Creative    |  Students create with technology  |      Tech enhances creation       |  New creations impossible without tech   |
+							| Interactive | Students interact with technology |     Tech enhances interaction     | New interactions impossible without tech |
+							| Passive     | Students consume content via tech | Tech enhances content consumption |     Content impossible without tech      |
+							</div>
 
+							<aside class="notes"></aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+							### Activity: Use PICRAT
 
-</div>
-</div>
+							Evaluate a lesson idea using PICRAT.
 
-<aside class="notes"></aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							(Time permitting)
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-### The PICRAT Framework
+							### PICRAT Example
 
-|             |            Replacement            |           Amplification           |              Transformation              |
-| ----------- |:-------------------------------: |:-------------------------------: |:--------------------------------------: |
-| Creative    |  Students create with technology  |      Tech enhances creation       |  New creations impossible without tech   |
-| Interactive | Students interact with technology |     Tech enhances interaction     | New interactions impossible without tech |
-| Passive     | Students consume content via tech | Tech enhances content consumption |     Content impossible without tech      |
-</div>
+							<div class="block">
 
-<aside class="notes"></aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							<!-- .element: style="font-size: 0.8em" -->
 
-### Activity: Use PICRAT
+							||**Replacement**|**Amplification**|**Transformation**|
+							|---|---|---|---|
+							|**Creative**|Students fill in their slide individually instead of on paper|Groups use shared PowerPoint and built-in icons/media to enhance explanations|Students co-create an interactive TPACK guide linking ideas, diagrams, and examples|
+							|**Interactive**|Students take turns clicking through slides during in-class discussion|Groups discuss ideas while editing a shared slide deck in real time|Students debate each group's slide and remix them into one consolidated framework|
+							|**Passive**|Instructor lectures using a PowerPoint instead of the whiteboard|Instructor embeds videos and graphics to make the lecture more engaging|Instructor builds an interactive deck where student clicks trigger content or paths|
 
-Evaluate a lesson idea using PICRAT.
+							</div>
+							</div>
 
-(Time permitting)
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							<aside class="notes"><p>This shows how <em>the same tool</em> can support very different kinds of student engagement and pedagogical impact.</p>
+							</aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-### PICRAT Example
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-<div class="block">
 
-<!-- .element: style="font-size: 0.8em" -->
+							<div class="block">
 
-||**Replacement**|**Amplification**|**Transformation**|
-|---|---|---|---|
-|**Creative**|Students fill in their slide individually instead of on paper|Groups use shared PowerPoint and built-in icons/media to enhance explanations|Students co-create an interactive TPACK guide linking ideas, diagrams, and examples|
-|**Interactive**|Students take turns clicking through slides during in-class discussion|Groups discuss ideas while editing a shared slide deck in real time|Students debate each group's slide and remix them into one consolidated framework|
-|**Passive**|Instructor lectures using a PowerPoint instead of the whiteboard|Instructor embeds videos and graphics to make the lecture more engaging|Instructor builds an interactive deck where student clicks trigger content or paths|
+							### Why Use PICRAT?
 
-</div>
-</div>
+							</div>
 
-<aside class="notes"><p>This shows how <em>the same tool</em> can support very different kinds of student engagement and pedagogical impact.</p>
-</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-### Why Use PICRAT?
 
-</div>
 
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							- Simple and memorable with just two guiding questions.
+							- Encourages movement toward creative, transformative uses.
+							- Supports student-centered and pedagogically meaningful tech use.
 
 
 
 
 
+							</div>
+							</ol>
 
-- Simple and memorable with just two guiding questions.
-- Encourages movement toward creative, transformative uses.
-- Supports student-centered and pedagogically meaningful tech use.
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
+							<div class="block">
 
+							<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDRyMmR3bmg5eXl5cnF1Z25yMXg2dzV4N2xzeDluNTk0ZzVoOWJkZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/fazdbXVW7StXoNQLYH/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
 
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<div class="block">
+							</div>
+							</div>
 
-<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDRyMmR3bmg5eXl5cnF1Z25yMXg2dzV4N2xzeDluNTk0ZzVoOWJkZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/fazdbXVW7StXoNQLYH/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
+							<aside class="notes"><p>Use this for your assessment task #2!</p>
+							</aside>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+							## Zotero
 
-</div>
+							<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjAzamZwNmdsOGJnYWV6azgwMXQ1ZmhtejZ3N3VhZ2p5dHU3dXZhciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26gsvcgO9EaGWFXqM/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-</div>
-</div>
+							<div class="block">
 
-<aside class="notes"><p>Use this for your assessment task #2!</p>
-</aside></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							### What is Zotero?
 
-## Zotero
+							</div>
 
-<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjAzamZwNmdsOGJnYWV6azgwMXQ1ZmhtejZ3N3VhZ2p5dHU3dXZhciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26gsvcgO9EaGWFXqM/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-### What is Zotero?
 
-</div>
 
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							- Free, open-source **reference manager**
+							- Helps you collect, organize, cite, and share research
+							- Works with Google Docs, Word, and Overleaf
+							- Browser plugin makes it easy to save articles and PDFs
 
 
 
 
+							</div>
+							</ol>
 
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-- Free, open-source **reference manager**
-- Helps you collect, organize, cite, and share research
-- Works with Google Docs, Word, and Overleaf
-- Browser plugin makes it easy to save articles and PDFs
 
+							<div class="block">
 
+							<img src="https://www.singh.gg/slides/00 System/Assets/zotero.png" alt="" style="object-fit: scale-down">
 
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<div class="block">
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<img src="00 System/Assets/zotero.png" alt="" style="object-fit: scale-down">
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-</div>
+							<div class="block">
 
+							### Why Use Zotero?
 
+							</div>
 
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-### Why Use Zotero?
 
-</div>
 
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							- Keeps all your readings and citations **organized in one place**
+							- Automatically formats citations in APA, MLA, Chicago, etc.
+							- Saves **a ton of time** on reference lists
+							- Ideal for **tracking readings** in this course and building your **thesis or MTP project library**
 
 
 
 
+							</div>
+							</ol>
 
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-- Keeps all your readings and citations **organized in one place**
-- Automatically formats citations in APA, MLA, Chicago, etc.
-- Saves **a ton of time** on reference lists
-- Ideal for **tracking readings** in this course and building your **thesis or MTP project library**
 
+							<div class="block">
 
+							<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGQybWd1YXpyNm00ZnludmlvMTJ6ZXF3bndhZDlxMzB4NG91N2gyMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/hQ5YTKrPtyCdkN75mj/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
 
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<div class="block">
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGQybWd1YXpyNm00ZnludmlvMTJ6ZXF3bndhZDlxMzB4NG91N2gyMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/hQ5YTKrPtyCdkN75mj/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-</div>
+							<div class="block">
 
+							### How to Use Zotero
 
+							</div>
 
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-### How to Use Zotero
 
-</div>
 
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							1. Download and install Zotero from [zotero.org](https://www.zotero.org/)
+							2. Watch the screencasts:
+							   - [Part 1 – Getting Started](https://youtu.be/yFjzdypDPL4?list=PLXVt1LPJfiAuLr72aRqIjSuohCG9Qhm_p)
+							   - [Part 2 – Organizing + Citing](https://youtu.be/1ogsfVhu4ng?list=PLXVt1LPJfiAuLr72aRqIjSuohCG9Qhm_p)
+							3. Start adding your articles from this course and beyond!
 
+							🧩 Tip: Add tags or notes to group readings by topic or assignment.
 
 
 
 
+							</div>
+							</ol>
 
-1. Download and install Zotero from [zotero.org](https://www.zotero.org/)
-2. Watch the screencasts:
-   - [Part 1 – Getting Started](https://youtu.be/yFjzdypDPL4?list=PLXVt1LPJfiAuLr72aRqIjSuohCG9Qhm_p)
-   - [Part 2 – Organizing + Citing](https://youtu.be/1ogsfVhu4ng?list=PLXVt1LPJfiAuLr72aRqIjSuohCG9Qhm_p)
-3. Start adding your articles from this course and beyond!
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-🧩 Tip: Add tags or notes to group readings by topic or assignment.
 
+							<div class="block">
 
+							<iframe width="100%" height="300" src="https://www.youtube.com/embed/yFjzdypDPL4?list=PLXVt1LPJfiAuLr72aRqIjSuohCG9Qhm_p" title="Zotero1 - Master Teacher Program | Performa - Université de Sherbrooke" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+							<iframe width="100%" height="300" src="https://www.youtube.com/embed/1ogsfVhu4ng?list=PLXVt1LPJfiAuLr72aRqIjSuohCG9Qhm_p" title="Zotero2 - Master Teacher Program | Performa - Université de Sherbrooke" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<div class="block">
+							</div>
+							</div>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<iframe width="100%" height="300" src="https://www.youtube.com/embed/yFjzdypDPL4?list=PLXVt1LPJfiAuLr72aRqIjSuohCG9Qhm_p" title="Zotero1 - Master Teacher Program | Performa - Université de Sherbrooke" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-<iframe width="100%" height="300" src="https://www.youtube.com/embed/1ogsfVhu4ng?list=PLXVt1LPJfiAuLr72aRqIjSuohCG9Qhm_p" title="Zotero2 - Master Teacher Program | Performa - Université de Sherbrooke" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-</div>
+							<div class="block">
 
+							### Tracking Engagement: Community of Inquiry
 
+							</div>
 
-</div>
-</div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 4%; top: 19%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-### Tracking Engagement: Community of Inquiry
 
-</div>
 
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 4%; top: 19%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							What evidence can we gather that our students are actually doing stuff?
 
+							- Moodle logs (completion, checklists, forum posts)
+							- Teams engagement
+							- Léa activity, absences, at risk
 
 
 
 
+							</div>
+							</ol>
 
-What evidence can we gather that our students are actually doing stuff?
+							<div class="" style="position: absolute; left: 50%; top: 20%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-- Moodle logs (completion, checklists, forum posts)
-- Teams engagement
-- Léa activity, absences, at risk
 
+							<div class="block">
 
+							<img src="https://www.singh.gg/slides/00 System/Assets/Community of Inquiry.png" alt="" style="object-fit: scale-down">
 
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 50%; top: 20%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<div class="block">
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<img src="00 System/Assets/Community of Inquiry.png" alt="" style="object-fit: scale-down">
+							### Moodle
 
+							<img src="https://www.singh.gg/slides/00 System/Assets/moodle-logs.png" alt="" style="width: 1600px; object-fit: fill">
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-</div>
+							### Teams
 
+							<img src="https://www.singh.gg/slides/00 System/Assets/teams-graph-2.png" alt="" style="object-fit: scale-down">
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+							### Lea
 
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							<img src="https://www.singh.gg/slides/00 System/Assets/lea-reports.png" alt="" style="width: 1300px; object-fit: fill">
+							</div>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-### Moodle
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
-<img src="00 System/Assets/moodle-logs.png" alt="" style="width: 1600px; object-fit: fill">
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-### Teams
+							<div class="block">
 
-<img src="00 System/Assets/teams-graph-2.png" alt="" style="object-fit: scale-down">
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							### Before Next Class
 
-### Lea
+							</div>
 
-<img src="00 System/Assets/lea-reports.png" alt="" style="width: 1300px; object-fit: fill">
-</div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
+							</div>
 
-<div class="block">
+							<div class="" style="position: absolute; left: 0%; top: 20%; height: 60%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
 
-### Before Next Class
 
-</div>
 
 
 
-</div>
 
-<div class="" style="position: absolute; left: 0%; top: 20%; height: 60%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
 
+							- Contribute to the glossary (2nd term)
+							- *Digital Competency Framework* - MEES
+							- Is AI a Valid Make sure to make a Source? (PlayPosit)
+							- The 5 Cs (TEDed)
+							- Assessment Task #2 - Survey of Tools
+								- Top IT Tools website
+								- Moodle Tool Guide
+								- Use PICRAT!
 
 
 
 
+							</div>
 
+							<div class="" style="position: absolute; left: 0%; top: 80%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
-- Contribute to the glossary (2nd term)
-- *Digital Competency Framework* - MEES
-- Is AI a Valid Make sure to make a Source? (PlayPosit)
-- The 5 Cs (TEDed)
-- Assessment Task #2 - Survey of Tools
-	- Top IT Tools website
-	- Moodle Tool Guide
-	- Use PICRAT!
 
+							<div class="block">
 
+							All tasks and deadlines are in Moodle!
 
+							</div>
 
-</div>
 
-<div class="" style="position: absolute; left: 0%; top: 80%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
 
 
-<div class="block">
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-All tasks and deadlines are in Moodle!
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-</div>
 
+							<div class="block">
 
+							### Assessment Task 2: Survey of Tools
 
+							</div>
 
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: style="text-align: left" class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							</div>
 
-<div class="block">
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-### Assessment Task 2: Survey of Tools
 
-</div>
 
 
 
-</div>
 
-<ol class="fa-ol">
-<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
+							1. Choose a pedagogical challenge
+							2. Survey 3 potential tools
+							3. Evaluate fit (pros/cons)
+							4. Share on Moodle Forum (by May 28th)
+							5. Respond to 2 peers (by June 1st)
+							6. Post self-reflection (by June 4th)
 
+							Details can be found on Moodle and in the Course Outline.
 
 
 
 
+							</div>
+							</ol>
 
-1. Choose a pedagogical challenge
-2. Survey 3 potential tools
-3. Evaluate fit (pros/cons)
-4. Share on Moodle Forum (by May 28th)
-5. Respond to 2 peers (by June 1st)
-6. Post self-reflection (by June 4th)
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
-Details can be found on Moodle and in the Course Outline.
 
+							<div class="block">
 
+							<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHdmZzloa3djYTloN3VsMXN6emJ2eHpjaHRyc3p3NHkxdGtwNGtxNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/rlW2uw0j5F74Dv6zEB/giphy.gif" alt="" style="object-fit: scale-down">
 
 
-</div>
-</ol>
+							</div>
 
-<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
 
 
-<div class="block">
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHdmZzloa3djYTloN3VsMXN6emJ2eHpjaHRyc3p3NHkxdGtwNGtxNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/rlW2uw0j5F74Dv6zEB/giphy.gif" alt="" style="object-fit: scale-down">
+							<img src="https://www.singh.gg/slides/00 System/Assets/top-tools-for-learning-2024.png" alt="" style="width: 1500px; object-fit: fill">
 
 
-</div>
+							Jane Hart, Top 100 Tools for Learning 2024, [TopTools4Learning.com](https://toptools4learning.com/) <!-- .element: style="font-size: 0.8em" -->
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+							<img src="https://www.singh.gg/slides/00 System/Assets/moodle-tool-guide.png" alt="" style="object-fit: scale-down">
 
 
-</div>
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							<https://moodletoolguide.net> <!-- .element: style="font-size: 0.8em" -->
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<img src="00 System/Assets/top-tools-for-learning-2024.png" alt="" style="width: 1500px; object-fit: fill">
+							### Assessment Task 2: Survey of Tools Forums
 
+							<div class="block">
 
-Jane Hart, Top 100 Tools for Learning 2024, [TopTools4Learning.com](https://toptools4learning.com/) <!-- .element: style="font-size: 0.8em" -->
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+							<!-- .element: style="font-size: 0.9em" -->
 
-<img src="00 System/Assets/moodle-tool-guide.png" alt="" style="object-fit: scale-down">
+							| 📖 Languages | 🧪 Sciences, Tech, and Business | 🏥 Nursing, Special Ed, and Health | 🎨 Geography, Arts, Indigenous Support |
+							|:----------: |:-----------------------------: |:--------------------------------: |:------------------------------------: |
+							|    Noemie    |               Leo               |           Louis-Philippe           |                Heather                 |
+							|     Dane     |               Tor               |             Sabrina Z.             |               Sabrina F.               |
+							|  Alexander   |             Zahraa              |              Alireza               |                 Ilana                  |
+							|   Victoria   |             Meghrig             |               April                |                 Robin                  |
+							|    Tanya     |              Sean               |               Sarah                |                                        |
+							|   Michelle   |              Elisa              |               Erika                |                                        |
+							|   Carolyn    |                                 |                                    |                                        |
+							|     Anna     |                                 |                                    |                                        |
 
+							</div>
+							</div>
+						</script>
+					</section>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<https://moodletoolguide.net> <!-- .element: style="font-size: 0.8em" -->
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+						## Thanks and see you next week
 
-### Assessment Task 2: Survey of Tools Forums
+						<img src="https://www.singh.gg/slides/00 System/Assets/Stickers/Waving.gif" alt="ng.gif" style="object-fit: scale-down">
 
-<div class="block">
 
-<!-- .element: style="font-size: 0.9em" -->
+						Questions? Comments?
+						</div>
+					</script>
+				</section>
+			</div>
+		</div>
 
-| 📖 Languages | 🧪 Sciences, Tech, and Business | 🏥 Nursing, Special Ed, and Health | 🎨 Geography, Arts, Indigenous Support |
-|:----------: |:-----------------------------: |:--------------------------------: |:------------------------------------: |
-|    Noemie    |               Leo               |           Louis-Philippe           |                Heather                 |
-|     Dane     |               Tor               |             Sabrina Z.             |               Sabrina F.               |
-|  Alexander   |             Zahraa              |              Alireza               |                 Ilana                  |
-|   Victoria   |             Meghrig             |               April                |                 Robin                  |
-|    Tanya     |              Sean               |               Sarah                |                                        |
-|   Michelle   |              Elisa              |               Erika                |                                        |
-|   Carolyn    |                                 |                                    |                                        |
-|     Anna     |                                 |                                    |                                        |
+		<script src="https://www.singh.gg/slides/dist/reveal.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/notes/notes.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/markdown/markdown.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/highlight/highlight.js"></script>
 
-</div>
-</div></script></section></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+		<script src="https://www.singh.gg/slides/plugin/zoom/zoom.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/math/math.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/mermaid/mermaid.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/chart/chart.umd.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/chart/plugin.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/customcontrols/plugin.js"></script>
 
-## Thanks and see you next week
+		<script>
+			function extend() {
+				const target = {};
+				for (let i = 0; i < arguments.length; i++) {
+					const source = arguments[i];
+					for (const key in source) {
+						if (source.hasOwnProperty(key)) {
+							target[key] = source[key];
+						}
+					}
+				}
+				return target;
+			}
 
-<img src="00 System/Assets/Stickers/Waving.gif" alt="ng.gif" style="object-fit: scale-down">
+			function isLight(color) {
+				let hex = color.replace('#', '');
 
+				// convert #fff => #ffffff
+				if (hex.length == 3) {
+					hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`;
+				}
 
-Questions? Comments?
-</div></script></section></div>
-    </div>
+				const c_r = parseInt(hex.substr(0, 2), 16);
+				const c_g = parseInt(hex.substr(2, 2), 16);
+				const c_b = parseInt(hex.substr(4, 2), 16);
+				const brightness = (c_r * 299 + c_g * 587 + c_b * 114) / 1000;
+				return brightness > 155;
+			}
 
-    <script src="dist/reveal.js"></script>
-    <script src="plugin/notes/notes.js"></script>
-    <script src="plugin/markdown/markdown.js"></script>
-    <script src="plugin/highlight/highlight.js"></script>
+			const bgColor = getComputedStyle(document.documentElement)
+				.getPropertyValue('--r-background-color')
+				.trim();
 
-    <script src="plugin/zoom/zoom.js"></script>
-    <script src="plugin/math/math.js"></script>
-    <script src="plugin/mermaid/mermaid.js"></script>
-    <script src="plugin/chart/chart.umd.js"></script>
-    <script src="plugin/chart/plugin.js"></script>
-    <script src="plugin/customcontrols/plugin.js"></script>
+			if (isLight(bgColor)) {
+				document.body.classList.add('has-light-background');
+			} else {
+				document.body.classList.add('has-dark-background');
+			}
 
-    <script>
-        function extend() {
-            const target = {};
-            for (let i = 0; i < arguments.length; i++) {
-                const source = arguments[i];
-                for (const key in source) {
-                    if (source.hasOwnProperty(key)) {
-                        target[key] = source[key];
-                    }
-                }
-            }
-            return target;
-        }
+			// default options to init reveal.js
+			const defaultOptions = {
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				transition: 'default', // none/fade/slide/convex/concave/zoom
+				plugins: [
+					RevealMarkdown,
+					RevealHighlight,
+					RevealZoom,
+					RevealNotes,
+					RevealMath.MathJax3,
+					RevealMermaid,
+					RevealChart,
+					RevealCustomControls,
+				],
+				allottedTime: 120 * 1000,
+				mathjax3: {
+					mathjax: 'plugin/math/mathjax/tex-chtml-full.js',
+				},
+				markdown: {
+					gfm: true,
+					mangle: false,
+					pedantic: false,
+					smartLists: false,
+					smartypants: false,
+				},
+				mermaid: {
+					theme: isLight ? 'default' : 'dark',
+				},
+				customcontrols: {
+					controls: [],
+				},
+			};
 
-        function isLight(color) {
-            let hex = color.replace('#', '');
+			if (pageInIframe()) {
+				defaultOptions.scrollActivationWidth = 5;
+			}
 
-            // convert #fff => #ffffff
-            if (hex.length == 3) {
-                hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`;
-            }
+			// options from URL query string
+			const queryOptions = Reveal().getQueryHash() || {};
 
-            const c_r = parseInt(hex.substr(0, 2), 16);
-            const c_g = parseInt(hex.substr(2, 2), 16);
-            const c_b = parseInt(hex.substr(4, 2), 16);
-            const brightness = ((c_r * 299) + (c_g * 587) + (c_b * 114)) / 1000;
-            return brightness > 155;
-        }
+			const options = extend(
+				defaultOptions,
+				{
+					controls: true,
+					progress: true,
+					slideNumber: false,
+					center: true,
+					transition: 'slide',
+					transitionSpeed: 'default',
+					width: 1920,
+					height: 1080,
+					margin: 0.04,
+				},
+				queryOptions
+			);
+		</script>
 
-        const bgColor = getComputedStyle(document.documentElement).getPropertyValue('--r-background-color').trim();
-
-        if (isLight(bgColor)) {
-            document.body.classList.add('has-light-background');
-        } else {
-            document.body.classList.add('has-dark-background');
-        }
-
-        // default options to init reveal.js
-        const defaultOptions = {
-            controls: true,
-            progress: true,
-            history: true,
-            center: true,
-            transition: 'default', // none/fade/slide/convex/concave/zoom
-            plugins: [
-                RevealMarkdown,
-                RevealHighlight,
-                RevealZoom,
-                RevealNotes,
-                RevealMath.MathJax3,
-                RevealMermaid,
-                RevealChart,
-                RevealCustomControls,
-            ],
-            allottedTime: 120 * 1000,
-            mathjax3: {
-                mathjax: 'plugin/math/mathjax/tex-chtml-full.js',
-            },
-            markdown: {
-                gfm: true,
-                mangle: false,
-                pedantic: false,
-                smartLists: false,
-                smartypants: false,
-            },
-            mermaid: {
-                theme: isLight ? 'default' : 'dark',
-            },
-            customcontrols: {
-                controls: [
-                ]
-            },
-        };
-
-        if ( pageInIframe() ) {
-            defaultOptions.scrollActivationWidth = 5;
-        }
-
-        // options from URL query string
-        const queryOptions = Reveal().getQueryHash() || {};
-
-        const options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":false,"center":true,"transition":"slide","transitionSpeed":"default","width":1920,"height":1080,"margin":0.04}, queryOptions);
-    </script>
-
-    <script>
-      Reveal.initialize(options);
-    </script>
-    <!-- created with Slides Extended reveal.html template -->
-</body>
+		<script>
+			Reveal.initialize(options);
+		</script>
+		<!-- created with Slides Extended reveal.html template -->
+	</body>
 </html>
