@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 
 :root {
 	--rosewater: #dc8a78;
@@ -139,8 +140,8 @@
 }
 
 .reveal {
-	font-family: "Quicksand", sans-serif;
-	background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/dust_scratches.png");
+	font-family: 'Quicksand', sans-serif;
+	background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/dust_scratches.png');
 	/* font-size: min(10vw, 10vh); */
 	font-size: 60px;
 }
@@ -156,7 +157,7 @@
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-	font-family: "Quicksand", serif;
+	font-family: 'Quicksand', serif;
 	font-weight: 700;
 }
 
@@ -189,7 +190,9 @@ that are not the first or last */
 	border: none;
 }
 
-svg { color: var(--text); }
+svg {
+	color: var(--text);
+}
 
 .center-vertical {
 	display: flex;
@@ -204,11 +207,13 @@ svg { color: var(--text); }
 	line-height: 2em;
 }
 
-ul.fa-ul, ol.fa-ol {
+ul.fa-ul,
+ol.fa-ol {
 	list-style-type: none;
 }
 
-ul.fa-ul li, ol.fa-ol li {
+ul.fa-ul li,
+ol.fa-ol li {
 	padding-left: 0.25em;
 }
 
@@ -218,4 +223,77 @@ ul.fa-ul li, ol.fa-ol li {
 
 .reveal table th {
 	text-align: center;
+}
+
+:root {
+	--main-line-color: hsl(234, 62%, 86%);
+	--side-line-color: hsl(350, 100%, 91%);
+	--paper-color: hsl(0, 15%, 95%);
+	--ink-color: hsl(0, 0%, 12%);
+	--line-thickness: 2px;
+	--line-spacing: 1.5em;
+	--baseline-offset: 0.6em; /* <— shifts blue lines down slightly to align with text baseline */
+}
+
+.reveal blockquote {
+	text-align: left;
+	background: var(--paper-color);
+	margin: 0.5em;
+	padding: 1em 2em 1em 4.5em;
+	font-family: 'Caveat', cursive;
+	font-style: normal;
+	font-size: 1em;
+	line-height: var(--line-spacing);
+	color: var(--ink-color);
+	background-image:
+		/* red margin line */ linear-gradient(
+			90deg,
+			transparent,
+			transparent 4em,
+			var(--side-line-color) 4em,
+			var(--side-line-color) 4.25em,
+			transparent 4.25em
+		),
+		/* blue horizontal lines */
+			repeating-linear-gradient(
+				to bottom,
+				transparent,
+				transparent calc(var(--line-spacing) - var(--line-thickness)),
+				var(--main-line-color)
+					calc(var(--line-spacing) - var(--line-thickness)),
+				var(--main-line-color) var(--line-spacing)
+			);
+	background-size: 100% var(--line-spacing);
+	background-position-y: var(
+		--baseline-offset
+	); /* <— this aligns the first line with the text baseline */
+	box-shadow: 0 0 0.25em rgb(0 0 0 / 0.25);
+}
+
+.reveal blockquote p {
+	line-height: inherit;
+	margin: 0;
+}
+
+.reveal blockquote mark {
+	background-color: rgba(255, 255, 0, 0.7);
+	border-radius: 0.4em;
+}
+
+.reveal .code-wrapper {
+	margin: 1em 0;
+	font-size: 0.8em;
+}
+
+.reveal pre {
+	width: auto;
+}
+
+.reveal .code-wrapper code {
+	border-radius: 0.25em;
+	padding: 0.5em 0.5em 0 0.5em;
+}
+
+.reveal img {
+	border-radius: 0.5em;
 }
