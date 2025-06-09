@@ -1,0 +1,2389 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+
+		<title>Pedagogy of Digital Learning - Class 5</title>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/reveal/reset.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/reveal/reveal.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/css/slides-extended.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/reveal/theme/white.css"
+			id="theme"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/plugin/highlight/zenburn.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/plugin/customcontrols/style.css"
+		/>
+
+		<link rel="stylesheet" href="https://www.singh.gg/slides/css/vik.css" />
+
+		<script
+			defer
+			src="https://www.singh.gg/slides/reveal/fontawesome/all.min.js"
+		></script>
+		<script
+			defer
+			src="https://www.singh.gg/slides/plugin/load-mathjax.js"
+		></script>
+
+		<script type="text/javascript">
+			function pageInIframe() {
+				return window.location !== window.parent.location;
+			}
+
+			let forgetPop = true;
+			function onPopState(event) {
+				if (forgetPop) {
+					forgetPop = false;
+				} else if (pageInIframe()) {
+					parent.postMessage(
+						event.target.location.href,
+						'app://obsidian.md'
+					);
+				}
+			}
+			window.onpopstate = onPopState;
+			window.onmessage = (event) => {
+				if (event.data == 'reload') {
+					window.document.location.reload();
+				}
+				forgetPop = true;
+			};
+
+			function fitElements() {
+				const itemsToFit = document.getElementsByClassName('fitText');
+				for (const item in itemsToFit) {
+					if (Object.hasOwnProperty.call(itemsToFit, item)) {
+						const element = itemsToFit[item];
+						fitElement(element, 1, 1000);
+						element.classList.remove('fitText');
+					}
+				}
+			}
+
+			function fitElement(element, start, end) {
+				let size = (end + start) / 2;
+				element.style.fontSize = `${size}px`;
+
+				if (Math.abs(start - end) < 1) {
+					while (element.scrollHeight > element.offsetHeight) {
+						size--;
+						element.style.fontSize = `${size}px`;
+					}
+					return;
+				}
+
+				if (element.scrollHeight > element.offsetHeight) {
+					fitElement(element, start, size);
+				} else {
+					fitElement(element, size, end);
+				}
+			}
+
+			document.onreadystatechange = () => {
+				fitElements();
+				if (document.readyState === 'complete') {
+					if (
+						pageInIframe() &&
+						window.location.href.indexOf('?export') != -1
+					) {
+						parent.postMessage(
+							event.target.location.href,
+							'app://obsidian.md'
+						);
+					}
+					if (window.location.href.indexOf('print-pdf') != -1) {
+						let stateCheck = setInterval(() => {
+							clearInterval(stateCheck);
+							window.print();
+						}, 250);
+					}
+				}
+			};
+		</script>
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+						## Pedagogy of Digital Learning
+
+						Vikram Singh | Class 5 | June 12, 2025
+						</div>
+
+						<aside class="notes"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/VNOcHCLAaSU" title="Bob&#39;s Burgers Teaching &amp; Learning" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+						<ul>
+						<li><p><input disabled="" type="checkbox">
+						Digital resilience toolkits on Moodle</p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						Upload class 4 slides live</p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						Upload class 4 slides PDF</p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						Upload other slides with menu + overview</p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						Update course calendar</p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						Perusall sharing</p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						Copyright stuff</p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						Peer feedback 1 hour</p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						Start with some kind of AI question or prompt (:P)</p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						How do I use AI in my teaching</p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						How do I make my slides (show PPT morph, stickers over gifs, design 101)</p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						Show them how I use it to plan lessons, come up with games (wheel game from last class), how I used it for my masters</p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						Excerpts from game prog forums where there is evidence that there is understanding</p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						Share the superheroes on Moodle, <a href="https://www.canva.com/design/DAGo2GcBhQ0/4ZpPp_Wint1Hcje4o1kA_g/edit">show Anne&#39;s in class</a></p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						Copilot thread link?</p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						Teaching presence is like a depleting health bar and it starts when class finishes, but gets replenished with async engagement and the next sync class</p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						Lindy effect <img src="https://www.singh.gg/slides/00 System/Assets/lindy-effect.png" alt="" style="object-fit: scale-down"></p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						Idea: Every slide deck should have a &quot;new tech used today&quot;</p>
+						</li>
+						</ul>
+						<h3 id="what-can-we-do">What Can We Do?</h3>
+						<ul>
+						<li>Track your screen time: Set limits, build habits</li>
+						<li>Use ad blockers and privacy tools (uBlock Origin, Firefox, Privacy Badger)</li>
+						<li>Reject cookies where possible</li>
+						<li>Teach students how the algorithm works</li>
+						<li>Support local news, independent creators, and human-centered platforms (ex. Newsletters, <a href="https://indieweb.org/Getting_Started">IndieWeb</a>, <a href="https://substack.com">Substack</a>)</li>
+						<li>Be critical: Why am I seeing this? Who benefits if I click?</li>
+						<li>Use a password manager (ex. <a href="https://www.lastpass.com/">LastPass</a>, <a href="https://bitwarden.com/">Bitwarden</a>, <a href="https://keepass.info/">KeePass</a>)</li>
+						<li>Use browser profiles, one for work, one for personal, one for shopping (<a href="https://support.google.com/chrome/answer/2364824?hl=en&co=GENIE.Platform%3DDesktop">Chrome</a>, <a href="https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles">Firefox</a>, <a href="https://support.microsoft.com/en-us/topic/sign-in-and-create-multiple-profiles-in-microsoft-edge-df94e622-2061-49ae-ad1d-6f0e43ce6435">Edge</a>)</li>
+						<li>Ditch Google, use <a href="https://duckduckgo.com">DuckDuckGo</a> instead.</li>
+						<li>Naomie Brockwell YouTube channel</li>
+						</ul>
+						<h3 id="notebooklm">NotebookLM</h3>
+						<ul>
+						<li>What is it?</li>
+						<li>Adding sources</li>
+						<li>Share clip of podcast</li>
+						<li>Screenshot of interface</li>
+						</ul>
+						<h3 id="picrat-categorization">PICRAT Categorization</h3>
+						<ul>
+						<li>Superheroes (Miro)</li>
+						<li>AhaSlides</li>
+						<li>Listening to slides</li>
+						<li>TPACK slides activity</li>
+						<li>Wheel/excel activity</li>
+						</ul>
+						</aside>
+					</script>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 30%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+							## Learning Objectives
+
+							By the end of this, you will be able to:
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 29%; height: 70%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.8em" -->
+
+							<li class="fragment"><span class="fa-li"><i class="fas fa-gavel"></i></span><b>Draft</b> a preliminary AI policy for your own course, informed by ethical and pedagogical considerations.</li>
+							<li class="fragment"><span class="fa-li"><i class="fas fa-keyboard"></i></span><b>Practice</b> crafting effective AI prompts.</li>
+							<li class="fragment"><span class="fa-li"><i class="fas fa-sync"></i></span><b>Explore</b> the process-product model and how the AI Assessment Scale can be used to scaffold student use of AI.</li>
+							<li class="fragment"><span class="fa-li"><i class="fas fa-user-shield"></i></span><b>Evaluate</b> key issues in digital citizenship, including tracking, algorithmic influence, and online agency.</li>
+							<li class="fragment"><span class="fa-li"><i class="fas fa-toolbox"></i></span><b>Design</b> a personalized digital resilience toolkit by identifying habits, tools, and strategies to navigate and critically engage with today's online environments.</li>
+
+							</div>
+
+
+
+
+
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 30%; height: 70%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://www.singh.gg/slides/00 System/Assets/Stickers/Compass.gif" alt="" style="object-fit: scale-down">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+
+							<aside class="notes"></aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							## Agenda
+
+							</div>
+
+
+
+							</div>
+
+
+							<div class="" style="position: absolute; left: 0%; top: 20%; height: 80%; width: 70%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1.2em; padding: 1em" -->
+
+							1. CAT Feedback
+							2. AI Policies
+							3. Prompting
+							4. Process Product Model + AIAS
+							5. Break
+							6. Digital Citizenship
+							7. Assessment Tasks
+
+							</div>
+
+
+
+
+
+
+							</div>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWxkZGNqNnJxZHZlMmNzNDh3ZW1nZnU1bXl2d3BiaTFqbmhwcmo0MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/C3gFgVk7UFS8TUmZ2J/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
+
+
+							</div>
+
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+						## A Quote
+
+						> 1. Anything that is in the world when you're born is normal and ordinary and just a natural part of the way the world works.
+						> 2. Anything that's invented between when you're 15 and 35 is new and exciting and revolutionary, and you can probably get a career in it.
+						> 3. Anything invented after you're 35 is against the natural order of things.
+
+						[Douglas Adams, The Salmon of Doubt: Hitchhiking the Galaxy One Last Time](https://www.goodreads.com/work/quotes/809325) <!-- .element: style="font-size: 0.8em" -->
+
+						notes: Which is literally me right now because I'm getting paid to teach this class!
+						</div>
+					</script>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							## CAT Feedback
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1.25em" -->
+
+							- CAT = **C**lassroom **A**ssessment **T**echnique
+							- Stop-Start-Continue is only one type
+							- Let's go through your feedback
+
+							</div>
+
+
+
+
+
+							notes:
+
+							🛑 What I'll try to reduce or adjust
+
+							- **Pace + Load**
+							  Some of you mentioned the course feels fast-paced or heavy with readings and new tools.
+							  I hear you—I'll be more intentional about when and how new tools are introduced and try to build in a little more breathing room where possible.
+
+							- **Breaks**
+							  I'll make sure we take the full break each session so everyone has time to rest and reset.
+
+							- **Random Breakout Groups**
+							  I'll explore more strategic groupings, especially to mix up tech skill levels.
+
+							- **Tool Navigation**
+							  I'll slow down and explain tools more clearly before asking you to use them—thanks for pointing this out.
+
+							🚀 What I'll start incorporating
+
+							- **More "Behind-the-Scenes"**
+							  Some of you are curious about how I build presentations or use tools for grading and formatting—I'll start sharing those workflows where helpful.
+
+							- **More Group Equity**
+							  I'll try to form groups that mix different tech skill levels so everyone gets a balanced experience.
+
+							- **Optional Previews**
+							  Since some of you like to work ahead, I'll keep posting links and resources early to support that.
+
+							✅ What I'll keep doing
+
+							- **Modelling & Sharing**
+							  I'm glad the tools, stories, and playful energy are working—I'll keep modelling "learning by doing."
+
+							- **Supportive Vibe**
+							  The chat, humour, flexibility, and callouts stay. That's the vibe.
+
+							- **Clear Structure**
+							  The grid view and calendar format will continue to keep things organized.
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3Mya2c1NmVkbHpqMGNxa2VyeGMxYTF6bmttaDc5cHVpN281NGQ2ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/OKalQ6YS6trCOxzoeM/giphy.gif" alt="" style="object-fit: scale-down">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Poll: Rate Your Techy-ness
+
+							<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXNxaDE2N2g3cjhpZDFrbDJycWY3OGgzMXlkNHg0OHRzYjcxNnV1MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/yHkFwHXeSA9z6DYALc/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
+
+
+							- I'll use the results to form the groups going forward.
+							- Zone of Proximal Development
+
+							notes: Using the Teams polling feature.
+							</div>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							## AI Ethics & Sustainability
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							- **Ethical Use**: Transparency, authorship, responsibility. Students must declare AI use and remain accountable for the output.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->**Equity Concerns**: Not all students have access to the same AI tools (e.g., GPT-4 vs. free tools).
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->**Environmental Cost**: GenAI requires enormous energy. How do we justify using it for every assignment?
+
+
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjB2cm40ZG5wbmp1Ymlqa3d2bm43dWlrM25oOWUwYW83OWR3anJtciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/daa8oT5L8Ox3ffWVjr/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							## AI Accessibility
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							- GenAI can support learners with disabilities, second-language learners, and neurodivergent students.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Risk of exacerbating the digital divide: Not all students have high-speed internet, stable devices, or paid access. Local LLMs are a solution here.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Policy decisions should consider whether we are levelling the playing field or widening it.
+
+
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHZveTAxMzViM3BpeXlnejQyOXljNXVxcmdzMnA0ZmJ2aGptZTVydCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/YErnuZCEjCfcl7HWJ2/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							## AhaSlides Brainstorm: AI Policies
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							What would YOU include in your own course, department, and/or college policy on AI use? <!-- .element: style="font-size: 1.5em" -->
+
+
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzYxeWNwY2U2Y3ZzOTM0ODlpMDkweDl1Y3djdGU3bnljNnEwaHlxaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/e5Sm1mk2alacB3DuFZ/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Proompt <!-- .element: class="r-fit-text" -->
+
+							notes:
+
+							PowerPoint tip, use one big word on a slide.
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Proompt <!-- .element: class="r-fit-text" -->
+
+							**/pɹuːmpt/**: _To prompt; to write a prompt for an AI model._
+
+							<https://en.wiktionary.org/wiki/proompt>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							## Let's Try It
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							1. Choose a topic from your discipline.
+							2. If you wanted a lesson plan on topic X, how would you prompt the AI?
+							3. Write the prompt in the chat.
+							4. (Optionally) Run the prompt in your GenAI agent of choice.
+
+
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTkxbGprYXhwZzgycnR3bGM3OGd6dDk3cG50NWQ2aW9ha2dicG92dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/u7Q3bJnID2DJ6ydItj/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### G.R.A.I.N. Pro(o)mpting Framework
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.75em" -->
+
+							|Step|Guiding Question|Example|
+							|---|---|---|
+							|**Goal**|What is the outcome or purpose of the prompt?|"I want a lesson plan on climate change for high school students."|
+							|**Role**|What role should the AI take on? (e.g., expert, tutor, critic, translator)|"You are an experienced science teacher."|
+							|**Audience**|Who is the output for? What is their background or level?|"The students have a basic understanding of environmental science."|
+							|**Input**|What information or constraints should the AI consider?|"Use Canadian examples. Limit it to 60 minutes. Include hands-on activities."|
+							|**Nuance**|How should the tone, format, or style be shaped?|"Keep the tone friendly and curious. Output in a structured bullet list."|
+
+							Response generated by ChatGPT 4o, OpenAI, June 2, 2025, <https://chatgpt.com/share/683e5c62-7d24-8000-b972-3a5987e87661>
+
+							</div>
+
+
+
+							notes:
+
+							Take 2 minutes to rework your original prompt. Once you're done, find your last message in the chat with the original prompt and reply to it with your new one.
+
+							I tried to look this up but apparently ChatGPT just made this up. A cursory search proved fruitless.
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### Full Example Prompt (using G.R.A.I.N.)
+
+							> You are an experienced science teacher. Design a 60-minute high school lesson plan on climate change using Canadian examples. The students have a basic understanding of environmental science. Include hands-on activities, and keep the tone friendly and curious. Present the lesson plan as a structured bullet list.
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### For This Activity
+
+							1. [What I tried](https://chatgpt.com/share/683df7d4-2640-8000-bb69-393e348d7ab6)
+							2. [Improved prompt](https://chatgpt.com/share/683e68f9-2f54-8000-95b8-143a3c774603)
+
+							notes: Output really matters, you can make a short list or long paragraphs, even XML for Moodle questions!
+							</div>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### Assignment Design: Is AI In or Out?
+
+							- Avoid blanket bans. Instead, **make AI use explicit**: where it's allowed, how it should be used, and what must remain human.
+							- Use the **AIAS scale** to scaffold and communicate expectations.
+							- Make AI use part of the learning process: planning, critique, revision.
+							- From the CETLI article: shift from "is this cheating?" to _"what kind of thinking are we trying to assess?"_
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+							<div class="block">
+
+							## Design Out: Limit AI Use
+
+							</div>
+
+
+
+							</div>
+
+							<div class="" style="position: absolute; left: 0%; top: 20%; height: 60%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+
+
+
+
+
+
+							<split left="2" right="1">
+
+							<div class="block">
+
+							<!-- .element: style="padding-left: 1em" -->
+
+							- Ask questions the internet can't answer
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Include verbal components of work
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Incorporate reflections on learning (metacognition!)
+							- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Emphasize **process** in addition to **product**
+							- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Ask students to affirm their academic integrity
+
+							</div>
+
+
+
+							<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDdwbG1qc3ZlcmttenF4OTZ2b3IwdnB1bG52emFkejRzcHZkNnRhdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/ehFmW0kLBrLPcerOgQ/giphy.gif" alt="" style="width: 200px; object-fit: fill">
+
+
+							</split>
+
+
+
+
+							</div>
+
+							<div class="" style="position: absolute; left: 0%; top: 80%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+							<div class="block">
+
+							Source: [UPenn Assignment Design: Is AI In or Out?](https://cetli.upenn.edu/resources/generative-ai/assignment-design-is-ai-in-or-out/)
+
+							</div>
+
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+							<div class="block">
+
+							## Design In: Encourage AI Use
+
+							</div>
+
+
+
+							</div>
+
+							<div class="" style="position: absolute; left: 0%; top: 20%; height: 60%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+
+
+
+
+
+
+							<split left="2" right="1">
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1.1em; padding-left: 1em" -->
+
+							- Engage with AI-generated materials
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Employ AI as a coach
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Engage in a dialogue with AI
+							- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Work with AI as a collaborator
+							- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Explore prompt engineering
+
+							</div>
+
+
+
+							<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTFnb3VmMHFqOWM2eXF1MTg2ZjR2bGQxeTc2MHZxbjYydm9qM29wayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/rL0yRrsd5a5PSeUMe7/giphy.gif" alt="" style="width: 500px; object-fit: fill">
+
+
+							</split>
+
+
+
+
+							</div>
+
+							<div class="" style="position: absolute; left: 0%; top: 80%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+							<div class="block">
+
+							Source: [UPenn Assignment Design: Is AI In or Out?](https://cetli.upenn.edu/resources/generative-ai/assignment-design-is-ai-in-or-out/)
+
+							</div>
+
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### Process-Product Reflection Prompts
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.85em" -->
+
+							<split even>
+
+							<div class="block">
+
+							<i class="fas fa-map-signs fa-3x maroon"></i>
+
+							**1. Planning**
+
+							- What was your goal?
+							- What steps did you plan?
+							- Did you intend to use AI?
+
+							</div>
+
+
+
+							<div class="block">
+
+							<!-- .element: class="fragment" -->
+
+							<i class="fas fa-robot fa-3x lavender"></i>
+
+							**2. AI Use**
+
+							- Which tool(s)?
+							- What prompts?
+							- How did you refine them?
+							- Was your voice still present?
+
+							</div>
+
+
+
+							<div class="block">
+
+							<!-- .element: class="fragment" -->
+
+							<i class="fas fa-sync-alt fa-3x teal"></i>
+
+							**3. Revision**
+
+							- What feedback did you use?
+							- What changed?
+							- How did AI affect that?
+
+							</div>
+
+
+
+							<div class="block">
+
+							<!-- .element: class="fragment" -->
+
+							<i class="fas fa-box-open fa-3x green"></i>
+
+							**4. Product**
+
+							- What's yours vs. AI's?
+							- How does it meet goals and expectations?
+
+							</div>
+
+
+
+							<div class="block">
+
+							<!-- .element: class="fragment" -->
+
+							<i class="fas fa-brain fa-3x pink"></i>
+
+							**5. Reflection**
+
+							- What did you learn?
+							- What was hard?
+							- Would you choose a different AIAS level next time?
+
+							</div>
+
+
+
+							</split>
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							## Process-Product Model Examples
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1.2em" -->
+
+							1. Heather Elliott (Geography): Iterative Research Project
+							2. Valerie Bherer (English): [Essay Workshops](https://www.saltise.ca/activity/peer-review-for-beginners/)
+							3. Math problem, showing your work
+							4. Do you have examples you can share?
+
+							</div>
+
+
+
+
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdW5ydzBxbzczZXkzM3Bmbnk5YWxzN2c1cmJ5OXE1eHNkaTIwc2tidiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/JolWcf2qvO8Y5TwgvT/giphy.gif" alt="" style="object-fit: scale-down">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## AIAS Reflection
+
+							|**Rubric Add-on**|**✔ Yes**|**❌ No / Needs Work**|
+							|---|---|---|
+							|I stayed within the declared AIAS level|||
+							|I documented how I used (or chose not to use) AI|||
+							|I reflected on the impact of AI on my thinking|||
+							|I critically engaged with AI-generated content (if applicable)|||
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### AI Assessment Scale
+
+							Before you complete this assignment, indicate the **AI Assessment Level** of this task. If unsure, ask your teacher.
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.75em" -->
+
+							- Level 1: **No AI**: You did not use AI in any part of the process.
+							- Level 2: **AI for Idea Generation Only**: You used AI to brainstorm, outline, or structure ideas but did not include AI-generated content in your final submission.
+							- Level 3: **AI for Editing Only**: You used AI to revise or edit your own original content, and you are submitting both versions.
+							- Level 4: **AI-Generated Content + Human Evaluation**: You used AI to generate part of your submission and provided critical commentary or analysis.
+							- Level 5: **Full AI Collaboration**: You used AI throughout and took responsibility for integrating and refining its output.
+
+							</div>
+
+
+
+							Briefly explain how this level applies to your work (2–3 sentences):
+
+							notes: Adapt this for your own courses.
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							### Activity: Process-Product + AIAS Integration
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							Take 5 minutes and do a brain dump of everything that comes to mind when you read the following questions.
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.8em" -->
+
+							1. Choose an assessment. If you already have one in mind for assessment task #4, use that one!
+							2. Which part of your students' process do you _not_ currently see, and how might you surface it?
+							3. What could "process" look like in your context? Logs? Reflections? Annotated outputs?
+							4. Where does AI show up in your students' workflows now, and how might you make that visible?
+
+							</div>
+
+
+
+
+
+							notes: Take a solid 5 minutes to write down everything that comes to mind when answer these questions, share with the class after.
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzYxeWNwY2U2Y3ZzOTM0ODlpMDkweDl1Y3djdGU3bnljNnEwaHlxaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/e5Sm1mk2alacB3DuFZ/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Does Process Mean More Grading?
+
+							<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTBxZzVtbThwNWEzaDJoYjI2bDJqejVlNXg0aGNybTRkc2hnOHR5ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/326kUKjnoJmBYYNoxH/giphy.gif" alt="" style="width: 1500px; object-fit: fill">
+
+
+							notes: Discussion question time permitting.
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							## Does Process Mean More Grading?
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+							<!-- .slide: data-auto-animate template="" -->
+
+
+
+							Not if you're strategic.
+
+							- Grade **some** students' process, not all, then rotate
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Use **checklists**, not essays
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Ask for **curated snapshots**, not full logs
+							- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Rotate **focus** (product one week, process the next)
+							- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Let **students evaluate the product** while you focus on process
+
+
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTBxZzVtbThwNWEzaDJoYjI2bDJqejVlNXg0aGNybTRkc2hnOHR5ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/326kUKjnoJmBYYNoxH/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+						<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2xvankyZHdvbnZxNWk5c2oxcjEzYjNteGp0ZDAyc21mNTVlMTJiYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/yvmvDbzVk7mK2JOYJG/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
+						</div>
+					</script>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Digital Citizenship
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							## Who's Really in Control?
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+							<!-- .slide: data-auto-animate template="" -->
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1.3em" -->
+
+							- How much time do _you_ spend on social media?
+							- How much do your _students_ spend?
+							- Who's in control: _you_ or the _algorithm_?
+
+							</div>
+
+
+
+
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjN6ajIweW5qa3hoeXRzd3FsMTdycW9ydTdjdzFlaTRrNzF2Mm8xcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/5nxc6j8Kox8AgnjC7y/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Who's Really in Control?
+
+							- 5.24 billion social media users worldwide (63.9% of population)
+							- Average social media daily use: **2h 21m**
+
+							Sources: [DataReportal, Feb 2025](https://datareportal.com/reports/digital-2025-global-overview-report)
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<img src="https://images.squarespace-cdn.com/content/v1/5b79011d266c077298791201/4266e821-18a9-4bf6-aa83-ccb75920a5ed/01+Global+Digital+Overview+January+2025+%E2%80%93%C2%A0DataReportal+20250203+Digital+2025+Global+Overview+Report+p10.png" alt="" style="object-fit: scale-down">
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							## You are not the customer
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+							<!-- .slide: data-auto-animate template="" -->
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1.3em" -->
+
+							- Your data feeds the algorithm
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->The algorithm feeds your attention
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Your attention fuels profit
+
+							</div>
+
+
+
+							You are the product.
+
+
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmkzOWg1NXduMTdza2gxMHYzNGt2aW9rbG1sbzE1cmRtcHljdm5heCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/hKI4UHMJXnRVECNpcI/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							## Tracking
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+							<!-- .slide: data-auto-animate template="" -->
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1em" -->
+
+							- "If I'm not doing anything shady, why care?"
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Because: **surveillance > manipulation**
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Ads, content, recommendations = persuasion engines
+							- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->What you see, think, buy, even believe is influenced
+							- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->You're not being watched, you're being **nudged**
+
+							</div>
+
+
+
+
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTA5bmU2MjJ5M3RpbDFkbzFkdXMyMGE4MWQzaDhsYmE1dmQ5dzNvYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/c3EfstTf4ngkFNl32D/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							## The Algorithm Decides
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+							<!-- .slide: data-auto-animate template="" -->
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1.4em" -->
+
+							- What you watch
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->What you believe is "normal"
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->What your friends are exposed to
+							- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->What's worth caring about
+
+							</div>
+
+
+
+
+
+							notes:
+
+							…and ultimately: **who gets into power**
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTVycWZ5ZXltZWRzanZkNnh5OWxmcDc5bnA1MHprYjZiYWt6dmR2biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/ETxV9xA7ez1ouOKx3y/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							### Case Study: Facebook & 2016 Election
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+							<!-- .slide: data-auto-animate template="" -->
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1.1em" -->
+
+							- **Cambridge Analytica** harvested 87 million profiles
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Built psychographic voter profiles
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Micro-targeted ads to suppress or sway votes
+							- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Most people didn't know they were part of it
+
+							</div>
+
+
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.7em" -->
+
+							[A year-long investigation into Facebook, data, and influencing elections in the digital age, The Guardian, 2018](https://www.theguardian.com/news/series/cambridge-analytica-files)
+
+							</div>
+
+
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjc3bzA1Z2xtNWFwYm9pam8yN2l4NGF1cWx4dDFodHdwZXRtbzZmdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/J5XlOw4DE9zaiQUeGM/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Breaking News
+
+							[OpenAI slams court order to save all ChatGPT logs, including deleted chats](https://arstechnica.com/tech-policy/2025/06/openai-says-court-forcing-it-to-save-all-chatgpt-logs-is-a-privacy-nightmare/)
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							## Do You Like Cookies?
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+							<!-- .slide: data-auto-animate template="" -->
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.9em" -->
+
+							- Cookies are small bits of data that remember your information as you browse (ex. remember my email checkbox)
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->The [EU's General Data Protection Regulation (GDPR)](https://gdpr-info.eu/) forced companies to disclose tracking
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Yes, it's annoying to click "reject all", but it gives us _some_ power to say no
+							- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Most people still accept all out of habit or fatigue (there are browser extensions that can help with that)
+
+							</div>
+
+
+
+
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXV6ZWtleTdxdGQ0MWw3emV1Ym0zY25jNnlsaWozaWxiaHY2dXg4eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/CPsnRKLWN0XS9DO4Ej/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<img src="https://cached.imagescaler.hbpl.co.uk/resize/scaleWidth/743/cached.offlinehbpl.hbpl.co.uk/news/OMC/TimesSquare-20151006033612984.jpg" alt="" style="width: 1500px; object-fit: fill">
+
+
+							notes:
+
+							What do they do with cookies? Why, sell ads of course! They know exactly where you go, what you click on, and how much time you spend on each page.
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							### What Happened to the Web?
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+							<!-- .slide: data-auto-animate template="" -->
+
+
+
+							- Search used to bring you **useful, human content**
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Now it's AI-generated slop with clickbait headlines
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->SEO farms churn out low-effort content
+							- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->You scroll through 5 paragraphs to get 1 recipe
+
+
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3FjMjRlZ3Q2anV4OXNhc2FvMnJqbm4waHp6aGxkZno2ZmlqYXE2NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/bYzslxtfHenEymtC14/giphy.gif" alt="" style="object-fit: scale-down">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							### The Dead Internet Theory
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+							<!-- .slide: data-auto-animate template="" -->
+
+
+
+							- Claim: bots now outnumber humans online
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->AI creates content, other AI reads and ranks it
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Comments and reviews often bot-written
+							- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Some believe we're now in an AI content loop
+							- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Even if not _true_, it **feels** true, and that's the problem
+
+
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGltbjF1c3U2NHpsM3h3MDJnMWdrbmlwNjJya292cnh2cDRkMDlyZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/jJiIMQPD14ojZhhbGO/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							### Activity: What _Can_ We Do?
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+							<!-- .slide: data-auto-animate template="" -->
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1.1em" -->
+
+							Digital resilience = **awareness + action**
+
+							We just talked about:
+
+							- Algorithms
+							- Cookies and trackers
+							- Manipulative design
+							- Misinformation
+							- AI slop and the "dead Internet"
+
+							Now let's flip the script.
+
+							</div>
+
+
+
+
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExczJmMzQ0MjhxM2R2aXphbGVibG4yZGJ0ajJnY3Ruam1zNmd2dzh4ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VdWNHBgPnDudA5F3MM/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### Activity: What _Can_ We Do?
+
+							In small groups, brainstorm your own **Digital Resilience Toolkit**.
+
+							<split even>
+
+							<div class="block">
+
+							✅ Include
+
+							- 3+ **habits** that support ethical or mindful tech use
+							- 2+ **tools or resources** (apps, extensions, settings, creators)
+							- 1+ **thing you want to try** this week
+
+							</div>
+
+
+
+							<div class="block">
+
+							<!-- .element: class="fragment" -->
+
+							💡 Prompts to get you started
+
+							- What's one browser extension or app you couldn't live without?
+							- What helps you resist doomscrolling?
+							- What do our students need to know that they probably don't?
+
+							</div>
+
+
+
+							</split>
+
+							[Link to Canva](https://www.canva.com/design/DAGpTxfCDkk/4_5RuEPBEd2Mo21fc_KfXg/edit?utm_content=DAGpTxfCDkk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+							notes:
+
+							- Make sure techy people are dispersed.
+							- I'll compile them after class and post the final version
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Share Your Toolkit
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Share Your Toolkit
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1.5em" -->
+
+							🙌 You don't have to do it all!
+
+							Start with **one habit or tool** that puts _you_ back in control.
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### Biases & News Sources
+
+							- <https://ground.news></https>
+							- <https://clark.libguides.com/evaluating-information/SIFT>
+							- <https://app.adfontesmedia.com/chart/interactive>
+							- Thanks to Carolyn!
+							- <https://www.gapminder.org></https>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<iframe width="100%" height="100%" src="https://app.adfontesmedia.com/chart/interactive" title="Political News Bias Chart"></iframe>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							## A Bit of Hope
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 4%; top: 19%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+							<!-- .slide: data-auto-animate template="" -->
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1.3em" -->
+
+							- [House Hippo](https://www.youtube.com/watch?v=NBfi8OEz0rA)
+							- [House Hippo 2.0](https://www.youtube.com/watch?v=5R_tOSRynZU)
+							- [Break the Fake](https://mediasmarts.ca/break-fake#gsc.tab=0)
+							- [Finnish Fake News](https://youtu.be/Vp8Qv2u-dDY)
+
+							</div>
+
+
+
+
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 50%; top: 20%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.6kecpVMrYu0igVgf-9ftUAHaEK%26pid%3DApi&f=1&ipt=6ee24078d216a6733b71d153b3bcb2474be9e92a828f735968414df3d97d9cea" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## More (too many) Resources
+
+							Purely for your interest, by no means mandatory.
+
+							- [Learn Quebec](https://learnquebec.ca/)
+							- [Digital Competency Continuum](https://www.education.gouv.qc.ca/fileadmin/site_web/documents/ministere/continuum-cadre-reference-PAN-en.pdf)
+							- [Intro to Digital Competency Framework for Students](https://www.youtube.com/watch?v=hXY2aNWsSx0)
+							- <https://www.saltise.ca/technology-tools></https>
+							</div>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							### Before Next Class
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							- Perusall how-to video + optional tutorial
+							- "Copyright Matters," Noel & Snel, Annotate on Perusall
+							- 2 EdPuzzle Videos on Copyright and Fair Dealing
+							- Assessment #3 - Learning Activity (**Draft**) DUE JUNE 12
+
+							All tasks and deadlines are in Moodle!
+
+
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTB1YjRxdDUycDE3NzN2bGZ1MWc3NHRuN2pvZjV4MG5qaXZucnRocCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/3cwLpdCalQrML78gbe/giphy.gif" alt="" style="object-fit: scale-down">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							### Assessment Task 3: Design Learning Activity
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.9em" -->
+
+							- Identify a pedagogical concern in your course
+							- Design a tech-enhanced activity + assessment
+							- Link to 2+ digital competency areas
+							- Submit: report, student handout, self-reflection
+							- Draft due **June 12**, be ready for peer feedback, final due **June 18**
+							- Make something that you can **actually use**!
+
+							</div>
+
+
+
+							Details can be found on Moodle and in the Course Outline.
+
+
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzF3emdreWFxeGtkajE2MThyeTFjcjZsZzAwaWU1enhkdXR1eWY4dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/n0gyWI7rdDydEy9niu/giphy.gif" alt="" style="object-fit: scale-down">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<split even left="2" right="1">
+
+							### Start Thinking About Fall <!-- .element: style="padding-top: 1em" -->
+
+							<img src="https://www.singh.gg/slides/00 System/Assets/performa-mtp-udes.png" alt="" style="padding-top: 0.5em; object-fit: scale-down">
+
+
+							</split>
+
+							We are offering the following courses in the certificate and diploma;
+
+							| Course                                 | Instructor              |
+							|----------------------------------------|--------------------------|
+							| College Teaching and Course Design     | Anne-Marie Lafortune    |
+							| How Students Learn                     | Valerie Hadd            |
+							| Philosophy of Education                | Elana Cooperberg        |
+							| Equity, Diversity, and Inclusion       | Sharon Coyle            |
+
+							[The full schedule can be found here, please ask your RLs for more information.](https://www.usherbrooke.ca/performa/en/course-schedules/network-courses-fall) <!-- .element: style="font-size: 0.8em" -->
+							</div>
+						</script>
+					</section>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+						## Thanks and see you next week
+
+						<img src="https://www.singh.gg/slides/00 System/Assets/Stickers/Waving.gif" alt="ng.gif" style="object-fit: scale-down">
+
+
+						Questions? Comments?
+						</div>
+					</script>
+				</section>
+			</div>
+		</div>
+
+		<script src="https://www.singh.gg/slides/reveal/reveal.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/notes/notes.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/markdown/markdown.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/highlight/highlight.js"></script>
+
+		<script src="https://www.singh.gg/slides/plugin/zoom/zoom.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/math/math.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/mermaid/mermaid.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/chart/chart.umd.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/chart/plugin.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/menu/menu.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/customcontrols/plugin.js"></script>
+
+		<script>
+			function extend() {
+				const target = {};
+				for (let i = 0; i < arguments.length; i++) {
+					const source = arguments[i];
+					for (const key in source) {
+						if (source.hasOwnProperty(key)) {
+							target[key] = source[key];
+						}
+					}
+				}
+				return target;
+			}
+
+			function isLight(color) {
+				let hex = color.replace('#', '');
+
+				// convert #fff => #ffffff
+				if (hex.length == 3) {
+					hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`;
+				}
+
+				const c_r = parseInt(hex.substr(0, 2), 16);
+				const c_g = parseInt(hex.substr(2, 2), 16);
+				const c_b = parseInt(hex.substr(4, 2), 16);
+				const brightness = (c_r * 299 + c_g * 587 + c_b * 114) / 1000;
+				return brightness > 155;
+			}
+
+			const bgColor = getComputedStyle(document.documentElement)
+				.getPropertyValue('--r-background-color')
+				.trim();
+
+			if (isLight(bgColor)) {
+				document.body.classList.add('has-light-background');
+			} else {
+				document.body.classList.add('has-dark-background');
+			}
+
+			// default options to init reveal.js
+			const defaultOptions = {
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				transition: 'default', // none/fade/slide/convex/concave/zoom
+				plugins: [
+					RevealMarkdown,
+					RevealHighlight,
+					RevealZoom,
+					RevealNotes,
+					RevealMath.MathJax3,
+					RevealMermaid,
+					RevealChart,
+					RevealCustomControls,
+					RevealMenu,
+				],
+				allottedTime: 120 * 1000,
+				mathjax3: {
+					mathjax: 'plugin/math/mathjax/tex-chtml-full.js',
+				},
+				markdown: {
+					gfm: true,
+					mangle: false,
+					pedantic: false,
+					smartLists: false,
+					smartypants: false,
+				},
+				mermaid: {
+					theme: isLight(bgColor) ? 'default' : 'dark',
+				},
+				customcontrols: {
+					controls: [
+						{
+							id: 'toggle-overview',
+							title: 'Toggle overview (O)',
+							icon: '<i class="fa fa-th"></i>',
+							action: 'Reveal.toggleOverview();',
+						},
+					],
+				},
+				menu: {
+					loadIcons: false,
+				},
+			};
+
+			if (pageInIframe()) {
+				defaultOptions.scrollActivationWidth = 5;
+			}
+
+			// options from URL query string
+			const queryOptions = Reveal().getQueryHash() || {};
+
+			const options = extend(
+				defaultOptions,
+				{
+					controls: true,
+					progress: true,
+					slideNumber: false,
+					center: true,
+					transition: 'slide',
+					transitionSpeed: 'default',
+					width: 1920,
+					height: 1080,
+					margin: 0.04,
+				},
+				queryOptions
+			);
+		</script>
+
+		<script>
+			Reveal.initialize(options);
+		</script>
+		<!-- created with Slides Extended reveal.html template -->
+	</body>
+</html>
