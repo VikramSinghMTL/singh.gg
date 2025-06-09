@@ -147,7 +147,7 @@
 }
 
 .reveal .slides {
-	border: solid red;
+	/* border: solid red; */
 	transform: scale(calc(100vw / 1920), calc(100vh / 1080));
 }
 
