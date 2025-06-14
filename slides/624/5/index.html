@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+
+		<title>Pedagogy of Digital Learning - Class 5</title>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/reveal/reset.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/reveal/reveal.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/css/slides-extended.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/reveal/theme/white.css"
+			id="theme"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/plugin/highlight/zenburn.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/plugin/customcontrols/style.css"
+		/>
+
+		<link rel="stylesheet" href="https://www.singh.gg/slides/css/vik.css" />
+
+		<script
+			defer
+			src="https://www.singh.gg/slides/reveal/fontawesome/all.min.js"
+		></script>
+		<script
+			defer
+			src="https://www.singh.gg/slides/plugin/load-mathjax.js"
+		></script>
+
+		<script type="text/javascript">
+			function pageInIframe() {
+				return window.location !== window.parent.location;
+			}
+
+			let forgetPop = true;
+			function onPopState(event) {
+				if (forgetPop) {
+					forgetPop = false;
+				} else if (pageInIframe()) {
+					parent.postMessage(
+						event.target.location.href,
+						'app://obsidian.md'
+					);
+				}
+			}
+			window.onpopstate = onPopState;
+			window.onmessage = (event) => {
+				if (event.data == 'reload') {
+					window.document.location.reload();
+				}
+				forgetPop = true;
+			};
+
+			function fitElements() {
+				const itemsToFit = document.getElementsByClassName('fitText');
+				for (const item in itemsToFit) {
+					if (Object.hasOwnProperty.call(itemsToFit, item)) {
+						const element = itemsToFit[item];
+						fitElement(element, 1, 1000);
+						element.classList.remove('fitText');
+					}
+				}
+			}
+
+			function fitElement(element, start, end) {
+				let size = (end + start) / 2;
+				element.style.fontSize = `${size}px`;
+
+				if (Math.abs(start - end) < 1) {
+					while (element.scrollHeight > element.offsetHeight) {
+						size--;
+						element.style.fontSize = `${size}px`;
+					}
+					return;
+				}
+
+				if (element.scrollHeight > element.offsetHeight) {
+					fitElement(element, start, size);
+				} else {
+					fitElement(element, size, end);
+				}
+			}
+
+			document.onreadystatechange = () => {
+				fitElements();
+				if (document.readyState === 'complete') {
+					if (
+						pageInIframe() &&
+						window.location.href.indexOf('?export') != -1
+					) {
+						parent.postMessage(
+							event.target.location.href,
+							'app://obsidian.md'
+						);
+					}
+					if (window.location.href.indexOf('print-pdf') != -1) {
+						let stateCheck = setInterval(() => {
+							clearInterval(stateCheck);
+							window.print();
+						}, 250);
+					}
+				}
+			};
+		</script>
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+						## Pedagogy of Digital Learning
+
+						Vikram Singh | Class 5 | June 12, 2025
+						</div>
+					</script>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 30%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+							## Learning Objectives
+
+							By the end of this, you will be able to:
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 29%; height: 70%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.92em" -->
+
+							<li class="fragment"><span class="fa-li"><i class="fas fa-copyright"></i></span><b>Demystify</b> copyright and fair dealing through Canadian education-specific examples.</li>
+
+							<li class="fragment"><span class="fa-li"><i class="fas fa-user-graduate"></i></span><b>Model</b> ethical and legal use of digital content in your own teaching context.</li>
+
+							<li class="fragment"><span class="fa-li"><i class="fas fa-vial"></i></span><b>Practice</b> using the Moodle Workshop tool through a sample submission and interface walkthrough.</li>
+
+							<li class="fragment"><span class="fa-li"><i class="fas fa-comments"></i></span><b>Provide</b> peer feedback to review a colleague’s draft learning activity.</li>
+
+							</div>
+
+
+
+
+
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 30%; height: 70%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://www.singh.gg/slides/00 System/Assets/Stickers/Compass.gif" alt="" style="object-fit: scale-down">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+
+							<aside class="notes"></aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							## Agenda
+
+							</div>
+
+
+
+							</div>
+
+
+							<div class="" style="position: absolute; left: 0%; top: 20%; height: 80%; width: 70%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1.2em; padding: 1em" -->
+
+							1. Copyright & Fair Dealing
+							2. Perusall Highlights
+							3. Break
+							4. Moodle Workshop (AT3 Peer Feedback)  
+							5. Looking Ahead
+
+							</div>
+
+
+
+
+
+
+							</div>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWxkZGNqNnJxZHZlMmNzNDh3ZW1nZnU1bXl2d3BiaTFqbmhwcmo0MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/C3gFgVk7UFS8TUmZ2J/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
+
+
+							</div>
+
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## 💾 Tech Tip: Emoji Picker 🍕
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							## 💾 Tech Tip: Emoji Picker 🍕
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+							<!-- .slide: data-auto-animate="true" template="" -->
+
+
+
+
+
+							- 🖱️ Place your cursor in the chat text box
+							- 🪟 Windows: `WIN + • (period)`
+							- 🍎 Mac: `⌃ + ⌘ + Space`
+							- ⌨️ Type to search for an emoji - **Which emoji best describes you today?**
+							- ↩️ Hit `Enter` to insert the first emoji result; or
+							- ➡️ Use the arrow keys to navigate to the one you want and then hit `Enter`
+							- 👑 Try not to use your mouse as a little challenge!
+
+
+
+							notes:
+
+							I use emoji all the time to add some visual flare to otherwise boring text. It's an easy way to use (copyright free!) images.
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjFkdm00MWpvd3AxbXd2bDQ5bzZndGl4MzQwdXRncW8yeDZrcDQ3bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/HqpAtt1YGxgNa/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+						## AT2 Forum Grading Feedback
+
+						<img src="https://www.singh.gg/slides/00 System/Assets/Class 5-2.png" alt="" style="object-fit: scale-down">
+
+
+						notes:
+
+						Really great job for the most part, I enjoyed reading everyone's reflections and to hear what you got out of it. I love hearing students' voices!
+						</div>
+					</script>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate-restart="true" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Copyright
+
+							Disclaimer: I am not a lawyer, this is not legal advice!
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Copyright
+
+							There's been a new one... Oops. (Thank you, Anna!)
+
+							<iframe width="70%" height="100%" src="https://www.copyrightmatters.ca/copyrightmatters5thedition/" title="Copyright Matters 5th Edition"></iframe>
+
+							<https://www.copyrightmatters.ca/copyrightmatters5thedition></https>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							### Copyright in the Classroom
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							- Canadian teachers have rights and responsibilities under the **Copyright Act**.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Understanding fair dealing helps protect you, your students, and your institution.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->It's about modelling ethical content use and avoiding infringement.
+
+
+
+							notes:
+
+							- This session is based on *Copyright Matters! (4th ed)*—a Q&A guide by Noel and Snel.
+							- Copyright is often misunderstood, but educators are expected to know the basics.
+							- We'll walk through key rights and limitations that apply directly to your teaching practice.
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmdyOGx6cHl1bG9kazdncmY2ZzV1NHdmbGZtaHFhZGVoOHo5ODVxOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/h25H11ruuAB7UKQqyC/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							### What Is Fair Dealing?
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							- Fair dealing allows limited use of copyrighted work without permission.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Applies for purposes like **education**, **criticism**, **research**, **parody**, etc.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Must be "fair" by using *short excerpts* (e.g., one chapter, 10%, one article).
+							- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->No "stacking" excerpts to recreate entire works.
+
+
+
+							notes:
+
+							- Fair dealing is not a loophole—it has legal weight under the Copyright Act.
+							- Think: Is the excerpt short? Am I using it for educational purposes in a non-profit setting?
+							- Always cite the source and author when required.
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTFoeDhpcnBnd2xrNDljcDlzNnJpbnp3MXRsdmw0eTloazhuZzQ3MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/xgi2sNvtqYGXNaTxZY/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							### Student Work = Copyrighted
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1.25em" -->
+
+							- Students automatically own copyright to any original work they create.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Consent is needed to publish their work online, use it as an exemplar, or share it in workshops.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Parents/guardians act on behalf of minors.
+
+							</div>
+
+
+
+
+
+							notes:
+
+							- Always ask before using student work publicly, even for good intentions.
+							- This is a great teachable moment about respecting creators since you're teaching future creators.
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExd245czQ0NWNpMmdqMnZueDgyMXljMTdrbjR3enNxd2ZsaWFsdm9lbyZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/bPdzSyA3CswM4mGKSn/200.gif" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							### What You *Can* Do
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1.25em" -->
+
+							- Show films and music if:
+							  - &shy;<!-- .element: class="fragment" data-fragment-index="1" -->On school premises
+							  - &shy;<!-- .element: class="fragment" data-fragment-index="2" -->For a class, not profit
+							  - &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Using a legal copy
+							- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Copy *for tests and exams*
+							- &shy;<!-- .element: class="fragment" data-fragment-index="5" -->Post short excerpts on LMS (e.g., Moodle, Teams)
+
+							</div>
+
+
+
+
+
+							notes:
+
+							- A "legal copy" includes something you bought, borrowed, or streamed *legally*.
+							- Use audiovisual materials only if the licensing terms allow it—Netflix ≠ fair game.
+							- Posting on a password-protected LMS is allowed, but keep excerpts short.
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaG9wenNka3ZkMWhvZXRibDNmbnFidm54czVueGV0OWV6eDQwbTk5bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/nAZqdR53TwEGWDwd88/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							### What You *Can't* Do
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1.25em" -->
+
+							- Copy from workbooks or one-time use materials
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Break digital locks, even for otherwise legal uses
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Use music in school dances, fundraisers, or as background music
+
+							</div>
+
+
+
+
+
+							notes:
+
+							- Workbooks are for individual use, no scanning or copying answers pages.
+							- Even if you bought a DVD, you can't rip it for class, that breaks the digital lock.
+							- Playing music "just because" (e.g., in the hallway or cafeteria) requires a license from SOCAN or Re:Sound.
+							- Just let the dang kids dance
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmd4cmVvaHMyY2xwMXFzNW1oNGFxZzRnZjR4ZjhwaHA4NnI3YmNmZyZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/GuAyo258Gj8m7UXYLg/200.gif" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/n-eK6kMs5ok" title="Venezuelan politicians visit Pawnee | Parks and Recreation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+							notes:
+
+							> The users' right permits user-generated content created under provision of the CopyrightAct to be disseminated. Dissemination includes uses such as posting a video to **YouTube** or a Web site. (p. 14)
+
+							- So because NBC put this on YouTube knowing it is public, it's fine. Netflix is a paid service.
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<img src="https://www.singh.gg/slides/00 System/Assets/right-to-infringement.png" alt="" style="object-fit: scale-down">
+
+
+							notes:
+
+							I think this is okay because it's parody. Also it's a great example of remixing content with something you know so that it absorbs better. This was made with ChatGPT.
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### Disclaimer: This is a joke
+
+							<split even>
+
+							<div class="block">
+
+							- Example of parody
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Copyright **is** a serious matter
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->It actually protects **YOU**
+							- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Tangent: This was made in collaboration with ChatGPT, it could be a cool way to have students learn course material!
+
+							</div>
+
+
+
+							<img src="https://www.singh.gg/slides/00 System/Assets/right-to-infringement.png" alt="" style="width: 800px; object-fit: fill">
+
+
+							</split>
+
+							notes:
+
+							I think this is okay because it's parody. Also it's a great example of remixing content with something you know so that it absorbs better. This was made with ChatGPT.
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### FNEEQ Collective Agreement (2023-2028)
+
+							> **Clause 8 1.03**: The course workbook or course notes, including those in audiovisual or electronic format, of which the professor is the author or one of the authors, <mark>shall not be used without his/her consent</mark>.
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							### Who Owns Your Teaching Materials?
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1em" -->
+
+							- By default, **you own the copyright** to your original works (e.g., articles, presentations, videos, etc.).
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->You keep **full rights** and **royalties**, unless the College made a special contribution and a signed agreement exists.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->The College must respect your author rights under both the **Copyright Act** and the **collective agreement**.
+
+							</div>
+
+
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.4em" -->
+
+							FNEEQ Collective Agreement (2023-2028) - APPENDIX V-3: APPENDIX PERTAINING TO THE USE OF A WORK OF WHICH A PROFESSOR IS THE AUTHOR OR ONE OF THE CO-AUTHORS
+
+							</div>
+
+
+
+							notes:
+
+							- "Work" includes a wide range of media—not just documents.
+							- You are the "author" under Appendix V-3 unless otherwise agreed.
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2w2eXRwMnF2aXA4MjF6bWpzdHB2NjZzcWFwYTdxMWk4am1xMjJodCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kLk1Qa8mrYdQA/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							## What You *Can't* Do
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.9em" -->
+
+							- You **can't claim royalties** on materials created as part of your regular teaching duties, such as:
+								- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Course outlines
+								- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Class notes and workbooks
+								- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Lab, shop, or fieldwork guides
+								- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Exams and audiovisual materials made for students
+							- These are considered part of your job (Clause 8‑4.01 a)).
+
+							</div>
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.4em" -->
+
+							FNEEQ Collective Agreement (2023-2028) - APPENDIX V-3: APPENDIX PERTAINING TO THE USE OF A WORK OF WHICH A PROFESSOR IS THE AUTHOR OR ONE OF THE CO-AUTHORS
+
+							</div>
+
+
+
+
+
+							notes:
+
+							- These "excluded works" are still protected by copyright—but ownership stays with the College.
+							- If you're producing something beyond these, and the College helps fund or develop it, a formal agreement is required.
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExam5hN3dyOHZ3dm9vZTJ3cnFrN3oxY2h3azFtYm9yNmUwNHJmYWp3bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/njON3jEmTYHEfRbfsk/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### Perusall: Starred Quotes
+
+							<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjg3dzd1dW56ejB3M2ZtazQxajR2ZmhsbXhkaXl5MnBkNWd3ZjMyeSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/LTWRr0hRG9pHHkzYcs/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<split even>
+
+							<div class="block">
+
+							### Perusall: Starred Quotes
+
+							<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjg3dzd1dW56ejB3M2ZtazQxajR2ZmhsbXhkaXl5MnBkNWd3ZjMyeSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/LTWRr0hRG9pHHkzYcs/giphy.gif" alt="" style="width: 400px; object-fit: fill">
+
+
+							Wow, talk about building social presence! <!-- .element: style="font-size: 1.5em" -->
+
+							</div>
+
+
+
+							<img src="https://www.singh.gg/slides/00 System/Assets/perusall-stats.png" alt="" style="object-fit: scale-down">
+
+
+							</split>
+
+							notes:
+
+							If you've not ever done anything like this, let me tell you how powerful and exciting the feeling is when you SEE your students engage and talk about the material. Especially using the LANGUGE of your discipline - it's an awesome feeling.
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<iframe width="100%" height="100%" src="https://www.fairdealingdecisiontool.ca/DecisionTool/" title="The Copyright Decision Tool"></iframe>
+
+							<https://www.fairdealingdecisiontool.ca/DecisionTool></https>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							### The Golden Rule
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1.25em" -->
+
+							- Use short excerpts and cite sources.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Check terms of use on internet content.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->When in doubt, use public domain, Creative Commons, or ask permission.
+
+							</div>
+
+
+
+
+
+							notes:
+
+							- Make students part of the process: teach them how to find usable content.
+							- The Copyright Decision Tool (copyrightdecisiontool.ca) is a handy resource.
+							- Teachers are both users and models, we should show what ethical use looks like.
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDQ4eHE5Z3FoZm1reTFkNXM4NHFmNGZuc2R6cnVsa2xyZHZoMG40cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/1YaIPS0BlwQuCT6Kpa/giphy.gif" alt="" style="width: 1200px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### Vik's GIF Usage
+
+							<https://giphy.com>
+
+							> You're allowed to use the Services only in accordance with this agreement. Generally speaking, you're only allowed to use content that you find on the site in connection with <mark>your use of the Services and solely for personal and non-commercial purposes</mark>. We can edit, take down, or block any content on the Services at any time ([GIPHY Terms of Service](https://support.giphy.com/hc/en-us/articles/360020027752-GIPHY-User-Terms-of-Service)).
+							</div>
+						</script>
+					</section>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+						<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2xvankyZHdvbnZxNWk5c2oxcjEzYjNteGp0ZDAyc21mNTVlMTJiYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/yvmvDbzVk7mK2JOYJG/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
+						</div>
+					</script>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate-restart="true" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### Moodle Workshop
+
+							<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWV4cjhwYnM1dmd6eWFvaWNzNHNjczJ5bnJ5dnpxbmh0OXQyamVjaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/hCOYhka0YTrGj8ZCaJ/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							### Moodle Workshop
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+							<!-- .slide: data-auto-animate template="" -->
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1.25em" -->
+
+							- A structured way to give peer feedback.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->You submit your work, then evaluate a peer's work using a shared form.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Feedback can be formative or summative.
+
+							</div>
+
+
+
+
+
+							notes:
+
+							- This models how you could use the Workshop in your own teaching.
+							- Encourages reflection, revision, and learning from peers.
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWV4cjhwYnM1dmd6eWFvaWNzNHNjczJ5bnJ5dnpxbmh0OXQyamVjaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/hCOYhka0YTrGj8ZCaJ/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							### What Makes Feedback Helpful?
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1.25em" -->
+
+							- Be kind, clear, and specific.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Focus on what's working and where there's room to grow.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Refer to parts of the draft (not just general impressions).
+
+							</div>
+
+
+
+
+
+							notes:
+
+							- A few good questions: What's strong? What's unclear? What's one idea they could explore further?
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDF4cnk5ZDU3cnE5bWhoN21lN2JiNTgwNHFlODVwNjYzZTQydGJ2aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/gIfb10foLDtsWg1W3d/giphy.gif" alt="" style="width: 1200px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### Let's Try It: AT3 Peer Feedback (1h)
+
+							<split even style="padding:0 1em;">
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.9em" -->
+
+							<i class="fas fa-tasks fa-3x maroon"></i>
+
+							- Try out the Workshop interface by assessing a sample submission.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Submit your draft learning activity for **assessment task #3**.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Split into breakout groups once submissions are in.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Discuss and give feedback to your assigned peer.
+
+							</div>
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.8em" -->
+
+							<i class="fas fa-users fa-3x lavender"></i>
+
+							1. &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Everyone is in a breakout group of 3–4 people.
+							1. &shy;<!-- .element: class="fragment" data-fragment-index="5" -->You're responsible for giving feedback to **one peer** (randomly assigned).
+							1. &shy;<!-- .element: class="fragment" data-fragment-index="6" -->Share ideas as a group.
+							1. &shy;<!-- .element: class="fragment" data-fragment-index="7" -->Use the assessment form in Moodle to give structured feedback.
+							1. &shy;<!-- .element: class="fragment" data-fragment-index="8" -->Allocate 15-20 minutes per person (nominate a time keeper!).
+
+							</div>
+
+
+
+							</split>
+
+							notes:
+
+							- You'll only formally assess one peer, but use the breakout time to talk, compare, and collaborate.
+							- I should set a timer and send out an announcement every 15 minutes.
+							</div>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							#### Before Next Class
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1.2em" -->
+
+							- Perusall feedback form: How did you like it?
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->No more readings!
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Assessment #3 - Learning Activity (**Final**) DUE JUNE 18
+							- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Assessment #4 - GenAI Redesign (**Draft**) DUE JUNE 19
+
+							</div>
+
+
+
+							All tasks and deadlines are in Moodle!
+
+
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTB1YjRxdDUycDE3NzN2bGZ1MWc3NHRuN2pvZjV4MG5qaXZucnRocCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/3cwLpdCalQrML78gbe/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							#### Assessment Task 4: GenAI Redesign
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.9em" -->
+
+							- Choose one of your own course assignments.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Analyze how GenAI might help or hinder learning (**AIAS**), and redesign the task accordingly.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Reflect on both the **product** and the **process**.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->You can use a multitude of formats.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Draft due **June 19**, be ready for peer feedback, final due **July 4**.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="5" -->Make something that you can **actually use**!
+
+							</div>
+
+
+
+							Details can be found on Moodle and in the Course Outline. <!-- .element: style="font-size: 0.7em" -->
+
+
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzBxbnA0MmhybG12eDF4OWVzYm40Z2lwcWkyNmlnOXd0cDE1NWhobSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/wcaG5uOyYwItg60qet/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<split even left="2" right="1">
+
+							#### Start Thinking About Fall <!-- .element: style="padding-top: 1em" -->
+
+							<img src="https://www.singh.gg/slides/00 System/Assets/performa-mtp-udes.png" alt="" style="padding-top: 0.5em; object-fit: scale-down">
+
+
+							</split>
+
+							We are offering the following courses in the certificate and diploma;
+
+							| Course                                 | Instructor              |
+							|----------------------------------------|--------------------------|
+							| College Teaching and Course Design     | Anne-Marie Lafortune    |
+							| How Students Learn                     | Valerie Hadd            |
+							| Philosophy of Education                | Elana Cooperberg        |
+							| Equity, Diversity, and Inclusion       | Sharon Coyle            |
+
+							[The full schedule can be found here, please ask your RLs for more information.](https://www.usherbrooke.ca/performa/en/course-schedules/network-courses-fall) <!-- .element: style="font-size: 0.8em" -->
+							</div>
+						</script>
+					</section>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+						### Thanks and see you next week
+
+						<img src="https://www.singh.gg/slides/00 System/Assets/Stickers/Waving.gif" alt="ng.gif" style="object-fit: scale-down">
+
+
+						Questions? Comments?
+						</div>
+					</script>
+				</section>
+			</div>
+		</div>
+
+		<script src="https://www.singh.gg/slides/reveal/reveal.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/notes/notes.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/markdown/markdown.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/highlight/highlight.js"></script>
+
+		<script src="https://www.singh.gg/slides/plugin/zoom/zoom.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/math/math.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/mermaid/mermaid.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/chart/chart.umd.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/chart/plugin.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/menu/menu.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/customcontrols/plugin.js"></script>
+
+		<script>
+			function extend() {
+				const target = {};
+				for (let i = 0; i < arguments.length; i++) {
+					const source = arguments[i];
+					for (const key in source) {
+						if (source.hasOwnProperty(key)) {
+							target[key] = source[key];
+						}
+					}
+				}
+				return target;
+			}
+
+			function isLight(color) {
+				let hex = color.replace('#', '');
+
+				// convert #fff => #ffffff
+				if (hex.length == 3) {
+					hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`;
+				}
+
+				const c_r = parseInt(hex.substr(0, 2), 16);
+				const c_g = parseInt(hex.substr(2, 2), 16);
+				const c_b = parseInt(hex.substr(4, 2), 16);
+				const brightness = (c_r * 299 + c_g * 587 + c_b * 114) / 1000;
+				return brightness > 155;
+			}
+
+			const bgColor = getComputedStyle(document.documentElement)
+				.getPropertyValue('--r-background-color')
+				.trim();
+
+			if (isLight(bgColor)) {
+				document.body.classList.add('has-light-background');
+			} else {
+				document.body.classList.add('has-dark-background');
+			}
+
+			// default options to init reveal.js
+			const defaultOptions = {
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				transition: 'default', // none/fade/slide/convex/concave/zoom
+				plugins: [
+					RevealMarkdown,
+					RevealHighlight,
+					RevealZoom,
+					RevealNotes,
+					RevealMath.MathJax3,
+					RevealMermaid,
+					RevealChart,
+					RevealCustomControls,
+					RevealMenu,
+				],
+				allottedTime: 120 * 1000,
+				mathjax3: {
+					mathjax: 'plugin/math/mathjax/tex-chtml-full.js',
+				},
+				markdown: {
+					gfm: true,
+					mangle: false,
+					pedantic: false,
+					smartLists: false,
+					smartypants: false,
+				},
+				mermaid: {
+					theme: isLight(bgColor) ? 'default' : 'dark',
+				},
+				customcontrols: {
+					controls: [
+						{
+							id: 'toggle-overview',
+							title: 'Toggle overview (O)',
+							icon: '<i class="fa fa-th"></i>',
+							action: 'Reveal.toggleOverview();',
+						},
+					],
+				},
+				menu: {
+					loadIcons: false,
+				},
+			};
+
+			if (pageInIframe()) {
+				defaultOptions.scrollActivationWidth = 5;
+			}
+
+			// options from URL query string
+			const queryOptions = Reveal().getQueryHash() || {};
+
+			const options = extend(
+				defaultOptions,
+				{
+					controls: true,
+					progress: true,
+					slideNumber: false,
+					center: true,
+					transition: 'slide',
+					transitionSpeed: 'default',
+					width: 1920,
+					height: 1080,
+					margin: 0.04,
+				},
+				queryOptions
+			);
+		</script>
+
+		<script>
+			Reveal.initialize(options);
+		</script>
+		<!-- created with Slides Extended reveal.html template -->
+	</body>
+</html>
