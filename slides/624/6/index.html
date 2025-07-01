@@ -1,0 +1,1792 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+
+		<title>Pedagogy of Digital Learning - Class 6</title>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/reveal/reset.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/reveal/reveal.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/css/slides-extended.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/reveal/theme/white.css"
+			id="theme"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/plugin/highlight/zenburn.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/plugin/customcontrols/style.css"
+		/>
+
+		<link rel="stylesheet" href="https://www.singh.gg/slides/css/vik.css" />
+
+		<script
+			defer
+			src="https://www.singh.gg/slides/reveal/fontawesome/all.min.js"
+		></script>
+		<script
+			defer
+			src="https://www.singh.gg/slides/plugin/load-mathjax.js"
+		></script>
+
+		<script type="text/javascript">
+			function pageInIframe() {
+				return window.location !== window.parent.location;
+			}
+
+			let forgetPop = true;
+			function onPopState(event) {
+				if (forgetPop) {
+					forgetPop = false;
+				} else if (pageInIframe()) {
+					parent.postMessage(
+						event.target.location.href,
+						'app://obsidian.md'
+					);
+				}
+			}
+			window.onpopstate = onPopState;
+			window.onmessage = (event) => {
+				if (event.data == 'reload') {
+					window.document.location.reload();
+				}
+				forgetPop = true;
+			};
+
+			function fitElements() {
+				const itemsToFit = document.getElementsByClassName('fitText');
+				for (const item in itemsToFit) {
+					if (Object.hasOwnProperty.call(itemsToFit, item)) {
+						const element = itemsToFit[item];
+						fitElement(element, 1, 1000);
+						element.classList.remove('fitText');
+					}
+				}
+			}
+
+			function fitElement(element, start, end) {
+				let size = (end + start) / 2;
+				element.style.fontSize = `${size}px`;
+
+				if (Math.abs(start - end) < 1) {
+					while (element.scrollHeight > element.offsetHeight) {
+						size--;
+						element.style.fontSize = `${size}px`;
+					}
+					return;
+				}
+
+				if (element.scrollHeight > element.offsetHeight) {
+					fitElement(element, start, size);
+				} else {
+					fitElement(element, size, end);
+				}
+			}
+
+			document.onreadystatechange = () => {
+				fitElements();
+				if (document.readyState === 'complete') {
+					if (
+						pageInIframe() &&
+						window.location.href.indexOf('?export') != -1
+					) {
+						parent.postMessage(
+							event.target.location.href,
+							'app://obsidian.md'
+						);
+					}
+					if (window.location.href.indexOf('print-pdf') != -1) {
+						let stateCheck = setInterval(() => {
+							clearInterval(stateCheck);
+							window.print();
+						}, 250);
+					}
+				}
+			};
+		</script>
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+						## Pedagogy of Digital Learning
+
+						Vikram Singh | Class 6 | June 19, 2025
+						</div>
+
+						<aside class="notes"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/VNOcHCLAaSU" title="Bob&#39;s Burgers Teaching &amp; Learning" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+						<ul>
+						<li><p><input disabled="" type="checkbox">
+						Upload other slides with menu + overview</p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						Update course calendaro</p>
+						</li>
+						<li><p><input checked="" disabled="" type="checkbox">
+						Peer feedback activity for 1 hour</p>
+						</li>
+						<li><p><input checked="" disabled="" type="checkbox">
+						Share excerpts from journals, ask permission from students first, maybe tally up frequent thoughts that came up</p>
+						</li>
+						<li><p><input checked="" disabled="" type="checkbox">
+						Slide about resisting tech, which came up a lot in the journals, is still valid. Resist always but through being informed rather than ignorance.</p>
+						</li>
+						<li><p><input checked="" disabled="" type="checkbox">
+						Anna&#39;s journal makes me want to rant about the value of open-source, plain-text, and offline software.</p>
+						</li>
+						<li><p><input checked="" disabled="" type="checkbox">
+						<a href="https://www.education.gouv.qc.ca/fileadmin/site_web/documents/ministere/continuum-cadre-reference-PAN-en.pdf">Mention the DCF continuum</a></p>
+						</li>
+						<li><p><input checked="" disabled="" type="checkbox">
+						Slide with all the different platforms we used in this course, split by category</p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						Share Perusall feedback results</p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						Stop using Google search! Use DuckDuckGo.</p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						How do I use AI in my teaching</p>
+						</li>
+						<li><p><input checked="" disabled="" type="checkbox">
+						How do I make my slides (show PPT morph, stickers over gifs, design 101)</p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						Show them how I use it to plan lessons, come up with games (wheel game from last class), how I used it for my masters</p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						Excerpts from game prog forums where there is evidence that there is understanding</p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						<a href="https://www.canva.com/design/DAGo2GcBhQ0/4ZpPp_Wint1Hcje4o1kA_g/edit">Show Anne&#39;s in class</a></p>
+						</li>
+						<li><p><input checked="" disabled="" type="checkbox">
+						Copilot thread link?</p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						Teaching presence is like a depleting health bar and it starts when class finishes, but gets replenished with async engagement and the next sync class</p>
+						</li>
+						<li><p><input checked="" disabled="" type="checkbox">
+						Lindy effect <img src="https://www.singh.gg/slides/00 System/Assets/lindy-effect.png" alt="" style="object-fit: scale-down"></p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						Idea: Every slide deck should have a &quot;new tech used today&quot;</p>
+						</li>
+						<li><p><input disabled="" type="checkbox">
+						Tips and my Philosophy</p>
+						<ul>
+						<li>Patterns, consistency, &quot;rhythm&quot; in my teaching</li>
+						<li>Big voice, talk slow</li>
+						</ul>
+						</li>
+						</ul>
+						<h3 id="what-can-we-do">What Can We Do?</h3>
+						<ul>
+						<li>Track your screen time: Set limits, build habits</li>
+						<li>Use ad blockers and privacy tools (uBlock Origin, Firefox, Privacy Badger)</li>
+						<li>Reject cookies where possible</li>
+						<li>Teach students how the algorithm works</li>
+						<li>Support local news, independent creators, and human-centered platforms (ex. Newsletters, <a href="https://indieweb.org/Getting_Started">IndieWeb</a>, <a href="https://substack.com">Substack</a>)</li>
+						<li>Be critical: Why am I seeing this? Who benefits if I click?</li>
+						<li>Use a password manager (ex. <a href="https://www.lastpass.com/">LastPass</a>, <a href="https://bitwarden.com/">Bitwarden</a>, <a href="https://keepass.info/">KeePass</a>)</li>
+						<li>Use browser profiles, one for work, one for personal, one for shopping (<a href="https://support.google.com/chrome/answer/2364824?hl=en&co=GENIE.Platform%3DDesktop">Chrome</a>, <a href="https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles">Firefox</a>, <a href="https://support.microsoft.com/en-us/topic/sign-in-and-create-multiple-profiles-in-microsoft-edge-df94e622-2061-49ae-ad1d-6f0e43ce6435">Edge</a>)</li>
+						<li>Ditch Google, use <a href="https://duckduckgo.com">DuckDuckGo</a> instead.</li>
+						<li>Naomie Brockwell YouTube channel</li>
+						</ul>
+						</aside>
+					</script>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 30%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+							## Learning Objectives
+
+							By the end of this, you will be able to:
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 29%; height: 70%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.9em" -->
+
+							<li class="fragment"><span class="fa-li"><i class="fas fa-book-reader"></i></span><b>Reflect</b> on key insights and shared themes from journal submissions throughout the course.</li>
+
+							<li class="fragment"><span class="fa-li"><i class="fas fa-toolbox"></i></span><b>Identify</b> digital tools explored during the course and consider their relevance to your own practice.</li>
+
+							<li class="fragment"><span class="fa-li"><i class="fas fa-chart-line"></i></span><b>Compare</b> pre- and post-course perceptions of TPACK using self-assessment survey results.</li>
+
+							<li class="fragment"><span class="fa-li"><i class="fas fa-comments"></i></span><b>Provide</b> peer feedback on redesigned assignments using the Moodle Workshop tool.</li>
+
+							</div>
+
+
+
+
+
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 30%; height: 70%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://www.singh.gg/slides/00 System/Assets/Stickers/Compass.gif" alt="" style="object-fit: scale-down">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+
+							<aside class="notes"></aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							## Agenda
+
+							</div>
+
+
+
+							</div>
+
+
+							<div class="" style="position: absolute; left: 0%; top: 20%; height: 80%; width: 70%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1.2em; padding: 1em" -->
+
+							1. Journal Insights
+							2. Odds & Ends
+							3. Tool Roundup
+							4. Perusall Feedback Highlights
+							5. TPACK Pre/Post Results
+							6. A4 Peer Feedback Workshop
+							7. Final Reflections
+
+							</div>
+
+
+
+
+
+
+							</div>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWxkZGNqNnJxZHZlMmNzNDh3ZW1nZnU1bXl2d3BiaTFqbmhwcmo0MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/C3gFgVk7UFS8TUmZ2J/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
+
+
+							</div>
+
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Journal Insights
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Journal Insights
+
+							<split even style="font-size:0.75em">
+
+							<div class="block">
+
+							<i class="fas fa-ban fa-3x red"></i>
+
+							**Tech Resistance & Purposeful Use**
+
+							</div>
+
+
+
+							<div class="block">
+
+							<i class="fas fa-lightbulb fa-3x yellow"></i>
+
+							**DCF Awareness & Evolution**
+
+							</div>
+
+
+
+							<div class="block">
+
+							<i class="fas fa-virus fa-3x green"></i>
+
+							**Pandemic as Catalyst**
+
+							</div>
+
+
+
+							<div class="block">
+
+							<i class="fas fa-universal-access fa-3x sky"></i>
+
+							**Inclusion & Access**
+
+							</div>
+
+
+
+							</split>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Journal Insights
+
+							<split even style="font-size:0.75em">
+
+							<div class="block">
+
+							<i class="fas fa-ban fa-3x red"></i>
+
+							**Tech Resistance & Purposeful Use**
+
+							- Concerns about tech overuse and skill erosion
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Rejection of "shiny tool syndrome"
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Emphasis on thoughtful, intentional integration
+
+							</div>
+
+
+
+							<div class="block">
+
+							<i class="fas fa-lightbulb fa-3x yellow"></i>
+
+							**DCF Awareness & Evolution**
+
+							- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Initially unknown, now seen as valuable
+							- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Appreciated for its flexibility and reflection prompts
+							- &shy;<!-- .element: class="fragment" data-fragment-index="5" -->Viewed as compatible with TPACK, SAMR, PICRAT, and AIAS
+
+							</div>
+
+
+
+							<div class="block">
+
+							<i class="fas fa-virus fa-3x green"></i>
+
+							**Pandemic as Catalyst**
+
+							- &shy;<!-- .element: class="fragment" data-fragment-index="6" -->Emergency remote teaching as turning point
+							- &shy;<!-- .element: class="fragment" data-fragment-index="7" -->Sparked reevaluation of pedagogy and tech roles
+							- &shy;<!-- .element: class="fragment" data-fragment-index="8" -->Teachers had to "relearn" teaching
+
+							</div>
+
+
+
+							<div class="block">
+
+							<i class="fas fa-universal-access fa-3x sky"></i>
+
+							**Inclusion & Access**
+
+							- &shy;<!-- .element: class="fragment" data-fragment-index="9" -->Tech creates opportunities and barriers
+							- &shy;<!-- .element: class="fragment" data-fragment-index="10" -->Concerns for neurodivergent students, low access
+							- &shy;<!-- .element: class="fragment" data-fragment-index="11" -->Desire for universal design and accessibility
+
+							</div>
+
+
+
+							</split>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Journal Insights
+
+							<split even style="font-size:0.75em">
+
+							<div class="block">
+
+							<i class="fas fa-user-graduate fa-3x sapphire"></i>
+
+							**Student Digital Literacy Gaps**
+
+							</div>
+
+
+
+							<div class="block">
+
+							<i class="fas fa-building fa-3x pink"></i>
+
+							**Institutional + Government Support**
+
+							</div>
+
+
+
+							<div class="block">
+
+							<i class="fas fa-chalkboard-teacher fa-3x peach"></i>
+
+							**Pedagogical Opportunities**
+
+							</div>
+
+
+
+							<div class="block">
+
+							<i class="fas fa-seedling fa-3x green"></i>
+
+							**Professional Identity & Growth**
+
+							</div>
+
+
+
+							</split>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Journal Insights
+
+							<split even style="font-size:0.75em">
+
+							<div class="block">
+
+							<i class="fas fa-user-graduate fa-3x sapphire"></i>
+
+							**Student Digital Literacy Gaps**
+
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Many students lack basic tech skills
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Misconception: youth = digital fluency
+							- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Teachers often fill the gap informally
+
+							</div>
+
+
+
+							<div class="block">
+
+							<i class="fas fa-building fa-3x pink"></i>
+
+							**Institutional + Government Support**
+
+							- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Desire for clearer policies and funding
+							- &shy;<!-- .element: class="fragment" data-fragment-index="5" -->Conflicting messages around AI, phones
+							- &shy;<!-- .element: class="fragment" data-fragment-index="6" -->Need for practical implementation resources
+
+							</div>
+
+
+
+							<div class="block">
+
+							<i class="fas fa-chalkboard-teacher fa-3x peach"></i>
+
+							**Pedagogical Opportunities**
+
+							- &shy;<!-- .element: class="fragment" data-fragment-index="7" -->Active learning, engagement, gamification
+							- &shy;<!-- .element: class="fragment" data-fragment-index="8" -->Collaboration, creativity, problem-solving
+							- &shy;<!-- .element: class="fragment" data-fragment-index="9" -->Tools that empower both students and teachers
+
+							</div>
+
+
+
+							<div class="block">
+
+							<i class="fas fa-seedling fa-3x green"></i>
+
+							**Professional Identity & Growth**
+
+							- &shy;<!-- .element: class="fragment" data-fragment-index="10" -->Teachers as guides, not just content deliverers
+							- &shy;<!-- .element: class="fragment" data-fragment-index="11" -->DCF as reflective tool for growth
+							- &shy;<!-- .element: class="fragment" data-fragment-index="12" -->Ongoing PD seen as essential
+
+							</div>
+
+
+
+							</split>
+							</div>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							## Informed Resistance
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							<div class="block">
+
+							- Resist tech not from fear or fatigue, but with knowledge and intention.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Don't use it just because it's shiny. But also don't reject it because it's new.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Being tech-savvy includes knowing when **not** to use it.
+
+							</div>
+
+
+
+
+
+							notes:
+
+							- Inspired by multiple journal reflections.
+							- Mention tool fatigue and minimalist alternatives.
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHBodWIwNjIzdjNzMDQ3N3FqdmFrYnZkMmhxMGJnMnMwaDAxaG52MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/vrzRiGOgNNVvLkd2SG/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## The Lindy Effect
+
+							<img src="https://www.singh.gg/slides/00 System/Assets/lindy-effect.png" alt="" style="width: 800px; object-fit: fill">
+
+
+							<https://en.wikipedia.org/wiki/Lindy_effect> <!-- .element: style="font-size: 0.8em" -->
+
+							notes:
+
+							- The longer something lasts, the more likely it'll last.
+							- Applied to tech: Markdown, email, books = Lindy.
+							- Flash-in-the-pan apps = not Lindy.
+							- <https://en.wikipedia.org/wiki/Lindy_effect>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							## Open Source, Offline, Plain Text
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							<div class="block">
+
+							- I love tools I can use without the internet
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->`.txt` > `.docx`
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->local > cloud
+							- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Ex. Obsidian, Zotero, Audacity, LibreOffice
+							- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Search for "\<tool name\> offline alternative"
+
+							</div>
+
+
+
+
+
+							notes:
+
+							- Mention Anna's journal as the spark.
+							- Maybe ask them what "offline" tool they'd keep if they could only keep one.
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWc3NXEzNjNhaTh3cGtuNmN5eTlqeDZyN2h6b3l0Mm84NzFvYWxkcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/NAq0PgHZIICdpmZsmw/giphy.gif" alt="" style="object-fit: scale-down">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### [Digital Competency Development Continuum](https://www.education.gouv.qc.ca/fileadmin/site_web/documents/ministere/continuum-cadre-reference-PAN-en.pdf)
+
+							> The _Digital Competency Development Continuum_ <mark>defines the scope</mark> of the elements of the 12 dimensions of digital competency and <mark>situates them on a progress matrix</mark> consisting of three possible levels: <mark>beginner, intermediate and advanced</mark>... For the purposes of this continuum, matrices were designed to illustrate learner progress in each of the framework dimensions. <mark>The matrices set out the steps involved in the development of digital competency</mark>.
+
+							notes:
+
+							- Some folks mentioned in their journals about how the DCF doesn't mention any logistics.
+							- The continuum doesn't do exactly that, but highlights the skills that students need to know more granularly so that you can make better calls in your courses.
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## [Digital Competency Self-Assessment](https://vikramsinghmtl.github.io/digital-competency-self-assessment/)
+
+							<img src="https://www.singh.gg/slides/00 System/Assets/digital-competency-self-assessment.png" alt="" style="width: 700px; object-fit: fill">
+
+
+							Created by Carolyn Genge - [click here for the updated version!](https://github.com/CarolynG96/Digital-competency-self-assessment)
+							</div>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Tools We Used
+
+							<img src="https://www.singh.gg/slides/00 System/Assets/624-tools-wordcloud.jpeg" alt="" style="object-fit: scale-down">
+
+
+							From AhaSlides Wordcloud
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Tools We Used
+
+							<split even style="font-size:0.75em">
+
+							<div class="block">
+
+							<i class="fas fa-chalkboard fa-3x maroon"></i>
+
+							**LMS & Content Platforms**
+
+							- Moodle
+							- Perusall
+							- H5P
+							- TEDed
+							- EdPuzzle
+							- PlayPosit
+
+							</div>
+
+
+
+							<div class="block">
+
+							<i class="fas fa-microphone-lines fa-3x lavender"></i>
+
+							**Presentation & Engagement**
+
+							- Google Slides
+							- Microsoft PowerPoint
+							- AhaSlides
+							- Mentimeter
+							- Kahoot
+							- Canva
+
+							</div>
+
+
+
+							<div class="block">
+
+							<i class="fas fa-people-arrows fa-3x yellow"></i>
+
+							**Collaborative Tools**
+
+							- Microsoft Teams
+							- Padlet
+							- Miro
+
+							</div>
+
+
+
+							<div class="block">
+
+							<i class="fas fa-tasks fa-3x green"></i>
+
+							**Assessment & Planning Tools**
+
+							- Google Forms
+							- Microsoft Forms
+							- Microsoft Excel
+							- Microsoft Word
+							- PDFs
+							- Zotero
+
+							</div>
+
+
+
+							</split>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.8em" -->
+
+							| <i class="fas fa-toolbox fa-2x pink"></i> Tool/Platform              | <i class="fas fa-chalkboard fa-2x maroon"></i> LMS/Content  | <i class="fas fa-microphone-lines fa-2x lavender"></i> Presentation  | <i class="fas fa-people-arrows fa-2x yellow"></i> Collaboration  | <i class="fas fa-tasks fa-2x green"></i> Assessment  |
+							|-------------------|:-------------:|:--------------:|:----------------:|:----------------------:|
+							| AhaSlides         |               |       ✔︎       |                  |           ✔︎           |
+							| Canva             |               |       ✔︎       |        ✔︎        |                        |
+							| EdPuzzle          |      ✔︎       |       ✔︎       |                  |           ✔︎           |
+							| Google Forms      |               |                |                  |           ✔︎           |
+							| Google Slides     |               |       ✔︎       |        ✔︎        |                        |
+							| H5P               |      ✔︎       |       ✔︎       |                  |           ✔︎           |
+							| Kahoot            |               |       ✔︎       |                  |           ✔︎           |
+							| Mentimeter        |               |       ✔︎       |        ✔︎        |           ✔︎           |
+							| MS Excel   |               |                |       ✔︎          |           ✔︎           |
+							| MS Forms   |               |                |                  |           ✔︎           |
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.8em" -->
+
+							| <i class="fas fa-toolbox fa-2x pink"></i> Tool/Platform              | <i class="fas fa-chalkboard fa-2x maroon"></i> LMS/Content  | <i class="fas fa-microphone-lines fa-2x lavender"></i> Presentation  | <i class="fas fa-people-arrows fa-2x yellow"></i> Collaboration  | <i class="fas fa-tasks fa-2x green"></i> Assessment  |
+							|-------------------|:-------------:|:--------------:|:----------------:|:----------------------:|
+							| MS Teams   |               |                |        ✔︎        |           ✔︎           |
+							| MS Word    |               |                |                  |           ✔︎           |
+							| Miro              |               |                |        ✔︎        |                        |
+							| Moodle            |      ✔︎       |        ✔︎        |        ✔︎        |           ✔︎           |
+							| Padlet            |               |                |        ✔︎        |           ✔︎           |
+							| Perusall          |      ✔︎       |                |        ✔︎        |           ✔︎           |
+							| PDFs              |               |                |                  |           ✔︎           |
+							| PlayPosit         |      ✔︎       |       ✔︎       |                  |           ✔︎           |
+							| TEDed             |      ✔︎       |       ✔︎       |                  |           ✔︎           |
+							| Zotero            |       ✔︎        |                |                  |                      |
+
+							</div>
+							</div>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate-restart="true" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Perusall Feedback
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Perusall Feedback
+
+							<img src="https://www.singh.gg/slides/00 System/Assets/perusall-feedback-2025.png" alt="" style="object-fit: scale-down">
+							</div>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate-restart="true" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## TPACK Pre-Post Results
+
+							(27 pre responses and 16 post responses)
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## TPACK Pre-Post Results
+
+							<img src="https://www.singh.gg/slides/00 System/Assets/tpack-survey-pre-post-results-2025.png" alt="" style="width: 2000px; object-fit: fill">
+
+
+							<span class="maroon">**Red**</span> and <span class="peach">**orange**</span> bars are lower - <span class="green">**green**</span> and <span class="lavender">**purple**</span> are higher!
+
+							🎉 <!-- .element: style="font-size: 3em" -->
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## TPACK Pre-Post Results
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.7em" -->
+
+							| Question                                                                             | Percentage Differential |
+							| ------------------------------------------------------------------------------------ | :---------------------: |
+							| I keep up with important new technologies.                                           |         +12.5%          |
+							| I frequently play around with technology.                                            |         <mark>+18.1%</mark>          |
+							| I know about a lot of different technologies.                                        |         <mark>+22.7%</mark>          |
+							| I have the technical skills I need to use technology.                                |         +10.7%          |
+							| I can select technologies to help students comprehend the concepts of my discipline. |         +15.0%          |
+							| I can select technologies to help students access valid information.                 |         +13.7%          |
+							| I can select technologies to help students use interpersonal communication skills.   |         <mark>+20.0%</mark>          |
+							| I can choose technologies that enhance the teaching approaches for a lesson.         |         +13.7%          |
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## TPACK Pre-Post Results
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.7em" -->
+
+							| Question                                                                                                                          | Percentage Differential |
+							| --------------------------------------------------------------------------------------------------------------------------------- | :---------------------: |
+							| I can choose technologies that enhance students' learning for an lesson.                                                          |         +14.3%          |
+							| I can adapt the use of technologies that I am learning about to different teaching activities.                                    |         <mark>+16.6%</mark>          |
+							| I can teach lessons that combine technology and teaching approaches for the content and skills needed in my discipline.           |         <mark>+16.0%</mark>          |
+							| I can select technologies to use in my classroom that enhance what I teach, how I teach, and what students learn.                 |         +12.5%          |
+							| I can use strategies that combine content and skills, technologies, and teaching approaches in my classroom.                      |         +16.8%          |
+							| I can provide leadership in helping others to coordinate the use of content, technologies, and teaching approaches at my college. |         <mark>+18.5%</mark>          |
+							| I can choose technologies that enhance the content of a lesson.                                                                   |         +13.1%          |
+
+							</div>
+							</div>
+						</script>
+					</section>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: style="text-align: left" class="drop" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+						<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+						<div class="block">
+
+						## How I Make Slides (Sorta)
+
+						</div>
+
+
+
+						</div>
+
+						<ol class="fa-ol">
+						<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+						<div class="block">
+
+						- Use PowerPoint **Morph** transitions.
+						- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Stickers over GIFs. Stickers are just GIFs with transparent backgrounds.
+						- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Very few colours, use colour sparingly.
+						- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Space together related elements.
+						- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Make text <span style="font-size:1.5em">**BIG**</span> and <span style="font-size:1.5em">**READABLE!**</span>
+
+						</div>
+
+
+
+
+
+
+						</div>
+						</ol>
+
+						<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+						<div class="block">
+
+						<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGszdTlhZnk4NnBrdmtzOXZkZDBoYWh1YmtxODdpN3VpMHA2aXZjZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/zfWIMdV8ZshROvRhjk/giphy.gif" alt="" style="object-fit: scale-down">
+
+
+						</div>
+
+
+
+						</div>
+						</div>
+					</script>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate-restart="true" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Copilot Thread Sharing
+
+							<img src="https://www.singh.gg/slides/00 System/Assets/copilot-share.png" alt="" style="width: 1500px; object-fit: fill">
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.6em" -->
+
+							Prompt [ChatGPT let's me generate a link to the... | Try in Copilot Chat](https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlZYTmxjbFl4ZkdoMGRIQnpPaTh2YzNWaWMzUnlZWFJsTFdsdWRDNXZabVpwWTJVdVkyOXRMM3hQU1VRNk9EZGlZbVEwTUdJdFl6VTNaaTAwWVRObExXRXlNakV0TW1ZMk1URXlOVE01TUdRd2ZHRmlNRE0zTmpBd0xXVXhPVGt0TkRkbU1pMDRNek5qTFdJM05tVTVOekkwTmpObE5ud3lNREkxTFRBMkxURTJWREUxT2pBMU9qSXpMalV6TmpBNU0xbyUzZCIsInNjZW5hcmlvIjoic2hhcmVMaW5rVmlhUmljaENvcHkiLCJwcm9wZXJ0aWVzIjp7InByb21wdFNvdXJjZSI6InVzZXIiLCJjbGlja1RpbWVzdGFtcCI6IjIwMjUtMDYtMTZUMTU6MDU6MjMuNjMzWiJ9LCJjaGF0VHlwZSI6IndlYiIsInZlcnNpb24iOjEuMX0)
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Copilot Thread Sharing
+
+							<img src="https://www.singh.gg/slides/00 System/Assets/copilot-share-2.png" alt="" style="width: 1200px; object-fit: fill">
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.6em" -->
+
+							Prompt [Will this feature be available in the future? | Try in Copilot Chat](https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlZYTmxjbFl4ZkdoMGRIQnpPaTh2YzNWaWMzUnlZWFJsTFdsdWRDNXZabVpwWTJVdVkyOXRMM3hQU1VRNk9EZGlZbVEwTUdJdFl6VTNaaTAwWVRObExXRXlNakV0TW1ZMk1URXlOVE01TUdRd2ZHSm1NMk5qT1RGbUxUUmtZbUV0TkRrM09TMDVOekkzTFRBeE1UTmxZMk01TTJSaU9Yd3lNREkxTFRBMkxURTJWREUxT2pFd09qRXdMamcyTWpFNU5EWmEiLCJzY2VuYXJpbyI6InNoYXJlTGlua1ZpYVJpY2hDb3B5IiwicHJvcGVydGllcyI6eyJwcm9tcHRTb3VyY2UiOiJ1c2VyIiwiY2xpY2tUaW1lc3RhbXAiOiIyMDI1LTA2LTE2VDE1OjEwOjEwLjk0NloifSwiY2hhdFR5cGUiOiJ3ZWIiLCJ2ZXJzaW9uIjoxLjF9)
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							## Copilot Thread Sharing
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+							<!-- .slide: data-auto-animate template="" -->
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1.4em" -->
+
+							- If we're being encouraged to use AI in our classrooms,
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->If we **MUST** use Copilot,
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Then thread sharing seems like a key feature that is missing!
+
+							</div>
+
+
+
+
+
+							notes:
+
+							If you're wondering why that image gives you anxiety, it's because you probably see it every time you open up your work computer;)
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/aa/Microsoft_Copilot_Icon.svg/1200px-Microsoft_Copilot_Icon.svg.png" alt="Microsoft Copilot - Wikipedia" style="object-fit: scale-down">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+						### One Takeaway
+
+						<img src="https://www.singh.gg/slides/00 System/Assets/624-one-takeaway.jpeg" alt="" style="width: 1400px; object-fit: fill">
+						</div>
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+						<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2xvankyZHdvbnZxNWk5c2oxcjEzYjNteGp0ZDAyc21mNTVlMTJiYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/yvmvDbzVk7mK2JOYJG/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
+						</div>
+					</script>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate-restart="true" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### Moodle Workshop
+
+							<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWV4cjhwYnM1dmd6eWFvaWNzNHNjczJ5bnJ5dnpxbmh0OXQyamVjaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/hCOYhka0YTrGj8ZCaJ/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							### Moodle Workshop
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+							<!-- .slide: data-auto-animate template="" -->
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1.25em" -->
+
+							- A structured way to give peer feedback.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->You submit your work, then evaluate a peer's work using a shared form.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Feedback can be formative or summative.
+
+							</div>
+
+
+
+
+
+							notes:
+
+							- This models how you could use the Workshop in your own teaching.
+							- Encourages reflection, revision, and learning from peers.
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWV4cjhwYnM1dmd6eWFvaWNzNHNjczJ5bnJ5dnpxbmh0OXQyamVjaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/hCOYhka0YTrGj8ZCaJ/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							### What Makes Feedback Helpful?
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1.25em" -->
+
+							- Be kind, clear, and specific.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Focus on what's working and where there's room to grow.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Refer to parts of the draft (not just general impressions).
+
+							</div>
+
+
+
+
+
+							notes:
+
+							- A few good questions: What's strong? What's unclear? What's one idea they could explore further?
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDF4cnk5ZDU3cnE5bWhoN21lN2JiNTgwNHFlODVwNjYzZTQydGJ2aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/gIfb10foLDtsWg1W3d/giphy.gif" alt="" style="width: 1200px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### Let's Try It: A4 Peer Feedback (1h)
+
+							<split even style="padding:0 1em;">
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.9em" -->
+
+							<i class="fas fa-tasks fa-3x maroon"></i>
+
+							- Submit your draft learning activity for **assessment task #4** if you haven't done so already.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Split into breakout groups once submissions are in.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Discuss and give feedback to your assigned peer.
+
+							</div>
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.8em" -->
+
+							<i class="fas fa-users fa-3x lavender"></i>
+
+							1. &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Everyone is in a breakout group of 3–4 people.
+							1. &shy;<!-- .element: class="fragment" data-fragment-index="4" -->You're responsible for giving feedback to **one peer** (randomly assigned).
+							1. &shy;<!-- .element: class="fragment" data-fragment-index="5" -->Share ideas as a group.
+							1. &shy;<!-- .element: class="fragment" data-fragment-index="6" -->Use the assessment form in Moodle to give structured feedback.
+							1. &shy;<!-- .element: class="fragment" data-fragment-index="7" -->Allocate 15-20 minutes per person (nominate a time keeper!).
+
+							</div>
+
+
+
+							</split>
+
+							notes:
+
+							- You'll only formally assess one peer, but use the breakout time to talk, compare, and collaborate.
+							- I should set a timer and send out an announcement every 15 minutes.
+							</div>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							## Final Assessments
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1.2em" -->
+
+							- Assessment #4 - Learning Activity (**Final**) DUE JULY 4
+								- Include your original version please!
+							- Assessment #5 - Community of Inquiry DUE JULY 4
+							- Fill out the course evaluation
+
+							</div>
+
+
+
+							All tasks and deadlines are in Moodle!
+
+
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTB1YjRxdDUycDE3NzN2bGZ1MWc3NHRuN2pvZjV4MG5qaXZucnRocCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/3cwLpdCalQrML78gbe/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							### Assessment Task 5: Professional Contribution to the Community of Inquiry <!-- .element: style="text-align: center" -->
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 4%; top: 19%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							- Fill out the quiz on Moodle to self-assess your contributions to our community.
+							- I'll be going through them to confirm, usually it's within +/- a point.
+
+
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 50%; top: 20%; height: 80%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://www.singh.gg/slides/00 System/Assets/Community of Inquiry.png" alt="" style="width: 850px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							###  APA Citation Guide for Generative AI Use*
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.6em" -->
+
+							| **Method**                                                                                      | **APA Style Example**                                                                                                    | **Example Usage Level & Context**                                                                                                     |
+							| ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
+							| **1. General Statement**                                                                        | This assignment was developed using ideas and suggestions generated by ChatGPT (OpenAI, 2025) and adapted accordingly.   | **Level 1 (Limited use)**: Brainstorming, rephrasing, outline generation; student writes the final content.                   |
+							| **2. In-text Citation**                                                                         | When asked, "Please critique my introduction," ChatGPT responded with several helpful pieces of feedback (OpenAI, 2025). | **Level 2 (Targeted use)**: Paraphrasing or quoting GenAI content used to refine student ideas or get feedback.               |
+							| **3. Footnote**                                                                                 | ¹ Response generated by ChatGPT-4, OpenAI, April 5, 2025, <https://chat.openai.com/share/abc123>                           | **Level 3 (Framed use)**: GenAI produced content that was revised by the student. Useful when referencing specific outputs.   |
+							| **4. Full Reference** ([official APA guide](https://apastyle.apa.org/blog/how-to-cite-chatgpt)) | OpenAI. (2023). _ChatGPT_ (May 29 version) [Large language model]. <https://chat.openai.com/share/abc123>                  | **Level 4 (Free use)**: Significant portions of content are AI-generated; required for multimedia, code, or full-text output. |
+
+							\*Adapted from Nadine Korte's AI citation guide.
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							## Course Evaluation
+
+							</div>
+
+
+
+							</div>
+
+							<ol class="fa-ol">
+							<div class="" style="position: absolute; left: 8%; top: 19%; height: 80%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+
+
+							- Please don't ignore this!
+							- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->All responses are anonymous and I will only receive the results well after grades are submitted.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Don't pull any punches, try to be as constructive as you can.
+							- &shy;<!-- .element: class="fragment" data-fragment-index="3" --><http://www.usherbrooke.ca/evaluation-enseignement></http>
+
+
+
+							notes:
+
+							- This really helps me since it's my first ever course!
+							- Don't be afraid to write about what you didn't like or what could have been done better.
+
+
+							</div>
+							</ol>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTM5cHF4cWxlcm85YnZsbjdndWNzcXc1cmFpMDVhbzdiaDh0MWgzcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/dhPzPuBlZWT3eMXYn1/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
+
+
+							</div>
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<split even left="2" right="1">
+
+							### Register for Fall <!-- .element: style="padding-top: 1em" -->
+
+							<img src="https://www.singh.gg/slides/00 System/Assets/performa-mtp-udes.png" alt="" style="padding-top: 0.5em; object-fit: scale-down">
+
+
+							</split>
+
+							We are offering the following courses in the certificate and diploma;
+
+							| Course                                 | Instructor              |
+							|----------------------------------------|--------------------------|
+							| College Teaching and Course Design     | Anne-Marie Lafortune    |
+							| How Students Learn                     | Valerie Hadd            |
+							| Philosophy of Education                | Elana Cooperberg        |
+							| Equity, Diversity, and Inclusion       | Sharon Coyle            |
+
+							[The full schedule can be found here, please ask your RLs for more information.](https://www.usherbrooke.ca/performa/en/course-schedules/network-courses-fall) <!-- .element: style="font-size: 0.8em" -->
+							</div>
+						</script>
+					</section>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+						### ❤️ Thanks so much for a lovely course ❤️
+
+						<img src="https://www.singh.gg/slides/00 System/Assets/Stickers/Waving.gif" alt="ng.gif" style="object-fit: scale-down">
+
+
+						Questions? Comments?
+						</div>
+					</script>
+				</section>
+			</div>
+		</div>
+
+		<script src="https://www.singh.gg/slides/reveal/reveal.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/notes/notes.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/markdown/markdown.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/highlight/highlight.js"></script>
+
+		<script src="https://www.singh.gg/slides/plugin/zoom/zoom.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/math/math.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/mermaid/mermaid.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/chart/chart.umd.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/chart/plugin.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/menu/menu.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/customcontrols/plugin.js"></script>
+
+		<script>
+			function extend() {
+				const target = {};
+				for (let i = 0; i < arguments.length; i++) {
+					const source = arguments[i];
+					for (const key in source) {
+						if (source.hasOwnProperty(key)) {
+							target[key] = source[key];
+						}
+					}
+				}
+				return target;
+			}
+
+			function isLight(color) {
+				let hex = color.replace('#', '');
+
+				// convert #fff => #ffffff
+				if (hex.length == 3) {
+					hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`;
+				}
+
+				const c_r = parseInt(hex.substr(0, 2), 16);
+				const c_g = parseInt(hex.substr(2, 2), 16);
+				const c_b = parseInt(hex.substr(4, 2), 16);
+				const brightness = (c_r * 299 + c_g * 587 + c_b * 114) / 1000;
+				return brightness > 155;
+			}
+
+			const bgColor = getComputedStyle(document.documentElement)
+				.getPropertyValue('--r-background-color')
+				.trim();
+
+			if (isLight(bgColor)) {
+				document.body.classList.add('has-light-background');
+			} else {
+				document.body.classList.add('has-dark-background');
+			}
+
+			// default options to init reveal.js
+			const defaultOptions = {
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				transition: 'default', // none/fade/slide/convex/concave/zoom
+				plugins: [
+					RevealMarkdown,
+					RevealHighlight,
+					RevealZoom,
+					RevealNotes,
+					RevealMath.MathJax3,
+					RevealMermaid,
+					RevealChart,
+					RevealCustomControls,
+					RevealMenu,
+				],
+				allottedTime: 120 * 1000,
+				mathjax3: {
+					mathjax: 'plugin/math/mathjax/tex-chtml-full.js',
+				},
+				markdown: {
+					gfm: true,
+					mangle: false,
+					pedantic: false,
+					smartLists: false,
+					smartypants: false,
+				},
+				mermaid: {
+					theme: isLight(bgColor) ? 'default' : 'dark',
+				},
+				customcontrols: {
+					controls: [
+						{
+							id: 'toggle-overview',
+							title: 'Toggle overview (O)',
+							icon: '<i class="fa fa-th"></i>',
+							action: 'Reveal.toggleOverview();',
+						},
+					],
+				},
+				menu: {
+					loadIcons: false,
+				},
+			};
+
+			if (pageInIframe()) {
+				defaultOptions.scrollActivationWidth = 5;
+			}
+
+			// options from URL query string
+			const queryOptions = Reveal().getQueryHash() || {};
+
+			const options = extend(
+				defaultOptions,
+				{
+					controls: true,
+					progress: true,
+					slideNumber: false,
+					center: true,
+					transition: 'slide',
+					transitionSpeed: 'default',
+					width: 1920,
+					height: 1080,
+					margin: 0.04,
+				},
+				queryOptions
+			);
+		</script>
+
+		<script>
+			Reveal.initialize(options);
+		</script>
+		<!-- created with Slides Extended reveal.html template -->
+	</body>
+</html>
