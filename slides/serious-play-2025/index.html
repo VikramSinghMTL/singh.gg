@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+
+		<title>Serious Play 2025</title>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/reveal/reset.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/reveal/reveal.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/css/slides-extended.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/reveal/theme/white.css"
+			id="theme"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/plugin/highlight/zenburn.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://www.singh.gg/slides/plugin/customcontrols/style.css"
+		/>
+
+		<link rel="stylesheet" href="https://www.singh.gg/slides/css/vik.css" />
+
+		<script
+			defer
+			src="https://www.singh.gg/slides/reveal/fontawesome/all.min.js"
+		></script>
+		<script
+			defer
+			src="https://www.singh.gg/slides/plugin/load-mathjax.js"
+		></script>
+
+		<script type="text/javascript">
+			function pageInIframe() {
+				return window.location !== window.parent.location;
+			}
+
+			let forgetPop = true;
+			function onPopState(event) {
+				if (forgetPop) {
+					forgetPop = false;
+				} else if (pageInIframe()) {
+					parent.postMessage(
+						event.target.location.href,
+						'app://obsidian.md'
+					);
+				}
+			}
+			window.onpopstate = onPopState;
+			window.onmessage = (event) => {
+				if (event.data == 'reload') {
+					window.document.location.reload();
+				}
+				forgetPop = true;
+			};
+
+			function fitElements() {
+				const itemsToFit = document.getElementsByClassName('fitText');
+				for (const item in itemsToFit) {
+					if (Object.hasOwnProperty.call(itemsToFit, item)) {
+						const element = itemsToFit[item];
+						fitElement(element, 1, 1000);
+						element.classList.remove('fitText');
+					}
+				}
+			}
+
+			function fitElement(element, start, end) {
+				let size = (end + start) / 2;
+				element.style.fontSize = `${size}px`;
+
+				if (Math.abs(start - end) < 1) {
+					while (element.scrollHeight > element.offsetHeight) {
+						size--;
+						element.style.fontSize = `${size}px`;
+					}
+					return;
+				}
+
+				if (element.scrollHeight > element.offsetHeight) {
+					fitElement(element, start, size);
+				} else {
+					fitElement(element, size, end);
+				}
+			}
+
+			document.onreadystatechange = () => {
+				fitElements();
+				if (document.readyState === 'complete') {
+					if (
+						pageInIframe() &&
+						window.location.href.indexOf('?export') != -1
+					) {
+						parent.postMessage(
+							event.target.location.href,
+							'app://obsidian.md'
+						);
+					}
+					if (window.location.href.indexOf('print-pdf') != -1) {
+						let stateCheck = setInterval(() => {
+							clearInterval(stateCheck);
+							window.print();
+						}, 250);
+					}
+				}
+			};
+		</script>
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+						## Stacking the Deck for Better Peer Feedback
+
+						### A (Card) Game Based Approach
+
+						<img src="https://seriousplayconf.com/wp-content/uploads/2024/06/logo_SPC_Transp.png" alt="" style="background-color: black; padding: 0.8em; width: 900px; object-fit: fill">
+
+
+						Vikram Singh • August 15, 2025
+						</div>
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: style="text-align: left" class="drop" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+						<div class="" style="position: absolute; left: 0%; top: 0%; height: 30%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+						## Learning Objectives
+
+						By the end of this, you will be able to:
+
+						</div>
+
+						<ol class="fa-ol">
+						<div class="" style="position: absolute; left: 8%; top: 29%; height: 70%; width: 62%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+
+
+						<div class="block">
+
+						<!-- .element: style="font-size: 0.93em" -->
+
+						<li><span class="fa-li"><i class="fas fa-brain"></i></span><b>Understand</b> how Self-Determination Theory (SDT) informs intrinsic motivation in peer feedback.</li>
+						<li class="fragment"><span class="fa-li"><i class="fas fa-gamepad"></i></span><b>Play</b> a card game designed to improve feedback quality using game-based learning.</li>
+						<li class="fragment"><span class="fa-li"><i class="fas fa-robot"></i></span><b>Explore</b> how AI was used to classify student feedback and generate gameplay conditions.</li>
+						<li class="fragment"><span class="fa-li"><i class="fas fa-chalkboard-teacher"></i></span><b>Reflect</b> on key ideas for your own assessment and classroom design.</li>
+
+						</div>
+
+
+
+
+
+
+						</div>
+						</ol>
+
+						<div class="" style="position: absolute; left: 70%; top: 30%; height: 70%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+						<div class="block">
+
+						<img src="https://www.singh.gg/slides/00 System/Assets/Stickers/Compass.gif" alt="" style="object-fit: scale-down">
+
+
+						</div>
+
+
+
+						</div>
+						</div>
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+						## Hello :)
+
+						<split evenly>
+
+						<img src="https://www.singh.gg/slides/00 System/Assets/me.jpg" alt="" style="width: 600px; object-fit: fill" class="fragment">
+
+
+						<img src="https://www.germanoconstruction.com/wp-content/uploads/2021/06/JOHN-ABBOTT-BIBLIO-2.jpg" alt="" style="width: 1000px; object-fit: fill" class="fragment">
+
+
+						</split>
+						</div>
+					</script>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### The Problem
+
+							<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWkyZXVreWc2anZ4ZGc1eHF2NHd6bjk0YWtheXAwOXpwcWYxOHI1diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/kc5KiPcBjdYxdJ6Jrt/giphy.gif" alt="" style="object-fit: scale-down">
+							</div>
+
+							<aside class="notes"><ul>
+							<li>PCR is essential in industry and promotes learning, but students often find it boring or stressful.</li>
+							<li>Motivation suffers due to <strong>time pressure</strong>, <strong>unclear purpose</strong>, and <strong>fear of judgment</strong>.</li>
+							<li>Feedback is often <strong>generic</strong>, <strong>superficial</strong>, or <strong>avoided</strong> altogether.</li>
+							<li>External motivators like the <strong>R-score</strong> can discourage students from helping peers.</li>
+							<li>Confidence gaps and lack of <strong>feedback literacy</strong> undermine peer learning.</li>
+							<li><strong>Social disconnects</strong> (e.g., anonymity, asynchronous review) weaken collaboration.</li>
+							</ul>
+							</aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### The Problem
+
+							<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWkyZXVreWc2anZ4ZGc1eHF2NHd6bjk0YWtheXAwOXpwcWYxOHI1diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/kc5KiPcBjdYxdJ6Jrt/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.8em; padding: 1em" -->
+
+							Many computer science students struggle to engage meaningfully in peer code review due to low motivation, limited feedback skills, and a lack of social connection, leading to superficial feedback that undermines learning.
+
+							</div>
+							</div>
+
+							<aside class="notes"><ul>
+							<li>PCR is essential in industry and promotes learning, but students often find it boring or stressful.</li>
+							<li>Motivation suffers due to <strong>time pressure</strong>, <strong>unclear purpose</strong>, and <strong>fear of judgment</strong>.</li>
+							<li>Feedback is often <strong>generic</strong>, <strong>superficial</strong>, or <strong>avoided</strong> altogether.</li>
+							<li>External motivators like the <strong>R-score</strong> can discourage students from helping peers.</li>
+							<li>Confidence gaps and lack of <strong>feedback literacy</strong> undermine peer learning.</li>
+							<li><strong>Social disconnects</strong> (e.g., anonymity, asynchronous review) weaken collaboration.</li>
+							</ul>
+							</aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### The Problem
+
+							<split even>
+
+							<div class="block">
+
+							<i class="fas fa-industry fa-3x maroon"></i>
+
+							**Real-World Relevance**
+
+							PCR is essential in industry and promotes learning, but students often find it boring or stressful.
+
+							</div>
+
+
+
+							<div class="block">
+
+							<!-- .element: class="fragment" -->
+
+							<i class="fas fa-clock fa-3x lavender"></i>
+
+							**Low Motivation**
+
+							Time pressure, unclear purpose, and fear of judgment reduce student engagement.
+
+							</div>
+
+
+
+							<div class="block">
+
+							<!-- .element: class="fragment" -->
+
+							<i class="fas fa-comment-slash fa-3x teal"></i>
+
+							**Shallow Feedback**
+
+							Students often give generic or superficial comments, or skip feedback entirely.
+
+							</div>
+
+
+
+							</split>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### The Problem
+
+							<split even>
+
+							<div class="block">
+
+							<i class="fas fa-ranking-star fa-3x green"></i>
+
+							**External Pressures**
+
+							Systems like the R-score discourage students from helping each other to succeed.
+
+							</div>
+
+
+
+							<div class="block">
+
+							<!-- .element: class="fragment" -->
+
+							<i class="fas fa-arrows-left-right-to-line fa-3x yellow"></i>
+
+							**Confidence Gaps**
+
+							Students may feel unqualified to give good feedback due to low feedback literacy.
+
+							</div>
+
+
+
+							<div class="block">
+
+							<!-- .element: class="fragment" -->
+
+							<i class="fas fa-handshake-slash fa-3x pink"></i>
+
+							**Social Disconnects**
+
+							Anonymity and asynchronous formats make PCR feel impersonal and isolating.
+
+							</div>
+
+
+
+							</split>
+							</div>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate-restart="true" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<img src="https://www.singh.gg/slides/00 System/Assets/conceptual-framework.png" alt="" style="width: 800px; object-fit: fill">
+							</div>
+
+							<aside class="notes"><ul>
+							<li>Traditional PCR doesn&#39;t support students&#39; needs for <strong>competence</strong>, <strong>autonomy</strong>, and <strong>relatedness</strong>.</li>
+							<li><strong>Self-Determination Theory (SDT)</strong> explains why motivation fails: students feel disempowered, unqualified, or isolated.</li>
+							<li><strong>Game-Based Learning (GBL)</strong> offers a path to boost motivation through challenge, choice, and collaboration.</li>
+							<li>Well-designed games support <strong>competence</strong> via skill growth, <strong>autonomy</strong> via in-game decisions, and <strong>relatedness</strong> via group play.</li>
+							<li>Aligning feedback with learning outcomes increases student buy-in and relevance.</li>
+							<li>My experiences in industry, teaching, and gaming informed this framework—game mechanics mirror PCR needs: communication, collaboration, and consequence.</li>
+							</ul>
+							</aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 100%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="middle">
+
+
+							### Conceptual Framework
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 0.9em" -->
+
+							This study uses Self-Determination Theory and Game-Based Learning to reframe Peer Code Review as an intrinsically motivating experience that builds feedback skills and community through meaningful play.
+
+							</div>
+
+
+
+							</div>
+
+							<div class="" style="position: absolute; left: 50%; top: 0%; height: 100%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+							<img src="https://www.singh.gg/slides/00 System/Assets/conceptual-framework.png" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+							</div>
+
+							<aside class="notes"><ul>
+							<li>Traditional PCR doesn&#39;t support students&#39; needs for <strong>competence</strong>, <strong>autonomy</strong>, and <strong>relatedness</strong>.</li>
+							<li><strong>Self-Determination Theory (SDT)</strong> explains why motivation fails: students feel disempowered, unqualified, or isolated.</li>
+							<li><strong>Game-Based Learning (GBL)</strong> offers a path to boost motivation through challenge, choice, and collaboration.</li>
+							<li>Well-designed games support <strong>competence</strong> via skill growth, <strong>autonomy</strong> via in-game decisions, and <strong>relatedness</strong> via group play.</li>
+							<li>Aligning feedback with learning outcomes increases student buy-in and relevance.</li>
+							<li>My experiences in industry, teaching, and gaming informed this framework—game mechanics mirror PCR needs: communication, collaboration, and consequence.</li>
+							</ul>
+							</aside>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate-restart="true" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### Literature Review
+
+							<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjIwNThvcjgyZ3RtcTczZHN5MmJ0MjlneDNlMjVlYnQ0aHlseTQ3ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/AOtr05VzKK72pHSvO1/giphy.gif" alt="" style="width: 900px; object-fit: fill">
+							</div>
+
+							<aside class="notes"><ul>
+							<li>Peer assessment builds evaluative judgment and metacognition but needs buy-in to be effective.</li>
+							<li>PCR mirrors industry practice and promotes higher-order thinking but is often done superficially.</li>
+							<li>Students struggle to stay motivated in PCR due to low <strong>competence</strong>, limited <strong>autonomy</strong>, and weak <strong>relatedness</strong>.</li>
+							<li>Gamification increases participation but relies on <strong>extrinsic rewards</strong>, which can undermine long-term motivation.</li>
+							<li>Game-Based Learning embeds feedback into meaningful gameplay loops that support SDT&#39;s core needs.</li>
+							<li>GBL promotes <strong>intrinsic motivation</strong> by making peer review an immersive, purpose-driven experience.</li>
+							<li>There&#39;s a research gap at the intersection of GBL and PCR—this study seeks to fill it.</li>
+							</ul>
+							</aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 100%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="middle">
+
+
+							### Literature Review
+
+							<div class="block">
+
+							While peer feedback, motivation, and gamification have been widely studied, few have explored how Game-Based Learning can intrinsically motivate students to give higher quality peer code reviews in CS education.
+
+							</div>
+
+
+
+							</div>
+
+							<div class="" style="position: absolute; left: 50%; top: 0%; height: 100%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+							<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjIwNThvcjgyZ3RtcTczZHN5MmJ0MjlneDNlMjVlYnQ0aHlseTQ3ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/AOtr05VzKK72pHSvO1/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
+
+
+							</div>
+							</div>
+
+							<aside class="notes"><ul>
+							<li>Peer assessment builds evaluative judgment and metacognition but needs buy-in to be effective.</li>
+							<li>PCR mirrors industry practice and promotes higher-order thinking but is often done superficially.</li>
+							<li>Students struggle to stay motivated in PCR due to low <strong>competence</strong>, limited <strong>autonomy</strong>, and weak <strong>relatedness</strong>.</li>
+							<li>Gamification increases participation but relies on <strong>extrinsic rewards</strong>, which can undermine long-term motivation.</li>
+							<li>Game-Based Learning embeds feedback into meaningful gameplay loops that support SDT&#39;s core needs.</li>
+							<li>GBL promotes <strong>intrinsic motivation</strong> by making peer review an immersive, purpose-driven experience.</li>
+							<li>There&#39;s a research gap at the intersection of GBL and PCR—this study seeks to fill it.</li>
+							</ul>
+							</aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 100%; width: 50%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+
+							## Gamification
+
+							</div>
+
+							<div class="" style="position: absolute; left: 40%; top: 0%; height: 100%; width: 60%; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-evenly" align="right">
+
+
+							## Game-Based Learning
+
+							</div>
+
+							<div class="" style="position: absolute; left: 10%; top: 20%; height: 20%; width: 20%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+
+							<i class="fas fa-location-dot fa-4x maroon"></i>
+
+							</div>
+
+							notes:
+
+							Trying to go **towards** GBL but we must understand it's a spectrum.
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 100%; width: 50%; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-evenly" align="left">
+
+
+							## Gamification
+
+							</div>
+
+							<div class="" style="position: absolute; left: 40%; top: 0%; height: 100%; width: 60%; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-evenly" align="right">
+
+
+							## Game-Based Learning
+
+							</div>
+
+							<div class="" style="position: absolute; left: 60%; top: 20%; height: 20%; width: 20%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+
+							<i class="fas fa-location-dot fa-4x maroon"></i>
+
+							</div>
+
+							notes:
+
+							Trying to go **towards** GBL but we must understand it's a spectrum.
+							</div>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate-restart="true" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### Research Questions
+
+							<split even>
+
+							<div class="block">
+
+							<i class="fas fa-comments fa-3x maroon"></i>
+
+							**RQ1**
+
+							Does a game-based learning intervention **increase the quality of feedback** provided during Computer Science peer code review?
+
+							</div>
+
+
+
+							<div class="block">
+
+							<i class="fas fa-masks-theater fa-3x lavender"></i>
+
+							**RQ2**
+
+							</div>
+
+
+
+							</split>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### Research Questions
+
+							<split even>
+
+							<div class="block">
+
+							<i class="fas fa-comments fa-3x maroon"></i>
+
+							**RQ1**
+
+							Does a game-based learning intervention **increase the quality of feedback** provided during Computer Science peer code review?
+
+							</div>
+
+
+
+							<div class="block">
+
+							<i class="fas fa-masks-theater fa-3x lavender"></i>
+
+							**RQ2**
+
+							Does the game-based learning intervention **influence students' perceived competence, autonomy, and relatedness**, as conceptualized by Self-Determination Theory?
+
+							</div>
+
+
+
+							</split>
+							</div>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate-restart="true" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Methodology
+
+							<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWttd3o3Y29ldTgzbzJydWVjbHNmNjZqOWZyYWZwbW53dDFqZDlsbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/mACiRE5HiqioJDdeSR/giphy.gif" alt="" style="width: 500px; object-fit: fill">
+
+
+							<div class="block">
+
+							A mixed-methods, quasi-experimental design was used to assess whether a custom-designed card game improved feedback quality and motivation among third-year CS students during peer code review.
+
+							</div>
+							</div>
+
+							<aside class="notes"><ul>
+							<li><strong>Participants</strong>: 42 third-year Game Programming students at John Abbott College; advanced enough to simulate real-world PCR.</li>
+							<li><strong>Design</strong>: Pre-post intervention study using surveys and feedback classification, grounded in Self-Determination Theory (SDT).</li>
+							<li><strong>Instruments</strong>:<ul>
+							<li><strong>Code Review Taxonomy</strong> → scored LLM-classified peer comments by quality.</li>
+							<li><strong>Intrinsic Motivation Inventory (IMI)</strong> → measured autonomy, competence, and relatedness.</li>
+							</ul>
+							</li>
+							<li><strong>Intervention</strong>: Feedback quality affected card game starting conditions; students played twice over two weeks.</li>
+							<li><strong>Data Analysis</strong>:<ul>
+							<li>RQ1 (feedback): Wilcoxon signed-rank test.</li>
+							<li>RQ2 (motivation): Independent t-tests on IMI subscales.</li>
+							</ul>
+							</li>
+							<li><strong>Ethics</strong>: Approved by UdeS and JAC. Participation was voluntary, anonymous where applicable, with secure data handling.</li>
+							</ul>
+							</aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Methodology
+
+							<split even wrap="3">
+
+							<div class="block">
+
+							<i class="fas fa-users fa-3x maroon"></i>
+
+							**Participants**
+
+							42 third-year CS students at John Abbott College with advanced programming experience preparing for internships.
+
+							</div>
+
+
+
+							<div class="block">
+
+							<!-- .element: class="fragment" -->
+
+							<i class="fas fa-flask fa-3x lavender"></i>
+
+							**Design**
+
+							Mixed-methods, quasi-experimental pre/post design to measure changes in motivation and feedback quality.
+
+							</div>
+
+
+
+							<div class="block">
+
+							<!-- .element: class="fragment" -->
+
+							<i class="fas fa-toolbox fa-3x teal"></i>
+
+							**Instruments**
+
+							Used a Code Review Taxonomy and adapted Intrinsic Motivation Inventory to assess feedback and psychological needs.
+
+							</div>
+
+
+
+							</split>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Methodology
+
+							<split even wrap="3">
+
+							<div class="block">
+
+							<i class="fas fa-dice fa-3x green"></i>
+
+							**Intervention**
+
+							Students played a custom card game where feedback quality determined starting advantages in gameplay.
+
+							</div>
+
+
+
+							<div class="block">
+
+							<!-- .element: class="fragment" -->
+
+							<i class="fas fa-chart-line fa-3x yellow"></i>
+
+							**Analysis**
+
+							Wilcoxon signed-rank test for feedback quality; independent t-tests on SDT subscales for motivation analysis.
+
+							</div>
+
+
+
+							<div class="block">
+
+							<!-- .element: class="fragment" -->
+
+							<i class="fas fa-shield-alt fa-3x pink"></i>
+
+							**Ethics**
+
+							Approved by UdeS and JAC ethics boards; data was anonymized and securely stored, with voluntary participation.
+
+							</div>
+
+
+
+							</split>
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<img src="https://www.singh.gg/slides/00 System/Assets/intervention-sequence.png" alt="" style="object-fit: scale-down">
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 100%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="middle">
+
+
+							### Intervention
+
+							<div class="block">
+
+							- Feedback quality = **starting hand**
+							- Players compete using **steal, trade, and nope** cards
+							- Better feedback = more strategic advantage
+							- Game loop: `Feedback → Game → Feedback → Game`
+
+							</div>
+
+
+
+							</div>
+
+							<div class="" style="position: absolute; left: 50%; top: 0%; height: 100%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+							<img src="https://www.singh.gg/slides/00 System/Assets/intervention-sequence.png" alt="" style="object-fit: scale-down">
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate-restart="true" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Let's Play
+
+							<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGM0YTYwem0xYnZuNmNxNDg3MDBzd21rNTY3dXJ2cWtwNWwyYjMycyZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/U4RfUbKPNbPSVMeKCb/giphy.gif" alt="" style="width: 700px; object-fit: fill">
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: style="text-align: left" class="drop" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 20%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							## Discussion
+
+							</div>
+
+
+
+							</div>
+
+
+							<div class="" style="position: absolute; left: 0%; top: 20%; height: 80%; width: 70%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+
+							<!-- .slide: data-auto-animate template="" -->
+
+
+
+							<div class="block">
+
+							<!-- .element: style="font-size: 1.4em" -->
+
+							- How did the game mechanics feel?
+							- Did the feedback classification seem fair?
+							- How might this model be adapted to your own context?
+
+							</div>
+
+
+
+
+
+
+							</div>
+
+							<div class="" style="position: absolute; left: 70%; top: 20%; height: 80%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: space-around" >
+
+
+							<div class="block">
+
+							<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGM0YTYwem0xYnZuNmNxNDg3MDBzd21rNTY3dXJ2cWtwNWwyYjMycyZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/U4RfUbKPNbPSVMeKCb/giphy.gif" alt="" style="width: 700px; object-fit: fill">
+
+
+							</div>
+
+
+
+
+							</div>
+							</div>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate-restart="true" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Results
+
+							<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmRtZndhdzZpZHNza3ZoaW42dXM0dnZibW1oZnI5bWxsa3FuZmY1aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/l378jTR4iHXQ0dPZm/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+							</div>
+
+							<aside class="notes"><ul>
+							<li><strong>Gaming background</strong>: 93% enjoy games, but few had prior exposure to GBL; strong fit for intervention.</li>
+							<li><strong>RQ1 (Feedback Quality)</strong>:<ul>
+							<li>Significant increase in median feedback score (from 3.0 to 4.0), $p =.03$.</li>
+							</ul>
+							</li>
+							<li><strong>RQ2 (Motivation)</strong>:<ul>
+							<li>Autonomy increased significantly ($p =.016$); competence and relatedness showed no significant change.</li>
+							</ul>
+							</li>
+							<li><strong>Qualitative results</strong>:<ul>
+							<li>54% reported higher motivation due to the game.</li>
+							<li>21% said it had no effect.</li>
+							<li>15% noted increased awareness, but no behavioral change.</li>
+							<li>10% felt confused or pressured.</li>
+							</ul>
+							</li>
+							<li>Students appreciated the connection between feedback and game advantage; one said, &quot;I went in-depth knowing it would give me an edge.&quot;</li>
+							</ul>
+							</aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 100%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="middle">
+
+
+							## Results
+
+							<div class="block">
+
+							The intervention significantly improved feedback quality and perceived autonomy, with most students reporting increased motivation and enjoyment during peer review.
+
+							</div>
+
+
+
+							</div>
+
+							<div class="" style="position: absolute; left: 50%; top: 0%; height: 100%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+							<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmRtZndhdzZpZHNza3ZoaW42dXM0dnZibW1oZnI5bWxsa3FuZmY1aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/l378jTR4iHXQ0dPZm/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+							</div>
+
+							<aside class="notes"><ul>
+							<li><strong>Gaming background</strong>: 93% enjoy games, but few had prior exposure to GBL; strong fit for intervention.</li>
+							<li><strong>RQ1 (Feedback Quality)</strong>:<ul>
+							<li>Significant increase in median feedback score (from 3.0 to 4.0), $p =.03$.</li>
+							</ul>
+							</li>
+							<li><strong>RQ2 (Motivation)</strong>:<ul>
+							<li>Autonomy increased significantly ($p =.016$); competence and relatedness showed no significant change.</li>
+							</ul>
+							</li>
+							<li><strong>Qualitative results</strong>:<ul>
+							<li>54% reported higher motivation due to the game.</li>
+							<li>21% said it had no effect.</li>
+							<li>15% noted increased awareness, but no behavioral change.</li>
+							<li>10% felt confused or pressured.</li>
+							</ul>
+							</li>
+							<li>Students appreciated the connection between feedback and game advantage; one said, &quot;I went in-depth knowing it would give me an edge.&quot;</li>
+							</ul>
+							</aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### Pre- and Post- Peer Feedback Scores (RQ1)
+
+							<img src="https://www.singh.gg/slides/00 System/Assets/pre-post-feedback-quality-results.png" alt="" style="object-fit: scale-down">
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### Pre- and Post- Motivation Scores (RQ2)
+
+							<img src="https://www.singh.gg/slides/00 System/Assets/pre-post-motivation-results.png" alt="" style="object-fit: scale-down">
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### Qualitative Feedback
+
+							> 100%, before I only put _good job_ or _error in x.js_, but now <mark>I went in-depth knowing it would give me an edge</mark> while playing the game (Participant 27).
+
+							> Knowing that you get more yellow action cards definitely <mark>prompted me to giving more in-depth peer feedback</mark> (Participant 9).
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### Qualitative Feedback
+
+							> <mark>Not really</mark>, I just [wrote] maybe a slightly more detailed version of what I would usually write" (Participant 5).
+
+							> Knowing that the cards I would get for the card game was impacted by my peer review assessment, <mark>it didn't really impact the way I graded people</mark> or in the game." (Participant 20)
+							</div>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							### Thematic Breakdown of Student Feedback
+
+							<img src="https://www.singh.gg/slides/00 System/Assets/student-feedback-results.png" alt="" style="object-fit: scale-down">
+							</div>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate-restart="true" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Discussion
+
+							<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2N3ZGkweThxNnkzY2lvb201cjB1dGM1YTAzZHF0OXN0aThnM2s3ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/qrDWLC2lQx8KXAqm00/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+							</div>
+
+							<aside class="notes"><ul>
+							<li><strong>RQ1:</strong> Feedback quality significantly improved; game tied academic effort to in-game success (meaningful play).</li>
+							<li><strong>RQ2:</strong> Only autonomy improved significantly; competence may need clearer feedback mechanisms, and relatedness could benefit from more collaboration-focused mechanics.</li>
+							<li><strong>Student reactions:</strong> Most felt more motivated, some neutral, a few confused or pressured.</li>
+							<li><strong>Design implications:</strong><ul>
+							<li>Link gameplay and feedback more transparently during the game.</li>
+							<li>Rebalance underused cards (e.g., Trade).</li>
+							<li>Add narrative framing and team-based mechanics to support relatedness.</li>
+							</ul>
+							</li>
+							<li><strong>Limitations:</strong><ul>
+							<li>Small sample, short duration, no control group.</li>
+							<li>LLM classification not formally validated.</li>
+							<li>Anonymity limited statistical tests (used independent t-tests instead of paired).</li>
+							</ul>
+							</li>
+							<li><strong>Future plans:</strong> Incorporate feedback into game improvements, support autonomy/competence/relatedness, and align PCR more closely with professional practice.</li>
+							</ul>
+							</aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 100%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="middle">
+
+
+							## Discussion
+
+							<div class="block">
+
+							The intervention improved feedback quality and perceived autonomy, but showed mixed results for competence and relatedness, offering design insights for refining game-based peer assessment.
+
+							</div>
+
+
+
+							</div>
+
+							<div class="" style="position: absolute; left: 50%; top: 0%; height: 100%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+							<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2N3ZGkweThxNnkzY2lvb201cjB1dGM1YTAzZHF0OXN0aThnM2s3ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/qrDWLC2lQx8KXAqm00/giphy.gif" alt="" style="width: 1000px; object-fit: fill">
+
+
+							</div>
+							</div>
+
+							<aside class="notes"><ul>
+							<li><strong>RQ1:</strong> Feedback quality significantly improved; game tied academic effort to in-game success (meaningful play).</li>
+							<li><strong>RQ2:</strong> Only autonomy improved significantly; competence may need clearer feedback mechanisms, and relatedness could benefit from more collaboration-focused mechanics.</li>
+							<li><strong>Student reactions:</strong> Most felt more motivated, some neutral, a few confused or pressured.</li>
+							<li><strong>Design implications:</strong><ul>
+							<li>Link gameplay and feedback more transparently during the game.</li>
+							<li>Rebalance underused cards (e.g., Trade).</li>
+							<li>Add narrative framing and team-based mechanics to support relatedness.</li>
+							</ul>
+							</li>
+							<li><strong>Limitations:</strong><ul>
+							<li>Small sample, short duration, no control group.</li>
+							<li>LLM classification not formally validated.</li>
+							<li>Anonymity limited statistical tests (used independent t-tests instead of paired).</li>
+							</ul>
+							</li>
+							<li><strong>Future plans:</strong> Incorporate feedback into game improvements, support autonomy/competence/relatedness, and align PCR more closely with professional practice.</li>
+							</ul>
+							</aside>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate-restart="true" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							## Conclusion
+
+							<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTJ4dWdpdHJlNGZ0aW9mdmY3NGlncGM2b3FkbzRjNXoxbWhja3N5MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/gReow57Fr0Zj6Kanxn/giphy.gif" alt="" style="width: 1200px; object-fit: fill">
+							</div>
+
+							<aside class="notes"><ul>
+							<li>The game meaningfully embedded <strong>feedback quality</strong> into its mechanics, promoting effort and motivation.</li>
+							<li><strong>RQ1:</strong> Feedback became more specific and actionable after the intervention.</li>
+							<li><strong>RQ2:</strong> Autonomy improved; competence and relatedness need further design support.</li>
+							<li>Qualitative feedback confirmed students were more invested in reviewing code.</li>
+							<li>Limitations: short timeframe, small sample, no paired data.</li>
+							<li>Future work: add scaffolding, narrative, and cooperative mechanics to sustain gains and support all three SDT needs.</li>
+							<li>Big idea: GBL can be pedagogically aligned, promoting <strong>mastery, agency, and connection</strong>.</li>
+							</ul>
+							</aside>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<!-- .slide: class="drop" data-auto-animate="true" template="" -->
+							<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+							<div class="" style="position: absolute; left: 0%; top: 0%; height: 100%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="middle">
+
+
+							## Conclusion
+
+							<div class="block">
+
+							Game-based learning helped students write better peer feedback and feel more autonomous, showing that meaningful play can transform peer review from an obligation into an engaging learning experience.
+
+							</div>
+
+
+
+							</div>
+
+							<div class="" style="position: absolute; left: 50%; top: 0%; height: 100%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+							<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTJ4dWdpdHJlNGZ0aW9mdmY3NGlncGM2b3FkbzRjNXoxbWhja3N5MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/gReow57Fr0Zj6Kanxn/giphy.gif" alt="" style="width: 800px; object-fit: fill">
+
+
+							</div>
+							</div>
+
+							<aside class="notes"><ul>
+							<li>The game meaningfully embedded <strong>feedback quality</strong> into its mechanics, promoting effort and motivation.</li>
+							<li><strong>RQ1:</strong> Feedback became more specific and actionable after the intervention.</li>
+							<li><strong>RQ2:</strong> Autonomy improved; competence and relatedness need further design support.</li>
+							<li>Qualitative feedback confirmed students were more invested in reviewing code.</li>
+							<li>Limitations: short timeframe, small sample, no paired data.</li>
+							<li>Future work: add scaffolding, narrative, and cooperative mechanics to sustain gains and support all three SDT needs.</li>
+							<li>Big idea: GBL can be pedagogically aligned, promoting <strong>mastery, agency, and connection</strong>.</li>
+							</ul>
+							</aside>
+						</script>
+					</section>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+						<split even>
+
+						<div class="block">
+
+						### Thesis Data Collection
+
+						<i class="fas fa-graduation-cap fa-2x maroon"></i>
+
+						- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->**Platform**: Moodle Workshop
+						- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->**Extraction**: Custom JavaScript scraper + Excel
+						- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->**Classification**: ChatGPT few-shot prompting with Code Review Taxonomy
+
+						</div>
+
+
+
+						<div class="block">
+
+						### Workshop Version (Today)
+
+						<i class="fas fa-people-group fa-2x lavender"></i>
+
+						- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->**Platform**: Google Forms
+						- &shy;<!-- .element: class="fragment" data-fragment-index="5" -->**Extraction**: Google Sheets + Apps Script
+						- &shy;<!-- .element: class="fragment" data-fragment-index="6" -->**Classification**: Gemini API few-shot prompting with same taxonomy
+
+						</div>
+
+
+
+						</split>
+
+						notes:
+
+						- If I could have made it more like today I would since it's way easier and less manual work for me to do. What's nice about the Workshop is it takes care of assigning everyone random submissions along with a grading rubric.
+						- Gemini's API is free while Copilot is not, otherwise Copilot would be a good alternative.
+						</div>
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<!-- .slide: class="drop" template="" -->
+						<div class="" style="position: absolute; left: 0px; top: 0px; height: 1080px; width: 1920px; min-height: 1080px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+						## Thank You
+
+						<img src="https://www.singh.gg/slides/00 System/Assets/Stickers/Waving.gif" alt="ng.gif" style="object-fit: scale-down">
+
+
+						Questions? Comments? Feedback?
+
+						[Resources](https://singh.gg/research) • [Slides](https://singh.gg/slides/serious-play-2025) • [Contact Me](mailto:vikram.singh@johnabbott.qc.ca)
+
+						<div class="" style="position: absolute; left: 0%; top: 0%; height: undefined%; width: undefined%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+
+						<img src="https://www.singh.gg/slides/00 System/Assets/serious-play-feedback-qr.png" alt="" style="width: 400px; object-fit: fill">
+
+						(feedback!)
+
+						</div>
+						</div>
+					</script>
+				</section>
+			</div>
+		</div>
+
+		<script src="https://www.singh.gg/slides/reveal/reveal.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/notes/notes.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/markdown/markdown.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/highlight/highlight.js"></script>
+
+		<script src="https://www.singh.gg/slides/plugin/zoom/zoom.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/math/math.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/mermaid/mermaid.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/chart/chart.umd.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/chart/plugin.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/menu/menu.js"></script>
+		<script src="https://www.singh.gg/slides/plugin/customcontrols/plugin.js"></script>
+
+		<script>
+			function extend() {
+				const target = {};
+				for (let i = 0; i < arguments.length; i++) {
+					const source = arguments[i];
+					for (const key in source) {
+						if (source.hasOwnProperty(key)) {
+							target[key] = source[key];
+						}
+					}
+				}
+				return target;
+			}
+
+			function isLight(color) {
+				let hex = color.replace('#', '');
+
+				// convert #fff => #ffffff
+				if (hex.length == 3) {
+					hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`;
+				}
+
+				const c_r = parseInt(hex.substr(0, 2), 16);
+				const c_g = parseInt(hex.substr(2, 2), 16);
+				const c_b = parseInt(hex.substr(4, 2), 16);
+				const brightness = (c_r * 299 + c_g * 587 + c_b * 114) / 1000;
+				return brightness > 155;
+			}
+
+			const bgColor = getComputedStyle(document.documentElement)
+				.getPropertyValue('--r-background-color')
+				.trim();
+
+			if (isLight(bgColor)) {
+				document.body.classList.add('has-light-background');
+			} else {
+				document.body.classList.add('has-dark-background');
+			}
+
+			// default options to init reveal.js
+			const defaultOptions = {
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				transition: 'default', // none/fade/slide/convex/concave/zoom
+				plugins: [
+					RevealMarkdown,
+					RevealHighlight,
+					RevealZoom,
+					RevealNotes,
+					RevealMath.MathJax3,
+					RevealMermaid,
+					RevealChart,
+					RevealCustomControls,
+					RevealMenu,
+				],
+				allottedTime: 120 * 1000,
+				mathjax3: {
+					mathjax: 'plugin/math/mathjax/tex-chtml-full.js',
+				},
+				markdown: {
+					gfm: true,
+					mangle: false,
+					pedantic: false,
+					smartLists: false,
+					smartypants: false,
+				},
+				mermaid: {
+					theme: isLight(bgColor) ? 'default' : 'dark',
+				},
+				customcontrols: {
+					controls: [
+						{
+							id: 'toggle-overview',
+							title: 'Toggle overview (O)',
+							icon: '<i class="fa fa-th"></i>',
+							action: 'Reveal.toggleOverview();',
+						},
+					],
+				},
+				menu: {
+					loadIcons: false,
+				},
+			};
+
+			if (pageInIframe()) {
+				defaultOptions.scrollActivationWidth = 5;
+			}
+
+			// options from URL query string
+			const queryOptions = Reveal().getQueryHash() || {};
+
+			const options = extend(
+				defaultOptions,
+				{
+					controls: true,
+					progress: true,
+					slideNumber: false,
+					center: true,
+					transition: 'slide',
+					transitionSpeed: 'default',
+					width: 1920,
+					height: 1080,
+					margin: 0.04,
+				},
+				queryOptions
+			);
+		</script>
+
+		<script>
+			Reveal.initialize(options);
+		</script>
+		<!-- created with Slides Extended reveal.html template -->
+	</body>
+</html>
